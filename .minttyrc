@@ -1,0 +1,15 @@
+Font=IBM Plex Mono Medium
+FontHeight=10
+ThemeFile=windows10
+Transparency=low
+Columns=180
+Rows=60
+FontWeight=500
+MiddleClickAction=void
+RightClickAction=paste
+PgUpDnScroll=yes
+OpaqueWhenFocused=yes
+CopyAsHTML=no
+BellType=1
+BellFlash=yes
+BellPopup=no
