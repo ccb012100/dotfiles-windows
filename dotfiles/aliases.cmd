@@ -6,6 +6,8 @@ doskey cdh=cd %USERPROFILE%
 doskey tmp=cd %TMP%
 doskey dotfiles=cd ~/.dotfiles
 
+doskey g=git $*
+
 doskey cb=cargo build $*
 doskey cc=cargo check $*
 doskey cr=cargo run $*
