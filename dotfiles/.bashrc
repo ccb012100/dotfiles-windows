@@ -16,8 +16,6 @@ alias cb='cargo build'
 alias cr='cargo run'
 alias cc='cargo check'
 
-alias cz='chezmoi'
-
 alias gb='go build .'
 alias gr='go run .'
 
@@ -29,4 +27,3 @@ color_prompt=yes
 [[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
 source ~/.bash_machine_specific_aliases
-alias config='/mingw64/bin/git --git-dir=/c/Users/Waffles/.dotfiles/ --work-tree=/c/Users/Waffles'
