@@ -19,6 +19,8 @@ alias cc='cargo check'
 alias gb='go build .'
 alias gr='go run .'
 
+alias dotfiles='cd ~/.dotfiles'
+
 # Add git branch if its present to PS1
 force_color_prompt=yes
 color_prompt=yes
