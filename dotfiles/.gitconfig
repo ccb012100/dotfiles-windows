@@ -31,20 +31,6 @@
 	ruo = remote update origin --prune
 	s = status
 	undo = reset HEAD~1 --mixed
-[color]
-	ui = true
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = yellow
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
 [commit]
 	gpgsign = true
 [gpg]
