@@ -6,7 +6,7 @@ REM /H -> copy hidden/system files
 REM /I -> assume dest is a directory
 REM /L -> dry run
 
-Set DOTFILES="%HOMEPATH%\.dotfiles\dotfiles"
+Set DOTFILES="%HOMEPATH%\.dotfiles\homepath"
 
 xcopy %HOMEPATH%\.bashrc %DOTFILES%\ /D /F /H /I
 xcopy %HOMEPATH%\.gitconfig %DOTFILES%\ /D /F /H /I
