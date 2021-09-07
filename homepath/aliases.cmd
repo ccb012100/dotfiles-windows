@@ -5,6 +5,7 @@ doskey ls=dir
 doskey cdh=cd %USERPROFILE%
 doskey tmp=cd %TMP%
 doskey dotfiles=cd ~/.dotfiles
+doskey dotfiles-copy=~/.dotfiles/copydotfiles.bat
 
 doskey g=git $*
 
