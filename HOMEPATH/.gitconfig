@@ -3,9 +3,9 @@
     autocrlf = true
     filemode = false
 [user]
-	name = Christopher Bocardo
-	email = ccb012100@users.noreply.github.com
-	signingkey = 93722A3AD155A73F
+    name = Christopher Bocardo
+    email = ccb012100@users.noreply.github.com
+    signingkey = 93722A3AD155A73F
 [pull]
     ff = only
     rebase = false
