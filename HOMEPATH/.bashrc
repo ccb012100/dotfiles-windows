@@ -19,7 +19,7 @@ alias cc='cargo check'
 alias gb='go build .'
 alias gr='go run .'
 
-alias dotfiles='cd ~/.dotfiles'
+alias dc='docker-compose'
 
 # Add git branch if its present to PS1
 force_color_prompt=yes
@@ -29,3 +29,20 @@ color_prompt=yes
 [[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
 source ~/.bash_machine_specific_aliases
+
+# functions to cd then ls in one step
+function cls() {
+    cd "$@" && ls -s
+}
+function cla {
+    cd "$@" && ls -a
+}
+function cll {
+    cd "$@" && ls -l
+}
+function clal {
+    cd "$@" && ls -al
+}
+function clla {
+    cd "$@" && ls -la
+}
