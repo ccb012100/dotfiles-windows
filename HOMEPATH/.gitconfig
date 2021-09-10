@@ -19,11 +19,13 @@
     amend = commit -a --amend
     cm = commit -m
     a = add
+    ai = add --interactive
     b = branch
     br = branch --remote
     cb = checkout -B
     co = checkout
     d = diff
+    ds = diff --staged
     l = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     main = checkout main
     master = checkout master
