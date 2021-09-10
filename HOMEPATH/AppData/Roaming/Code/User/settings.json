@@ -19,8 +19,6 @@
   "editor.renderWhitespace": "none",
   "editor.suggest.localityBonus": true,
   "editor.wordWrap": "on",
-  // explorer
-  "explorer.confirmDragAndDrop": false,
   // files
   "files.associations": {
     "*.vssettings": "xml",
@@ -261,8 +259,9 @@
   "redhat.telemetry.enabled": true,
   "markdown.preview.scrollEditorWithPreview": false,
   "terminal.integrated.fontFamily": "Consolas",
-  "explorer.confirmDelete": false,
   "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
   "editor.bracketPairColorization.enabled": true,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  },
+  "explorer.openEditors.sortOrder": "alphabetical"
 }
