@@ -19,7 +19,7 @@ alias cc='cargo check'
 alias gb='go build .'
 alias gr='go run .'
 
-alias dc='docker-compose'
+alias dc='docker compose'
 
 # Add git branch if its present to PS1
 force_color_prompt=yes
