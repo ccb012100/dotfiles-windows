@@ -876,7 +876,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+v",
+    "key": "ctrl+shift+v",
     "command": "cursorPageDown",
     "when": "textInputFocus"
   },
@@ -1519,11 +1519,6 @@
     "command": "memo.openDailyNote"
   },
   {
-    "key": "ctrl+y",
-    "command": "editor.action.clipboardPasteAction",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+l i",
     "command": "editor.action.insertSnippet"
   },
@@ -1538,7 +1533,7 @@
     "when": "terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "ctrl+shift+v",
+    "key": "ctrl+v",
     "command": "filesExplorer.paste",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
   },
@@ -1558,16 +1553,12 @@
     "when": "editorHasSelection && editorTextFocus && editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+v",
-    "command": "-editor.action.clipboardPasteAction"
-  },
-  {
     "key": "alt+v",
     "command": "list.focusPageUp",
     "when": "listFocus && !inputFocus"
   },
   {
-    "key": "ctrl+v",
+    "key": "ctrl+shift+v",
     "command": "list.focusPageDown",
     "when": "listFocus && !inputFocus"
   },
@@ -1600,5 +1591,9 @@
     "key": "ctrl+.",
     "command": "-problems.action.showQuickFixes",
     "when": "problemFocus"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "editor.action.clipboardPasteAction"
   }
 ]
