@@ -16,6 +16,9 @@
         <Shortcut id="42035" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="43001" Ctrl="yes" Alt="no" Shift="no" Key="82" />
         <Shortcut id="41014" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <Shortcut id="42014" Ctrl="no" Alt="yes" Shift="no" Key="38" />
+        <Shortcut id="42015" Ctrl="no" Alt="yes" Shift="no" Key="40" />
+        <Shortcut id="43009" Ctrl="no" Alt="no" Shift="no" Key="0" />
     </InternalCommands>
     <Macros />
     <UserDefinedCommands>
@@ -37,7 +40,7 @@
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="80" />
         </ScintKey>
         <ScintKey ScintID="2304" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="37">
-            <NextKey Ctrl="yes" Alt="no" Shift="no" Key="74" />
+            <NextKey Ctrl="yes" Alt="no" Shift="no" Key="66" />
         </ScintKey>
         <ScintKey ScintID="2306" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="39">
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="70" />
@@ -48,7 +51,7 @@
         <ScintKey ScintID="2310" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="39">
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="73" />
         </ScintKey>
-        <ScintKey ScintID="2288" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <ScintKey ScintID="2288" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="74" />
         <ScintKey ScintID="2338" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="76" />
         <ScintKey ScintID="2337" menuCmdID="0" Ctrl="yes" Alt="no" Shift="yes" Key="76" />
         <ScintKey ScintID="2312" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="79" />
