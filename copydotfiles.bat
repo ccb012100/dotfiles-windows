@@ -15,7 +15,13 @@ xcopy %HOMEPATH%\.minttyrc %DOTFILES%\ /D /F /H /I
 xcopy %HOMEPATH%\_gvimrc %DOTFILES%\ /D /F /H /I
 xcopy %HOMEPATH%\_vimrc %DOTFILES%\ /D /F /H /I
 xcopy %HOMEPATH%\aliases.cmd %DOTFILES%\ /D /F /H /I
+
+REM ~/.config
 xcopy %HOMEPATH%\.config\nvim\init.vim %DOTFILES%\.config\nvim\ /D /F /H /I
+
+REM ~/.gnupg
+xcopy %HOMEPATH%\.gnupg\agent.conf %DOTFILES%\.gnupg /D /F /H /I
+xcopy %HOMEPATH%\.gnupg\gpg-agent.conf %DOTFILES%\.gnupg /D /F /H /I
 
 REM VS Code
 xcopy %APPDATA%\Code\User\keybindings.json %DOTFILES%\AppData\Roaming\Code\User\ /D /F /H /I
@@ -37,18 +43,25 @@ xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\settings.json ^
 	%DOTFILES%\AppData\Local\Microsoft\PowerToys\ /D /F /H /I
 xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\FancyZones\settings.json ^
 	%DOTFILES%\AppData\Local\Microsoft\PowerToys\FancyZones\ /D /F /H /I
-xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json ^
-	%DOTFILES%\AppData\Local\Microsoft\PowerToys\File Explorer\ /D /F /H /I
-xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json ^
-	%DOTFILES%\AppData\Local\Microsoft\PowerToys\File Explorer\ /D /F /H /I
-xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\Keyboard Manager\default.json ^
-	%DOTFILES%\AppData\Local\Microsoft\PowerToys\Keyboard Manager\ /D /F /H /I
-xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json ^
+xcopy "%HOMEPATH%\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json" ^
+	"%DOTFILES%\AppData\Local\Microsoft\PowerToys\File Explorer\" /D /F /H /I
+xcopy "%HOMEPATH%\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json" ^
+	"%DOTFILES%\AppData\Local\Microsoft\PowerToys\File Explorer\" /D /F /H /I
+xcopy "%HOMEPATH%\AppData\Local\Microsoft\PowerToys\Keyboard Manager\default.json" ^
+	"%DOTFILES%\AppData\Local\Microsoft\PowerToys\Keyboard Manager\" /D /F /H /I
+xcopy "%HOMEPATH%\AppData\Local\Microsoft\PowerToys\Keyboard Manager\settings.json" ^
+	"%DOTFILES%\AppData\Local\Microsoft\PowerToys\Keyboard Manager\" /D /F /H /I
+	xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json ^
 	%DOTFILES%\AppData\Local\Microsoft\PowerToys\PowerRename\ /D /F /H /I
 xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-ui-flags ^
 	%DOTFILES%\AppData\Local\Microsoft\PowerToys\PowerRename\ /D /F /H /I
-xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json ^
-	%DOTFILES%\AppData\Local\Microsoft\PowerToys\PowerToys Run\ /D /F /H /I
-xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\PowerToysRunSettings.json ^
-	%DOTFILES%\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\ /D /F /H /I
+xcopy "%HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json" ^
+	"%DOTFILES%\AppData\Local\Microsoft\PowerToys\PowerToys Run\" /D /F /H /I
+xcopy "%HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\PowerToysRunSettings.json" ^
+	"%DOTFILES%\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\" /D /F /H /I
+
+REM MySQL Workbench
+xcopy "C:\Program Files\MySQL\MySQL Workbench 8.0 CE\data\code_editor.xml" "%DOTFILES%\C\Program Files\MySQL\MySQL Workbench 8.0 CE\data\" /D /F /H /I
+xcopy "C:\Program Files\MySQL\MySQL Workbench 8.0 CE\data\main_menu.xml" "%DOTFILES%\C\Program Files\MySQL\MySQL Workbench 8.0 CE\data\" /D /F /H /I
+
 @pause
