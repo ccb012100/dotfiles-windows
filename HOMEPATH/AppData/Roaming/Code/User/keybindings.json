@@ -89,7 +89,7 @@
     "command": "-editor.action.toggleTabFocusMode"
   },
   {
-    "key": "shift+alt+j",
+    "key": "alt+j",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -204,7 +204,7 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "alt+j",
+    "key": "shift+alt+j",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -350,10 +350,6 @@
     "key": "cmd+/",
     "command": "-editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+ctrl+f",
-    "command": "workbench.action.findInFiles"
   },
   {
     "key": "ctrl+d",
@@ -539,11 +535,6 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+s",
-    "command": "editor.action.nextMatchFindAction",
-    "when": "editorFocus"
-  },
-  {
     "key": "ctrl+, t",
     "command": "workbench.action.terminal.focus"
   },
@@ -640,10 +631,6 @@
   {
     "key": "ctrl+b",
     "command": "-workbench.debug.viewlet.action.addFunctionBreakpointAction"
-  },
-  {
-    "key": "cmd+f",
-    "command": "actions.find"
   },
   {
     "key": "shift+cmd+.",
@@ -1001,10 +988,6 @@
     "when": "remoteFileDialogVisible"
   },
   {
-    "key": "ctrl+x ctrl+f",
-    "command": "workbench.action.files.openFileFolder"
-  },
-  {
     "key": "ctrl+shift+g",
     "command": "-workbench.action.files.openFileFolder"
   },
@@ -1269,11 +1252,6 @@
     "command": "-editor.action.toggleColumnSelection"
   },
   {
-    "key": "alt+v",
-    "command": "cursorPageUp",
-    "when": "textInputFocus"
-  },
-  {
     "key": "shift+cmd+space",
     "command": "-editor.action.triggerParameterHints",
     "when": "editorHasSignatureHelpProvider && editorTextFocus"
@@ -1451,7 +1429,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+s",
+    "key": "ctrl+s",
     "command": "actions.find",
     "when": "editorFocus || editorIsOpen"
   },
@@ -1553,7 +1531,7 @@
     "when": "editorHasSelection && editorTextFocus && editorLangId == 'markdown'"
   },
   {
-    "key": "alt+v",
+    "key": "alt+p",
     "command": "list.focusPageUp",
     "when": "listFocus && !inputFocus"
   },
@@ -1595,5 +1573,33 @@
   {
     "key": "ctrl+y",
     "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "-workbench.action.files.save"
+  },
+  {
+    "key": "alt+s",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-workbench.action.terminal.focusFind",
+    "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-keybindings.editor.searchKeybindings",
+    "when": "inKeybindings"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-settings.action.search",
+    "when": "inSettingsEditor"
+  },
+  {
+    "key": "ctrl+x ctrl+f",
+    "command": "workbench.action.quickOpen"
   }
 ]

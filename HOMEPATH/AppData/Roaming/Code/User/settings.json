@@ -9,9 +9,8 @@
   "breadcrumbs.enabled": true,
   // editor
   "editor.codeLens": false,
-  "editor.fontFamily": "Fira Code, Hack, mononoki, Consolas, IBM Plex Mono, Ubuntu Mono, Inconsolata",
+  "editor.fontFamily": "Fira Code, Source Code Pro, Consolas, IBM Plex Mono, Ubuntu Mono, Inconsolata",
   "editor.fontLigatures": true,
-  "editor.fontSize": 12,
   "editor.letterSpacing": 1,
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 60,
