@@ -1,11 +1,14 @@
 @echo off
 
+set DOTFILES=%HOMEPATH%\.dotfiles\
+
 doskey ls=dir
 
-doskey cdh=cd %USERPROFILE%
-doskey tmp=cd %TMP%
-doskey dotfiles=cd ~/.dotfiles
-doskey dotfiles-copy=~/.dotfiles/copydotfiles.bat
+doskey cd-h=cd %USERPROFILE%
+doskey cd-tmp=cd %TMP%
+doskey cd-temp=cd %TMP%
+doskey cd-dotfiles=cd %DOTFILES%\
+doskey dotfiles-copy=%HOMEPATH%\dotfiles\copydotfiles.bat
 
 doskey g=git $*
 
