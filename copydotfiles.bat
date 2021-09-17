@@ -67,4 +67,4 @@ xcopy "C:\Program Files\MySQL\MySQL Workbench 8.0 CE\data\code_editor.xml" ^
 xcopy "C:\Program Files\MySQL\MySQL Workbench 8.0 CE\data\main_menu.xml" ^
 	"%DOTFILES_CDIR%\Program Files\MySQL\MySQL Workbench 8.0 CE\data\" /D /F /H /I
 
-@pause
+@PAUSE
