@@ -1601,5 +1601,31 @@
   {
     "key": "ctrl+x ctrl+f",
     "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "alt+t",
+    "command": "editor.action.transpose"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "editor.action.transposeLetters"
+  },
+  {
+    "key": "ctrl+x g",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-markdown.extension.editing.toggleItalic",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   }
 ]
