@@ -8,7 +8,6 @@ doskey cd-h=cd %USERPROFILE%
 doskey cd-tmp=cd %TMP%
 doskey cd-temp=cd %TMP%
 doskey cd-dotfiles=cd %DOTFILES%\
-doskey dotfiles-copy=%HOMEPATH%\dotfiles\copydotfiles.bat
 
 doskey g=git $*
 
