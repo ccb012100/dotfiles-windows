@@ -47,9 +47,9 @@ xcopy %DOTFILES_HOMEPATH%\AppData\Local\Microsoft\PowerToys\FancyZones\settings.
 xcopy "%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json" ^
 	"%HOMEPATH%\AppData\Local\Microsoft\PowerToys\File Explorer\" /D /F /H /I
 xcopy "%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\PowerToys\File Explorer\settings.json" ^
-	"%HOMEPATH%\AppData\Local\MHOMEPATHcrosoft\PowerToys\File Explorer\" /D /F /H /I
+	"%HOMEPATH%\AppData\Local\%HOMEPATH%\Microsoft\PowerToys\File Explorer\" /D /F /H /I
 xcopy "%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\PowerToys\Keyboard Manager\default.json" ^
-	"%HOMEPATH%\AppData\HOMEPATHocal\Microsoft\PowerToys\Keyboard Manager\" /D /F /H /I
+	"%HOMEPATH%\AppData\%HOMEPATH%\Local\Microsoft\PowerToys\Keyboard Manager\" /D /F /H /I
 xcopy "%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\PowerToys\Keyboard Manager\settings.json" ^
 	"%HOMEPATH%\AppData\Local\Microsoft\PowerToys\Keyboard Manager\" /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerRename\power-rename-settings.json ^
