@@ -261,6 +261,5 @@
   "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
   "editor.bracketPairColorization.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
-  },
   "explorer.openEditors.sortOrder": "alphabetical"
 }

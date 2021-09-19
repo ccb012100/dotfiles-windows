@@ -42,7 +42,7 @@
     {
       "Id": "B4D3B69656E14D44865C8D818EAE47C4",
       "Name": "Folder",
-      "Description": "Navigates folders starting from a drive letter 'C:\\' or from the user home '~'.",
+      "Description": "Navigates folders starting from a drive letter \u0027C:\\\u0027 or from the user home \u0027~\u0027.",
       "Author": "qianlifeng",
       "Disabled": false,
       "IsGlobal": true,
@@ -78,11 +78,11 @@
     {
       "Id": "D409510CD0D2481F853690A07E6DC426",
       "Name": "Shell",
-      "Description": "Executes commands (e.g 'ping', 'cmd').",
+      "Description": "Executes commands (e.g \u0027ping\u0027, \u0027cmd\u0027).",
       "Author": "qianlifeng",
       "Disabled": false,
       "IsGlobal": false,
-      "ActionKeyword": ">",
+      "ActionKeyword": "\u003E",
       "IconPathDark": "Microsoft.Plugin.Shell\\Images\\shell.dark.png",
       "IconPathLight": "Microsoft.Plugin.Shell\\Images\\shell.light.png",
       "AdditionalOptions": []
@@ -106,7 +106,7 @@
       "Author": "betadele",
       "Disabled": false,
       "IsGlobal": true,
-      "ActionKeyword": "<",
+      "ActionKeyword": "\u003C",
       "IconPathDark": "Microsoft.Plugin.WindowWalker\\Images\\windowwalker.dark.png",
       "IconPathLight": "Microsoft.Plugin.WindowWalker\\Images\\windowwalker.light.png",
       "AdditionalOptions": []
@@ -150,7 +150,7 @@
     {
       "Id": "CEA08895D2544B019B2E9C5009600DF4",
       "Name": "Windows System Commands",
-      "Description": "Executes system commands (e.g. 'shutdown', 'lock', 'sleep').",
+      "Description": "Executes system commands (e.g. \u0027shutdown\u0027, \u0027lock\u0027, \u0027sleep\u0027).",
       "Author": "Wox",
       "Disabled": false,
       "IsGlobal": true,
