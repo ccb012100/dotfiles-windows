@@ -47,6 +47,8 @@ set rtp+=/usr/local/opt/fzf
 autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
-colo slate
-highlight CursorLine guibg=#303000
-highlight CursorColumn guibg=#303000
+syntax enable
+"" https://github.com/morhetz/gruvbox/wiki/Installation
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
+set background=dark " Setting dark mode
