@@ -48,3 +48,5 @@ autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
 colo slate
+highlight CursorLine guibg=#303000
+highlight CursorColumn guibg=#303000
