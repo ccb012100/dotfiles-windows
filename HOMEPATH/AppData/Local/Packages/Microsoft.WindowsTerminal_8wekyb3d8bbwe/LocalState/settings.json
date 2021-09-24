@@ -40,10 +40,17 @@
                 "action": "commandPalette"
             },
             "keys": "ctrl+space"
+        },
+        {
+            "command": 
+            {
+                "action": "quakeMode"
+            },
+            "keys": "win+/"
         }
     ],
     "copyOnSelect": true,
-    "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+    "defaultProfile": "{e0c65449-3279-4de2-b035-61cd1af7da94}",
     "initialRows": 60,
     "profiles": 
     {
@@ -51,73 +58,44 @@
         "list": 
         [
             {
-                "acrylicOpacity": 1.0,
-                "antialiasingMode": "cleartype",
                 "bellStyle": 
                 [
                     "window",
                     "taskbar"
                 ],
                 "colorScheme": "Dracula",
-                "experimental.retroTerminalEffect": false,
+                "commandline": "wsl.exe ~ -d Ubuntu-20.04",
                 "font": 
                 {
-                    "face": "SauceCodePro Nerd Font Mono",
+                    "face": "SauceCodePro NF",
                     "size": 10
                 },
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
                 "name": "Ubuntu",
-                "padding": "8",
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\Ubuntu\\home\\bagel",
-                "useAcrylic": false
+                "startingDirectory": null
             },
             {
-                "bellStyle": 
-                [
-                    "window",
-                    "taskbar"
-                ],
+                "colorScheme": "Gruvbox Dark",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
                 "font": 
                 {
-                    "face": "Source Code Pro",
-                    "size": 11
+                    "face": "Cascadia Mono",
+                    "size": 10
                 },
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-                "hidden": false,
-                "name": "Git Bash",
-                "padding": "8",
-                "source": "Git"
-            },
-            {
-                "acrylicOpacity": 1.0,
-                "bellStyle": 
-                [
-                    "window",
-                    "taskbar"
-                ],
-                "closeOnExit": "graceful",
-                "colorScheme": "One Half Dark",
-                "commandline": "cmd.exe /k aliases.cmd",
-                "cursorColor": "#FFFFFF",
-                "cursorShape": "bar",
-                "font": 
-                {
-                    "face": "Consolas",
-                    "size": 11
-                },
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "historySize": 9001,
-                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
-                "name": "cmd",
-                "padding": "8",
-                "snapOnInput": true,
-                "startingDirectory": "%USERPROFILE%",
-                "useAcrylic": false
+                "guid": "{e0c65449-3279-4de2-b035-61cd1af7da94}",
+                "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "Git-Bash",
+                "startingDirectory": "%USERPROFILE%"
             },
             {
                 "acrylicOpacity": 0.5,
+                "bellStyle": 
+                [
+                    "window",
+                    "taskbar"
+                ],
                 "closeOnExit": "graceful",
                 "colorScheme": "One Half Dark",
                 "commandline": "powershell.exe",
@@ -134,6 +112,32 @@
                 "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
                 "name": "PowerShell v5",
                 "padding": "0, 0, 0, 0",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
+                "useAcrylic": false
+            },
+            {
+                "acrylicOpacity": 1.0,
+                "bellStyle": 
+                [
+                    "window",
+                    "taskbar"
+                ],
+                "closeOnExit": "graceful",
+                "colorScheme": "Campbell",
+                "commandline": "cmd.exe /k aliases.cmd",
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "bar",
+                "font": 
+                {
+                    "face": "Consolas",
+                    "size": 11
+                },
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+                "name": "cmd",
+                "padding": "8",
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": false
@@ -160,12 +164,6 @@
                 "source": "Windows.Terminal.Azure",
                 "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": false
-            },
-            {
-                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-                "hidden": false,
-                "name": "PowerShell",
-                "source": "Windows.Terminal.PowershellCore"
             }
         ]
     },
@@ -218,8 +216,8 @@
             "yellow": "#C19C00"
         },
         {
-            "background": "#0C0C0C",
-            "black": "#0C0C0C",
+            "background": "#000000",
+            "black": "#000000",
             "blue": "#BD93F9",
             "brightBlack": "#6272A4",
             "brightBlue": "#D6ACFF",
@@ -241,8 +239,8 @@
             "yellow": "#F1FA8C"
         },
         {
-            "background": "#282828",
-            "black": "#282828",
+            "background": "#000000",
+            "black": "#000000",
             "blue": "#458588",
             "brightBlack": "#928374",
             "brightBlue": "#83A598",
@@ -264,8 +262,8 @@
             "yellow": "#D79921"
         },
         {
-            "background": "#282C34",
-            "black": "#282C34",
+            "background": "#000000",
+            "black": "#000000",
             "blue": "#61AFEF",
             "brightBlack": "#5A6374",
             "brightBlue": "#61AFEF",
@@ -426,8 +424,10 @@
         }
     ],
     "showTerminalTitleInTitlebar": true,
+    "startOnUserLogin": true,
     "tabSwitcherMode": "mru",
-    "tabWidthMode": "titleLength",
+    "tabWidthMode": "equal",
     "theme": "dark",
+    "trimBlockSelection": true,
     "windowingBehavior": "useExisting"
 }
