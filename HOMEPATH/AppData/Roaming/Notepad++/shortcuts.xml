@@ -31,7 +31,10 @@
         <Command name="Open file in another instance" Ctrl="no" Alt="yes" Shift="no" Key="117">$(NPP_FULL_FILE_PATH) $(CURRENT_WORD) -nosession -multiInst</Command>
         <Command name="Send via Outlook" Ctrl="yes" Alt="yes" Shift="yes" Key="79">outlook /a &quot;$(FULL_CURRENT_PATH)&quot;</Command>
     </UserDefinedCommands>
-    <PluginCommands />
+    <PluginCommands>
+        <PluginCommand moduleName="NPPJSONViewer.dll" internalID="0" Ctrl="yes" Alt="yes" Shift="no" Key="74" />
+        <PluginCommand moduleName="NPPJSONViewer.dll" internalID="1" Ctrl="yes" Alt="yes" Shift="no" Key="77" />
+    </PluginCommands>
     <ScintillaKeys>
         <ScintKey ScintID="2300" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="40">
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="78" />
@@ -52,9 +55,14 @@
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="73" />
         </ScintKey>
         <ScintKey ScintID="2288" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="74" />
-        <ScintKey ScintID="2338" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="76" />
+        <ScintKey ScintID="2338" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="75" />
         <ScintKey ScintID="2337" menuCmdID="0" Ctrl="yes" Alt="no" Shift="yes" Key="76" />
         <ScintKey ScintID="2312" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="79" />
         <ScintKey ScintID="2314" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="69" />
+        <ScintKey ScintID="2180" menuCmdID="42006" Ctrl="no" Alt="no" Shift="no" Key="46">
+            <NextKey Ctrl="yes" Alt="no" Shift="no" Key="68" />
+        </ScintKey>
+        <ScintKey ScintID="2469" menuCmdID="42010" Ctrl="yes" Alt="no" Shift="yes" Key="68" />
+        <ScintKey ScintID="2451" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="35" />
     </ScintillaKeys>
 </NotepadPlus>

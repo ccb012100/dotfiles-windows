@@ -151,7 +151,6 @@
       "value": "#42b883"
     }
   ],
-  "workbench.sideBar.location": "right",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -185,7 +184,7 @@
   "javascript.preferences.quoteStyle": "single",
   "scm.alwaysShowActions": true,
   "scm.alwaysShowRepositories": true,
-  "editor.acceptSuggestionOnEnter": "off",
+  "editor.acceptSuggestionOnEnter": "smart",
   "editor.suggest.shareSuggestSelections": true,
   "editor.suggest.showWords": false,
   "[yaml]": {
@@ -261,5 +260,30 @@
   "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
   "editor.bracketPairColorization.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "explorer.openEditors.sortOrder": "alphabetical"
+  "explorer.openEditors.sortOrder": "alphabetical",
+  "editor.quickSuggestions": true,
+  "window.title": "${dirty}${separator}${rootName}",
+  "csv-preview.formatValues": "unquoted",
+  "csv-preview.lineNumbers": "ordinal",
+  "csv-preview.resizeColumns": "all",
+  "peacock.affectAccentBorders": true,
+  "peacock.affectStatusAndTitleBorders": true,
+  "peacock.affectTabActiveBorder": true,
+  "git-graph.repository.fetchAndPrune": true,
+  "git-graph.repository.fetchAndPruneTags": true,
+  "workbench.sideBar.location": "right",
+  "debug.onTaskErrors": "showErrors",
+  "workbench.startupEditor": "none",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.statusBar.pullRequests.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.hovers.currentLine.enabled": false,
+  "errorLens.enabledDiagnosticLevels": ["error"],
+  "errorLens.fontFamily": "Consolas",
+  "errorLens.removeLinebreaks": false,
+  "editor.parameterHints.enabled": false
 }
