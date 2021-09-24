@@ -2,10 +2,6 @@
     editor = vim
     autocrlf = true
     filemode = false
-[user]
-    name = Christopher Bocardo
-    email = ccb012100@users.noreply.github.com
-    signingkey = 93722A3AD155A73F
 [pull]
     ff = only
     rebase = false
@@ -52,3 +48,9 @@
 [mergetool "sourcetree"]
     cmd = 'C:/Program Files (x86)/Meld/Meld.exe' \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
     trustExitCode = true
+[includeIf "gitdir:~/ccb012100/"]
+    # set all repos in ~/ccb012100 to use personal username/email
+    path = ~/ccb012100/.gitconfig
+[includeIf "gitdir:~/repos/"]
+    # set all repos in ~/repos to use work username/email
+    path = ~/repos/.gitconfig
