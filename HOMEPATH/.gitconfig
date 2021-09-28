@@ -26,6 +26,7 @@
     main = checkout main
     master = checkout master
     pub = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    ri = rebase --interactive
     ruo = remote update origin --prune
     s = status
     undo = reset HEAD~1 --mixed
@@ -44,7 +45,7 @@
     cmd = \"C:\\Program Files (x86)\\Meld\\Meld.exe\" "$LOCAL" "$REMOTE"
     path = C:/Program Files (x86)/Meld/Meld.exe
 [difftool "sourcetree"]
-    cmd = 'C:/Program Files (x86)/Meld/Meld.exe' \"$LOCAL\"  \"$REMOTE\"
+	cmd = 'C:/Program Files (x86)/Meld/Meld.exe' \"$LOCAL\"  \"$REMOTE\"
 [mergetool "sourcetree"]
     cmd = 'C:/Program Files (x86)/Meld/Meld.exe' \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
     trustExitCode = true
