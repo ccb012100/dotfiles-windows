@@ -50,7 +50,7 @@
   "git.promptToSaveFilesBeforeCommit": "always",
   "git.rebaseWhenSync": true,
   // Markdown
-  "markdown.preview.fontFamily": "IBM Plex Mono",
+  "markdown.preview.fontFamily": "Consolas",
   // markdownlints
   "markdownlint.config": {
     "MD013": false,
@@ -209,7 +209,6 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "python.languageServer": "Default",
-  "rust-analyzer.inlayHints.enable": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "[vue]": {
@@ -285,5 +284,12 @@
   "errorLens.enabledDiagnosticLevels": ["error"],
   "errorLens.fontFamily": "Consolas",
   "errorLens.removeLinebreaks": false,
-  "editor.parameterHints.enabled": false
+  "editor.parameterHints.enabled": false,
+  "editor.find.seedSearchStringFromSelection": "selection",
+  "rust-analyzer.assist.importEnforceGranularity": true,
+  "rust-analyzer.lens.methodReferences": true,
+  "rust-analyzer.lens.references": true,
+  "omnisharp.enableRoslynAnalyzers": true,
+  "scm.defaultViewMode": "tree",
+  "scm.inputFontFamily": "Consolas"
 }
