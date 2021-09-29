@@ -73,7 +73,7 @@
     "command": "cursorLineEnd"
   },
   {
-    "key": "ctrl+;",
+    "key": "alt+k",
     "command": "deleteAllRight"
   },
   {
@@ -274,11 +274,6 @@
   },
   {
     "key": "ctrl+w",
-    "command": "editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+w",
     "command": "-editor.action.addSelectionToNextFindMatch"
   },
   {
@@ -350,16 +345,6 @@
   {
     "key": "ctrl+d",
     "command": "-editor.action.copyLinesDownAction"
-  },
-  {
-    "key": "ctrl+l ctrl+k",
-    "command": "editor.action.clipboardCutAction",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+l ctrl+l",
-    "command": "editor.action.clipboardCopyAction",
-    "when": "textInputFocus"
   },
   {
     "key": "ctrl+.",
@@ -949,20 +934,12 @@
     "command": "-actions.find"
   },
   {
-    "key": "ctrl+l ctrl+w",
-    "command": "editor.action.toggleWordWrap"
-  },
-  {
     "key": "alt+z",
     "command": "-editor.action.toggleWordWrap"
   },
   {
     "key": "ctrl+alt+l",
     "command": "-workbench.view.explorer"
-  },
-  {
-    "key": "ctrl+l w",
-    "command": "editor.action.toggleRenderWhitespace"
   },
   {
     "key": "ctrl+x 3",
@@ -995,11 +972,6 @@
   {
     "key": "cmd+v",
     "command": "-execPaste"
-  },
-  {
-    "key": "ctrl+, e",
-    "command": "workbench.files.action.focusOpenEditorsView",
-    "when": "workbench.explorer.openEditorsView.active"
   },
   {
     "key": "cmd+k e",
@@ -1067,8 +1039,9 @@
     "when": "workbench.scm.active"
   },
   {
-    "key": "ctrl+, c",
-    "command": "workbench.action.focusActiveEditorGroup"
+    "key": "ctrl+, e",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus"
   },
   {
     "key": "cmd+backspace",
@@ -1220,14 +1193,6 @@
   },
   {
     "key": "cmd+w",
-    "command": "workbench.action.previousEditorInGroup"
-  },
-  {
-    "key": "cmd+k alt+cmd+left",
-    "command": "-workbench.action.previousEditorInGroup"
-  },
-  {
-    "key": "cmd+w",
     "command": "-workbench.action.terminal.killEditor",
     "when": "terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
   },
@@ -1247,11 +1212,7 @@
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+w",
-    "command": "workbench.action.previousEditor"
-  },
-  {
-    "key": "alt+o",
+    "key": "ctrl+x ]",
     "command": "workbench.action.nextEditor"
   },
   {
@@ -1275,11 +1236,6 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "ctrl+l",
-    "command": "acceptSelectedSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
     "key": "ctrl+j",
     "command": "showNextParameterHint",
     "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
@@ -1292,11 +1248,6 @@
   {
     "key": "ctrl+h",
     "command": "file-browser.stepOut",
-    "when": "inFileBrowser"
-  },
-  {
-    "key": "ctrl+l",
-    "command": "file-browser.stepIn",
     "when": "inFileBrowser"
   },
   {
@@ -1454,10 +1405,6 @@
     "key": "ctrl+.",
     "command": "-problems.action.showQuickFixes",
     "when": "problemFocus"
-  },
-  {
-    "key": "ctrl+y",
-    "command": "editor.action.clipboardPasteAction"
   },
   {
     "key": "ctrl+s",
@@ -1655,10 +1602,6 @@
     "command": "workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+c ctrl+x",
-    "command": "editor.action.clipboardCutAction"
-  },
-  {
     "key": "ctrl+x",
     "command": "-editor.action.clipboardCutAction"
   },
@@ -1667,60 +1610,16 @@
     "command": "-editor.action.clipboardPasteAction"
   },
   {
-    "key": "ctrl+v",
-    "command": "-solutionExplorer.paste",
-    "when": "view == 'slnexpl' && viewItem == 'project-folder'"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "-solutionExplorer.paste",
-    "when": "view == 'slnexpl' && viewItem == 'project-cps'"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "-solutionExplorer.paste",
-    "when": "view == 'slnexpl' && viewItem == 'project-standard'"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "-solutionExplorer.paste",
-    "when": "view == 'slnexpl' && viewItem == 'project-website'"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "-solutionExplorer.paste",
-    "when": "view == 'slnbrw' && viewItem == 'project-folder'"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "-solutionExplorer.paste",
-    "when": "view == 'slnbrw' && viewItem == 'project-cps'"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "-solutionExplorer.paste",
-    "when": "view == 'slnbrw' && viewItem == 'project-standard'"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "-solutionExplorer.paste",
-    "when": "view == 'slnbrw' && viewItem == 'project-website'"
-  },
-  {
     "key": "alt+v",
     "command": "cursorPageUp",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+c ctrl+c",
-    "command": "editor.action.clipboardCopyAction"
   },
   {
     "key": "ctrl+c",
     "command": "-editor.action.clipboardCopyAction"
   },
   {
-    "key": "ctrl+c ctrl+c",
+    "key": "alt+w",
     "command": "solutionExplorer.copy",
     "when": "view == 'slnexpl' && viewItem == 'project-folder'"
   },
@@ -1730,7 +1629,7 @@
     "when": "view == 'slnexpl' && viewItem == 'project-folder'"
   },
   {
-    "key": "ctrl+c ctrl+c",
+    "key": "alt+w",
     "command": "solutionExplorer.copy",
     "when": "view == 'slnexpl' && viewItem == 'project-file'"
   },
@@ -1740,7 +1639,7 @@
     "when": "view == 'slnexpl' && viewItem == 'project-file'"
   },
   {
-    "key": "ctrl+c ctrl+c",
+    "key": "alt+w",
     "command": "solutionExplorer.copy",
     "when": "view == 'slnbrw' && viewItem == 'project-folder'"
   },
@@ -1750,7 +1649,7 @@
     "when": "view == 'slnbrw' && viewItem == 'project-folder'"
   },
   {
-    "key": "ctrl+c ctrl+c",
+    "key": "alt+w",
     "command": "solutionExplorer.copy",
     "when": "view == 'slnbrw' && viewItem == 'project-file'"
   },
@@ -1758,11 +1657,6 @@
     "key": "ctrl+c",
     "command": "-solutionExplorer.copy",
     "when": "view == 'slnbrw' && viewItem == 'project-file'"
-  },
-  {
-    "key": "ctrl+c ctrl+c",
-    "command": "workbench.action.terminal.copySelection",
-    "when": "terminalFocus && terminalProcessSupported && terminalTextSelected"
   },
   {
     "key": "ctrl+c",
@@ -1828,16 +1722,12 @@
     "command": "workbench.action.focusLeftGroup"
   },
   {
-    "key": "ctrl+h l",
+    "key": "ctrl+c l",
     "command": "workbench.action.focusRightGroup"
   },
   {
-    "key": "ctrl+c c",
+    "key": "ctrl+x ctrl+k",
     "command": "workbench.action.closeOtherEditors"
-  },
-  {
-    "key": "ctrl+c ctrl+v",
-    "command": "editor.action.clipboardPasteAction"
   },
   {
     "key": "ctrl+shift+v",
@@ -1999,5 +1889,135 @@
   {
     "key": "shift+alt+u",
     "command": "editor.action.transformToLowercase"
+  },
+  {
+    "key": "ctrl+, ctrl+p",
+    "command": "workbench.action.focusPanel"
+  },
+  {
+    "key": "ctrl+, e",
+    "command": "workbench.files.action.focusOpenEditorsView",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.closeGroup",
+    "when": "activeEditorGroupEmpty && multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeGroup",
+    "when": "activeEditorGroupEmpty && multipleEditorGroups"
+  },
+  {
+    "key": "alt+k",
+    "command": "-keybindings.editor.recordSearchKeys",
+    "when": "inKeybindings && inKeybindingsSearch"
+  },
+  {
+    "key": "alt+w",
+    "command": "problems.action.copy",
+    "when": "problemFocus"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "-problems.action.copy",
+    "when": "problemFocus"
+  },
+  {
+    "key": "alt+w",
+    "command": "remote.tunnel.copyAddressInline",
+    "when": "tunnelViewFocus && tunnelType == 'Detected' && tunnelViewMultiSelection == 'undefined' || tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "-remote.tunnel.copyAddressInline",
+    "when": "tunnelViewFocus && tunnelType == 'Detected' && tunnelViewMultiSelection == 'undefined' || tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
+  },
+  {
+    "key": "ctrl+x left",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "alt+backspace",
+    "command": "deleteWordLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+backspace",
+    "command": "-metaGo.metaJump.deleteToBefore",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+w",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "alt+o",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+c up",
+    "command": "workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "ctrl+c down",
+    "command": "workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "ctrl+c left",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+c ctrl+right",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "deleteAllRight"
+  },
+  {
+    "key": "ctrl+x [",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+x right",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "workbench.action.terminal.sendSequence",
+    "when": "terminalFocus",
+    "args": {
+      "text": "\u0003"
+    }
+  },
+  {
+    "key": "ctrl+y",
+    "command": "editor.action.clipboardPasteAction"
   }
 ]
