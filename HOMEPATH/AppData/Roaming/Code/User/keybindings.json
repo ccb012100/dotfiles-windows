@@ -1621,11 +1621,6 @@
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
   },
   {
-    "key": "ctrl+c ctrl+c",
-    "command": "keybindings.editor.copyKeybindingEntry",
-    "when": "inKeybindings && keybindingFocus"
-  },
-  {
     "key": "ctrl+c",
     "command": "-keybindings.editor.copyKeybindingEntry",
     "when": "inKeybindings && keybindingFocus"
@@ -2443,5 +2438,106 @@
     "key": "alt+k",
     "command": "deleteAllRight",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+, shift+o",
+    "command": "outline.focus"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "keybindings.editor.searchKeybindings",
+    "when": "inKeybindings"
+  },
+  {
+    "key": "alt+win+left",
+    "command": "-metaGo.cursorSpaceWordLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+win+backspace",
+    "command": "-metaGo.cursorSpaceWordLeftDelete",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+win+left",
+    "command": "-metaGo.cursorSpaceWordLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+win+right",
+    "command": "-metaGo.cursorSpaceWordRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+win+delete",
+    "command": "-metaGo.cursorSpaceWordRightDelete",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+win+right",
+    "command": "-metaGo.cursorSpaceWordRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+win+backspace",
+    "command": "-metaGo.cursorSpaceWordSpaceLeftDelete",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+win+delete",
+    "command": "-metaGo.cursorSpaceWordSpaceRightDelete",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+win+end",
+    "command": "-metaGo.cursorSpaceWordSpaceRightSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+win+end",
+    "command": "-metaGo.cursorSpaceWordSpaceRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+win+home",
+    "command": "-metaGo.cursorSpaceWordSpaceLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+win+home",
+    "command": "-metaGo.cursorSpaceWordSpaceLeftSelect",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+.",
+    "command": "metaGo.selectAfter",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+.",
+    "command": "-metaGo.selectAfter",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+.",
+    "command": "-metaGo.addCursorAfter"
+  },
+  {
+    "key": "ctrl+alt+,",
+    "command": "metaGo.selectBefore"
+  },
+  {
+    "key": "ctrl+alt+,",
+    "command": "-metaGo.addCursorBefore"
+  },
+  {
+    "key": "ctrl+; ctrl+r",
+    "command": "references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "shift+alt+f12",
+    "command": "-references-view.findReferences",
+    "when": "editorHasReferenceProvider"
   }
 ]

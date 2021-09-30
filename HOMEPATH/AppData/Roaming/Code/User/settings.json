@@ -154,7 +154,6 @@
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
   "sqlite.recordsPerPage": 100,
   "go.toolsManagement.autoUpdate": true,
   "git.confirmSync": false,
@@ -227,5 +226,8 @@
   "omnisharp.enableRoslynAnalyzers": true,
   "scm.defaultViewMode": "tree",
   "scm.inputFontFamily": "Consolas",
-  "workbench.editor.tabSizing": "shrink"
+  "workbench.editor.tabSizing": "shrink",
+  "diffEditor.renderSideBySide": false,
+  "C_Cpp.autocompleteAddParentheses": true,
+  "python.autoComplete.addBrackets": true
 }
