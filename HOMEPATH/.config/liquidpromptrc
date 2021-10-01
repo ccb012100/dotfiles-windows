@@ -1,1 +1,1 @@
-LP_PS1_POSTFIX=$'\n'
+LP_PS1_POSTFIX=$'\n> '

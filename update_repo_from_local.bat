@@ -19,6 +19,7 @@ xcopy %HOMEPATH%\aliases.cmd %DOTFILES_HOMEPATH%\ /D /F /H /I
 
 REM ~/.config
 xcopy %HOMEPATH%\.config\nvim\init.vim %DOTFILES_HOMEPATH%\.config\nvim\ /D /F /H /I
+xcopy %HOMEPATH%\.config\liquidpromptrc %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
 
 REM ~/.gnupg
 xcopy %HOMEPATH%\.gnupg\gpg.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
