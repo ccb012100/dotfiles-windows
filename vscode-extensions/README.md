@@ -3,7 +3,7 @@
 First, get a list of installed extensions:
 
 ```bash
-code --list-extensions > extensions.txt
+code --list-extensions > vscode-extensions.txt
 ```
 
 Then, run the script `install-vscode-extensions.sh`.
