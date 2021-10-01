@@ -5,7 +5,7 @@
   "breadcrumbs.enabled": true,
   // editor
   "editor.codeLens": false,
-  "editor.fontFamily": "Hasklig, JetBrains Mono, Fira Code, Source Code Pro, Consolas, Ubuntu Mono",
+  "editor.fontFamily": "JetBrains Mono, Haskig, Fira Code, Source Code Pro, Consolas, Ubuntu Mono",
   "editor.fontLigatures": true,
   "editor.letterSpacing": 1,
   "editor.minimap.enabled": false,
@@ -110,7 +110,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "Panda Syntax",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
@@ -140,9 +140,6 @@
   },
   "git.pruneOnFetch": true,
   "editor.semanticHighlighting.enabled": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
   "rust-analyzer.checkOnSave.command": "clippy",
   "editor.accessibilitySupport": "off",
   "editor.formatOnSave": true,
@@ -229,5 +226,6 @@
   "workbench.editor.tabSizing": "shrink",
   "diffEditor.renderSideBySide": false,
   "C_Cpp.autocompleteAddParentheses": true,
-  "python.autoComplete.addBrackets": true
+  "python.autoComplete.addBrackets": true,
+  "editor.fontSize": 13
 }

@@ -126,11 +126,6 @@
     "command": "-workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+n",
-    "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
     "key": "ctrl+p",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
@@ -300,11 +295,6 @@
     "key": "shift+cmd+k",
     "command": "-editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+q",
-    "command": "workbench.action.closeWindow",
-    "when": "!editorIsOpen && !multipleEditorGroups"
   },
   {
     "key": "ctrl+x ctrl+;",
@@ -817,10 +807,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+x ctrl+c",
-    "command": "workbench.action.quit"
-  },
-  {
     "key": "cmd+r",
     "command": "-workbench.action.reloadWindow",
     "when": "isDevelopment"
@@ -889,10 +875,6 @@
   {
     "key": "ctrl+shift+g",
     "command": "-workbench.action.files.openFileFolder"
-  },
-  {
-    "key": "ctrl+x f",
-    "command": "explorer.newFile"
   },
   {
     "key": "cmd+f",
@@ -1286,7 +1268,7 @@
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+alt+m n",
+    "key": "shift+alt+m n",
     "command": "memo.openDailyNote"
   },
   {
@@ -1955,46 +1937,6 @@
     "command": "-testing.cancelRun"
   },
   {
-    "key": "ctrl+; c",
-    "command": "-jupyter.changeCellToCode",
-    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
-  },
-  {
-    "key": "ctrl+; m",
-    "command": "-jupyter.changeCellToMarkdown",
-    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
-  },
-  {
-    "key": "ctrl+; x",
-    "command": "-jupyter.deleteCells",
-    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
-  },
-  {
-    "key": "ctrl+; a",
-    "command": "-jupyter.insertCellAbove",
-    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
-  },
-  {
-    "key": "ctrl+; b",
-    "command": "-jupyter.insertCellBelow",
-    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
-  },
-  {
-    "key": "ctrl+; s",
-    "command": "-jupyter.insertCellBelowPosition",
-    "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !notebookEditorFocused"
-  },
-  {
-    "key": "ctrl+; d",
-    "command": "-jupyter.moveCellsDown",
-    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
-  },
-  {
-    "key": "ctrl+; u",
-    "command": "-jupyter.moveCellsUp",
-    "when": "editorTextFocus && jupyter.hascodecells && !notebookEditorFocused"
-  },
-  {
     "key": "ctrl+; ctrl+a",
     "command": "-testing.debugAll"
   },
@@ -2539,5 +2481,57 @@
     "key": "shift+alt+f12",
     "command": "-references-view.findReferences",
     "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.statusBar.focusNext",
+    "when": "statusBarFocused"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.banner.focusNextAction",
+    "when": "bannerFocused"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "showNextParameterHint",
+    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "notifications.focusPreviousToast",
+    "when": "notificationFocus && notificationToastsVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "showPrevParameterHint",
+    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+  },
+  {
+    "key": "ctrl+x ctrl+c",
+    "command": "workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+x f",
+    "command": "file-browser.open"
   }
 ]
