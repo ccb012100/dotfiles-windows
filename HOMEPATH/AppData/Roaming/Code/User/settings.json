@@ -5,7 +5,7 @@
   "breadcrumbs.enabled": true,
   // editor
   "editor.codeLens": false,
-  "editor.fontFamily": "Fira Code, Source Code Pro, Consolas, IBM Plex Mono, Ubuntu Mono, Inconsolata",
+  "editor.fontFamily": "Hasklig, JetBrains Mono, Fira Code, Source Code Pro, Consolas, Ubuntu Mono",
   "editor.fontLigatures": true,
   "editor.letterSpacing": 1,
   "editor.minimap.enabled": false,
