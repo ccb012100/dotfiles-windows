@@ -40,7 +40,6 @@
   "git.confirmForcePush": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autofetch": true,
-  "git.defaultCloneDirectory": "C:/code",
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
   "git.promptToSaveFilesBeforeCommit": "always",
@@ -212,9 +211,6 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.enabled": false,
   "gitlens.hovers.currentLine.enabled": false,
-  "errorLens.enabledDiagnosticLevels": ["error"],
-  "errorLens.fontFamily": "Consolas",
-  "errorLens.removeLinebreaks": false,
   "editor.parameterHints.enabled": false,
   "editor.find.seedSearchStringFromSelection": "selection",
   "rust-analyzer.assist.importEnforceGranularity": true,
@@ -227,5 +223,6 @@
   "diffEditor.renderSideBySide": false,
   "C_Cpp.autocompleteAddParentheses": true,
   "python.autoComplete.addBrackets": true,
-  "editor.fontSize": 13
+  "editor.fontSize": 13,
+  "better-comments.highlightPlainText": true
 }
