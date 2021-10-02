@@ -68,7 +68,6 @@ serayuzgur.crates
 stringham.move-ts
 svsool.markdown-memo
 tinkertrain.theme-panda
-usernamehw.errorlens
 vadimcn.vscode-lldb
 VisualStudioExptTeam.vscodeintellicode
 vscode-icons-team.vscode-icons
