@@ -5,7 +5,6 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 alias cd-dotfiles='cd ~/.dotfiles'
-alias c.='code .' # open current directory in vscode
 alias ls='ls --color --block-size=K'
 alias la='ls -A'
 alias ll='ls -l'
@@ -14,14 +13,15 @@ alias lla='ls -Al'
 
 alias g='git'
 
+alias c.='code .' # open current directory in vscode
 alias cb='cargo build'
 alias cr='cargo run'
 alias cc='cargo check'
-
 alias gb='go build .'
 alias gr='go run .'
-
 alias dc='docker compose'
+alias dot-b='dotnet build'
+alias dot-r='dotnet run'
 
 # Add git branch if its present to PS1
 force_color_prompt=yes

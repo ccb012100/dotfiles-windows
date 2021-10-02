@@ -10,10 +10,11 @@ doskey cd-temp=cd %TMP%
 doskey cd-dotfiles=cd %DOTFILES%\
 
 doskey g=git $*
-
 doskey cb=cargo build $*
 doskey cc=cargo check $*
 doskey cr=cargo run $*
-
 doskey gb=go build .
 doskey gr=go run .
+doskey c.=code .
+doskey dot-r=dotnet run $*
+doskey dot-b=dotnet build $*
