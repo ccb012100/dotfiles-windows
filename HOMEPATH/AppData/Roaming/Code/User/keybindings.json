@@ -109,11 +109,6 @@
   },
   {
     "key": "ctrl+n",
-    "command": "cursorDown",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+n",
     "command": "-workbench.action.files.newUntitledFile"
   },
   {
@@ -1155,14 +1150,9 @@
     "command": "workbench.action.nextEditor"
   },
   {
-    "key": "ctrl+j",
+    "key": "ctrl+n",
     "command": "workbench.action.quickOpenSelectNext",
     "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
     "key": "ctrl+k",
@@ -2484,16 +2474,6 @@
   },
   {
     "key": "ctrl+n",
-    "command": "workbench.statusBar.focusNext",
-    "when": "statusBarFocused"
-  },
-  {
-    "key": "ctrl+n",
-    "command": "workbench.banner.focusNextAction",
-    "when": "bannerFocused"
-  },
-  {
-    "key": "ctrl+n",
     "command": "showNextParameterHint",
     "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
   },
@@ -2503,7 +2483,7 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "ctrl+p",
+    "key": "ctrl+n",
     "command": "list.focusDown",
     "when": "listFocus && !inputFocus"
   },
@@ -2531,7 +2511,26 @@
     "command": "-workbench.action.closeWindow"
   },
   {
-    "key": "ctrl+x f",
+    "key": "ctrl+x d",
     "command": "file-browser.open"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "cursorDown",
+    "when": "textInputFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "notifications.focusNextToast",
+    "when": "notificationFocus && notificationToastsVisible"
+  },
+  {
+    "key": "shift+alt+w",
+    "command": "editor.action.clipboardPasteAction"
   }
 ]
