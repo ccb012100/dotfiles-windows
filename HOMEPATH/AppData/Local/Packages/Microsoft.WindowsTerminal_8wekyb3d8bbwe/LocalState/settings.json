@@ -43,7 +43,7 @@
     }
   ],
   "copyOnSelect": true,
-  "defaultProfile": "{e0c65449-3279-4de2-b035-61cd1af7da94}",
+  "defaultProfile": "{ed4702c7-2b61-4adf-91be-378661a5ca11}",
   "initialRows": 60,
   "profiles": {
     "defaults": {},
@@ -51,30 +51,15 @@
       {
         "bellStyle": ["window", "taskbar"],
         "colorScheme": "Dracula",
-        "commandline": "wsl.exe ~ -d Ubuntu-20.04",
+        "commandline": "wsl.exe ~ -d Ubuntu",
         "font": {
-          "face": "Cascadia Mono PL",
-          "size": 10,
-          "weight": "normal"
-        },
-        "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-        "hidden": false,
-        "name": "Ubuntu",
-        "source": "Windows.Terminal.Wsl",
-        "startingDirectory": null
-      },
-      {
-        "bellStyle": "audible",
-        "colorScheme": "Gruvbox Dark",
-        "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
-        "font": {
-          "face": "Cascadia Mono",
+          "face": "JetBrains Mono NL",
           "size": 10
         },
-        "guid": "{e0c65449-3279-4de2-b035-61cd1af7da94}",
-        "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
-        "name": "Git-Bash",
-        "startingDirectory": "%USERPROFILE%"
+        "guid": "{ed4702c7-2b61-4adf-91be-378661a5ca11}",
+        "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+        "name": "Ubuntu",
+        "startingDirectory": null
       },
       {
         "acrylicOpacity": 0.5,
@@ -97,6 +82,19 @@
         "snapOnInput": true,
         "startingDirectory": "%USERPROFILE%",
         "useAcrylic": false
+      },
+      {
+        "bellStyle": "audible",
+        "colorScheme": "Gruvbox Dark",
+        "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+        "font": {
+          "face": "Cascadia Mono",
+          "size": 10
+        },
+        "guid": "{e0c65449-3279-4de2-b035-61cd1af7da94}",
+        "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+        "name": "Git-Bash",
+        "startingDirectory": "%USERPROFILE%"
       },
       {
         "acrylicOpacity": 1.0,
