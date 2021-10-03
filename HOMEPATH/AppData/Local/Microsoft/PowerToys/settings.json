@@ -9,7 +9,8 @@
     "Keyboard Manager": true,
     "PowerRename": true,
     "PowerToys Run": true,
-    "Shortcut Guide": false
+    "Shortcut Guide": false,
+    "Video Conference": false
   },
   "is_elevated": false,
   "run_elevated": false,
