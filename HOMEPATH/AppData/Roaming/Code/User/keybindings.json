@@ -1087,10 +1087,6 @@
     "when": "editorHasSignatureHelpProvider && editorTextFocus"
   },
   {
-    "key": "ctrl+i",
-    "command": "cursorWordRight"
-  },
-  {
     "key": "ctrl+enter",
     "command": "editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
@@ -2532,5 +2528,10 @@
   {
     "key": "shift+alt+w",
     "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "cursorWordEndRight",
+    "when": "textInputFocus && !accessibilityModeEnabled"
   }
 ]
