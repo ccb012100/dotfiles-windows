@@ -10,7 +10,8 @@
       { "originalKeys": "164;219", "newRemapKeys": "166", "targetApp": "firefox.exe" },
       { "originalKeys": "164;221", "newRemapKeys": "167", "targetApp": "firefox.exe" },
       { "originalKeys": "164;219", "newRemapKeys": "166", "targetApp": "msedge.exe" },
-      { "originalKeys": "164;221", "newRemapKeys": "167", "targetApp": "msedge.exe" }
+      { "originalKeys": "164;221", "newRemapKeys": "167", "targetApp": "msedge.exe" },
+      { "originalKeys": "162;71", "newRemapKeys": "27", "targetApp": "rider64.exe" }
     ]
   }
 }

@@ -157,7 +157,10 @@
       "ActionKeyword": "",
       "IconPathDark": "System\\Images\\lock.dark.png",
       "IconPathLight": "System\\Images\\lock.light.png",
-      "AdditionalOptions": [{ "Key": "ConfirmSystemCommands", "DisplayLabel": "Show a dialog to confirm system commands", "Value": false }]
+      "AdditionalOptions": [
+        { "Key": "ConfirmSystemCommands", "DisplayLabel": "Show a dialog to confirm system commands", "Value": false },
+        { "Key": "LocalizeSystemCommands", "DisplayLabel": "Use localized system commands instead of english ones", "Value": true }
+      ]
     },
     {
       "Id": "525995402BEF4A8CA860D92F6D108092",
