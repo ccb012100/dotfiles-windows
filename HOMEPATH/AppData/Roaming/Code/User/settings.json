@@ -84,7 +84,7 @@
     "editor.fontSize": 14,
     "editor.quickSuggestions": true,
     "files.trimTrailingWhitespace": false,
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorCustomizations": {
     "tab.activeModifiedBorder": "#FFC300",
@@ -224,5 +224,7 @@
   "C_Cpp.autocompleteAddParentheses": true,
   "python.autoComplete.addBrackets": true,
   "editor.fontSize": 13,
-  "better-comments.highlightPlainText": true
+  "better-comments.highlightPlainText": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "emmet.showSuggestionsAsSnippets": true
 }

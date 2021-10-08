@@ -76,11 +76,6 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+l r",
-    "command": "editor.action.refactor",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+shift+r",
     "command": "-editor.action.refactor",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
@@ -940,10 +935,6 @@
     "when": "workbench.panel.markers.view.active"
   },
   {
-    "key": "ctrl+l t",
-    "command": "workbench.action.toggleTabsVisibility"
-  },
-  {
     "key": "ctrl+cmd+w",
     "command": "-workbench.action.toggleTabsVisibility"
   },
@@ -1350,7 +1341,7 @@
     "command": "editor.action.transposeLetters"
   },
   {
-    "key": "ctrl+; ctrl+s",
+    "key": "ctrl+; s",
     "command": "workbench.action.showAllSymbols"
   },
   {
@@ -1505,7 +1496,7 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+; s",
+    "key": "ctrl+; ctrl+s",
     "command": "workbench.action.gotoSymbol"
   },
   {
@@ -1719,7 +1710,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "shift+alt+f",
+    "key": "ctrl+alt+f",
     "command": "workbench.action.findInFiles"
   },
   {
@@ -2347,10 +2338,6 @@
     "command": "workbench.action.closeActiveEditor"
   },
   {
-    "key": "ctrl+x ctrl+k",
-    "command": "workbench.action.closeOtherEditors"
-  },
-  {
     "key": "ctrl+h k",
     "command": "workbench.action.openGlobalKeybindings"
   },
@@ -2368,7 +2355,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+, shift+o",
+    "key": "ctrl+, ctrl+o",
     "command": "outline.focus"
   },
   {
@@ -2533,5 +2520,59 @@
     "key": "ctrl+i",
     "command": "cursorWordEndRight",
     "when": "textInputFocus && !accessibilityModeEnabled"
+  },
+  {
+    "key": "down",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "down",
+    "command": "-cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+l t",
+    "command": "dotnet.test.runTestsInContext"
+  },
+  {
+    "key": "ctrl+l d",
+    "command": "dotnet.test.debugTestsInContext"
+  },
+  {
+    "key": "ctrl+, c",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "cursorLineStart"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "-file-browser.actions",
+    "when": "inFileBrowser"
+  },
+  {
+    "key": "ctrl+l a",
+    "command": "editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "-editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+l a",
+    "command": "list.selectAll",
+    "when": "listFocus && listSupportsMultiselect && !inputFocus"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "-list.selectAll",
+    "when": "listFocus && listSupportsMultiselect && !inputFocus"
+  },
+  {
+    "key": "ctrl+x q",
+    "command": "workbench.action.closeAllEditors"
   }
 ]
