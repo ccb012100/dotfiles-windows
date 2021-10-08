@@ -14,11 +14,13 @@
         <Shortcut id="42069" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="42070" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="42035" Ctrl="no" Alt="no" Shift="no" Key="0" />
-        <Shortcut id="43001" Ctrl="yes" Alt="no" Shift="no" Key="82" />
+        <Shortcut id="43001" Ctrl="yes" Alt="no" Shift="no" Key="83" />
         <Shortcut id="41014" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="42014" Ctrl="no" Alt="yes" Shift="no" Key="38" />
         <Shortcut id="42015" Ctrl="no" Alt="yes" Shift="no" Key="40" />
         <Shortcut id="43009" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <Shortcut id="41006" Ctrl="yes" Alt="yes" Shift="no" Key="83" />
+        <Shortcut id="41008" Ctrl="no" Alt="no" Shift="no" Key="0" />
     </InternalCommands>
     <Macros />
     <UserDefinedCommands>
