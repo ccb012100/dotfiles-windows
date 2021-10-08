@@ -13,19 +13,22 @@
     acm = ! git add -A && git commit -m
     alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend = commit -a --amend
-    cm = commit -m
     a = add
     ai = add --interactive
     b = branch
     br = branch --remote
+    c = commit
     cb = checkout -B
+    cm = commit -m
     co = checkout
     d = diff
+    develop = checkout develop
     ds = diff --staged
     l = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     main = checkout main
     master = checkout master
     pub = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    r = rebase
     ri = rebase --interactive
     ruo = remote update origin --prune
     s = status
