@@ -32,23 +32,16 @@
     undo = reset HEAD~1 --mixed
 [url "https://github.com/"]
     insteadOf = gh:
-[merge]
-    tool = meld
-[mergetool "meld"]
-    cmd = \"C:\\Program Files (x86)\\Meld\\Meld.exe\" "$LOCAL" "$BASE" "$REMOTE" "--output=$MERGED"
-    path = C:/Program Files (x86)/Meld/Meld.exe
-    trustExitCode = false
-    keepBackup = false
 [diff]
-    tool = meld
-[difftool "meld"]
-    cmd = \"C:\\Program Files (x86)\\Meld\\Meld.exe\" "$LOCAL" "$REMOTE"
-    path = C:/Program Files (x86)/Meld/Meld.exe
-[difftool "sourcetree"]
-	cmd = 'C:/Program Files (x86)/Meld/Meld.exe' \"$LOCAL\"  \"$REMOTE\"
-[mergetool "sourcetree"]
-    cmd = 'C:/Program Files (x86)/Meld/Meld.exe' \"$LOCAL\" \"$MERGED\" \"$REMOTE\"
-    trustExitCode = true
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[difftool]
+    prompt = false
 [includeIf "gitdir:~/ccb012100/"]
     # set all repos in ~/ccb012100 to use personal username/email
     path = ~/ccb012100/.gitconfig
