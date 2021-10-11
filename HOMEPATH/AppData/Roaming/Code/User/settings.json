@@ -109,7 +109,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Yoncé",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
@@ -226,5 +226,7 @@
   "editor.fontSize": 13,
   "better-comments.highlightPlainText": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "emmet.showSuggestionsAsSnippets": true
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.guides.bracketPairs": true,
+  "errorLens.messageEnabled": false
 }
