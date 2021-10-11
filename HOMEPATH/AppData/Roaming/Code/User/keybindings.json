@@ -1010,7 +1010,7 @@
     "when": "editorTextFocus && inDebugMode"
   },
   {
-    "key": "alt+enter",
+    "key": "ctrl+alt+enter",
     "command": "editor.action.insertLineBefore",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -2619,5 +2619,15 @@
   {
     "key": "alt+m alt+f",
     "command": "markdownlint.fixAll"
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
