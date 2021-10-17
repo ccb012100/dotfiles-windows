@@ -1,0 +1,19 @@
+{
+  "RoslynExtensionsOptions": {
+    "enableDecompilationSupport": true,
+    "EnableAnalyzersSupport": true,
+    "LocationPaths": []
+  },
+  "RenameOptions": {
+    "RenameInComments": true,
+    "RenameOverloads": true,
+    "RenameInStrings": true
+  },
+  "FormattingOptions": {
+    "OrganizeImports": true
+  },
+  "ImplementTypeOptions": {
+    "PropertyGenerationBehavior": "PreferAutoProperties",
+    "InsertionBehavior": "WithOtherMembersOfTheSameKind"
+  }
+}
