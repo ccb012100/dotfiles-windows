@@ -139,14 +139,6 @@
     "command": "-workbench.action.zoomIn"
   },
   {
-    "key": "ctrl+numpad_add",
-    "command": "editor.action.fontZoomIn"
-  },
-  {
-    "key": "ctrl+numpad_subtract",
-    "command": "editor.action.fontZoomOut"
-  },
-  {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal"
   },
@@ -202,14 +194,6 @@
   {
     "key": "ctrl+h ctrl+left",
     "command": "-workbench.action.focusLeftGroup"
-  },
-  {
-    "key": "alt+=",
-    "command": "workbench.action.increaseViewSize"
-  },
-  {
-    "key": "alt+-",
-    "command": "workbench.action.decreaseViewSize"
   },
   {
     "key": "alt+down",
@@ -477,11 +461,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+cmd+[",
-    "command": "editor.foldAll",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "cmd+k cmd+0",
     "command": "-editor.foldAll",
     "when": "editorTextFocus"
@@ -489,11 +468,6 @@
   {
     "key": "alt+cmd+]",
     "command": "-editor.unfold",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+cmd+]",
-    "command": "editor.unfoldAll",
     "when": "editorTextFocus"
   },
   {
@@ -872,18 +846,8 @@
     "command": "workbench.action.splitEditorDown"
   },
   {
-    "key": "ctrl+[",
-    "command": "editor.fold",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
     "key": "alt+cmd+[",
     "command": "-editor.fold",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+]",
-    "command": "editor.unfold",
     "when": "editorTextFocus && foldingEnabled"
   },
   {
@@ -1230,7 +1194,7 @@
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
   },
   {
-    "key": "shift+alt+m n",
+    "key": "alt+m n",
     "command": "memo.openDailyNote"
   },
   {
@@ -1661,11 +1625,6 @@
     "command": "markdownlint.fixLine"
   },
   {
-    "key": "alt+m p",
-    "command": "markdown.showPreviewToSide",
-    "when": "!markdownPreviewFocus"
-  },
-  {
     "key": "alt+m alt+p",
     "command": "markdown.extension.closePreviewToSide",
     "when": "markdownPreviewFocus"
@@ -1848,11 +1807,6 @@
   {
     "key": "alt+w",
     "command": "editor.action.clipboardCopyAction"
-  },
-  {
-    "key": "alt+e",
-    "command": "editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
   },
   {
     "key": "ctrl+c up",
@@ -2517,11 +2471,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+l t",
-    "command": "dotnet.test.runTestsInContext"
-  },
-  {
-    "key": "ctrl+l d",
+    "key": "ctrl+c d",
     "command": "dotnet.test.debugTestsInContext"
   },
   {
@@ -2629,5 +2579,168 @@
     "key": "ctrl+enter",
     "command": "-editor.action.insertLineAfter",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+c space",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "debuggersAvailable && editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+[",
+    "command": "-editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+shift+]",
+    "command": "-editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+-",
+    "command": "-decreaseSearchEditorContextLines",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "alt+=",
+    "command": "-increaseSearchEditorContextLines",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "shift+alt+numpad_add",
+    "command": "editor.unfoldAllExcept"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "editor.unfoldRecursively"
+  },
+  {
+    "key": "alt+numpad_subtract",
+    "command": "editor.foldRecursively"
+  },
+  {
+    "key": "ctrl+alt+-",
+    "command": "editor.foldAll"
+  },
+  {
+    "key": "ctrl+alt+numpad_subtract",
+    "command": "editor.foldAll"
+  },
+  {
+    "key": "ctrl+alt+=",
+    "command": "editor.unfoldAll"
+  },
+  {
+    "key": "ctrl+alt+numpad_add",
+    "command": "editor.unfoldAll"
+  },
+  {
+    "key": "alt+=",
+    "command": "editor.unfoldRecursively"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "editor.fold"
+  },
+  {
+    "key": "ctrl+numpad_add",
+    "command": "editor.fold"
+  },
+  {
+    "key": "shift+alt+-",
+    "command": "editor.foldAllExcept"
+  },
+  {
+    "key": "shift+alt+numpad_subtract",
+    "command": "editor.foldAllExcept"
+  },
+  {
+    "key": "alt+-",
+    "command": "editor.foldRecursively"
+  },
+  {
+    "key": "shift+alt+=",
+    "command": "editor.unfoldAllExcept"
+  },
+  {
+    "key": "ctrl+r t",
+    "command": "-npm-script.test",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+c r",
+    "command": "dotnet-test-explorer.runTestInContext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+r alt+c",
+    "command": "-dotnet-test-explorer.runTestInContext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+c ctrl+r",
+    "command": "testing.runAll"
+  },
+  {
+    "key": "alt+o",
+    "command": "-C_Cpp.SwitchHeaderSource",
+    "when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
+  },
+  {
+    "key": "ctrl+; space",
+    "command": "metaGo.gotoSmart"
+  },
+  {
+    "key": "alt+s",
+    "command": "editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "alt+o",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+right",
+    "command": "-editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+m p",
+    "command": "markdown.showPreviewToSide"
+  },
+  {
+    "key": "ctrl+x ctrl+w",
+    "command": "workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "-workbench.action.files.saveAs"
+  },
+  {
+    "key": "ctrl+alt+win+n",
+    "command": "-welcome.showNewFileEntries"
+  },
+  {
+    "key": "ctrl+x n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+x ctrl+n",
+    "command": "explorer.newFolder"
   }
 ]

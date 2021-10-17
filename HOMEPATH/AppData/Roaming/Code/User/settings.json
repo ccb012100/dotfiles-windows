@@ -40,7 +40,6 @@
   "git.confirmForcePush": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autofetch": true,
-  "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
   "git.promptToSaveFilesBeforeCommit": "always",
   "git.rebaseWhenSync": true,
@@ -109,7 +108,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "Yoncé",
+  "workbench.colorTheme": "Panda Syntax",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
@@ -220,7 +219,6 @@
   "scm.defaultViewMode": "tree",
   "scm.inputFontFamily": "Consolas",
   "workbench.editor.tabSizing": "shrink",
-  "diffEditor.renderSideBySide": false,
   "C_Cpp.autocompleteAddParentheses": true,
   "python.autoComplete.addBrackets": true,
   "editor.fontSize": 13,
@@ -228,5 +226,11 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "emmet.showSuggestionsAsSnippets": true,
   "editor.guides.bracketPairs": true,
-  "errorLens.messageEnabled": false
+  "errorLens.messageEnabled": false,
+  "nxConsole.useNVM": true,
+  "path-intellisense.showHiddenFiles": true,
+  "peacock.affectStatusAndTitleBorders": true,
+  "peacock.affectTabActiveBorder": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.enableCommitSigning": true
 }
