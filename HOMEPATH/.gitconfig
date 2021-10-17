@@ -36,7 +36,7 @@
 [url "https://github.com/"]
     insteadOf = gh:
 [diff]
-  tool = vscode
+	tool = vscode
 [difftool "vscode"]
   cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
