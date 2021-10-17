@@ -25,6 +25,9 @@ REM ~/.gnupg
 xcopy %DOTFILES_HOMEPATH%\.gnupg\gpg.conf %HOMEPATH%\.gnupg\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\.gnupg\gpg-agent.conf %HOMEPATH%\.gnupg\ /D /F /H /I
 
+REM ~/.omnisharp
+xcopy %DOTFILES_HOMEPATH%\.omnisharp\omnisharp.json %HOMEPATH%\.omnisharp\ /D /F /H /I
+
 REM VS Code
 xcopy %DOTFILES_HOMEPATH%\AppData\Roaming\Code\User\keybindings.json %HOMEPATH%\AppData\Roaming\Code\User\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\AppData\Roaming\Code\User\settings.json %HOMEPATH%\AppData\Roaming\Code\User\ /D /F /H /I
