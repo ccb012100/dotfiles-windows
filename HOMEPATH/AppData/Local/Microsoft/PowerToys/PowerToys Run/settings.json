@@ -12,7 +12,8 @@
     "ignore_hotkeys_in_fullscreen": false,
     "clear_input_on_launch": false,
     "theme": 0,
-    "startupPosition": 0
+    "startupPosition": 0,
+    "use_centralized_keyboard_hook": false
   },
   "plugins": [
     {
