@@ -974,7 +974,7 @@
     "when": "editorTextFocus && inDebugMode"
   },
   {
-    "key": "ctrl+alt+enter",
+    "key": "ctrl+alt+m",
     "command": "editor.action.insertLineBefore",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -1338,11 +1338,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+m d",
-    "command": "metaGo.metaJump.deleteToSmart",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+d",
     "command": "-metaGo.metaJump.deleteToSmart",
     "when": "editorTextFocus"
@@ -1667,28 +1662,13 @@
     "command": "cursorWordLeft"
   },
   {
-    "key": "ctrl+m h",
-    "command": "metaGo.scrollCurrentLineToTop",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+t",
     "command": "-metaGo.scrollCurrentLineToTop",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+m m",
-    "command": "metaGo.scrollCurrentLineToMiddle",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+m",
     "command": "-metaGo.scrollCurrentLineToMiddle",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+m l",
-    "command": "metaGo.scrollCurrentLineToBottom",
     "when": "editorTextFocus"
   },
   {
@@ -1703,11 +1683,6 @@
   {
     "key": "shift+alt+,",
     "command": "-metaGo.selectBefore",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+m p",
-    "command": "metaGo.changeSurroundingPair",
     "when": "editorTextFocus"
   },
   {
@@ -2571,7 +2546,7 @@
     "command": "markdownlint.fixAll"
   },
   {
-    "key": "alt+enter",
+    "key": "ctrl+m",
     "command": "editor.action.insertLineAfter",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -2702,10 +2677,6 @@
     "when": "editorTextFocus && editorLangId == 'c' || editorTextFocus && editorLangId == 'cpp' || editorTextFocus && editorLangId == 'cuda-cpp'"
   },
   {
-    "key": "ctrl+; space",
-    "command": "metaGo.gotoSmart"
-  },
-  {
     "key": "alt+s",
     "command": "editor.action.startFindReplaceAction"
   },
@@ -2742,5 +2713,18 @@
   {
     "key": "ctrl+x ctrl+n",
     "command": "explorer.newFolder"
+  },
+  {
+    "key": "ctrl+alt+o",
+    "command": "expandLineSelection"
+  },
+  {
+    "key": "ctrl+; space",
+    "command": "metaGo.gotoSmart"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "-editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
