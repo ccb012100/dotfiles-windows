@@ -6,7 +6,7 @@
     ff = only
     rebase = false
 [fetch]
-    prune = false
+	prune = true
 [rebase]
     autoStash = false
 [alias]
@@ -24,9 +24,12 @@
     d = diff
     develop = checkout develop
     ds = diff --staged
+    fp = push --force
     l = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     main = checkout main
     master = checkout master
+    pl = pull
+    ps = push
     pub = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     r = rebase
     ri = rebase --interactive
