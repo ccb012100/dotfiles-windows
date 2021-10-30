@@ -24,7 +24,7 @@ alias dc='docker compose'
 alias dot-b='dotnet build'
 alias dot-r='dotnet run'
 
-# Add git branch if its present to PS1
+# Add git branch if it's present to PS1
 force_color_prompt=yes
 color_prompt=yes
 
@@ -33,7 +33,7 @@ color_prompt=yes
 
 source ~/.bash_machine_specific_aliases
 
-# functions to cd then ls in one step
+# functions to `cd` then `ls` in one step
 function cls() {
     cd "$@" && ls -s
 }
@@ -48,4 +48,9 @@ function clal {
 }
 function clla {
     cd "$@" && ls -la
+}
+
+# Git Bash doesn't have the `man` command
+function man() {
+    "$@" --help | less
 }
