@@ -108,7 +108,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "Panda Syntax",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
@@ -234,5 +234,6 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "git.suggestSmartCommit": false,
   "turboConsoleLog.addSemicolonInTheEnd": true,
-  "turboConsoleLog.quote": "'"
+  "turboConsoleLog.quote": "'",
+  "editor.hover.above": false
 }

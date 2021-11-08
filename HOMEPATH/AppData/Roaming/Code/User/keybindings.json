@@ -2478,10 +2478,6 @@
     "when": "listFocus && listSupportsMultiselect && !inputFocus"
   },
   {
-    "key": "ctrl+x q",
-    "command": "workbench.action.closeAllEditors"
-  },
-  {
     "key": "ctrl+x h",
     "command": "editor.action.selectAll",
     "when": "editorFocus && !listFocus"
@@ -2726,5 +2722,21 @@
     "key": "ctrl+/",
     "command": "-editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+; a",
+    "command": "workbench.action.closeUnmodifiedEditors"
+  },
+  {
+    "key": "ctrl+; o",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "ctrl+; ]",
+    "command": "workbench.action.closeEditorsToTheRight"
+  },
+  {
+    "key": "ctrl+; [",
+    "command": "workbench.action.closeEditorsToTheLeft"
   }
 ]
