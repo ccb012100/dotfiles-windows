@@ -1096,11 +1096,6 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "ctrl+j",
-    "command": "showNextParameterHint",
-    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
-  },
-  {
     "key": "ctrl+h",
     "command": "file-browser.stepOut",
     "when": "inFileBrowser"
@@ -1264,11 +1259,6 @@
   {
     "key": "ctrl+s",
     "command": "-workbench.action.files.save"
-  },
-  {
-    "key": "ctrl+s",
-    "command": "editor.action.nextMatchFindAction",
-    "when": "editorFocus && editorHasSelection"
   },
   {
     "key": "ctrl+f",
@@ -2738,5 +2728,56 @@
   {
     "key": "ctrl+; [",
     "command": "workbench.action.closeEditorsToTheLeft"
+  },
+  {
+    "key": "shift+escape",
+    "command": "-closeParameterHints",
+    "when": "editorFocus && parameterHintsVisible"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+l f",
+    "command": "footsteps.toggleHighlightingLines"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "-cursorWordPartLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "-cursorWordPartRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+l w",
+    "command": "editor.action.toggleRenderWhitespace"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "-footsteps.skipForwards"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "-footsteps.skipBack"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "footsteps.skipBackSameFile"
+  },
+  {
+    "key": "ctrl+alt+right",
+    "command": "footsteps.skipForwardsSameFile"
+  },
+  {
+    "key": "ctrl+l alt+f",
+    "command": "footsteps.clearChangesWithinFile"
   }
 ]
