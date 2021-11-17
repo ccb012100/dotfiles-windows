@@ -28,6 +28,7 @@
     l = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     main = checkout main
     master = checkout master
+    pf = push --force
     pl = pull
     ps = push
     pub = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
@@ -54,3 +55,5 @@
 [includeIf "gitdir:~/repos/"]
     # set all repos in ~/repos to use work username/email
     path = ~/repos/.gitconfig
+[help]
+	autoCorrect = prompt
