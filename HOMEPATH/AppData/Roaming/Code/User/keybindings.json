@@ -1197,14 +1197,19 @@
     "command": "editor.action.insertSnippet"
   },
   {
-    "key": "shift+alt+v",
-    "command": "workbench.action.terminal.paste",
+    "key": "ctrl+v",
+    "command": "-workbench.action.terminal.paste",
     "when": "terminalFocus && terminalProcessSupported"
   },
   {
     "key": "ctrl+v",
     "command": "-workbench.action.terminal.paste",
-    "when": "terminalFocus && terminalProcessSupported"
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-workbench.action.terminal.paste",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
     "key": "ctrl+y",
@@ -1448,6 +1453,10 @@
   {
     "key": "ctrl+v",
     "command": "-editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "editor.action.clipboardPasteAction"
   },
   {
     "key": "alt+v",
@@ -1804,10 +1813,6 @@
     "args": {
       "text": "\u0003"
     }
-  },
-  {
-    "key": "ctrl+y",
-    "command": "editor.action.clipboardPasteAction"
   },
   {
     "key": "ctrl+\\",
@@ -2417,10 +2422,6 @@
     "when": "notificationFocus && notificationToastsVisible"
   },
   {
-    "key": "shift+alt+w",
-    "command": "editor.action.clipboardPasteAction"
-  },
-  {
     "key": "ctrl+i",
     "command": "cursorWordEndRight",
     "when": "textInputFocus && !accessibilityModeEnabled"
@@ -2779,5 +2780,63 @@
   {
     "key": "ctrl+l alt+f",
     "command": "footsteps.clearChangesWithinFile"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-solutionExplorer.paste",
+    "when": "view == 'slnexpl' && viewItem == 'project-folder'"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-solutionExplorer.paste",
+    "when": "view == 'slnexpl' && viewItem == 'project-cps'"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-solutionExplorer.paste",
+    "when": "view == 'slnexpl' && viewItem == 'project-standard'"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-solutionExplorer.paste",
+    "when": "view == 'slnexpl' && viewItem == 'project-website'"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-solutionExplorer.paste",
+    "when": "view == 'slnbrw' && viewItem == 'project-folder'"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-solutionExplorer.paste",
+    "when": "view == 'slnbrw' && viewItem == 'project-cps'"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-solutionExplorer.paste",
+    "when": "view == 'slnbrw' && viewItem == 'project-standard'"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-solutionExplorer.paste",
+    "when": "view == 'slnbrw' && viewItem == 'project-website'"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-quicktype.pasteJSONAsTypesAndSerialization",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+v",
+    "command": "-quicktype.pasteJSONAsTypes",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "paste"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "default:paste"
   }
 ]

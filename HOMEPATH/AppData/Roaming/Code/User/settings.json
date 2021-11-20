@@ -43,6 +43,7 @@
   "git.fetchOnPull": true,
   "git.promptToSaveFilesBeforeCommit": "always",
   "git.rebaseWhenSync": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
   // Markdown
   "markdown.preview.fontFamily": "Consolas",
   // markdownlints
@@ -62,7 +63,6 @@
   "typescript.format.insertSpaceAfterConstructor": true,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
   "typescript.format.insertSpaceAfterTypeAssertion": true,
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
@@ -266,7 +266,5 @@
     "!Split",
     "!Split sequence"
   ],
-  "aws.profile": "profile:default",
-  "footsteps.maxNumberOfChangesToHighlight": 10,
-  "footsteps.doHighlightChanges": false
+  "aws.profile": "profile:default"
 }
