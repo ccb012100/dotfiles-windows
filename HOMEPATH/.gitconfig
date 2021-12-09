@@ -21,6 +21,7 @@
     cb = checkout -B
     cm = commit -m
     co = checkout
+    cp = cherry-pick
     d = diff
     develop = checkout develop
     ds = diff --staged
@@ -45,6 +46,7 @@
   cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
   tool = vscode
+	summary = true
 [mergetool "vscode"]
     cmd = code --wait $MERGED
 [difftool]
