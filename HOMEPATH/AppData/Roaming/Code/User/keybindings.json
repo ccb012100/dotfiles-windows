@@ -2833,10 +2833,6 @@
   },
   {
     "key": "ctrl+y",
-    "command": "paste"
-  },
-  {
-    "key": "ctrl+y",
-    "command": "default:paste"
+    "command": "editor.action.clipboardPasteAction"
   }
 ]

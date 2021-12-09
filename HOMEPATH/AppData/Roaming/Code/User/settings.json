@@ -220,7 +220,6 @@
   "scm.inputFontFamily": "Consolas",
   "workbench.editor.tabSizing": "shrink",
   "C_Cpp.autocompleteAddParentheses": true,
-  "python.autoComplete.addBrackets": true,
   "editor.fontSize": 13,
   "better-comments.highlightPlainText": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -233,8 +232,6 @@
   "peacock.affectTabActiveBorder": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "git.suggestSmartCommit": false,
-  "turboConsoleLog.addSemicolonInTheEnd": true,
-  "turboConsoleLog.quote": "'",
   "editor.hover.above": false,
   "json.schemas": [],
   "yaml.customTags": [
