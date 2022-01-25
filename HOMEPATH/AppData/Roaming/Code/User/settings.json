@@ -108,7 +108,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Monokai++",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
@@ -263,5 +263,8 @@
     "!Split",
     "!Split sequence"
   ],
-  "aws.profile": "profile:default"
+  "aws.profile": "profile:default",
+  "codesnap.showWindowControls": false,
+  "codesnap.shutterAction": "copy",
+  "js/ts.implicitProjectConfig.experimentalDecorators": true
 }

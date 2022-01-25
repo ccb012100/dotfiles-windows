@@ -14,7 +14,7 @@
         <Shortcut id="42069" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="42070" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="42035" Ctrl="no" Alt="no" Shift="no" Key="0" />
-        <Shortcut id="43001" Ctrl="yes" Alt="no" Shift="no" Key="82" />
+        <Shortcut id="43001" Ctrl="yes" Alt="no" Shift="no" Key="70" />
         <Shortcut id="41014" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="42014" Ctrl="no" Alt="yes" Shift="no" Key="38" />
         <Shortcut id="42015" Ctrl="no" Alt="yes" Shift="no" Key="40" />
@@ -47,9 +47,7 @@
         <ScintKey ScintID="2304" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="37">
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="66" />
         </ScintKey>
-        <ScintKey ScintID="2306" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="39">
-            <NextKey Ctrl="yes" Alt="no" Shift="no" Key="70" />
-        </ScintKey>
+        <ScintKey ScintID="2306" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="39" />
         <ScintKey ScintID="2308" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="37">
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="85" />
         </ScintKey>

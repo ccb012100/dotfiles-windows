@@ -31,6 +31,7 @@
     master = checkout master
     pf = push --force
     pl = pull
+    prune = remote update origin --prune
     ps = push
     pub = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     r = rebase
