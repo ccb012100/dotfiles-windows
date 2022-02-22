@@ -1,6 +1,11 @@
 set encoding=utf-8
 scriptencoding utf-8
 
+"" Exit Insert mode
+inoremap jj <Esc>
+inoremap kj <Esc>
+""
+
 "" Clipboard functionality (paste from system)
 vnoremap <leader>y "+y
 nnoremap <leader>y "+y
