@@ -79,7 +79,7 @@
   "yaml.format.enable": true,
   // Markdown
   "[markdown]": {
-    "editor.fontFamily": "IBM Plex Mono, 'Consolas', 'Hack', 'Courier New', monospace",
+    "editor.fontFamily": "JetBrains Mono, IBM Plex Mono, 'Consolas', 'Hack', 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.quickSuggestions": true,
     "files.trimTrailingWhitespace": false,
@@ -189,7 +189,7 @@
   "remote.WSL.debug": true,
   "redhat.telemetry.enabled": true,
   "markdown.preview.scrollEditorWithPreview": false,
-  "terminal.integrated.fontFamily": "Consolas",
+  "terminal.integrated.fontFamily": "Cascadia Mono",
   "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
   "editor.bracketPairColorization.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -266,5 +266,7 @@
   "aws.profile": "profile:default",
   "codesnap.showWindowControls": false,
   "codesnap.shutterAction": "copy",
-  "js/ts.implicitProjectConfig.experimentalDecorators": true
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "audioCues.enabled": "on",
+  "explorer.confirmDragAndDrop": true
 }

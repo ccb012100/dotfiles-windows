@@ -139,10 +139,6 @@
     "command": "-workbench.action.zoomIn"
   },
   {
-    "key": "ctrl+`",
-    "command": "-workbench.action.terminal.toggleTerminal"
-  },
-  {
     "key": "ctrl+h ctrl+s",
     "command": "-workbench.action.openGlobalKeybindings"
   },
@@ -1453,10 +1449,6 @@
   {
     "key": "ctrl+v",
     "command": "-editor.action.clipboardPasteAction"
-  },
-  {
-    "key": "ctrl+y",
-    "command": "editor.action.clipboardPasteAction"
   },
   {
     "key": "alt+v",
@@ -2834,5 +2826,10 @@
   {
     "key": "ctrl+y",
     "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
   }
 ]
