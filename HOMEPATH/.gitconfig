@@ -23,6 +23,7 @@
     co = checkout
     cp = cherry-pick
     d = diff
+    diff = diff --color-moved
     develop = checkout develop
     ds = diff --staged
     fp = push --force
@@ -43,11 +44,13 @@
     insteadOf = gh:
 [diff]
 	tool = vscode
+    algorithm = histogram
 [difftool "vscode"]
   cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
   tool = vscode
 	summary = true
+  conflictStyle = zdiff3
 [mergetool "vscode"]
     cmd = code --wait $MERGED
 [difftool]
