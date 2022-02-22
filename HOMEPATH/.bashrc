@@ -6,11 +6,13 @@ alias ......='cd ../../../../..'
 
 alias cd-dotfiles='cd ~/.dotfiles'
 alias cd-dotemacs='cd $APPDATA/.emacs.d/'
+
 alias ls='ls --color --block-size=K'
 alias la='ls -A'
 alias ll='ls -l'
 alias lal='ls -Al'
 alias lla='ls -Al'
+alias tree='cmd //c tree' # use cmd.exe "tree command"
 
 alias g='git'
 
