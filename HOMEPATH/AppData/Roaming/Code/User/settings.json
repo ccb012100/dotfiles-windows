@@ -108,7 +108,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "Monokai++",
+  "workbench.colorTheme": "Panda Syntax",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
@@ -144,7 +144,6 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "python.languageServer": "Default",
-  "editor.multiCursorModifier": "ctrlCmd",
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
@@ -199,7 +198,6 @@
   "csv-preview.formatValues": "unquoted",
   "csv-preview.lineNumbers": "ordinal",
   "csv-preview.resizeColumns": "all",
-  "workbench.sideBar.location": "right",
   "debug.onTaskErrors": "showErrors",
   "workbench.startupEditor": "none",
   "gitlens.codeLens.authors.enabled": false,
@@ -267,6 +265,16 @@
   "codesnap.showWindowControls": false,
   "codesnap.shutterAction": "copy",
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
-  "audioCues.enabled": "on",
-  "explorer.confirmDragAndDrop": true
+  "explorer.confirmDragAndDrop": false,
+  "vsicons.presets.jsonOfficial": true,
+  "JSON-zain.json.autorefresh": true,
+  "workbench.settings.useSplitJSON": true,
+  "workbench.sideBar.location": "right",
+  "workbench.experimental.layoutControl.enabled": true,
+  "workbench.experimental.layoutControl.type": "both",
+  "audioCues.lineHasBreakpoint": "on",
+  "audioCues.onDebugBreak": "on",
+  // using colors from Monokai pallette for RainbowTags
+  "rainbowTags.colors": ["#F92672", "#AE81FF", "#A6E22E", "#66D9EF"],
+  "workbench.editor.splitInGroupLayout": "vertical"
 }

@@ -1574,18 +1574,8 @@
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
   },
   {
-    "key": "alt+]",
-    "command": "markdown.extension.onIndentLines",
-    "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
-  },
-  {
     "key": "ctrl+]",
     "command": "-markdown.extension.onIndentLines",
-    "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
-  },
-  {
-    "key": "alt+[",
-    "command": "markdown.extension.onOutdentLines",
     "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
   },
   {
@@ -1629,10 +1619,6 @@
     "key": "alt+p",
     "command": "scrollLineUp",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+x t",
-    "command": "workbench.action.toggleMaximizedPanel"
   },
   {
     "key": "ctrl+v",
@@ -2010,31 +1996,6 @@
     "key": "ctrl+k ctrl+d",
     "command": "-editor.action.moveSelectionToNextFindMatch",
     "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+k ctrl+c",
-    "command": "-notebook.cell.collapseCellInput",
-    "when": "notebookCellListFocused && !inputFocus && !notebookCellInputIsCollapsed"
-  },
-  {
-    "key": "ctrl+k t",
-    "command": "-notebook.cell.collapseCellOutput",
-    "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus && !notebookCellOutputIsCollapsed"
-  },
-  {
-    "key": "ctrl+k ctrl+c",
-    "command": "-notebook.cell.expandCellInput",
-    "when": "notebookCellInputIsCollapsed && notebookCellListFocused"
-  },
-  {
-    "key": "ctrl+k t",
-    "command": "-notebook.cell.expandCellOutput",
-    "when": "notebookCellListFocused && notebookCellOutputIsCollapsed"
-  },
-  {
-    "key": "ctrl+k ctrl+shift+\\",
-    "command": "-notebook.cell.split",
-    "when": "notebookCellEditable && notebookEditable && notebookEditorFocused"
   },
   {
     "key": "ctrl+k ctrl+t",
@@ -2482,11 +2443,6 @@
   },
   {
     "key": "ctrl+alt+enter",
-    "command": "-notebook.cell.execute",
-    "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
-  },
-  {
-    "key": "ctrl+alt+enter",
     "command": "-editor.action.replaceAll",
     "when": "editorFocus && findWidgetVisible"
   },
@@ -2494,11 +2450,6 @@
     "key": "ctrl+alt+enter",
     "command": "-search.action.replaceAll",
     "when": "replaceActive && searchViewletVisible && !findWidgetVisible"
-  },
-  {
-    "key": "ctrl+alt+enter",
-    "command": "-notebook.cell.quitEdit",
-    "when": "inputFocus && notebookEditorFocused && notebookCellType == 'markup'"
   },
   {
     "key": "alt+enter",
@@ -2514,11 +2465,6 @@
     "key": "alt+enter",
     "command": "-search.action.openInEditor",
     "when": "hasSearchResult && searchViewletFocus"
-  },
-  {
-    "key": "alt+enter",
-    "command": "-notebook.cell.executeAndInsertBelow",
-    "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
   },
   {
     "key": "alt+m alt+f",
@@ -2698,29 +2644,13 @@
     "command": "expandLineSelection"
   },
   {
-    "key": "ctrl+; space",
+    "key": "ctrl+'",
     "command": "metaGo.gotoSmart"
   },
   {
     "key": "ctrl+/",
     "command": "-editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+; a",
-    "command": "workbench.action.closeUnmodifiedEditors"
-  },
-  {
-    "key": "ctrl+; o",
-    "command": "workbench.action.closeOtherEditors"
-  },
-  {
-    "key": "ctrl+; ]",
-    "command": "workbench.action.closeEditorsToTheRight"
-  },
-  {
-    "key": "ctrl+; [",
-    "command": "workbench.action.closeEditorsToTheLeft"
   },
   {
     "key": "shift+escape",
@@ -2831,5 +2761,93 @@
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "workbench.action.gotoLine"
+  },
+
+  {
+    "key": "alt+m alt+m",
+    "command": "notebook.cell.changeToMarkdown",
+    "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'code'"
+  },
+  {
+    "key": "alt+m alt+m",
+    "command": "notebook.cell.changeToCode",
+    "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'markdown'"
+  },
+  {
+    "key": "shift+alt+n",
+    "command": "editor.action.moveLinesDownAction"
+  },
+  {
+    "key": "shift+alt+n",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+n",
+    "command": "notebook.cell.moveDown",
+    "when": "notebookEditorFocused && !inputFocus"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "editor.action.moveLinesUpAction"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+/",
+    "command": "-metaGo.gotoSmart"
+  },
+  {
+    "key": "ctrl+alt+'",
+    "command": "metaGo.addCursorSmart"
+  },
+  {
+    "key": "ctrl+alt+/",
+    "command": "-metaGo.addCursorSmart"
+  },
+  {
+    "key": "shift+alt+]",
+    "command": "metaGo.bookmark.expandSelectionToNext"
+  },
+  {
+    "key": "shift+alt+[",
+    "command": "metaGo.bookmark.expandSelectionToPrevious"
+  },
+  {
+    "key": "ctrl+x t",
+    "command": "metaGo.bookmark.toggle"
+  },
+  {
+    "key": "ctrl+x shift+`",
+    "command": "editor.action.marker.prevInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+x `",
+    "command": "editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+l o",
+    "command": "editor.action.surroundWithSnippet"
+  },
+  {
+    "key": "ctrl+x p",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+x 0",
+    "command": "workbench.action.closeEditorsAndGroup"
+  },
+  {
+    "key": "ctrl+x 1",
+    "command": "workbench.action.closeEditorsInOtherGroups"
   }
 ]
