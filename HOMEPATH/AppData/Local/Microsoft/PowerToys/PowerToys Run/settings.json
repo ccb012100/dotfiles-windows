@@ -3,7 +3,7 @@
     "search_result_preference": "most_recently_used",
     "search_type_preference": "application_name",
     "maximum_number_of_results": 10,
-    "open_powerlauncher": { "win": false, "ctrl": false, "alt": true, "shift": false, "code": 32, "key": "" },
+    "open_powerlauncher": { "win": true, "ctrl": false, "alt": false, "shift": false, "code": 32, "key": "" },
     "open_file_location": { "win": false, "ctrl": false, "alt": false, "shift": false, "code": 0, "key": "" },
     "copy_path_location": { "win": false, "ctrl": false, "alt": false, "shift": false, "code": 0, "key": "" },
     "open_console": { "win": false, "ctrl": false, "alt": false, "shift": false, "code": 0, "key": "" },
@@ -116,6 +116,22 @@
       ]
     },
     {
+      "Id": "BADD1B06EF0A4B61AD95395F24241D69",
+      "Name": "Time zone",
+      "Description": "Gets the the current time of a time zone",
+      "Author": "TobiasSekan",
+      "Disabled": false,
+      "IsGlobal": false,
+      "ActionKeyword": "\u0026",
+      "IconPathDark": "TimeZone\\Images\\timeZone.dark.png",
+      "IconPathLight": "TimeZone\\Images\\timeZone.light.png",
+      "AdditionalOptions": [
+        { "Key": "ShowTimeZoneNames", "DisplayLabel": "Show time zone names", "Value": true },
+        { "Key": "ShowTimeNames", "DisplayLabel": "Show time names", "Value": true },
+        { "Key": "ShowMilitaryTimeZoneNames", "DisplayLabel": "Show military time zone names", "Value": false }
+      ]
+    },
+    {
       "Id": "aa0ee9daff654fb7be452c2d77c471b9",
       "Name": "Unit Converter",
       "Description": "Provides unit conversion (e.g. 10 ft in m).",
@@ -154,7 +170,7 @@
     {
       "Id": "9F1B49201C3F4BF781CAAD5CD88EA4DC",
       "Name": "Web Search",
-      "Description": "Search the web in your default browser using your default search engine.",
+      "Description": "Search the web with your default search engine.",
       "Author": "cyberrex5",
       "Disabled": false,
       "IsGlobal": true,
