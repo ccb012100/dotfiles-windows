@@ -45,7 +45,7 @@ let g:rainbow_active = 1 " turn on rainbow brackets
 ""
 set backupdir=.backup/,~/.backup/,/tmp//
 set directory=.swp/,~/.swp/,/tmp//
-st undodir=.undo/,~/.undo/,/tmp//
+set undodir=.undo/,~/.undo/,/tmp//
 
 set rtp+=/usr/local/opt/fzf
 
