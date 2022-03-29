@@ -30,16 +30,20 @@
     l = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     main = checkout main
     master = checkout master
+    mt = mergetool
     pf = push --force
     pl = pull
     prune = remote update origin --prune
     ps = push
     pub = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     r = rebase
+    ra = rebase --abort
+    rc = rebase --continue
     ri = rebase --interactive
     ruo = remote update origin --prune
     s = status
-    undo = reset HEAD~1 --mixed
+    # get url of current repository
+ 	url =! bash -c 'git config --get remote.origin.url | sed -E "s/.+:\\(.+\\)\\.git$/https:\\\\/\\\\/github\\\\.com\\\\/\\\\1/g"'   undo = reset HEAD~1 --mixed
 [url "https://github.com/"]
     insteadOf = gh:
 [diff]
