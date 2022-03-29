@@ -64,16 +64,34 @@
                     "taskbar"
                 ],
                 "colorScheme": "Dracula",
-                "commandline": "wsl.exe ~ -d Ubuntu",
+                "commandline": "wsl.exe ~ -d Ubuntu-20.04",
                 "font": 
                 {
                     "face": "JetBrains Mono NL",
-                    "size": 10
+                    "size": 11,
+                    "weight": "normal"
                 },
-                "guid": "{ed4702c7-2b61-4adf-91be-378661a5ca11}",
-                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-                "name": "Ubuntu",
-                "startingDirectory": null
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "WSL",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": null,
+                "tabTitle": "WSL"
+            },
+            {
+                "bellStyle": "audible",
+                "colorScheme": "Gruvbox Dark",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "font": 
+                {
+                    "face": "JetBrains Mono",
+                    "size": 11
+                },
+                "guid": "{e0c65449-3279-4de2-b035-61cd1af7da94}",
+                "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "Git Bash",
+                "startingDirectory": "%USERPROFILE%",
+                "tabTitle": "Git Bash"
             },
             {
                 "acrylicOpacity": 0.5,
@@ -101,20 +119,6 @@
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": false
-            },
-            {
-                "bellStyle": "audible",
-                "colorScheme": "Gruvbox Dark",
-                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
-                "font": 
-                {
-                    "face": "Cascadia Mono",
-                    "size": 10
-                },
-                "guid": "{e0c65449-3279-4de2-b035-61cd1af7da94}",
-                "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
-                "name": "Git-Bash",
-                "startingDirectory": "%USERPROFILE%"
             },
             {
                 "acrylicOpacity": 1.0,
@@ -248,11 +252,11 @@
             "brightGreen": "#B8BB26",
             "brightPurple": "#D3869B",
             "brightRed": "#FB4934",
-            "brightWhite": "#EBDBB2",
+            "brightWhite": "#FFFFFF",
             "brightYellow": "#FABD2F",
             "cursorColor": "#FFFFFF",
             "cyan": "#689D6A",
-            "foreground": "#EBDBB2",
+            "foreground": "#FFFFFF",
             "green": "#98971A",
             "name": "Gruvbox Dark",
             "purple": "#B16286",
