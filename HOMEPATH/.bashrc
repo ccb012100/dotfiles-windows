@@ -12,6 +12,8 @@ alias la='ls -A'
 alias ll='ls -l'
 alias lal='ls -Al'
 alias lla='ls -Al'
+alias llt='ls -lt'
+alias llat='ls -Alt'
 alias tree='cmd //c tree' # use cmd.exe "tree command"
 
 alias g='git'
