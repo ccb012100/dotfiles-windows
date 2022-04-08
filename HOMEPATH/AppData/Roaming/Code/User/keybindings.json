@@ -2821,5 +2821,9 @@
     "key": "shift+alt+n",
     "command": "list.expandSelectionDown",
     "when": "listFocus && listSupportsMultiselect && !inputFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+o",
+    "command": "workbench.action.moveEditorToNextGroup"
   }
 ]
