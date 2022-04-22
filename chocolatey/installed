@@ -1,5 +1,6 @@
 choco list --local-only | awk '{ print $1 }'
 Chocolatey
+ag
 cascadiacode
 cascadiacodeitalic
 cascadiacodepl
@@ -10,6 +11,7 @@ cascadiamonoitalic
 cascadiamonopl
 cascadiamonopl-italic
 chocolatey
+chocolatey-compatibility.extension
 chocolatey-core.extension
 chocolatey-dotnetfx.extension
 chocolatey-font-helpers.extension
@@ -18,18 +20,24 @@ chocolatey-windowsupdate.extension
 curl
 dotnetfx
 FiraCode
+gh
 hackfont-windows
 jetbrainsmono
 jq
+KB2533623
 KB2919355
 KB2919442
 KB2999226
 KB3033929
 KB3035131
-less
+KB3063858
+nuget.commandline
+nvm
+nvm.install
+nvm.portable
 ripgrep
 SQLite
 ubuntu.font
 vcredist140
 vcredist2015
-32
+40
