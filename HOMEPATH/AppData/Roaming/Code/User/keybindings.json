@@ -409,26 +409,13 @@
     "command": "-editor.action.toggleRenderWhitespace"
   },
   {
-    "key": "tab",
-    "command": "acceptSelectedSuggestion",
-    "when": "suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
-  },
-  {
     "key": "ctrl+/",
     "command": "undo",
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+, t",
-    "command": "workbench.action.terminal.focus"
-  },
-  {
     "key": "ctrl+x b",
     "command": "workbench.action.showAllEditors"
-  },
-  {
-    "key": "ctrl+, p",
-    "command": "workbench.action.problems.focus"
   },
   {
     "key": "ctrl+l ctrl+r",
@@ -456,7 +443,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "tab",
+    "key": "enter",
     "command": "acceptSelectedSuggestionOnEnter",
     "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   },
@@ -854,7 +841,7 @@
     "command": "-workbench.action.showCommands"
   },
   {
-    "key": "shift+cmd+p",
+    "key": "alt+6",
     "command": "workbench.actions.view.problems",
     "when": "workbench.panel.markers.view.active"
   },
@@ -873,10 +860,6 @@
     "when": "viewContainer.workbench.view.explorer.enabled"
   },
   {
-    "key": "ctrl+, o",
-    "command": "workbench.panel.output.focus"
-  },
-  {
     "key": "shift+cmd+u",
     "command": "-workbench.action.output.toggleOutput",
     "when": "workbench.panel.output.active"
@@ -887,23 +870,9 @@
     "when": "workbench.panel.output.active"
   },
   {
-    "key": "ctrl+, d",
-    "command": "workbench.debug.action.focusRepl"
-  },
-  {
-    "key": "ctrl+, g",
-    "command": "workbench.view.scm",
-    "when": "workbench.scm.active"
-  },
-  {
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm",
     "when": "workbench.scm.active"
-  },
-  {
-    "key": "ctrl+, e",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "!editorFocus"
   },
   {
     "key": "cmd+backspace",
@@ -1026,10 +995,6 @@
     "command": "cursorWordRight"
   },
   {
-    "key": "ctrl+, ctrl+t",
-    "command": "workbench.action.createTerminalEditorSide"
-  },
-  {
     "key": "ctrl+x o",
     "command": "workbench.action.focusNextGroup"
   },
@@ -1065,11 +1030,6 @@
     "key": "ctrl+n",
     "command": "workbench.action.quickOpenSelectNext",
     "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "selectPrevSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
     "key": "ctrl+h",
@@ -1641,15 +1601,6 @@
     "command": "editor.action.transformToLowercase"
   },
   {
-    "key": "ctrl+, ctrl+p",
-    "command": "workbench.action.focusPanel"
-  },
-  {
-    "key": "ctrl+, e",
-    "command": "workbench.files.action.focusOpenEditorsView",
-    "when": "editorFocus"
-  },
-  {
     "key": "ctrl+q",
     "command": "workbench.action.terminal.killEditor",
     "when": "terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
@@ -2174,10 +2125,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+, ctrl+o",
-    "command": "outline.focus"
-  },
-  {
     "key": "ctrl+s",
     "command": "keybindings.editor.searchKeybindings",
     "when": "inKeybindings"
@@ -2349,11 +2296,6 @@
   {
     "key": "ctrl+c d",
     "command": "dotnet.test.debugTestsInContext"
-  },
-  {
-    "key": "ctrl+, c",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "!editorFocus"
   },
   {
     "key": "ctrl+a",
@@ -2765,7 +2707,7 @@
     "command": "metaGo.bookmark.expandSelectionToPrevious"
   },
   {
-    "key": "ctrl+x t",
+    "key": "ctrl+x m",
     "command": "metaGo.bookmark.toggle"
   },
   {
@@ -2825,5 +2767,109 @@
   {
     "key": "ctrl+x ctrl+o",
     "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "ctrl+x left",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "down",
+    "command": "-scm.viewNextCommit",
+    "when": "scmInputIsInLastPosition && scmRepository && !suggestWidgetVisible"
+  },
+  {
+    "key": "up",
+    "command": "-scm.viewPreviousCommit",
+    "when": "scmInputIsInFirstPosition && scmRepository && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "-editor.action.inPlaceReplace.up",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "alt+0",
+    "command": "-workbench.action.lastEditorInGroup"
+  },
+  {
+    "key": "alt+1",
+    "command": "-workbench.action.openEditorAtIndex1"
+  },
+  {
+    "key": "alt+2",
+    "command": "-workbench.action.openEditorAtIndex2"
+  },
+  {
+    "key": "alt+3",
+    "command": "-workbench.action.openEditorAtIndex3"
+  },
+  {
+    "key": "alt+4",
+    "command": "-workbench.action.openEditorAtIndex4"
+  },
+  {
+    "key": "alt+5",
+    "command": "-workbench.action.openEditorAtIndex5"
+  },
+  {
+    "key": "alt+6",
+    "command": "-workbench.action.openEditorAtIndex6"
+  },
+  {
+    "key": "alt+7",
+    "command": "-workbench.action.openEditorAtIndex7"
+  },
+  {
+    "key": "alt+8",
+    "command": "-workbench.action.openEditorAtIndex8"
+  },
+  {
+    "key": "alt+9",
+    "command": "-workbench.action.openEditorAtIndex9"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "alt+7",
+    "command": "workbench.view.extension.test"
+  },
+  {
+    "key": "alt+8",
+    "command": "nugetpackagemanagergui.view"
+  },
+  {
+    "key": "alt+2",
+    "command": "metaGo.bookmark.view"
+  },
+  {
+    "key": "alt+/",
+    "command": "editor.action.inlineSuggest.trigger"
+  },
+  {
+    "key": "alt+down",
+    "command": "-showNextParameterHint",
+    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+  },
+  {
+    "key": "alt+up",
+    "command": "-showPrevParameterHint",
+    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+  },
+  {
+    "key": "ctrl+shift+space",
+    "command": "-editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
   }
 ]
