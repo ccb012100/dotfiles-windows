@@ -35,6 +35,9 @@ xcopy %DOTFILES_HOMEPATH%\AppData\Roaming\Code\User\settings.json %HOMEPATH%\App
 REM NotePad++
 xcopy %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\shortcuts.xml %HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I
 
+REM kdiff3
+xcopy %DOTFILES_HOMEPATH%\AppData\Local\kdiff3rc %HOMEPATH%\AppData\Local\ /D /F /H /I
+
 REM Sublime Text
 REM xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Default (Windows).sublime-keymap" /D /F /H /I
 REM xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Preferences.sublime-settings" /D /F /H /I

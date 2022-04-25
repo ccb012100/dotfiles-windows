@@ -35,6 +35,9 @@ xcopy %APPDATA%\Code\User\settings.json %DOTFILES_HOMEPATH%\AppData\Roaming\Code
 REM NotePad++
 xcopy %APPDATA%\NotePad++\shortcuts.xml %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I
 
+REM kdiff3
+xcopy %HOMEPATH%\AppData\Local\kdiff3rc %DOTFILES_HOMEPATH%\AppData\Local\ /D /F /H /I
+
 REM Sublime Text
 REM xcopy "%APPDATA%\Sublime Text\Packages\User\Default (Windows).sublime-keymap" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
 REM xcopy "%APPDATA%\Sublime Text\Packages\User\Preferences.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
@@ -45,7 +48,7 @@ REM xcopy "%APPDATA%\Sublime Merge\Packages\User\Preferences.sublime-settings" "
 
 REM Visual Studio
 REM xcopy %HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\CurrentSettings.vssettings ^
-	%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\ /D /F /H /I
+REM	%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\ /D /F /H /I
 
 REM Windows Terminal
 REM xcopy %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^

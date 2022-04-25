@@ -48,18 +48,21 @@
 [url "https://github.com/"]
     insteadOf = gh:
 [diff]
-	tool = vscode
-    algorithm = histogram
-[difftool "vscode"]
-  cmd = code --wait --diff $LOCAL $REMOTE
-[merge]
-  tool = vscode
-	summary = true
-  conflictStyle = zdiff3
-[mergetool "vscode"]
-    cmd = code --wait $MERGED
+        tool = kdiff3
+[difftool "kdiff3"]
+        path = "C:/Program Files/KDiff3/bin/kdiff3.exe"
 [difftool]
-    prompt = false
+        prompt = false
+        keepBackup = false
+        trustExitCode = false
+[merge]
+        tool = kdiff3
+[mergetool]
+        prompt = false
+        keepBackup = false
+        keepTemporaries = false
+[mergetool "kdiff3"]
+        path = "C:/Program Files/KDiff3/bin/kdiff3.exe"
 [includeIf "gitdir:~/ccb012100/"]
     # set all repos in ~/ccb012100 to use personal username/email
     path = ~/ccb012100/.gitconfig
