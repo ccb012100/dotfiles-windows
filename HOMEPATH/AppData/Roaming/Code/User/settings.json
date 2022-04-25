@@ -1,282 +1,230 @@
 {
-  // Auto Close Tag
-  "auto-close-tag.activationOnLanguage": ["xml", "HTML (Eex)"],
-  // bracketPairColorizer
-  "breadcrumbs.enabled": true,
-  // editor
-  "editor.codeLens": false,
-  "editor.fontFamily": "JetBrains Mono, Haskig, Fira Code, Source Code Pro, Consolas, Ubuntu Mono",
-  "editor.fontLigatures": true,
-  "editor.letterSpacing": 1,
-  "editor.minimap.enabled": false,
-  "editor.minimap.maxColumn": 60,
-  "editor.minimap.renderCharacters": false,
-  "editor.renderWhitespace": "none",
-  "editor.suggest.localityBonus": true,
-  "editor.wordWrap": "on",
-  // files
-  "files.associations": {
-    "*.vssettings": "xml",
-    "*.adoc": "asciidoc",
-    "*.DotSettings": "xml",
-    ".gitignore_global": "txt"
-  },
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/*.js": {
-      "when": "$(basename).ts"
+    "auto-close-tag.activationOnLanguage": ["xml", "HTML (Eex)"],
+    "breadcrumbs.enabled": true,
+    "editor.codeLens": false,
+    "editor.fontFamily": "JetBrains Mono, Haskig, Fira Code, Source Code Pro, Consolas, Ubuntu Mono",
+    "editor.fontLigatures": true,
+    "editor.letterSpacing": 1,
+    "editor.minimap.enabled": false,
+    "editor.minimap.maxColumn": 60,
+    "editor.minimap.renderCharacters": false,
+    "editor.renderWhitespace": "none",
+    "editor.suggest.localityBonus": true,
+    "editor.wordWrap": "on",
+    "files.associations": {
+        "*.vssettings": "xml",
+        "*.adoc": "asciidoc",
+        "*.DotSettings": "xml",
+        ".gitignore_global": "txt"
     },
-    "**/*.js.map": {
-      "when": "$(basename)"
-    }
-  },
-  "files.trimTrailingWhitespace": true,
-  // Git
-  "git.allowForcePush": true,
-  "git.confirmForcePush": true,
-  "git.alwaysShowStagedChangesResourceGroup": true,
-  "git.autofetch": true,
-  "git.fetchOnPull": true,
-  "git.promptToSaveFilesBeforeCommit": "always",
-  "git.rebaseWhenSync": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
-  // Markdown
-  "markdown.preview.fontFamily": "Consolas",
-  // markdownlints
-  "markdownlint.config": {
-    "MD013": false,
-    "MD024": { "siblings_only": true },
-    "MD026": false
-  },
-  // prettier
-  "prettier.printWidth": 140,
-  "prettier.singleQuote": true,
-  "search.showLineNumbers": true,
-  // ts-lint
-  "tslint.alwaysShowRuleFailuresAsWarnings": true,
-  // TypeScript
-  "typescript.suggest.completeFunctionCalls": true,
-  "typescript.format.insertSpaceAfterConstructor": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
-  "typescript.format.insertSpaceAfterTypeAssertion": true,
-  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "typescript.preferences.quoteStyle": "single",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  // window
-  "window.titleBarStyle": "custom",
-  // workbench
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.iconTheme": "vscode-icons",
-  // Zen Mode
-  "zenMode.hideStatusBar": false,
-  // YAML
-  "yaml.format.enable": true,
-  // Markdown
-  "[markdown]": {
-    "editor.fontFamily": "JetBrains Mono, IBM Plex Mono, 'Consolas', 'Hack', 'Courier New', monospace",
-    "editor.fontSize": 14,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "**/*.js.map": {
+            "when": "$(basename)"
+        }
+    },
+    "files.trimTrailingWhitespace": true,
+    "git.allowForcePush": true,
+    "git.confirmForcePush": true,
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.autofetch": true,
+    "git.fetchOnPull": true,
+    "git.promptToSaveFilesBeforeCommit": "always",
+    "git.rebaseWhenSync": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "markdown.preview.fontFamily": "Consolas",
+    "markdownlint.config": {
+        "MD013": false,
+        "MD024": { "siblings_only": true },
+        "MD026": false
+    },
+    "prettier.printWidth": 140,
+    "prettier.singleQuote": true,
+    "search.showLineNumbers": true,
+    "tslint.alwaysShowRuleFailuresAsWarnings": true,
+    "typescript.suggest.completeFunctionCalls": true,
+    "typescript.format.insertSpaceAfterConstructor": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+    "typescript.format.insertSpaceAfterTypeAssertion": true,
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.titleBarStyle": "custom",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.iconTheme": "vscode-icons",
+    "zenMode.hideStatusBar": false,
+    "yaml.format.enable": true,
+    "[markdown]": {
+        "editor.fontFamily": "JetBrains Mono, IBM Plex Mono, 'Consolas', 'Hack', 'Courier New', monospace",
+        "editor.fontSize": 14,
+        "editor.quickSuggestions": true,
+        "files.trimTrailingWhitespace": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorCustomizations": {
+        "tab.activeModifiedBorder": "#FFC300",
+        "tab.activeBackground": "#1857a4"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.external.osxExec": "zsh",
+    "[javascript]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.autoStash": true,
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "explorer.incrementalNaming": "smart",
+    "editor.cursorSurroundingLines": 5,
+    "git.supportCancellation": true,
+    "markdown.preview.fontSize": 13,
+    "metaGo.decoration.fontSize": 12,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.minimap.size": "fit",
+    "workbench.editor.scrollToSwitchTabs": true,
+    "window.titleSeparator": "‣",
+    "javascript.preferences.quoteStyle": "single",
+    "scm.alwaysShowActions": true,
+    "scm.alwaysShowRepositories": true,
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.suggest.showWords": false,
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "full",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "git.pruneOnFetch": true,
+    "editor.semanticHighlighting.enabled": true,
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "editor.accessibilitySupport": "off",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true,
+    "python.languageServer": "Default",
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "sqlite.recordsPerPage": 100,
+    "go.toolsManagement.autoUpdate": true,
+    "git.confirmSync": false,
+    "markdown.extension.print.theme": "dark",
+    "problems.showCurrentInStatus": true,
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.enableBell": true,
+    "terminal.integrated.env.windows": {
+        "MSYSTEM": "MINGW64",
+        "MSYS2_PATH_TYPE": "inherit",
+        "CHERE_INVOKING": "1"
+    },
+    "terminal.external.windowsExec": "C:\\\\Program Files\\\\Git\\\\git-bash.exe",
+    "terminal.integrated.profiles.windows": {
+        "Ubuntu (WSL)": {
+            "path": "C:\\\\Windows\\\\System32\\\\wsl.exe",
+            "icon": "terminal-ubuntu"
+        },
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash",
+            "path": "C:\\\\Program Files\\\\Git\\\\git-bash.exe"
+        }
+    },
+    "markdown.preview.typographer": true,
+    "remote.WSL.debug": true,
+    "redhat.telemetry.enabled": true,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "terminal.integrated.fontFamily": "Cascadia Mono",
+    "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
+    "editor.bracketPairColorization.enabled": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.openEditors.sortOrder": "alphabetical",
     "editor.quickSuggestions": true,
-    "files.trimTrailingWhitespace": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.colorCustomizations": {
-    "tab.activeModifiedBorder": "#FFC300",
-    "tab.activeBackground": "#1857a4"
-  },
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "terminal.external.osxExec": "zsh",
-  "[javascript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "git.autoStash": true,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
-  "editor.acceptSuggestionOnCommitCharacter": false,
-  "explorer.incrementalNaming": "smart",
-  "editor.cursorSurroundingLines": 5,
-  "git.supportCancellation": true,
-  "markdown.preview.fontSize": 13,
-  "metaGo.decoration.fontSize": 12,
-  "vsicons.dontShowNewVersionMessage": true,
-  "editor.minimap.size": "fit",
-  "workbench.editor.scrollToSwitchTabs": true,
-  "window.titleSeparator": "‣",
-  "javascript.preferences.quoteStyle": "single",
-  "scm.alwaysShowActions": true,
-  "scm.alwaysShowRepositories": true,
-  "editor.acceptSuggestionOnEnter": "smart",
-  "editor.suggest.shareSuggestSelections": true,
-  "editor.suggest.showWords": false,
-  "[yaml]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "full",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
+    "window.title": "${dirty}${separator}${rootName}",
+    "csv-preview.formatValues": "unquoted",
+    "csv-preview.lineNumbers": "ordinal",
+    "csv-preview.resizeColumns": "all",
+    "debug.onTaskErrors": "showErrors",
+    "workbench.startupEditor": "none",
+    "editor.parameterHints.enabled": false,
+    "editor.find.seedSearchStringFromSelection": "selection",
+    "rust-analyzer.assist.importEnforceGranularity": true,
+    "rust-analyzer.lens.methodReferences": true,
+    "rust-analyzer.lens.references": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+    "scm.defaultViewMode": "tree",
+    "scm.inputFontFamily": "Consolas",
+    "workbench.editor.tabSizing": "shrink",
+    "C_Cpp.autocompleteAddParentheses": true,
+    "editor.fontSize": 13,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "emmet.showSuggestionsAsSnippets": true,
+    "editor.guides.bracketPairs": true,
+    "errorLens.messageEnabled": false,
+    "path-intellisense.showHiddenFiles": true,
+    "peacock.affectStatusAndTitleBorders": true,
+    "peacock.affectTabActiveBorder": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.suggestSmartCommit": false,
+    "editor.hover.above": false,
+    "json.schemas": [],
+    "codesnap.showWindowControls": false,
+    "codesnap.shutterAction": "copy",
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "explorer.confirmDragAndDrop": false,
+    "vsicons.presets.jsonOfficial": true,
+    "JSON-zain.json.autorefresh": true,
+    "workbench.settings.useSplitJSON": true,
+    "workbench.sideBar.location": "right",
+    "audioCues.lineHasBreakpoint": "on",
+    "audioCues.onDebugBreak": "on",
+    "rainbowTags.colors": ["#F92672", "#AE81FF", "#A6E22E", "#66D9EF"], // using colors from Monokai pallette for RainbowTags
+    "workbench.editor.splitInGroupLayout": "vertical",
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "git.pruneOnFetch": true,
-  "editor.semanticHighlighting.enabled": true,
-  "rust-analyzer.checkOnSave.command": "clippy",
-  "editor.accessibilitySupport": "off",
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "python.languageServer": "Default",
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  },
-  "sqlite.recordsPerPage": 100,
-  "go.toolsManagement.autoUpdate": true,
-  "git.confirmSync": false,
-  "markdown.extension.print.theme": "dark",
-  "problems.showCurrentInStatus": true,
-  "terminal.integrated.defaultLocation": "editor",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.enableBell": true,
-  "terminal.integrated.env.windows": {
-    "MSYSTEM": "MINGW64",
-    "MSYS2_PATH_TYPE": "inherit",
-    "CHERE_INVOKING": "1"
-  },
-  "terminal.external.windowsExec": "C:\\\\Program Files\\\\Git\\\\git-bash.exe",
-  "terminal.integrated.profiles.windows": {
-    "Ubuntu (WSL)": {
-      "path": "C:\\\\Windows\\\\System32\\\\wsl.exe",
-      "icon": "terminal-ubuntu"
-    },
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
-    },
-    "Command Prompt": {
-      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Git Bash": {
-      "source": "Git Bash",
-      "path": "C:\\\\Program Files\\\\Git\\\\git-bash.exe"
+    "rewrap.wrappingColumn": 80,
+    "editor.rulers": [80, 120],
+    "[csharp][markdown][javascript][typescript][json][html]": {
+        "editor.rulers": [120]
     }
-  },
-  "markdown.preview.typographer": true,
-  "remote.WSL.debug": true,
-  "redhat.telemetry.enabled": true,
-  "markdown.preview.scrollEditorWithPreview": false,
-  "terminal.integrated.fontFamily": "Cascadia Mono",
-  "[svelte]": { "editor.defaultFormatter": "svelte.svelte-vscode" },
-  "editor.bracketPairColorization.enabled": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "explorer.openEditors.sortOrder": "alphabetical",
-  "editor.quickSuggestions": true,
-  "window.title": "${dirty}${separator}${rootName}",
-  "csv-preview.formatValues": "unquoted",
-  "csv-preview.lineNumbers": "ordinal",
-  "csv-preview.resizeColumns": "all",
-  "debug.onTaskErrors": "showErrors",
-  "workbench.startupEditor": "none",
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.statusBar.pullRequests.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.codeLens.enabled": false,
-  "gitlens.statusBar.enabled": false,
-  "gitlens.hovers.currentLine.enabled": false,
-  "editor.parameterHints.enabled": false,
-  "editor.find.seedSearchStringFromSelection": "selection",
-  "rust-analyzer.assist.importEnforceGranularity": true,
-  "rust-analyzer.lens.methodReferences": true,
-  "rust-analyzer.lens.references": true,
-  "omnisharp.enableRoslynAnalyzers": true,
-  "scm.defaultViewMode": "tree",
-  "scm.inputFontFamily": "Consolas",
-  "workbench.editor.tabSizing": "shrink",
-  "C_Cpp.autocompleteAddParentheses": true,
-  "editor.fontSize": 13,
-  "better-comments.highlightPlainText": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "emmet.showSuggestionsAsSnippets": true,
-  "editor.guides.bracketPairs": true,
-  "errorLens.messageEnabled": false,
-  "nxConsole.useNVM": true,
-  "path-intellisense.showHiddenFiles": true,
-  "peacock.affectStatusAndTitleBorders": true,
-  "peacock.affectTabActiveBorder": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "git.suggestSmartCommit": false,
-  "editor.hover.above": false,
-  "json.schemas": [],
-  "yaml.customTags": [
-    "!And",
-    "!And sequence",
-    "!If",
-    "!If sequence",
-    "!Not",
-    "!Not sequence",
-    "!Equals",
-    "!Equals sequence",
-    "!Or",
-    "!Or sequence",
-    "!FindInMap",
-    "!FindInMap sequence",
-    "!Base64",
-    "!Join",
-    "!Join sequence",
-    "!Cidr",
-    "!Ref",
-    "!Sub",
-    "!Sub sequence",
-    "!GetAtt",
-    "!GetAZs",
-    "!ImportValue",
-    "!ImportValue sequence",
-    "!Select",
-    "!Select sequence",
-    "!Split",
-    "!Split sequence"
-  ],
-  "aws.profile": "profile:default",
-  "codesnap.showWindowControls": false,
-  "codesnap.shutterAction": "copy",
-  "js/ts.implicitProjectConfig.experimentalDecorators": true,
-  "explorer.confirmDragAndDrop": false,
-  "vsicons.presets.jsonOfficial": true,
-  "JSON-zain.json.autorefresh": true,
-  "workbench.settings.useSplitJSON": true,
-  "workbench.sideBar.location": "right",
-  "audioCues.lineHasBreakpoint": "on",
-  "audioCues.onDebugBreak": "on",
-  // using colors from Monokai pallette for RainbowTags
-  "rainbowTags.colors": ["#F92672", "#AE81FF", "#A6E22E", "#66D9EF"],
-  "workbench.editor.splitInGroupLayout": "vertical",
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "rewrap.wrappingColumn": 80
 }
