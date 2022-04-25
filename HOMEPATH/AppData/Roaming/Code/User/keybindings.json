@@ -2736,11 +2736,6 @@
     "when": "scmInputIsInLastPosition && scmRepository && !suggestWidgetVisible"
   },
   {
-    "key": "up",
-    "command": "-scm.viewPreviousCommit",
-    "when": "scmInputIsInFirstPosition && scmRepository && !suggestWidgetVisible"
-  },
-  {
     "key": "ctrl+shift+,",
     "command": "-editor.action.inPlaceReplace.up",
     "when": "editorTextFocus && !editorReadonly"
@@ -2900,5 +2895,34 @@
     "key": "alt+up",
     "command": "-scm.forceViewPreviousCommit",
     "when": "scmRepository"
+  },
+  {
+    "key": "alt+up",
+    "command": "scm.viewPreviousCommit",
+    "when": "scmInputIsInFirstPosition && scmRepository && !suggestWidgetVisible"
+  },
+  {
+    "key": "up",
+    "command": "-scm.viewPreviousCommit",
+    "when": "scmInputIsInFirstPosition && scmRepository && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+alt+h",
+    "command": "cursorWordLeftSelect",
+    "when": "textInputFocus && !accessibilityModeEnabled"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "cursorLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "cursorRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "cursorWordRightSelect"
   }
 ]
