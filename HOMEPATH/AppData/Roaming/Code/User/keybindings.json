@@ -172,10 +172,6 @@
     "command": "-workbench.action.focusAboveGroup"
   },
   {
-    "key": "alt+down",
-    "command": "workbench.action.focusBelowGroup"
-  },
-  {
     "key": "ctrl+h ctrl+down",
     "command": "-workbench.action.focusBelowGroup"
   },
@@ -2889,5 +2885,20 @@
   {
     "key": "ctrl+alt+c ctrl+alt+c",
     "command": "-comment-ts.commentThis"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "cursorUpSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+n",
+    "command": "cursorDownSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+up",
+    "command": "-scm.forceViewPreviousCommit",
+    "when": "scmRepository"
   }
 ]
