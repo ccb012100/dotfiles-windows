@@ -2449,11 +2449,6 @@
     "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+c r",
-    "command": "dotnet-test-explorer.runTestInContext",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+r alt+c",
     "command": "-dotnet-test-explorer.runTestInContext",
     "when": "editorTextFocus"
@@ -2875,5 +2870,24 @@
   {
     "key": "ctrl+l ctrl+w",
     "command": "editor.action.toggleWordWrap"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "-workbench.action.files.openFolderViaWorkspace",
+    "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+  },
+  {
+    "key": "ctrl+shift+\\",
+    "command": "-workbench.action.terminal.focusTabs",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "-workbench.action.terminal.copySelection",
+    "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
+  },
+  {
+    "key": "ctrl+alt+c ctrl+alt+c",
+    "command": "-comment-ts.commentThis"
   }
 ]
