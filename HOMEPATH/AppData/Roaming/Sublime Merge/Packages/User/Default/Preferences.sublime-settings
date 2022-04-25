@@ -1,0 +1,10 @@
+{
+	"font_face": "JetBrains Mono",
+	"font_size": 10,
+	"hardware_acceleration": "opengl",
+	"hide_menu": false,
+	"render_commit_dialog_message_at_top": true,
+	"side_bar_layout": "tabs",
+	"time_format": "12h",
+	"translate_tabs_to_spaces": false
+}

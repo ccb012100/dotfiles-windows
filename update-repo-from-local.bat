@@ -40,6 +40,9 @@ xcopy "%APPDATA%\Sublime Text\Packages\User\Default (Windows).sublime-keymap" "%
 xcopy "%APPDATA%\Sublime Text\Packages\User\Preferences.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
 xcopy "%APPDATA%\Sublime Text\Packages\User\Package Control.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
 
+REM Sublime Merge
+xcopy "%APPDATA%\Sublime Merge\Packages\User\Preferences.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Merge\Packages\User\Default\" /D /F /H /I
+
 REM Visual Studio
 xcopy %HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\CurrentSettings.vssettings ^
 	%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\ /D /F /H /I
