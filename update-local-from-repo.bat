@@ -36,16 +36,16 @@ REM NotePad++
 xcopy %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\shortcuts.xml %HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I
 
 REM Sublime Text
-xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Default (Windows).sublime-keymap" /D /F /H /I
-xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Preferences.sublime-settings" /D /F /H /I
-xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Package Control.sublime-settings" /D /F /H /I
+REM xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Default (Windows).sublime-keymap" /D /F /H /I
+REM xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Preferences.sublime-settings" /D /F /H /I
+REM xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Package Control.sublime-settings" /D /F /H /I
 
 REM Sublime Merge
-xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Merge\Packages\User\Default\" "%APPDATA%\Sublime Merge\Packages\User\Preferences.sublime-settings" /D /F /H /I
+REM xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Merge\Packages\User\Default\" "%APPDATA%\Sublime Merge\Packages\User\Preferences.sublime-settings" /D /F /H /I
 
 REM Visual Studio
-xcopy %DOTFILES_HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\CurrentSettings.vssettings ^
-	%HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\ /D /F /H /I
+REM xcopy %DOTFILES_HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\CurrentSettings.vssettings ^
+REM	%HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\ /D /F /H /I
 
 REM Windows Terminal
 REM xcopy %DOTFILES_HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^

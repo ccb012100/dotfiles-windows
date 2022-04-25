@@ -9,7 +9,7 @@ REM /L -> dry run
 Set DOTFILES_HOMEPATH="%HOMEPATH%\.dotfiles\HOMEPATH"
 Set DOTFILES_CDIR="%HOMEPATH%\.dotfiles\C"
 
-REM ~
+REM ~/
 xcopy %HOMEPATH%\.bashrc %DOTFILES_HOMEPATH%\ /D /F /H /I
 xcopy %HOMEPATH%\.gitconfig %DOTFILES_HOMEPATH%\ /D /F /H /I
 xcopy %HOMEPATH%\.minttyrc %DOTFILES_HOMEPATH%\ /D /F /H /I
@@ -36,15 +36,15 @@ REM NotePad++
 xcopy %APPDATA%\NotePad++\shortcuts.xml %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I
 
 REM Sublime Text
-xcopy "%APPDATA%\Sublime Text\Packages\User\Default (Windows).sublime-keymap" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
-xcopy "%APPDATA%\Sublime Text\Packages\User\Preferences.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
-xcopy "%APPDATA%\Sublime Text\Packages\User\Package Control.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
+REM xcopy "%APPDATA%\Sublime Text\Packages\User\Default (Windows).sublime-keymap" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
+REM xcopy "%APPDATA%\Sublime Text\Packages\User\Preferences.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
+REM xcopy "%APPDATA%\Sublime Text\Packages\User\Package Control.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
 
 REM Sublime Merge
-xcopy "%APPDATA%\Sublime Merge\Packages\User\Preferences.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Merge\Packages\User\Default\" /D /F /H /I
+REM xcopy "%APPDATA%\Sublime Merge\Packages\User\Preferences.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Merge\Packages\User\Default\" /D /F /H /I
 
 REM Visual Studio
-xcopy %HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\CurrentSettings.vssettings ^
+REM xcopy %HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\CurrentSettings.vssettings ^
 	%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\ /D /F /H /I
 
 REM Windows Terminal
