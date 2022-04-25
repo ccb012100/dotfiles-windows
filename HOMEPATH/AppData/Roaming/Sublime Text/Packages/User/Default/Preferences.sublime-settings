@@ -7,7 +7,7 @@
 	"folder_exclude_patterns": [".git", "obj", "lib", "bin", "node_modules"],
 	"font_face":"Jetbrains Mono",
 	"font_options":["no_liga", "no_clig"],
-	"font_size": 11,
+	"font_size": 10,
 	"hardware_acceleration": "opengl",
 	"highlight_gutter": true,
 	"highlight_line": true,

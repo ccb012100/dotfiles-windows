@@ -1,6 +1,9 @@
 [
 	// command palette
 	{ "keys": ["ctrl+space"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+	// side bar
+	{ "keys": ["alt+j"], "command": "toggle_side_bar" },
+	{ "keys": ["alt+1"], "command": "focus_side_bar" },
 	// views/panes
 	{ "keys": ["ctrl+x", "n"], "command": "new_pane" },
 	{ "keys": ["ctrl+x", "0"], "command": "close_pane" },
