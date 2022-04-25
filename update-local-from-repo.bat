@@ -38,6 +38,7 @@ xcopy %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\shortcuts.xml %HOMEPATH%\App
 REM Sublime Text
 xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Default (Windows).sublime-keymap" /D /F /H /I
 xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Preferences.sublime-settings" /D /F /H /I
+xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" "%APPDATA%\Sublime Text\Packages\User\Package Control.sublime-settings" /D /F /H /I
 
 REM Visual Studio
 xcopy %DOTFILES_HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\CurrentSettings.vssettings ^
