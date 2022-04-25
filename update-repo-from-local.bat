@@ -35,13 +35,17 @@ xcopy %APPDATA%\Code\User\settings.json %DOTFILES_HOMEPATH%\AppData\Roaming\Code
 REM NotePad++
 xcopy %APPDATA%\NotePad++\shortcuts.xml %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I
 
+REM Sublime Text
+xcopy "%APPDATA%\Sublime Text\Packages\User\Default (Windows).sublime-keymap" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
+xcopy "%APPDATA%\Sublime Text\Packages\User\Preferences.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
+
 REM Visual Studio
 xcopy %HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\CurrentSettings.vssettings ^
 	%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\ /D /F /H /I
 
 REM Windows Terminal
-xcopy %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^
-	%DOTFILES_HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\ /D /F /H /I
+REM xcopy %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^
+REM	%DOTFILES_HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\ /D /F /H /I
 
 REM Power Toys
 xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\settings.json ^
@@ -64,11 +68,5 @@ xcopy "%HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerToys Run\settings.json"
 	"%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerToys Run\" /D /F /H /I
 xcopy "%HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\PowerToysRunSettings.json" ^
 	"%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\PowerToys\PowerToys Run\Settings\" /D /F /H /I
-
-REM MySQL Workbench
-xcopy "C:\Program Files\MySQL\MySQL Workbench 8.0 CE\data\code_editor.xml" ^
-	"%DOTFILES_CDIR%\Program Files\MySQL\MySQL Workbench 8.0 CE\data\" /D /F /H /I
-xcopy "C:\Program Files\MySQL\MySQL Workbench 8.0 CE\data\main_menu.xml" ^
-	"%DOTFILES_CDIR%\Program Files\MySQL\MySQL Workbench 8.0 CE\data\" /D /F /H /I
 
 @PAUSE
