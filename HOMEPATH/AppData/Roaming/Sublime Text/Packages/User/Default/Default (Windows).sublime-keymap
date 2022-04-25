@@ -1,4 +1,6 @@
 [
+	// command palette
+	{ "keys": ["ctrl+space"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
 	// views/panes
 	{ "keys": ["ctrl+x", "n"], "command": "new_pane" },
 	{ "keys": ["ctrl+x", "0"], "command": "close_pane" },
@@ -80,6 +82,8 @@
 	{ "keys": ["ctrl+;", "l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	// insert snippet
 	{ "keys": ["ctrl+l", "i"], "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet" } },
+	// toggle word wrap
+	{ "keys": ["ctrl+l", "ctrl+w"], "command": "toggle_setting", "args": {"setting": "word_wrap" } },
 	// Use CTRL+G for ESCAPE
 	{ "keys": ["ctrl+g"], "command": "cancel"},
 	{ "keys": ["ctrl+g"], "command": "single_selection", "context":
