@@ -16,10 +16,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+u",
-    "command": "cursorWordLeft"
-  },
-  {
     "key": "ctrl+q",
     "command": "-workbench.action.quickOpenView"
   },
@@ -147,7 +143,7 @@
     "command": "editor.action.sortLinesAscending"
   },
   {
-    "key": "ctrl+l ctrl+s",
+    "key": "ctrl+l shift+s",
     "command": "editor.action.sortLinesDescending"
   },
   {
@@ -249,11 +245,6 @@
     "key": "shift+cmd+k",
     "command": "-editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+x ctrl+;",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "cmd+/",
@@ -423,7 +414,7 @@
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+x ctrl+/",
+    "key": "ctrl+x ctrl+;",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -737,10 +728,6 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "cmd+b",
-    "command": "cursorWordLeft"
-  },
-  {
     "key": "cmd+r r",
     "command": "-npm-script.rerun-last-script"
   },
@@ -942,18 +929,8 @@
     "command": "-workbench.action.showAllSymbols"
   },
   {
-    "key": "ctrl+shift+up",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+cmd+up",
     "command": "-editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+down",
-    "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus"
   },
   {
@@ -991,7 +968,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+right",
+    "key": "ctrl+i",
     "command": "cursorWordRight"
   },
   {
@@ -1609,11 +1586,6 @@
     "key": "ctrl+w",
     "command": "-workbench.action.terminal.killEditor",
     "when": "terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
-  },
-  {
-    "key": "ctrl+q",
-    "command": "workbench.action.closeGroup",
-    "when": "activeEditorGroupEmpty && multipleEditorGroups"
   },
   {
     "key": "ctrl+w",
@@ -2279,11 +2251,6 @@
     "when": "notificationFocus && notificationToastsVisible"
   },
   {
-    "key": "ctrl+i",
-    "command": "cursorWordEndRight",
-    "when": "textInputFocus && !accessibilityModeEnabled"
-  },
-  {
     "key": "down",
     "command": "cursorDown",
     "when": "textInputFocus"
@@ -2871,5 +2838,33 @@
     "key": "ctrl+shift+space",
     "command": "-editor.action.triggerParameterHints",
     "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "-cursorUndo",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "-workbench.action.newWindow"
+  },
+  {
+    "key": "ctrl+f4",
+    "command": "-workbench.action.closeGroup",
+    "when": "activeEditorGroupEmpty && multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-workbench.action.showTreeHover",
+    "when": "customTreeView && listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "cursorWordLeft"
   }
 ]
