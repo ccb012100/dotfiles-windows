@@ -146,5 +146,9 @@
         <ScintKey ScintID="2179" menuCmdID="42005" Ctrl="yes" Alt="no" Shift="no" Key="86">
             <NextKey Ctrl="no" Alt="no" Shift="yes" Key="45" />
         </ScintKey>
+        <ScintKey ScintID="2177" menuCmdID="42001" Ctrl="yes" Alt="no" Shift="no" Key="88">
+            <NextKey Ctrl="no" Alt="no" Shift="yes" Key="46" />
+            <NextKey Ctrl="yes" Alt="no" Shift="no" Key="87" />
+        </ScintKey>
     </ScintillaKeys>
 </NotepadPlus>
