@@ -1,5 +1,5 @@
 [KDiff3 Options]
-ApplicationFont=Ubuntu,8,-1,5,50,0,0,0,0,0
+ApplicationFont=Ubuntu,9,-1,5,50,0,0,0,0,0
 AutoAdvance=false
 AutoAdvanceDelay=500
 AutoCopySelection=true
@@ -90,14 +90,15 @@ WhiteSpace2FileMergeDefault=0
 WhiteSpace3FileMergeDefault=0
 WhiteSpaceEqual=true
 WindowStateFullScreen=false
-WindowStateMaximised=false
+WindowStateMaximised=true
 WordWrap=false
 
 [MainWindow]
 \sHeight 3840x2160=1893
 \sWidth 3840x2160=3586
-\sXPosition 3840x2160=112
-\sYPosition 3840x2160=135
+\sWindow-Maximized 3840x2160=true
+\sXPosition 3840x2160=0
+\sYPosition 3840x2160=45
 RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAAAADgIAAAcAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAADgIAAAb9AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
