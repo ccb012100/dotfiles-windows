@@ -156,10 +156,6 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "shift+alt+j",
-    "command": "workbench.action.togglePanel"
-  },
-  {
     "key": "ctrl+j",
     "command": "-workbench.action.togglePanel"
   },
@@ -906,7 +902,7 @@
     "when": "editorTextFocus && inDebugMode"
   },
   {
-    "key": "ctrl+alt+m",
+    "key": "ctrl+shift+m",
     "command": "editor.action.insertLineBefore",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -1062,22 +1058,6 @@
     "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
   },
   {
-    "key": "alt+m t",
-    "command": "markdown.extension.toc.create"
-  },
-  {
-    "key": "alt+m u",
-    "command": "markdown.extension.toc.update"
-  },
-  {
-    "key": "alt+m /",
-    "command": "markdown.extension.editing.toggleCodeBlock"
-  },
-  {
-    "key": "alt+m ;",
-    "command": "markdown.extension.editing.toggleCodeSpan"
-  },
-  {
     "key": "ctrl+shift+[",
     "command": "-markdown.extension.editing.toggleHeadingDown",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
@@ -1086,10 +1066,6 @@
     "key": "ctrl+shift+]",
     "command": "-markdown.extension.editing.toggleHeadingUp",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
-  },
-  {
-    "key": "alt+m n",
-    "command": "memo.openDailyNote"
   },
   {
     "key": "ctrl+l i",
@@ -1178,10 +1154,6 @@
     "key": "ctrl+f",
     "command": "-settings.action.search",
     "when": "inSettingsEditor"
-  },
-  {
-    "key": "ctrl+t",
-    "command": "editor.action.transposeLetters"
   },
   {
     "key": "ctrl+; s",
@@ -1312,11 +1284,6 @@
     "key": "ctrl+shift+x",
     "command": "-workbench.view.extensions",
     "when": "viewContainer.workbench.view.extensions.enabled"
-  },
-  {
-    "key": "alt+;",
-    "command": "deleteAllLeft",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "alt+f12",
@@ -1462,11 +1429,6 @@
     "when": "!notebookEditorFocused && editorLangId == 'markdown'"
   },
   {
-    "key": "alt+m b",
-    "command": "markdown.extension.editing.toggleBold",
-    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
-  },
-  {
     "key": "ctrl+b",
     "command": "-markdown.extension.editing.toggleBold",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
@@ -1485,23 +1447,6 @@
     "key": "ctrl+shift+v",
     "command": "-markdown.extension.togglePreview",
     "when": "!terminalFocus"
-  },
-  {
-    "key": "alt+m i",
-    "command": "markdown.extension.editing.toggleItalic"
-  },
-  {
-    "key": "alt+m s",
-    "command": "markdown.extension.editing.toggleStrikethrough"
-  },
-  {
-    "key": "alt+m f",
-    "command": "markdownlint.fixLine"
-  },
-  {
-    "key": "alt+m alt+p",
-    "command": "markdown.extension.closePreviewToSide",
-    "when": "markdownPreviewFocus"
   },
   {
     "key": "ctrl+k v",
@@ -1566,11 +1511,11 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+u",
+    "key": "ctrl+l u",
     "command": "editor.action.transformToUppercase"
   },
   {
-    "key": "shift+alt+u",
+    "key": "ctrl+l l",
     "command": "editor.action.transformToLowercase"
   },
   {
@@ -2329,10 +2274,6 @@
     "when": "hasSearchResult && searchViewletFocus"
   },
   {
-    "key": "alt+m alt+f",
-    "command": "markdownlint.fixAll"
-  },
-  {
     "key": "ctrl+m",
     "command": "editor.action.insertLineAfter",
     "when": "editorTextFocus && !editorReadonly"
@@ -2473,10 +2414,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+m p",
-    "command": "markdown.showPreviewToSide"
-  },
-  {
     "key": "ctrl+x ctrl+w",
     "command": "workbench.action.files.saveAs"
   },
@@ -2497,7 +2434,7 @@
     "command": "explorer.newFolder"
   },
   {
-    "key": "ctrl+alt+o",
+    "key": "shift+alt+o",
     "command": "expandLineSelection"
   },
   {
@@ -2624,16 +2561,6 @@
     "command": "workbench.action.gotoLine"
   },
 
-  {
-    "key": "alt+m alt+m",
-    "command": "notebook.cell.changeToMarkdown",
-    "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'code'"
-  },
-  {
-    "key": "alt+m alt+m",
-    "command": "notebook.cell.changeToCode",
-    "when": "notebookEditorFocused && !inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'markdown'"
-  },
   {
     "key": "ctrl+alt+n",
     "command": "editor.action.moveLinesDownAction",
@@ -2907,22 +2834,73 @@
     "when": "scmInputIsInFirstPosition && scmRepository && !suggestWidgetVisible"
   },
   {
-    "key": "ctrl+alt+h",
+    "key": "shift+alt+j",
     "command": "cursorWordLeftSelect",
     "when": "textInputFocus && !accessibilityModeEnabled"
   },
   {
-    "key": "ctrl+alt+j",
+    "key": "shift+alt+u",
     "command": "cursorLeftSelect",
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+alt+k",
+    "key": "shift+alt+i",
     "command": "cursorRightSelect",
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+alt+l",
+    "key": "shift+alt+k",
     "command": "cursorWordRightSelect"
+  },
+  {
+    "key": "ctrl+l c",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "editor.action.transpose"
+  },
+  {
+    "key": "alt+5",
+    "command": "todo-tree-view.focus"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+shift+alt+n",
+    "command": "cursorColumnSelectDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+p",
+    "command": "cursorColumnSelectUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+k g",
+    "command": "-textPowerTools.filterLinesIncludingString",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+l ctrl+u",
+    "command": "textPowerTools.changeCaseToSwapCase"
+  },
+  {
+    "key": "alt+;",
+    "command": "metaGo.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+\\",
+    "command": "-metaGo.jumpToBracket",
+    "when": "editorTextFocus"
   }
 ]
