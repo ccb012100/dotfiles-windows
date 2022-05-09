@@ -1209,10 +1209,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+; l",
-    "command": "workbench.action.gotoLine"
-  },
-  {
     "key": "ctrl+; f",
     "command": "workbench.action.quickOpen"
   },
@@ -2426,19 +2422,15 @@
     "command": "-welcome.showNewFileEntries"
   },
   {
-    "key": "ctrl+x n",
-    "command": "explorer.newFile"
-  },
-  {
     "key": "ctrl+x ctrl+n",
-    "command": "explorer.newFolder"
+    "command": "explorer.newFile"
   },
   {
     "key": "shift+alt+o",
     "command": "expandLineSelection"
   },
   {
-    "key": "ctrl+'",
+    "key": "ctrl+; ctrl+;",
     "command": "metaGo.gotoSmart"
   },
   {
@@ -2557,11 +2549,6 @@
     "when": "terminal.active"
   },
   {
-    "key": "ctrl+g",
-    "command": "workbench.action.gotoLine"
-  },
-
-  {
     "key": "ctrl+alt+n",
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
@@ -2608,10 +2595,6 @@
   {
     "key": "ctrl+l o",
     "command": "editor.action.surroundWithSnippet"
-  },
-  {
-    "key": "ctrl+x p",
-    "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
     "key": "ctrl+x 0",
@@ -2902,5 +2885,45 @@
     "key": "ctrl+shift+\\",
     "command": "-metaGo.jumpToBracket",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+x n",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+x p",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "alt+g a",
+    "command": "git.stage"
+  },
+  {
+    "key": "alt+g d",
+    "command": "git.openChange"
+  },
+  {
+    "key": "alt+g f",
+    "command": "git.fetch"
+  },
+  {
+    "key": "alt+g p",
+    "command": "git.pull"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+c m",
+    "command": "metaGo.scrollCurrentLineToMiddle"
+  },
+  {
+    "key": "ctrl+, b",
+    "command": "metaGo.scrollCurrentLineToBottom"
+  },
+  {
+    "key": "ctrl+, t",
+    "command": "metaGo.scrollCurrentLineToTop"
   }
 ]

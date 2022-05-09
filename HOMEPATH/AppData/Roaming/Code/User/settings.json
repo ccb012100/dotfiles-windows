@@ -6,7 +6,7 @@
     "editor.fontLigatures": true,
     "editor.letterSpacing": 1,
     "editor.minimap.maxColumn": 60,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
     "editor.suggest.localityBonus": true,
     "editor.wordWrap": "on",
     "files.associations": {
@@ -247,33 +247,9 @@
     "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
     "todo-tree.tree.hideIconsWhenGroupedByTag": true,
     "todo-tree.tree.showCountsInTree": true,
-    "yaml.customTags": [
-        "!And",
-        "!And sequence",
-        "!If",
-        "!If sequence",
-        "!Not",
-        "!Not sequence",
-        "!Equals",
-        "!Equals sequence",
-        "!Or",
-        "!Or sequence",
-        "!FindInMap",
-        "!FindInMap sequence",
-        "!Base64",
-        "!Join",
-        "!Join sequence",
-        "!Cidr",
-        "!Ref",
-        "!Sub",
-        "!Sub sequence",
-        "!GetAtt",
-        "!GetAZs",
-        "!ImportValue",
-        "!ImportValue sequence",
-        "!Select",
-        "!Select sequence",
-        "!Split",
-        "!Split sequence"
-    ]
+    "[csv][tsv]": {
+        "editor.insertSpaces": false,
+        "editor.rulers": [0]
+    },
+    "[plaintext]": {"editor.insertSpaces":false}
 }
