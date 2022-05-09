@@ -20,13 +20,7 @@
       { "originalKeys": "162;69", "newRemapKeys": "35", "targetApp": "msedge.exe" },
       { "originalKeys": "162;79", "newRemapKeys": "36", "targetApp": "msedge.exe" },
       { "originalKeys": "162;219", "newRemapKeys": "166", "targetApp": "msedge.exe" },
-      { "originalKeys": "162;221", "newRemapKeys": "167", "targetApp": "msedge.exe" },
-      { "originalKeys": "162;66", "newRemapKeys": "37", "targetApp": "slack.exe" },
-      { "originalKeys": "162;68", "newRemapKeys": "46", "targetApp": "slack.exe" },
-      { "originalKeys": "162;69", "newRemapKeys": "35", "targetApp": "slack.exe" },
-      { "originalKeys": "162;79", "newRemapKeys": "36", "targetApp": "slack.exe" },
-      { "originalKeys": "162;219", "newRemapKeys": "166", "targetApp": "slack.exe" },
-      { "originalKeys": "162;221", "newRemapKeys": "167", "targetApp": "slack.exe" }
+      { "originalKeys": "162;221", "newRemapKeys": "167", "targetApp": "msedge.exe" }
     ]
   }
 }
