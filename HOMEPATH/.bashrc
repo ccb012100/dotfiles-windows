@@ -59,3 +59,8 @@ function clla {
 function man() {
     "$@" --help | less
 }
+# for some reason PATH isn't picking up GitHub CLI
+function gh() {
+    /c/Program\ Files/GitHub\ CLI/gh.exe "$@"
+}
+
