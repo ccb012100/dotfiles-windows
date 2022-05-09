@@ -37,6 +37,7 @@ color_prompt=yes
 [[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
 source ~/.bash_machine_specific_aliases
+source ~/ccb012100/starred_music/search.sh
 
 # functions to `cd` then `ls` in one step
 function cls() {
@@ -54,7 +55,6 @@ function clal {
 function clla {
     cd "$@" && ls -la
 }
-
 # Git Bash doesn't have the `man` command
 function man() {
     "$@" --help | less
