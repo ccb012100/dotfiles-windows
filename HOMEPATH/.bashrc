@@ -4,8 +4,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
-alias cd-dotfiles='cd ~/.dotfiles'
-alias cd-dotemacs='cd $APPDATA/.emacs.d/'
+alias dotfiles='cd ~/.dotfiles'
+alias dotemacs='cd $APPDATA/.emacs.d/'
 
 alias ls='ls --color --block-size=K'
 alias la='ls -A'
@@ -27,6 +27,7 @@ alias gr='go run .'
 alias dc='docker compose'
 alias dot-b='dotnet build'
 alias dot-r='dotnet run'
+alias pn='pnpm'
 
 # Add git branch if it's present to PS1
 force_color_prompt=yes
