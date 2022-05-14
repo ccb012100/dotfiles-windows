@@ -64,7 +64,7 @@
     "[markdown]": {
         "editor.fontFamily": "JetBrains Mono, IBM Plex Mono, 'Consolas', 'Hack', 'Courier New', monospace",
         "editor.fontSize": 14,
-        "editor.quickSuggestions": true,
+        "editor.quickSuggestions": false,
         "files.trimTrailingWhitespace": false,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -204,8 +204,6 @@
     "git.suggestSmartCommit": false,
     "editor.hover.above": false,
     "json.schemas": [],
-    "codesnap.showWindowControls": false,
-    "codesnap.shutterAction": "copy",
     "js/ts.implicitProjectConfig.experimentalDecorators": true,
     "explorer.confirmDragAndDrop": false,
     "vsicons.presets.jsonOfficial": true,
@@ -221,7 +219,7 @@
     },
     "rewrap.wrappingColumn": 80,
     "editor.rulers": [80, 120],
-    "[csharp][markdown][javascript][typescript][json][html]": {
+    "[csharp][markdown][javascript][typescript][json][html][rust]": {
         "editor.rulers": [120]
     },
     "editor.minimap.renderCharacters": false,
@@ -251,5 +249,44 @@
         "editor.insertSpaces": false,
         "editor.rulers": [0]
     },
-    "[plaintext]": {"editor.insertSpaces":false}
+    "[plaintext]": {
+        "editor.insertSpaces": false
+    },
+    "rust-analyzer.lens.enable": true,
+    "editor.tabCompletion": "on",
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "rust-analyzer.inlayHints.closureReturnTypeHints": true,
+    "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+    "rust-analyzer.inlayHints.reborrowHints": true,
+    "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true,
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
+    "csharp.inlayHints.parameters.enabled": true,
+    "csharp.inlayHints.parameters.forIndexerParameters": true,
+    "csharp.inlayHints.parameters.forLiteralParameters": true,
+    "csharp.inlayHints.parameters.forObjectCreationParameters": true,
+    "csharp.inlayHints.parameters.forOtherParameters": true,
+    "csharp.inlayHints.parameters.suppressForParametersThatDifferOnlyBySuffix": true,
+    "csharp.inlayHints.parameters.suppressForParametersThatMatchArgumentName": true,
+    "csharp.inlayHints.parameters.suppressForParametersThatMatchMethodIntent": true,
+    "csharp.inlayHints.types.enabled": true,
+    "csharp.inlayHints.types.forImplicitObjectCreation": true,
+    "csharp.inlayHints.types.forImplicitVariableTypes": true,
+    "csharp.inlayHints.types.forLambdaParameterTypes": true,
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "aceJump.scroll.mode": "none",
+    "aceJump.placeholder.upperCase": true,
+    "aceJump.dim.enabled": false,
+    "aceJump.finder.onlyInitialLetter": false,
+    "findJump.jumpCursorPosition": "end",
+    "findJump.positionAbsolute": true,
+    "findJump.jumpChars": "jfdksa;wibceghlmnopqrtuvxyz./1234567890'=",
 }
