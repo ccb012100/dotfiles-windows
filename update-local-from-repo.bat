@@ -12,6 +12,7 @@ Set DOTFILES_CDIR="%HOMEPATH%\.dotfiles\C"
 REM ~
 xcopy %DOTFILES_HOMEPATH%\.bashrc %HOMEPATH%\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\.gitconfig %HOMEPATH%\ /D /F /H /I
+xcopy %DOTFILES_HOMEPATH%\.gitattributes %HOMEPATH%\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\.minttyrc %HOMEPATH%\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\_gvimrc %HOMEPATH%\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\_vimrc %HOMEPATH%\ /D /F /H /I
