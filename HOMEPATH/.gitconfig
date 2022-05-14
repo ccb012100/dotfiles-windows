@@ -1,7 +1,7 @@
 [core]
     editor = vim
-    autocrlf = true
     filemode = false
+	attributesfile = ~/.config/git/attributes
 [pull]
     ff = only
     rebase = false
@@ -71,6 +71,3 @@
     path = ~/repos/.gitconfig
 [help]
 	autoCorrect = prompt
-[gui]
-	recentrepo = C:/Users/54745/repos/frontend
-	pruneduringfetch = true
