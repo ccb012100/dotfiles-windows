@@ -1,3 +1,6 @@
+#!/bin/bash
+export EDITOR="vim"
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -25,9 +28,11 @@ alias cc='cargo check'
 alias gb='go build .'
 alias gr='go run .'
 alias dc='docker compose'
+alias dot='dotnet'
 alias dot-b='dotnet build'
 alias dot-r='dotnet run'
 alias pn='pnpm'
+alias npm='echo "use pn/pnpm"'
 
 # Add git branch if it's present to PS1
 force_color_prompt=yes
@@ -63,4 +68,3 @@ function man() {
 function gh() {
     /c/Program\ Files/GitHub\ CLI/gh.exe "$@"
 }
-
