@@ -1,5 +1,6 @@
 [core]
     editor = vim
+    autocrlf = true
     filemode = false
 	attributesfile = ~/.config/git/attributes
 [pull]
