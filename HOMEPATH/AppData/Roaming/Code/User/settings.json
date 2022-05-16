@@ -13,7 +13,8 @@
         "*.vssettings": "xml",
         "*.adoc": "asciidoc",
         "*.DotSettings": "xml",
-        ".gitignore_global": "txt"
+        ".gitignore_global": "txt",
+        "attributes": "properties"
     },
     "files.exclude": {
         "**/.git": true,
@@ -66,7 +67,7 @@
         "editor.fontSize": 14,
         "editor.quickSuggestions": false,
         "files.trimTrailingWhitespace": false,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
     "workbench.colorCustomizations": {
         "tab.activeModifiedBorder": "#FFC300",
@@ -75,7 +76,7 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "ms-vscode.vscode-typescript-tslint-plugin"
     },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
@@ -98,7 +99,6 @@
     "editor.cursorSurroundingLines": 5,
     "git.supportCancellation": true,
     "markdown.preview.fontSize": 13,
-    "metaGo.decoration.fontSize": 12,
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.editor.scrollToSwitchTabs": true,
     "window.titleSeparator": "‣",
@@ -198,8 +198,6 @@
     "editor.guides.bracketPairs": true,
     "errorLens.messageEnabled": false,
     "path-intellisense.showHiddenFiles": true,
-    "peacock.affectStatusAndTitleBorders": true,
-    "peacock.affectTabActiveBorder": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "git.suggestSmartCommit": false,
     "editor.hover.above": false,
@@ -252,23 +250,6 @@
     "[plaintext]": {
         "editor.insertSpaces": false
     },
-    "rust-analyzer.lens.enable": true,
-    "editor.tabCompletion": "on",
-    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-    "editor.inlayHints.enabled": "offUnlessPressed",
-    "rust-analyzer.inlayHints.closureReturnTypeHints": true,
-    "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
-    "rust-analyzer.inlayHints.reborrowHints": true,
-    "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true,
-    "javascript.inlayHints.parameterNames.enabled": "all",
-    "javascript.inlayHints.parameterTypes.enabled": true,
-    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-    "javascript.inlayHints.variableTypes.enabled": true,
-    "typescript.inlayHints.parameterNames.enabled": "all",
-    "typescript.inlayHints.parameterTypes.enabled": true,
-    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-    "typescript.inlayHints.variableTypes.enabled": true,
     "csharp.inlayHints.parameters.enabled": true,
     "csharp.inlayHints.parameters.forIndexerParameters": true,
     "csharp.inlayHints.parameters.forLiteralParameters": true,
@@ -282,11 +263,24 @@
     "csharp.inlayHints.types.forImplicitVariableTypes": true,
     "csharp.inlayHints.types.forLambdaParameterTypes": true,
     "debug.console.acceptSuggestionOnEnter": "on",
-    "aceJump.scroll.mode": "none",
-    "aceJump.placeholder.upperCase": true,
-    "aceJump.dim.enabled": false,
-    "aceJump.finder.onlyInitialLetter": false,
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.tabCompletion": "on",
+    "findJump.jumpChars": "jfdksa;wibceghlmnopqrtuvxyz./1234567890'=",
     "findJump.jumpCursorPosition": "end",
     "findJump.positionAbsolute": true,
-    "findJump.jumpChars": "jfdksa;wibceghlmnopqrtuvxyz./1234567890'=",
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true,
+    "rust-analyzer.inlayHints.closureReturnTypeHints": true,
+    "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
+    "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true,
+    "rust-analyzer.inlayHints.reborrowHints": true,
+    "rust-analyzer.lens.enable": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.inlayHints.variableTypes.enabled": true,
 }
