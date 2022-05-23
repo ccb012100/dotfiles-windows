@@ -93,7 +93,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "git.autoStash": true,
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Andromeda Colorizer",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "explorer.incrementalNaming": "smart",
     "editor.cursorSurroundingLines": 5,
@@ -215,7 +215,7 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "rewrap.wrappingColumn": 80,
+    "rewrap.wrappingColumn": 120,
     "editor.rulers": [80, 120],
     "[csharp][markdown][javascript][typescript][json][html][rust]": {
         "editor.rulers": [120]
@@ -283,4 +283,5 @@
     "typescript.inlayHints.parameterTypes.enabled": true,
     "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
     "typescript.inlayHints.variableTypes.enabled": true,
+    "rewrap.autoWrap.enabled": true,
 }

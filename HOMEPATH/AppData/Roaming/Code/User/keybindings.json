@@ -2690,7 +2690,7 @@
     "command": "editor.action.jumpToBracket"
   },
   {
-    "key": "ctrl+; ;",
+    "key": "ctrl+; ctrl+;",
     "command": "findJump.activate"
   },
   {
@@ -2698,7 +2698,7 @@
     "command": "-findJump.activate"
   },
   {
-    "key": "ctrl+; ctrl+;",
+    "key": "ctrl+; ;",
     "command": "findJump.activateWithSelection"
   },
   {
@@ -2710,5 +2710,22 @@
     "key": "shift+enter",
     "command": "-acceptRenameInputWithPreview",
     "when": "config.editor.rename.enablePreview && editorFocus && renameInputVisible"
+  },
+  {
+    "key": "alt+q alt+q",
+    "command": "-jump-extension.jump-to-the-start-of-a-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q",
+    "command": "paragraphHardWrapper.wrap"
+  },
+  {
+    "key": "ctrl+x j",
+    "command": "markdown.showPreviewToSide"
+  },
+  {
+    "key": "ctrl+x backspace",
+    "command": "deleteAllLeft"
   }
 ]
