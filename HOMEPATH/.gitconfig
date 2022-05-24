@@ -3,6 +3,7 @@
     autocrlf = true
     filemode = false
 	attributesfile = ~/.config/git/attributes
+	excludesfile = C:/Users/Waffles/.config/git/ignore
 [pull]
     ff = only
     rebase = false

@@ -18,9 +18,10 @@ xcopy %DOTFILES_HOMEPATH%\_vimrc %HOMEPATH%\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\aliases.cmd %HOMEPATH%\ /D /F /H /I
 
 REM ~/.config
-xcopy %DOTFILES_HOMEPATH%\.config\git\attributes %HOMEPATH%\ /D /F /H /I
-xcopy %DOTFILES_HOMEPATH%\.config\nvim\init.vim %HOMEPATH%\.config\nvim\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\.config\liquidpromptrc %HOMEPATH%\.config\ /D /F /H /I
+xcopy %DOTFILES_HOMEPATH%\.config\git\attributes %HOMEPATH%\ /D /F /H /I
+xcopy %DOTFILES_HOMEPATH%\.config\git\ignore %HOMEPATH%\ /D /F /H /I
+xcopy %DOTFILES_HOMEPATH%\.config\nvim\init.vim %HOMEPATH%\.config\nvim\ /D /F /H /I
 
 REM ~/.gnupg
 xcopy %DOTFILES_HOMEPATH%\.gnupg\gpg.conf %HOMEPATH%\.gnupg\ /D /F /H /I

@@ -1,0 +1,11 @@
+# MacOS
+
+.DS_Store
+
+# vi
+
+*~
+
+# Windows
+
+Thumbs.db
