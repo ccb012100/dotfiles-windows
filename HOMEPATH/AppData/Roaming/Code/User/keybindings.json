@@ -876,10 +876,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+i",
-    "command": "cursorWordRight"
-  },
-  {
     "key": "ctrl+x o",
     "command": "workbench.action.focusNextGroup"
   },
@@ -1352,7 +1348,7 @@
     "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
-    "key": "alt+f",
+    "key": "alt+b",
     "command": "cursorWordLeft"
   },
   {
@@ -2727,5 +2723,9 @@
   {
     "key": "ctrl+x backspace",
     "command": "deleteAllLeft"
+  },
+  {
+    "key": "alt+f",
+    "command": "cursorWordRight"
   }
 ]
