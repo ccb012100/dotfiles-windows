@@ -283,5 +283,5 @@
     "rewrap.autoWrap.enabled": true,
     "rust-analyzer.imports.granularity.enforce": true,
     "rust-analyzer.inlayHints.closureReturnTypeHints.enable": true,
-    "rust-analyzer.inlayHints.reborrowHints.enable": "always",
+    "rust-analyzer.inlayHints.reborrowHints.enable": true,
 }

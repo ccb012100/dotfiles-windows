@@ -2727,5 +2727,9 @@
   {
     "key": "alt+f",
     "command": "cursorWordRight"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "cursorWordRight"
   }
 ]
