@@ -1,4 +1,3 @@
-#!/bin/bash
 export EDITOR="vim"
 
 alias ..='cd ..'
@@ -22,15 +21,7 @@ alias tree='cmd //c tree' # use cmd.exe "tree command"
 alias g='git'
 
 alias c.='code .' # open current directory in vscode
-alias cb='cargo build'
-alias cr='cargo run'
-alias cc='cargo check'
-alias gb='go build .'
-alias gr='go run .'
 alias dc='docker compose'
-alias dot='dotnet'
-alias dot-b='dotnet build'
-alias dot-r='dotnet run'
 alias pn='pnpm'
 alias npm='echo "use pn/pnpm"'
 
@@ -67,4 +58,56 @@ function man() {
 # for some reason PATH isn't picking up GitHub CLI
 function gh() {
     /c/Program\ Files/GitHub\ CLI/gh.exe "$@"
+}
+# dotnet cli commands
+function dot() {
+    case $1 in
+        b )
+            shift
+            dotnet build "$@"
+        ;;
+        r )
+            shift
+            dotnet run "$@"
+        ;;
+        * )
+            dotnet "$@"
+        ;;
+    esac
+}
+# golang cli commands
+function gl() {
+    case $1 in
+            b )
+            shift
+            go build .
+        ;;
+        r )
+            shift
+            go run .
+        ;;
+        * )
+            go "$@"
+        ;;
+    esac
+}
+# cargo cli commands
+function cg() {
+    case $1 in
+        b )
+            shift
+            cargo build
+        ;;
+        c )
+            shift
+            cargo check
+        ;;
+        r )
+            shift
+            cargo run
+        ;;
+        * )
+            cargo "$@"
+        ;;
+    esac
 }
