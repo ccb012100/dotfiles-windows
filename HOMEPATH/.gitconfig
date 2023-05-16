@@ -3,7 +3,15 @@
     autocrlf = true
     filemode = false
 	attributesfile = ~/.config/git/attributes
-	excludesfile = C:/Users/Waffles/.config/git/ignore
+	excludesfile = ~/.config/git/ignore
+[user]
+    name = Christopher Bocardo
+    email = ccb012100@users.noreply.github.com
+    signingkey = ~/.ssh/id_rsa.pub
+[commit]
+    gpgsign = true
+[gpg]
+    format = ssh
 [pull]
     ff = only
     rebase = false
@@ -65,11 +73,5 @@
         keepTemporaries = false
 [mergetool "kdiff3"]
         path = "C:/Program Files/KDiff3/bin/kdiff3.exe"
-[includeIf "gitdir:~/ccb012100/"]
-    # set all repos in ~/ccb012100 to use personal username/email
-    path = ~/ccb012100/.gitconfig
-[includeIf "gitdir:~/repos/"]
-    # set all repos in ~/repos to use work username/email
-    path = ~/repos/.gitconfig
 [help]
 	autoCorrect = prompt
