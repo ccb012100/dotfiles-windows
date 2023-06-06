@@ -22,6 +22,7 @@ xcopy %HOMEPATH%\.config\liquidpromptrc %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
 xcopy %HOMEPATH%\.config\git\attributes %DOTFILES_HOMEPATH%\git\ /D /F /H /I
 xcopy %HOMEPATH%\.config\git\ignore %DOTFILES_HOMEPATH%\git\ /D /F /H /I
 xcopy %HOMEPATH%\.config\nvim\init.vim %DOTFILES_HOMEPATH%\.config\nvim\ /D /F /H /I
+xcopy %HOMEPATH%\.config\kanata.kbd %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
 
 REM ~/.gnupg
 xcopy %HOMEPATH%\.gnupg\gpg.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
