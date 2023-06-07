@@ -20,6 +20,7 @@ xcopy %DOTFILES_HOMEPATH%\aliases.cmd %HOMEPATH%\ /D /F /H /I
 REM ~/.config
 xcopy %DOTFILES_HOMEPATH%\.config\kanata.kbd %HOMEPATH%\.config\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\.config\liquidpromptrc %HOMEPATH%\.config\ /D /F /H /I
+xcopy %DOTFILES_HOMEPATH%\.config\starship.toml %HOMEPATH%\.config\ /D /F /H /I
 
 REM ~/.config/nvim
 xcopy %DOTFILES_HOMEPATH%\.config\nvim\init.vim %HOMEPATH%\.config\nvim\ /D /F /H /I
