@@ -1,5 +1,5 @@
 @ECHO OFF
-REM COPY DOTFILES TO .dotfiles DIRECTORY
+REM set up the local machine's dotfiles from the ~/.dotfiles directory
 REM /D -> only copy if src is newer than dest
 REM /F -> display full path and file name of src and dest
 REM /H -> copy hidden/system files
@@ -18,9 +18,11 @@ xcopy %DOTFILES_HOMEPATH%\_vimrc %HOMEPATH%\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\aliases.cmd %HOMEPATH%\ /D /F /H /I
 
 REM ~/.config
-xcopy %DOTFILES_HOMEPATH%\.config\kanata.kbd %HOMEPATH%\.config\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\.config\liquidpromptrc %HOMEPATH%\.config\ /D /F /H /I
 xcopy %DOTFILES_HOMEPATH%\.config\starship.toml %HOMEPATH%\.config\ /D /F /H /I
+
+REM ~/.config/kmonad
+xcopy %DOTFILES_HOMEPATH%\.config\kmonad\dell_latitude.kbd %HOMEPATH%\.config\ /D /F /H /I
 
 REM ~/.config/nvim
 xcopy %DOTFILES_HOMEPATH%\.config\nvim\init.vim %HOMEPATH%\.config\nvim\ /D /F /H /I
