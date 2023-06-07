@@ -2,7 +2,7 @@
 [diff]
     tool = meld
 [difftool "meld"]
-    path = "C:\Program Files (x86)\Meld\meld\meld.exe"
+    path = "/c/Program Files/Meld/Meld.exe"
 [difftool]
     prompt = false
     keepBackup = false
@@ -15,4 +15,4 @@
     keepBackup = false
     keepTemporaries = false
 [mergetool "meld"]
-    path = "C:\Program Files (x86)\Meld\meld\meld.exe"
+    path = "/c/Program Files/Meld/M.exe"
