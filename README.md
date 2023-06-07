@@ -19,7 +19,7 @@ The important bit:
 <Actions Context="Author">
     <Exec>
         <Command>C:\Users\ccb012100\tools\kanata\target\release\kanata.exe</Command>
-        <Arguments>--cfg ~/.config/kanata.kbd</Arguments>
+        <Arguments>--cfg %HOMEPATH%\.config\kanata.kbd</Arguments>
     </Exec>
 </Actions>
 ```
