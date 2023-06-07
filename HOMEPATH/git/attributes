@@ -5,7 +5,7 @@
 
 ~/.config/git/attributes text eol=lf
 
-.gitignore text eol=lf
+#.gitignore text eol=lf
 
 # Force shell scripts/configs to always use lf line endings
 *.bashrc text eol=lf

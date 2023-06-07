@@ -1,0 +1,4 @@
+[github]
+	user = ccb012100
+[url "git@github.com:"]
+	insteadof = https://github.com/

@@ -1,0 +1,18 @@
+# diff tools
+[diff]
+    tool = meld
+[difftool "meld"]
+    path = "C:\Program Files (x86)\Meld\meld\meld.exe"
+[difftool]
+    prompt = false
+    keepBackup = false
+    trustExitCode = false
+# merge tools
+[merge]
+    tool = meld
+[mergetool]
+    prompt = false
+    keepBackup = false
+    keepTemporaries = false
+[mergetool "meld"]
+    path = "C:\Program Files (x86)\Meld\meld\meld.exe"

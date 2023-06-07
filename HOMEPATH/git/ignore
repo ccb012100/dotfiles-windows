@@ -9,3 +9,11 @@
 # Windows
 
 Thumbs.db
+
+# Google Drive
+
+.tmp.driveupload
+.tmp.drivedownload
+
+# Node
+node_modules/
