@@ -28,7 +28,10 @@ force_color_prompt=yes
 color_prompt=yes
 
 # Only load Liquidprompt in interactive shells, not from a script or from scp
-[[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
+# [[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
+
+# starship prompt
+eval "$(starship init bash)"
 
 # functions to `cd` then `ls` in one step
 function cls() {
