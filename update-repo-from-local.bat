@@ -18,36 +18,27 @@ xcopy %HOMEPATH%\_vimrc %DOTFILES_HOMEPATH%\ /D /F /H /I
 xcopy %HOMEPATH%\aliases.cmd %DOTFILES_HOMEPATH%\ /D /F /H /I
 
 REM ~/.config
-xcopy %HOMEPATH%\.config\liquidpromptrc %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\attributes %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\ignore %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\nvim\init.vim %DOTFILES_HOMEPATH%\.config\nvim\ /D /F /H /I
 xcopy %HOMEPATH%\.config\kanata.kbd %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
+xcopy %HOMEPATH%\.config\liquidpromptrc %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
+xcopy %HOMEPATH%\.config\nvim\init.vim %DOTFILES_HOMEPATH%\.config\nvim\ /D /F /H /I
+
+REM ~/.config/git
+xcopy %HOMEPATH%\.config\git\aliases.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\attributes %DOTFILES_HOMEPATH%\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\git.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\github.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\ignore %DOTFILES_HOMEPATH%\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\tools.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
 
 REM ~/.gnupg
 xcopy %HOMEPATH%\.gnupg\gpg.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
 xcopy %HOMEPATH%\.gnupg\gpg-agent.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
-
-REM ~/.omnisharp
-xcopy %HOMEPATH%\.omnisharp\omnisharp.json %DOTFILES_HOMEPATH%\.omnisharp\ /D /F /H /I
 
 REM NotePad++
 xcopy %APPDATA%\NotePad++\shortcuts.xml %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I
 
 REM kdiff3
 xcopy %HOMEPATH%\AppData\Local\kdiff3rc %DOTFILES_HOMEPATH%\AppData\Local\ /D /F /H /I
-
-REM Sublime Text
-REM xcopy "%APPDATA%\Sublime Text\Packages\User\Default (Windows).sublime-keymap" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
-REM xcopy "%APPDATA%\Sublime Text\Packages\User\Preferences.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
-REM xcopy "%APPDATA%\Sublime Text\Packages\User\Package Control.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Text\Packages\User\Default\" /D /F /H /I
-
-REM Sublime Merge
-REM xcopy "%APPDATA%\Sublime Merge\Packages\User\Preferences.sublime-settings" "%DOTFILES_HOMEPATH%\AppData\Roaming\Sublime Merge\Packages\User\Default\" /D /F /H /I
-
-REM Visual Studio
-REM xcopy %HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\CurrentSettings.vssettings ^
-REM	%DOTFILES_HOMEPATH%\AppData\Local\Microsoft\VisualStudio\16.0_df333996\Settings\ /D /F /H /I
 
 REM Windows Terminal
 REM xcopy %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^
