@@ -30,11 +30,10 @@
 )
 
 ;; The first layer defined is the layer that will be active by default when
-;; kanata starts up. This layer is the standard QWERTY layout except for the
-;; backtick/grave key (@grl) which is an alias for a tap-hold key.
+;; kanata starts up.
 ;;
 ;; There are currently a maximum of 25 layers allowed.
-(deflayer base
+(deflayer baselayer
   esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  ins del pp
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
@@ -63,7 +62,8 @@
   ;; 3. tap action
   ;; 4. hold action
   ;;
-  meh (tap-hold-release $tt $ht esc S-C-lalt) ;; tap = ESC, hold = SHIFT+CTRL+ALT
+  ;; FIXME: get meh working
+  meh (tap-hold-release $tt $ht esc lctl) ;; tap = ESC, hold = SHIFT+CTRL+ALT
   cap (tap-hold $tt $ht caps lctl) ;; tap for ESC, hold for CTRL
   cw (caps-word 5000) ;; 5s idle timeout on caps word
   spc (tap-hold-release $tt $ht spc lctl)

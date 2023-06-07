@@ -18,7 +18,6 @@ xcopy %HOMEPATH%\_vimrc %DOTFILES_HOMEPATH%\ /D /F /H /I
 xcopy %HOMEPATH%\aliases.cmd %DOTFILES_HOMEPATH%\ /D /F /H /I
 
 REM ~/.config
-xcopy %HOMEPATH%\.config\kanata.kbd %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
 xcopy %HOMEPATH%\.config\liquidpromptrc %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
 xcopy %HOMEPATH%\.config\starship.toml %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
 @REM xcopy %HOMEPATH%\.config\nvim\init.vim %DOTFILES_HOMEPATH%\.config\nvim\ /D /F /H /I
@@ -30,6 +29,9 @@ xcopy %HOMEPATH%\.config\git\git.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
 xcopy %HOMEPATH%\.config\git\github.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
 xcopy %HOMEPATH%\.config\git\ignore %DOTFILES_HOMEPATH%\git\ /D /F /H /I
 xcopy %HOMEPATH%\.config\git\tools.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
+
+REM ~/.config/kmonad
+xcopy %HOMEPATH%\.config\kmonad\dell_latitude.kbd %DOTFILES_HOMEPATH%\.config\kmonad\ /D /F /H /I
 
 REM ~/.gnupg
 xcopy %HOMEPATH%\.gnupg\gpg.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
