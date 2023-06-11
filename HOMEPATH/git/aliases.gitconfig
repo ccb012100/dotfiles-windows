@@ -1,124 +1,124 @@
 ## aliases
 [alias]
-    ## add
-    a       = add
-    aa      = ! git add --all && git s
-    aacm    = ! git add add --all && git commit
-    acm     = ! git add --update && git commit
-    ai      = add --all --interactive
-    au      = ! git add --update && git s
-    aucm    = ! git add --update && git commit
+	## add
+	a       = add
+	aa      = ! git add --all && git s
+	aacm    = ! git add add --all && git commit
+	acm     = ! git add --update && git commit
+	ai      = add --all --interactive
+	au      = ! git add --update && git s
+	aucm    = ! git add --update && git commit
 
-    alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
+	alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
 
-    ## branch
-    b       = branch
-    bd      = branch --delete
-    bl      = branch --list
-    bv      = branch -v
-    br      = branch --remote
-    brv     = branch --remote -v
-    # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
-    delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
+	## branch
+	b       = branch
+	bd      = branch --delete
+	bl      = branch --list
+	bv      = branch -v
+	br      = branch --remote
+	brv     = branch --remote -v
+	# delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
+	delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
 
-    ## commit
-    amend   = commit --amend
-    c       = commit
-    ca      = commit --amend
-    call    = commit --all
-    can     = ca --no-edit
-    cm      = commit -m
-    cmnv    = cm --no-verify
-    cp      = cherry-pick
+	## commit
+	amend   = commit --amend
+	c       = commit
+	ca      = commit --amend
+	call    = commit --all
+	can     = ca --no-edit
+	cm      = commit -m
+	cmnv    = cm --no-verify
+	cp      = cherry-pick
 
-    ## checkout
-    back    = checkout -
-    co      = checkout # create and checkout a new branch
-    cob     = checkout -b
-    cof     = checkout --force
-    main    = checkout main
-    master  = checkout master
+	## checkout
+	back    = checkout -
+	co      = checkout # create and checkout a new branch
+	cob     = checkout -b
+	cof     = checkout --force
+	main    = checkout main
+	master  = checkout master
 
-    ## diff
-    d       = diff
-    ds      = diff --staged
-    dt      = difftool
-    dts     = difftool --staged
+	## diff
+	d       = diff
+	ds      = diff --staged
+	dt      = difftool
+	dts     = difftool --staged
 
-    ## fetch
-    f       = fetch --all
-    fm      = fetch origin main:main # update local main branch to match origin
+	## fetch
+	f       = fetch --all
+	fm      = fetch origin main:main # update local main branch to match origin
 
-    ## log
-    l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
-    l1      = l -1 --compact-summary # show last commit with summary
-    last    = log -1 HEAD --compact-summary
-    lc      = l --compact-summary
-    lm      = l --merges
-    lmc     = l --compact-summary
-    ln      = log -n
-    lnc     = log --compact-summary -n
-    lnm     = l --no-merges
-    lnmc    = lmn --compact-summary
-    lp      = log --patch --compact-summary # show diffs
-    lp1     = lp -1 --compact-summary # show last commit with diff
-    ls      = ls-files
+	## log
+	l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
+	l1      = l -1 --compact-summary # show last commit with summary
+	last    = log -1 HEAD --compact-summary
+	lc      = l --compact-summary
+	lm      = l --merges
+	lmc     = l --compact-summary
+	ln      = log -n
+	lnc     = log --compact-summary -n
+	lnm     = l --no-merges
+	lnmc    = lmn --compact-summary
+	lp      = log --patch --compact-summary # show diffs
+	lp1     = lp -1 --compact-summary # show last commit with diff
+	ls      = ls-files
 
-    ## merge
-    m       = merge
-    ma      = merge --abort
-    mc      = merge --continue
-    mt      = mergetool
+	## merge
+	m       = merge
+	ma      = merge --abort
+	mc      = merge --continue
+	mt      = mergetool
 
-    ## pull
-    p       = pull
-    pa      = pull --autostash
-    pr      = pull --rebase
-    pra     = pull --rebase --autostash
+	## pull
+	p       = pull
+	pa      = pull --autostash
+	pr      = pull --rebase
+	pra     = pull --rebase --autostash
 
-    ## push
-    ps      = push
-    psf     = push -v --force-with-lease
-    psnv    = push -v --no-verify # bypass pre-push hook
-    publish = push -v --set-upstream origin HEAD
+	## push
+	ps      = push
+	psf     = push -v --force-with-lease
+	psnv    = push -v --no-verify # bypass pre-push hook
+	publish = push -v --set-upstream origin HEAD
 
-    ## rebase
-    r       = rebase
-    ra      = rebase --abort
-    rc      = rebase --continue
-    ri      = rebase --interactive
+	## rebase
+	r       = rebase
+	ra      = rebase --abort
+	rc      = rebase --continue
+	ri      = rebase --interactive
 
-    ## reset
-    resets  = reset --soft
-    reseth  = reset --hard
-    undo    = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
-    unwind  = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
+	## reset
+	resets  = reset --soft
+	reseth  = reset --hard
+	undo    = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
+	unwind  = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
 
-    ## restore
-    uns     = unstage
-    unsall  = unstage *
-    unstage = restore --staged
-    rest    = restore
+	## restore
+	uns     = unstage
+	unsall  = unstage *
+	unstage = restore --staged
+	rest    = restore
 
 	sbs = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
 
-    ## stash
-    pop       = stash pop
-    stash-all = stash push --include-untracked # *not* stash push --all, which includes ignored files
+	## stash
+	pop       = stash pop
+	stash-all = stash push --include-untracked # *not* stash push --all, which includes ignored files
 
-    ## status
-    s   = ss
-    sl  = status --long
-    ss  = status --short --branch
-    sv  = svv
-    svv = status -vv
+	## status
+	s   = ss
+	sl  = status --long
+	ss  = status --short --branch
+	sv  = svv
+	svv = status -vv
 
-    ## tag
-    current-tags    = tag --list --points-at HEAD
-    t               = current-tags
+	## tag
+	current-tags    = tag --list --points-at HEAD
+	t               = current-tags
 
-    ## misc
-    chx     = update-index --chmod=+x
-    fg      = forgit
-    swc     = switch --create # create new branch and switch to it
-    update  = ! git fetch origin $1:$1 # update local branch from origin without checking it out
+	## misc
+	chx     = update-index --chmod=+x
+	fg      = forgit
+	swc     = switch --create # create new branch and switch to it
+	update  = ! git fetch origin $1:$1 # update local branch from origin without checking it out

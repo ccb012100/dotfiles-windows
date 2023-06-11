@@ -1,27 +1,27 @@
 [advice]
 	addIgnoredFile = false
 [core]
-    editor = vim
+	editor = vim
 	autocrlf = true
-    filemode = false
+	filemode = false
 	attributesfile = ~/.config/git/attributes
 	excludesfile = ~/.config/git/ignore
-    #hooksPath = ~/.config/git/hooks
+	sshCommand = SSH_ASKPASS=\"C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-gui--askpass\" ssh
+	#hooksPath = ~/.config/git/hooks
 [commit]
-    gpgsign = true
+	gpgsign = true
 	verbose = true
 [credential]
 	helper = /usr/local/share/gcm-core/git-credential-manager-core
 	credentialStore = gpg
 [fetch]
-    prune = true
+	prune = true
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [gpg]
-    program = gpg
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = ~/.ssh/allowed_signers
@@ -30,12 +30,14 @@
 [init]
 	defaultBranch = main
 [pull]
-    ff = only
-    rebase = true
+	ff = only
+	rebase = true
 [push]
-    default = simple
-    autoSetupRemote = true
+	default = simple
+	autoSetupRemote = true
 [rebase]
-    autoStash = false
+	autoStash = false
 [status]
 	showUntrackedFiles = all
+[tag]
+	gpgsign = true
