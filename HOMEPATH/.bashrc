@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 export EDITOR="vim"
 
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+
 eval `ssh-agent` # start ssh agent
 
 alias ..='cd ..'
