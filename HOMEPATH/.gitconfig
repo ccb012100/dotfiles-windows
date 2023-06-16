@@ -1,6 +1,6 @@
 [user]
     name = Christopher Bocardo
-    email = ccb012100@users.noreply.github.com
+    email = 397636+ccb012100@users.noreply.github.com
     signingkey = ~/.ssh/id_ed25519
 [include]
     path = .config/git/git.gitconfig
