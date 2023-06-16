@@ -1,6 +1,6 @@
 {
-  "PreviousHotkey": "",
-  "Hotkey": "Alt \u002B Space",
+  "PreviousHotkey": "Alt \u002B Space",
+  "Hotkey": "Ctrl \u002B Alt \u002B Shift \u002B Space",
   "UseCentralizedKeyboardHook": false,
   "SearchQueryResultsWithDelay": true,
   "SearchInputDelayFast": 0,
@@ -20,8 +20,7 @@
   "WindowLeft": 240,
   "WindowTop": 241,
   "MaxResultsToShow": 4,
-  "ActivateTimes": 4,
-  "CustomPluginHotkeys": [],
+  "ActivateTimes": 12,
   "DontPromptUpdateMsg": false,
   "EnableUpdateLog": false,
   "StartWoxOnSystemStartup": true,
