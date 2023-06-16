@@ -6,7 +6,6 @@
 	filemode = false
 	attributesfile = ~/.config/git/attributes
 	excludesfile = ~/.config/git/ignore
-	sshCommand = SSH_ASKPASS=\"C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-gui--askpass\" ssh
 	#hooksPath = ~/.config/git/hooks
 [commit]
 	gpgsign = true
