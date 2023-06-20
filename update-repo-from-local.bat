@@ -22,6 +22,10 @@ xcopy %HOMEPATH%\.config\liquidpromptrc %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
 xcopy %HOMEPATH%\.config\starship.toml %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
 @REM xcopy %HOMEPATH%\.config\nvim\init.vim %DOTFILES_HOMEPATH%\.config\nvim\ /D /F /H /I
 
+REM ~/.config/bash
+xcopy %HOMEPATH%\.config\bash\functions.sh %DOTFILES_HOMEPATH%\.config\bash\ /D /F /H /I
+xcopy %HOMEPATH%\.config\bash\aliases.sh %DOTFILES_HOMEPATH%\.config\bash\ /D /F /H /I
+
 REM ~/.config/git
 xcopy %HOMEPATH%\.config\git\aliases.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
 xcopy %HOMEPATH%\.config\git\attributes %DOTFILES_HOMEPATH%\git\ /D /F /H /I
