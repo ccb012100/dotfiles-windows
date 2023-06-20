@@ -2,7 +2,7 @@
 	addIgnoredFile = false
 [core]
 	editor = vim
-	autocrlf = true
+	autocrlf = false
 	filemode = false
 	attributesfile = ~/.config/git/attributes
 	excludesfile = ~/.config/git/ignore
