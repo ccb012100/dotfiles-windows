@@ -18,7 +18,6 @@ xcopy %HOMEPATH%\_vimrc %DOTFILES_HOMEPATH%\ /D /F /H /I
 xcopy %HOMEPATH%\aliases.cmd %DOTFILES_HOMEPATH%\ /D /F /H /I
 
 REM ~/.config
-xcopy %HOMEPATH%\.config\liquidpromptrc %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
 xcopy %HOMEPATH%\.config\starship.toml %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
 @REM xcopy %HOMEPATH%\.config\nvim\init.vim %DOTFILES_HOMEPATH%\.config\nvim\ /D /F /H /I
 
@@ -43,9 +42,6 @@ xcopy %HOMEPATH%\.gnupg\gpg-agent.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
 
 REM NotePad++
 xcopy %APPDATA%\NotePad++\shortcuts.xml %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I
-
-REM kdiff3
-xcopy %HOMEPATH%\AppData\Local\kdiff3rc %DOTFILES_HOMEPATH%\AppData\Local\ /D /F /H /I
 
 REM Windows Terminal
 REM xcopy %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^
