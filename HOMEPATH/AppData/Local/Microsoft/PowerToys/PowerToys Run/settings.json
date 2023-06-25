@@ -249,7 +249,7 @@
         {
             "Id": "5D69806A5A474115821C3E4C56B9C793",
             "Name": "Time and Date",
-            "Description": "Provides time and date values for the system time or a custom time stamp (Examples: \u0027Day\u0027, \u0027Day::6/16/2023\u0027, \u0027Time::8:01:38 AM\u0027, \u0027Calendar week::6/16/2023\u0027)",
+            "Description": "Provides time and date values for the system time or a custom time stamp (Examples: \u0027Day\u0027, \u0027Day::6/20/2023\u0027, \u0027Time::1:53:59 PM\u0027, \u0027Calendar week::6/20/2023\u0027)",
             "Author": "htcfreek",
             "Disabled": true,
             "IsGlobal": true,
