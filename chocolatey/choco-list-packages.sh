@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-choco list >| choco-installed-packages.txt
+choco list >| "$HOME"/.dotfiles/chocolatey/choco-installed-packages.txt

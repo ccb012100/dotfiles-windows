@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-winget list >| winget-installed-packages.txt
+winget list >| "$HOME"/.dotfiles/winget/winget-installed-packages.txt

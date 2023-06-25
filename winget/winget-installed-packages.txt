@@ -5,7 +5,7 @@ Battery Percentage Icon                       61867SoleonInnovation.BatteryPerce
 Intel® Graphics Command Center                AppUp.IntelGraphicsExperience_8j3eq9eme6ctt    1.100.4979.0       
 Intel® OptaneTM Memory and Storage Management AppUp.IntelOptaneMemoryandStorageManagement_8… 18.1.1037.0        
 ThunderboltTM Control Center                  AppUp.ThunderboltControlCenter_8j3eq9eme6ctt   1.0.36.0           
-RipGrep GNU                                   BurntSushi.ripgrep.GNU                         13.0.0             winget
+RipGrep MSVC                                  BurntSushi.ripgrep.MSVC                        13.0.0             winget
 Ubuntu                                        Canonical.Ubuntu.2204                          2204.2.33.0        winget
 Dell SupportAssist for Home PCs               DellInc.DellSupportAssistforPCs_htrsf667h5kn2  3.14.4.0           
 Discord                                       Discord.Discord                                1.0.9013           winget
