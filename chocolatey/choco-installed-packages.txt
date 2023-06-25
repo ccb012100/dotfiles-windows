@@ -1,0 +1,16 @@
+Chocolatey v2.0.0
+chocolatey 2.0.0
+chocolatey-compatibility.extension 1.0.0
+chocolatey-core.extension 1.4.0
+chocolatey-font-helpers.extension 0.0.4
+chocolatey-windowsupdate.extension 1.0.5
+FiraCode 6.2.0
+jetbrainsmono 2.2.0
+KB2919355 1.0.20160915
+KB2919442 1.0.20160915
+KB2999226 1.0.20181019
+KB3033929 1.0.5
+KB3035131 1.0.3
+vcredist140 14.36.32532
+vcredist2015 14.0.24215.20170201
+14 packages installed.

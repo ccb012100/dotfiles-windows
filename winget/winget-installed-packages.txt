@@ -1,0 +1,96 @@
+   -    - Name                                          Id                                             Version            Source
+-----------------------------------------------------------------------------------------------------------------------
+1Password                                     AgileBits.1Password                            8.10.7             winget
+Battery Percentage Icon                       61867SoleonInnovation.BatteryPercentageIcon_d… 1.3.30.0           
+Intel® Graphics Command Center                AppUp.IntelGraphicsExperience_8j3eq9eme6ctt    1.100.4979.0       
+Intel® OptaneTM Memory and Storage Management AppUp.IntelOptaneMemoryandStorageManagement_8… 18.1.1037.0        
+ThunderboltTM Control Center                  AppUp.ThunderboltControlCenter_8j3eq9eme6ctt   1.0.36.0           
+RipGrep GNU                                   BurntSushi.ripgrep.GNU                         13.0.0             winget
+Ubuntu                                        Canonical.Ubuntu.2204                          2204.2.33.0        winget
+Dell SupportAssist for Home PCs               DellInc.DellSupportAssistforPCs_htrsf667h5kn2  3.14.4.0           
+Discord                                       Discord.Discord                                1.0.9013           winget
+Dropbox                                       Dropbox.Dropbox                                177.3.5390         winget
+Dropbox                                       DropboxInc.Dropbox_wkt425jdc3sga               177.3.5390.0       
+Git                                           Git.Git                                        2.41.0             winget
+GNU Privacy Guard                             GnuPG.GnuPG                                    2.4.2              winget
+Gpg4win (4.1.0)                               GnuPG.Gpg4win                                  4.1.0              winget
+Hack Fonts version 1.6.0                      SourceFoundry.HackFonts                        1.6.0              winget
+Haskell Stack                                 commercialhaskell.stack                        2.11.1             winget
+Microsoft Edge                                Microsoft.Edge                                 114.0.1823.58      winget
+Microsoft Edge Update                         Microsoft Edge Update                          1.3.175.29         
+Microsoft Edge WebView2 Runtime               Microsoft.EdgeWebView2Runtime                  114.0.1823.58      winget
+App Installer                                 Microsoft.DesktopAppInstaller_8wekyb3d8bbwe    1.19.11071.0       
+Xbox                                          Microsoft.GamingApp_8wekyb3d8bbwe              2306.1001.16.0     
+Get Help                                      Microsoft.GetHelp_8wekyb3d8bbwe                10.2303.10961.0    
+HEIF Image Extensions                         Microsoft.HEIFImageExtension_8wekyb3d8bbwe     1.0.61171.0        
+Paint 3D                                      Microsoft.MSPaint_8wekyb3d8bbwe                6.2203.1037.0      
+Microsoft Edge                                Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe   114.0.1823.58      
+Microsoft Sticky Notes                        Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe   4.6.0.0            
+OneDrive                                      Microsoft.OneDriveSync_8wekyb3d8bbwe           23119.606.1.0      
+Paint                                         Microsoft.Paint_8wekyb3d8bbwe                  11.2302.19.0       
+Power Automate                                Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe   1.0.511.0          
+PowerToys PowerRename Context Menu            Microsoft.PowerToys.PowerRenameContextMenu_8w… 0.70.1.0           
+Raw Image Extension                           Microsoft.RawImageExtension_8wekyb3d8bbwe      2.1.60611.0        
+Snipping Tool                                 Microsoft.ScreenSketch_8wekyb3d8bbwe           11.2303.17.0       
+Windows Security                              Microsoft.SecHealthUI_8wekyb3d8bbwe            1000.25305.9000.0  
+Store Experience Host                         Microsoft.StorePurchaseApp_8wekyb3d8bbwe       12303.1401.1.0     
+VP9 Video Extensions                          Microsoft.VP9VideoExtensions_8wekyb3d8bbwe     1.0.61591.0        
+Web Media Extensions                          Microsoft.WebMediaExtensions_8wekyb3d8bbwe     1.0.42192.0        
+Webp Image Extensions                         Microsoft.WebpImageExtension_8wekyb3d8bbwe     1.0.52351.0        
+Microsoft Photos                              Microsoft.Windows.Photos_8wekyb3d8bbwe         2023.11050.16005.0 
+Windows Clock                                 Microsoft.WindowsAlarms_8wekyb3d8bbwe          11.2304.0.0        
+Windows Calculator                            Microsoft.WindowsCalculator_8wekyb3d8bbwe      11.2210.0.0        
+Windows Camera                                Microsoft.WindowsCamera_8wekyb3d8bbwe          2023.2304.11.0     
+Feedback Hub                                  Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe     1.2304.1243.0      
+Windows Maps                                  Microsoft.WindowsMaps_8wekyb3d8bbwe            11.2303.5.0        
+Windows Notepad                               Microsoft.WindowsNotepad_8wekyb3d8bbwe         11.2304.26.0       
+Windows Sound Recorder                        Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe   11.2304.25.0       
+Microsoft Store                               Microsoft.WindowsStore_8wekyb3d8bbwe           22305.1401.1.0     
+Windows Terminal                              Microsoft.WindowsTerminal                      1.17.11461.0       winget
+Windows Package Manager Source (winget)       Microsoft.Winget.Source_8wekyb3d8bbwe          2023.625.1537.228  
+Xbox Game Bar Plugin                          Microsoft.XboxGameOverlay_8wekyb3d8bbwe        1.54.4001.0        
+Xbox Game Bar                                 Microsoft.XboxGamingOverlay_8wekyb3d8bbwe      5.823.3261.0       
+Xbox Identity Provider                        Microsoft.XboxIdentityProvider_8wekyb3d8bbwe   12.95.3001.0       
+Xbox Game Speech Window                       Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bb… 1.21.13002.0       
+Phone Link                                    Microsoft.YourPhone_8wekyb3d8bbwe              1.23042.108.0      
+Quick Assist                                  MicrosoftCorporationII.QuickAssist_8wekyb3d8b… 2.0.21.0           
+Windows Subsystem for Linux                   MicrosoftCorporationII.WindowsSubsystemForLin… 1.2.5.0            
+Windows Web Experience Pack                   MicrosoftWindows.Client.WebExperience_cw5n1h2… 423.13900.0.0      
+Notepad++ (64-bit x64)                        Notepad++.Notepad++                            8.5.4              winget
+Notepad++                                     NotepadPlusPlus_7njy0v32s6xk6                  1.0.0.0            
+Microsoft OneDrive                            Microsoft.OneDrive                             23.119.0606.0001   winget
+Rustup: the Rust toolchain installer          Rustlang.Rustup                                1.26.0             winget
+SQLite                                        SQLite.SQLite                                  3.42.0             winget
+SoundSwitch 6.7.2.0                           AntoineAflalo.SoundSwitch                      6.7.2.0            winget
+Spotify Music                                 SpotifyAB.SpotifyMusic_zpdnekdrzrea0           1.213.661.0        
+SumatraPDF                                    SumatraPDF.SumatraPDF                          3.4.6              winget
+cURL                                          cURL.cURL                                      8.0.1              winget
+Visual Studio Community 2022                  Microsoft.VisualStudio.2022.Community          17.6.2             winget
+less                                          jftuga.less                                    633                winget
+jq                                            jqlang.jq                                      1.6                winget
+Slack                                         SlackTechnologies.Slack                        4.32.127           winget
+Realtek USB Ethernet Controller All-In-One W… {04201224-2B34-4EE7-862B-B7BBF89DB3AB}         1153.9.0823.2022   
+Realtek USB Audio                             {0A46A65D-89AC-464C-8026-3CD44960BD04}         6.3.9600.2330      
+PowerShell 7-x64                              Microsoft.PowerShell                           7.3.4.0            winget
+Microsoft .NET Runtime - 6.0.19 (x64)         Microsoft.DotNet.Runtime.6                     6.0.19             winget
+Windows SDK AddOn                             {15941C7F-810D-41DF-8C5A-8D0490277AFB}         10.1.0.0           
+starship                                      Starship.Starship                              1.15.0             winget
+Microsoft Visual C++ 2015-2022 Redistributab… {410c0ee1-00bb-41b6-9772-e12c2828b02f}         14.36.32532.0      
+Microsoft Update Health Tools                 {43D501A5-E5E3-46EC-8F33-9E15D2A2CBD5}         5.70.0.0           
+vs_CoreEditorFonts                            {56FB5923-1A95-4D55-BE78-CD42B50E67AD}         17.6.33605         
+Dell SupportAssist                            {6D3561B7-19AA-438B-9C83-CD2CED199472}         3.14.0.91          
+Microsoft Visual Studio Installer             {6F320B93-EE3C-4826-85E0-ADF79F8D4C61}         3.6.2115.31769     
+Microsoft Visual Studio Code (User)           Microsoft.VisualStudioCode                     1.79.2             winget
+Windows PC Health Check                       Microsoft.WindowsPCHealthCheck                 3.7.2204.15001     winget
+Logi Options+                                 Logitech.OptionsPlus                           1.44.415782        winget
+Microsoft Visual C++ 2015-2022 Redistributab… {8bdfe669-9705-4184-9368-db9ce581e0e7}         14.36.32532.0      
+Intel(R) Serial IO                            {9FD91C5C-44AE-4D9D-85BE-AE52816B0294}         30.100.2104.1      
+Dell ControlVault Host Components Installer … {C8DE9232-6F4E-47C9-90A5-B3369FA57841}         5.9.8.17           
+GitHub CLI                                    GitHub.cli                                     2.31.0             winget
+Realtek Audio Driver                          {F132AF7F-7BCA-4EDE-8A7C-958108FE7DBC}         6.0.9481.1         
+Meld                                          Meld.Meld                                      3.22.0             winget
+AquaSnap 1.23.15                              NurgoSoftware.AquaSnap                         1.23.15            winget
+Dell SupportAssist OS Recovery Plugin for De… {cff56899-3afb-4fe1-aeec-a0474836d1cd}         5.5.5.16206        
+Windows Software Development Kit - Windows 1… Microsoft.WindowsSDK.10.0.22000                10.0.22000.832     winget
+PowerToys (Preview) x64                       Microsoft.PowerToys                            0.70.1             winget
+BCUninstaller                                 Klocman.BulkCrapUninstaller                    5.6.0.0            winget
