@@ -7,3 +7,6 @@
     path = .config/git/aliases.gitconfig
     path = .config/git/github.gitconfig
     path = .config/git/tools.gitconfig
+[core]
+	sshcommand = C:/Windows/System32/OpenSSH/ssh.exe
+
