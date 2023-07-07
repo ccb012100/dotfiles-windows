@@ -1,7 +1,34 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "previousInOrder"
+            },
+            "keys": "alt+shift+;"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+enter"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+space"
+        },
         {
             "command": "unbound",
             "keys": "ctrl+y"
@@ -15,54 +42,70 @@
             "keys": "ctrl+p"
         },
         {
-            "command": "commandPalette",
+            "command": 
+            {
+                "action": "commandPalette"
+            },
             "keys": "shift+space"
         },
         {
-            "command": "commandPalette",
+            "command": 
+            {
+                "action": "commandPalette"
+            },
             "keys": "ctrl+space"
         },
         {
-            "command": "scrollDown",
+            "command": 
+            {
+                "action": "scrollDown"
+            },
             "keys": "ctrl+shift+j"
         },
         {
-            "command": "scrollUp",
-            "keys": "ctrl+shift+k"
-        },
-        {
-            "command": "scrollDown",
+            "command": 
+            {
+                "action": "scrollDown"
+            },
             "keys": "ctrl+shift+d"
         },
         {
-            "command": "scrollUp",
+            "command": 
+            {
+                "action": "scrollUp"
+            },
+            "keys": "ctrl+shift+k"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollUp"
+            },
             "keys": "ctrl+shift+u"
         },
         {
-            "command": {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+enter"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+space"
-        },
-        {
-            "command": {
+            "command": 
+            {
                 "action": "moveFocus",
                 "direction": "previousInOrder"
             },
             "keys": "ctrl+shift+b"
         },
         {
-            "command": {
+            "command": "togglePaneZoom",
+            "keys": "ctrl+shift+z"
+        },
+        {
+            "command": 
+            {
+                "action": "findMatch",
+                "direction": "next"
+            },
+            "keys": "ctrl+s"
+        },
+        {
+            "command": 
+            {
                 "action": "moveFocus",
                 "direction": "nextInOrder"
             },
@@ -73,25 +116,42 @@
             "keys": "ctrl+shift+q"
         },
         {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "backward"
+            },
+            "keys": "alt+shift+comma"
+        },
+        {
             "command": "closePane",
             "keys": "ctrl+shift+w"
         },
         {
-            "command": {
-                "action": "findMatch",
-                "direction": "next"
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "forward"
             },
-            "keys": "ctrl+s"
+            "keys": "alt+shift+period"
         },
         {
-            "command": {
+            "command": "toggleSplitOrientation",
+            "keys": "ctrl+shift+'"
+        },
+        {
+            "command": 
+            {
                 "action": "findMatch",
                 "direction": "prev"
             },
             "keys": "ctrl+r"
         },
         {
-            "command": "renameTab",
+            "command": 
+            {
+                "action": "renameTab"
+            },
             "keys": "ctrl+f2"
         },
         {
@@ -99,74 +159,58 @@
             "keys": "ctrl+shift+t"
         },
         {
-            "command": "nextTab",
-            "keys": "ctrl+shift+."
-        },
-        {
-            "command": "prevTab",
-            "keys": "ctrl+shift+,"
-        },
-        {
-            "command": {
-                "action": "moveTab",
-                "direction": "forward"
+            "command": 
+            {
+                "action": "nextTab"
             },
-            "keys": "alt+shift+."
+            "keys": "ctrl+shift+period"
         },
         {
-            "command": {
-                "action": "moveTab",
-                "direction": "backward"
+            "command": 
+            {
+                "action": "prevTab"
             },
-            "keys": "alt+shift+,"
+            "keys": "ctrl+shift+comma"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "swapPane",
                 "direction": "nextInOrder"
             },
             "keys": "ctrl+shift+;"
-        },
-        {
-            "command": {
-                "action": "swapPane",
-                "direction": "previousInOrder"
-            },
-            "keys": "alt+shift+;"
-        },
-        {
-            "command": "togglePaneZoom",
-            "keys": "ctrl+shift+z"
-        },
-        {
-            "command": "toggleSplitOrientation",
-            "keys": "ctrl+shift+'"
-        },
+        }
     ],
     "alwaysShowNotificationIcon": false,
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "altGrAliasing": false,
             "antialiasingMode": "cleartype",
             "bellStyle": "window",
+            "closeOnExit": "graceful",
             "colorScheme": "Tango Dark",
-            "font": {
+            "font": 
+            {
                 "face": "CaskaydiaCove Nerd Font Mono",
                 "size": 11.0
             },
             "intenseTextStyle": "all",
             "padding": "5",
-            "scrollbarState": "hidden",
-            "altGrAliasing": false,
+            "scrollbarState": "hidden"
         },
-        "list": [
+        "list": 
+        [
             {
                 "colorScheme": "Dracula",
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
@@ -176,28 +220,31 @@
                 "tabColor": "#454B1B"
             },
             {
-                "colorScheme": "GruvboxDarkHard",
-                "name": "WSL",
+                "colorScheme": "Sakura",
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
+                "name": "WSL",
                 "source": "Windows.Terminal.Wsl",
                 "tabColor": "#E95420"
             },
             {
+                "altGrAliasing": true,
+                "colorScheme": "Campbell Powershell",
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "cmd.exe",
-                "altGrAliasing": true,
                 "tabColor": "#00008B"
             },
             {
                 "altGrAliasing": true,
                 "closeOnExit": "automatic",
+                "colorScheme": "Campbell Powershell",
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "cursorShape": "bar",
                 "elevate": true,
-                "font": {
+                "font": 
+                {
                     "size": 12.0
                 },
                 "guid": "{d5b08fdb-9a10-498a-a536-69672ac7ee1a}",
@@ -207,8 +254,8 @@
                 "name": "cmd.exe (Administrator)",
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%",
-                "useAcrylic": false,
-                "tabColor": "#C41E3A"
+                "tabColor": "#C41E3A",
+                "useAcrylic": false
             },
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -230,7 +277,8 @@
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -671,43 +719,51 @@
     ],
     "tabSwitcherMode": "disabled",
     "tabWidthMode": "titleLength",
-    "themes": [
+    "themes": 
+    [
         {
             "name": "legacyDark",
-            "tab": {
+            "tab": 
+            {
                 "background": null,
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "window": {
+            "window": 
+            {
                 "applicationTheme": "dark",
                 "useMica": false
             }
         },
         {
             "name": "legacyLight",
-            "tab": {
+            "tab": 
+            {
                 "background": null,
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "window": {
+            "window": 
+            {
                 "applicationTheme": "light",
                 "useMica": false
             }
         },
         {
             "name": "legacySystem",
-            "tab": {
+            "tab": 
+            {
                 "background": null,
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "window": {
+            "window": 
+            {
                 "applicationTheme": "system",
                 "useMica": false
             }
         }
     ],
-    "useAcrylicInTabRow": true
+    "useAcrylicInTabRow": true,
+    "windowingBehavior": "useExisting"
 }
