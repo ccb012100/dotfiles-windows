@@ -19,7 +19,6 @@ xcopy %HOMEPATH%\aliases.cmd %DOTFILES_HOMEPATH%\ /D /F /H /I
 
 REM ~/.config
 xcopy %HOMEPATH%\.config\starship.toml %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
-@REM xcopy %HOMEPATH%\.config\nvim\init.vim %DOTFILES_HOMEPATH%\.config\nvim\ /D /F /H /I
 
 REM ~/.config/bash
 xcopy %HOMEPATH%\.config\bash\functions.sh %DOTFILES_HOMEPATH%\.config\bash\ /D /F /H /I
@@ -49,6 +48,9 @@ xcopy %APPDATA%\NotePad++\shortcuts.xml %DOTFILES_HOMEPATH%\AppData\Roaming\Note
 REM Windows Terminal
 REM xcopy %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^
 REM	%DOTFILES_HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\ /D /F /H /I
+
+@REM Neovim
+xcopy %HOMEPATH%\AppData\Local\nvim\init.vim %DOTFILES_HOMEPATH%\AppData\Local\nvim\ /D /F /H /I
 
 REM Power Toys
 xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\settings.json ^

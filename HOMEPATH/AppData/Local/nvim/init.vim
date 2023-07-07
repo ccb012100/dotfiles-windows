@@ -47,4 +47,4 @@ set rtp+=/usr/local/opt/fzf
 autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
-colorscheme torte
+colorscheme habamax

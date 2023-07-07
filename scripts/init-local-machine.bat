@@ -55,6 +55,9 @@ REM Windows Terminal
 REM xcopy %DOTFILES_HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^
 REM       %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\ /D /F /H /I /P
 
+REM Neovim
+xcopy %DOTFILES_HOMEPATH%\AppData\Local\nvim\init.vim %HOMEPATH%\AppData\Local\nvim\init.vim /D /F /H /I /P
+
 REM Power Toys
 xcopy %DOTFILES_HOMEPATH%\AppData\Local\Microsoft\PowerToys\settings.json ^
 	%HOMEPATH%\AppData\Local\Microsoft\PowerToys\ /D /F /H /I /P
