@@ -40,7 +40,7 @@ xcopy %HOMEPATH%\.gnupg\gpg.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
 xcopy %HOMEPATH%\.gnupg\gpg-agent.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
 
 REM GitHub CLI (gh)
-xcopy "%APPDATA%\Roaming\GitHub CLI" "%DOTFILES_HOMEPATH%\AppData\Roaming\GitHub CLI\" /D /F /H /I
+xcopy "%APPDATA%\GitHub CLI\config.yml" "%DOTFILES_HOMEPATH%\GitHub CLI\" /D /F /H /I
 
 REM NotePad++
 xcopy %APPDATA%\NotePad++\shortcuts.xml %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I
