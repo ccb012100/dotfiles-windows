@@ -44,6 +44,10 @@ REM ~/.gnupg
 xcopy %DOTFILES_HOMEPATH%\.gnupg\gpg.conf %HOMEPATH%\.gnupg\ /D /F /H /I /P
 xcopy %DOTFILES_HOMEPATH%\.gnupg\gpg-agent.conf %HOMEPATH%\.gnupg\ /D /F /H /I /P
 
+REM GitHub CLI (gh)
+xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\GitHub CLI\config.yml" "%HOMEPATH%\AppData\Roaming\GitHub CLI\" /D /F /H /I /P
+xcopy "%DOTFILES_HOMEPATH%\AppData\Roaming\GitHub CLI\config.yml" "%HOMEPATH%\AppData\Roaming\GitHub CLI\" /D /F /H /I /P
+
 REM NotePad++
 xcopy %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\shortcuts.xml %HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I /P
 
