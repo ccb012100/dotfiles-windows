@@ -1,26 +1,6 @@
 {
-  "remapKeys": { "inProcess": [{ "originalKeys": "19", "newRemapKeys": "179" }] },
-  "remapShortcuts": {
-    "global": [],
-    "appSpecific": [
-      { "originalKeys": "162;66", "newRemapKeys": "37", "targetApp": "chrome.exe" },
-      { "originalKeys": "162;68", "newRemapKeys": "46", "targetApp": "chrome.exe" },
-      { "originalKeys": "162;69", "newRemapKeys": "35", "targetApp": "chrome.exe" },
-      { "originalKeys": "162;79", "newRemapKeys": "36", "targetApp": "chrome.exe" },
-      { "originalKeys": "162;219", "newRemapKeys": "166", "targetApp": "chrome.exe" },
-      { "originalKeys": "162;221", "newRemapKeys": "167", "targetApp": "chrome.exe" },
-      { "originalKeys": "162;66", "newRemapKeys": "37", "targetApp": "firefox.exe" },
-      { "originalKeys": "162;68", "newRemapKeys": "46", "targetApp": "firefox.exe" },
-      { "originalKeys": "162;69", "newRemapKeys": "35", "targetApp": "firefox.exe" },
-      { "originalKeys": "162;79", "newRemapKeys": "36", "targetApp": "firefox.exe" },
-      { "originalKeys": "162;219", "newRemapKeys": "166", "targetApp": "firefox.exe" },
-      { "originalKeys": "162;221", "newRemapKeys": "167", "targetApp": "firefox.exe" },
-      { "originalKeys": "162;66", "newRemapKeys": "37", "targetApp": "msedge.exe" },
-      { "originalKeys": "162;68", "newRemapKeys": "46", "targetApp": "msedge.exe" },
-      { "originalKeys": "162;69", "newRemapKeys": "35", "targetApp": "msedge.exe" },
-      { "originalKeys": "162;79", "newRemapKeys": "36", "targetApp": "msedge.exe" },
-      { "originalKeys": "162;219", "newRemapKeys": "166", "targetApp": "msedge.exe" },
-      { "originalKeys": "162;221", "newRemapKeys": "167", "targetApp": "msedge.exe" }
-    ]
-  }
+  "remapKeys": {
+    "inProcess": [{ "originalKeys": "20", "newRemapKeys": "27" }]
+  },
+  "remapShortcuts": { "global": [], "appSpecific": [] }
 }
