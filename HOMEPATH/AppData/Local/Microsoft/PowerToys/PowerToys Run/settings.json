@@ -49,7 +49,31 @@
         "search_clicked_item_weight": 15,
         "search_query_tuning_enabled": false,
         "search_wait_for_slow_results": false,
-        "generate_thumbnails_from_files": true
+        "generate_thumbnails_from_files": true,
+        "DefaultOpenPowerLauncher": {
+            "win": false,
+            "ctrl": false,
+            "alt": true,
+            "shift": false,
+            "code": 32,
+            "key": ""
+        },
+        "DefaultOpenFileLocation": {
+            "win": false,
+            "ctrl": false,
+            "alt": false,
+            "shift": false,
+            "code": 0,
+            "key": ""
+        },
+        "DefaultCopyPathLocation": {
+            "win": false,
+            "ctrl": false,
+            "alt": false,
+            "shift": false,
+            "code": 0,
+            "key": ""
+        }
     },
     "plugins": [
         {
