@@ -1,6 +1,7 @@
 @ECHO OFF
 REM set up the local machine's dotfiles from the ~/.dotfiles directory
 REM /D -> only copy if src is newer than dest
+REM /E -> copy subdirectories, including empty ones
 REM /F -> display full path and file name of src and dest
 REM /H -> copy hidden/system files
 REM /I -> assume dest is a directory
@@ -39,6 +40,9 @@ xcopy %DOTFILES_HOMEPATH%\.config\git\git.gitconfig %HOMEPATH%\.config\git\ /D /
 xcopy %DOTFILES_HOMEPATH%\.config\git\ignore %HOMEPATH%\.config\git\ /D /F /H /I /P
 xcopy %DOTFILES_HOMEPATH%\.config\git\tools.gitconfig %HOMEPATH%\.config\git\ /D /F /H /I /P
 xcopy %DOTFILES_HOMEPATH%\.config\git\user.gitconfig %HOMEPATH%\.config\git\ /D /F /H /I /P
+
+REM ~/.gnupg
+xcopy %DOTFILES_HOMEPATH%\.fleet %HOMEPATH%\.fleet\ /D /E /F /H /I /P
 
 REM ~/.gnupg
 xcopy %DOTFILES_HOMEPATH%\.gnupg\gpg.conf %HOMEPATH%\.gnupg\ /D /F /H /I /P

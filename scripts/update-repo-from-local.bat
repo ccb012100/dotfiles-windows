@@ -1,6 +1,7 @@
 @ECHO OFF
 REM COPY DOTFILES TO .dotfiles DIRECTORY
 REM /D -> only copy if src is newer than dest
+REM /E -> copy subdirectories, including empty ones
 REM /F -> display full path and file name of src and dest
 REM /H -> copy hidden/system files
 REM /I -> assume dest is a directory
@@ -35,9 +36,15 @@ xcopy %HOMEPATH%\.config\git\tools.gitconfig %DOTFILES_HOMEPATH%\.config\git\ /D
 REM ~/.config/kmonad
 xcopy %HOMEPATH%\.config\kmonad\dell_*.kbd %DOTFILES_HOMEPATH%\.config\kmonad\ /D /F /H /I
 
+REM ~/.fleet
+xcopy %HOMEPATH%\.fleet %DOTFILES_HOMEPATH%\.fleet /D /E /F /H /I
+
 REM ~/.gnupg
 xcopy %HOMEPATH%\.gnupg\gpg.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
 xcopy %HOMEPATH%\.gnupg\gpg-agent.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
+
+REM ~/.ssh
+xcopy %HOMEPATH%\.ssh\config %DOTFILES_HOMEPATH%\.ssh\ /D /F /H /I
 
 REM GitHub CLI (gh)
 xcopy "%APPDATA%\GitHub CLI\config.yml" "%DOTFILES_HOMEPATH%\GitHub CLI\" /D /F /H /I
