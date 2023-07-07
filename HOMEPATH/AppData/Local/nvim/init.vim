@@ -1,5 +1,5 @@
-"" Vim: place in ~/.vim/vimrc
-set nocompatible    " set nocompatible must be the first line in .vimrc
+"" Neovim: place in ~/AppData/Local/nvim/init.vim
+set nocompatible    " set nocompatible must be the first line in init.vim
 scriptencoding utf-8
 filetype indent plugin on
 
@@ -69,7 +69,13 @@ set visualbell
 set wildmenu                    " visual autocomplete for the command menu
 set ww=<,>,[,],h,l,b,s          " allow cursor to wrap to previous/next line
 
-"" github.com/easymotion/vim-easymotion
+" https://github.com/junegunn/vim-plug
+call plug#begin()
+    Plug 'easymotion/vim-easymotion'
+    Plug 'tpope/vim-commentary'
+call plug#end()
+
+" vim-easymotion
 let g:EasyMotion_do_mapping = 0             " disable default mappings
 let g:EasyMotion_smartcase = 1              " case-insensitive
 let g:EasyMotion_startofline = 0            " keep cursor column when jk motion
@@ -97,7 +103,8 @@ nnoremap <BS>l <Plug>(easymotion-lineforward)
 nnoremap <BS>s <Plug>(easymotion-s2)        " 2-char search
 nnoremap <BS>W <Plug>(easymotion-w)         " word motion
 nnoremap <BS>w <Plug>(easymotion-bd-w)      " word motion
-""" use easymotion with searches
+
+"" use easymotion with searches
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
@@ -115,21 +122,11 @@ autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 syntax enable
 colorscheme habamax
 
-"" use https://github.com/nickeb96/fish.vim on fish scripts
-autocmd FileType fish colorscheme fish-default
+set viminfo+=n~/.vim/viminfo
 
-"" vim-specific
-if !has('nvim')
-    set viminfo+=n~/.vim/viminfo
-    set ttymouse=xterm2
-    "" set tmp file directories
-    set backupdir=~/.vim/.backup/,/tmp//
-    set undodir=~/.vim/.undo/,/tmp//
-else
-    "" set tmp file directories
-    set backupdir=~/.local/share/nvim//
-    set undodir=~/.local/share/nvim//
-endif
+"" set tmp file directories
+set backupdir=~/.local/share/nvim//
+set undodir=~/.local/share/nvim//
 
 "" The rest of these are copied straight from
 """ https://github.com/vim/vim/blob/master/runtime/defaults.vim
