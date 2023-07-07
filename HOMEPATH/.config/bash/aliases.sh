@@ -14,6 +14,8 @@ alias llt='ls -lt'
 alias llat='ls -Alt'
 alias tree='cmd //c tree' # use cmd.exe "tree command"
 
+alias path="tr ':' '\n' <<< \"$PATH\""
+
 alias k='git'
 alias ka='git a'
 alias kaa='git aa'
@@ -46,4 +48,4 @@ alias c.='code .' # open current directory in vscode
 alias dn=dotnet
 
 alias v=vim
-alias nvim=vim
+alias vim=nvim
