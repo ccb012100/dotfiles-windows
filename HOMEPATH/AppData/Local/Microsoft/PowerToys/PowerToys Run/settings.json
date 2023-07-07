@@ -38,7 +38,7 @@
         "override_win_r_key": false,
         "override_win_s_key": false,
         "ignore_hotkeys_in_fullscreen": false,
-        "clear_input_on_launch": false,
+        "clear_input_on_launch": true,
         "tab_selects_context_buttons": true,
         "theme": 2,
         "startupPosition": 0,
