@@ -46,8 +46,8 @@ REM NotePad++
 xcopy %APPDATA%\NotePad++\shortcuts.xml %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I
 
 REM Windows Terminal
-REM xcopy %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^
-REM	%DOTFILES_HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\ /D /F /H /I
+xcopy %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^
+%DOTFILES_HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\ /D /F /H /I
 
 @REM Neovim
 xcopy %HOMEPATH%\AppData\Local\nvim\init.vim %DOTFILES_HOMEPATH%\AppData\Local\nvim\ /D /F /H /I
