@@ -8,4 +8,4 @@ Run the `copydotfiles.bat` script to copy files from `%HOMEPATH%` into the repo'
 
 ### Run on Windows login
 
-Use **Task Scheduler** to run the [`start-kmonad.bat`](start-kmonad.bat) script on login.
+Use **Task Scheduler** to run the [`scripts/kmonad-init.bat`](scripts/kmonad-init.bat) script on login.
