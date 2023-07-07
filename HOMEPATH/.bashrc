@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
-export EDITOR="vim"
+export EDITOR="nvim"
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 eval "$(starship init bash)"
