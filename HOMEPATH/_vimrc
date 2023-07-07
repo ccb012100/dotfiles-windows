@@ -55,10 +55,4 @@ autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
 syntax enable
-"" https://github.com/morhetz/gruvbox/wiki/Installation
-"" (also needs to be installed in $HOME/vimfiles/colors/ to work with gVim)
-"" git clone https://github.com/morhetz/gruvbox.git "~\vimfiles\pack\default\start\gruvbox"
-autocmd vimenter * ++nested colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
-colorscheme gruvbox
-set background=dark " Setting dark mode
+colorscheme habamax
