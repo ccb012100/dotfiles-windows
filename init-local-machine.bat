@@ -32,9 +32,9 @@ REM ~/.config/git
 xcopy %DOTFILES_HOMEPATH%\.config\git\aliases.gitconfig %HOMEPATH%\.config\git\ /D /F /H /I /P
 xcopy %DOTFILES_HOMEPATH%\.config\git\attributes %HOMEPATH%\.config\git\ /D /F /H /I /P
 xcopy %DOTFILES_HOMEPATH%\.config\git\git.gitconfig %HOMEPATH%\.config\git\ /D /F /H /I /P
-xcopy %DOTFILES_HOMEPATH%\.config\git\github.gitconfig %HOMEPATH%\.config\git\ /D /F /H /I /P
 xcopy %DOTFILES_HOMEPATH%\.config\git\ignore %HOMEPATH%\.config\git\ /D /F /H /I /P
 xcopy %DOTFILES_HOMEPATH%\.config\git\tools.gitconfig %HOMEPATH%\.config\git\ /D /F /H /I /P
+xcopy %DOTFILES_HOMEPATH%\.config\git\user.gitconfig %HOMEPATH%\.config\git\ /D /F /H /I /P
 
 REM ~/.gnupg
 xcopy %DOTFILES_HOMEPATH%\.gnupg\gpg.conf %HOMEPATH%\.gnupg\ /D /F /H /I /P

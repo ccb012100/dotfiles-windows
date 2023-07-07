@@ -44,3 +44,6 @@ alias kunstage='git unstage'
 alias c=code
 alias c.='code .' # open current directory in vscode
 alias dn=dotnet
+
+alias v=vim
+alias nvim=vim
