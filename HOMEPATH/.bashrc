@@ -7,3 +7,6 @@ eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 
 source "$HOME"/.config/bash/*.sh
+
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
