@@ -180,7 +180,7 @@
                 "hidden": false,
                 "name": "Git Bash",
                 "source": "Git",
-                "tabColor": "#000"
+                "tabColor": "#000FFF"
             },
             {
                 "colorScheme": "Wombat",
@@ -188,7 +188,7 @@
                 "hidden": false,
                 "name": "WSL",
                 "source": "Windows.Terminal.Wsl",
-                "tabColor": "#E95420"
+                "tabColor": "#000"
             },
             {
                 "altGrAliasing": true,
@@ -642,7 +642,7 @@
             "tab": {
                 "background": "#00000000",
                 "unfocusedBackground": "#00000000",
-                "showCloseButton": "never"
+                "showCloseButton": "hover"
             },
             "tabRow": {
                 "background": "#00000000",
