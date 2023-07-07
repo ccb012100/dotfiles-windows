@@ -26,15 +26,15 @@ xcopy %HOMEPATH%\.config\bash\functions.sh %DOTFILES_HOMEPATH%\.config\bash\ /D 
 xcopy %HOMEPATH%\.config\bash\aliases.sh %DOTFILES_HOMEPATH%\.config\bash\ /D /F /H /I
 
 REM ~/.config/git
-xcopy %HOMEPATH%\.config\git\aliases.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\attributes %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\git.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\github.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\ignore %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\tools.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\aliases.gitconfig %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\attributes %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\git.gitconfig %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\github.gitconfig %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\ignore %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\tools.gitconfig %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
 
 REM ~/.config/kmonad
-xcopy %HOMEPATH%\.config\kmonad\dell_latitude.kbd %DOTFILES_HOMEPATH%\.config\kmonad\ /D /F /H /I
+xcopy %HOMEPATH%\.config\kmonad\dell_*.kbd %DOTFILES_HOMEPATH%\.config\kmonad\ /D /F /H /I
 
 REM ~/.gnupg
 xcopy %HOMEPATH%\.gnupg\gpg.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I

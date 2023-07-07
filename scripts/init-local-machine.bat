@@ -22,8 +22,12 @@ REM ~/.config
 xcopy %DOTFILES_HOMEPATH%\.config\liquidpromptrc %HOMEPATH%\.config\ /D /F /H /I /P
 xcopy %DOTFILES_HOMEPATH%\.config\starship.toml %HOMEPATH%\.config\ /D /F /H /I /P
 
+REM ~/.config/bash
+xcopy %DOTFILES_HOMEPATH%\.config\bash\aliases.sh %HOMEPATH%\.config\bash\ /D /F /H /I /P
+xcopy %DOTFILES_HOMEPATH%\.config\bash\functions.sh %HOMEPATH%\.config\bash\ /D /F /H /I /P
+
 REM ~/.config/kmonad
-xcopy %DOTFILES_HOMEPATH%\.config\kmonad\dell_latitude.kbd %HOMEPATH%\.config\kmonad\ /D /F /H /I /P
+xcopy %DOTFILES_HOMEPATH%\.config\kmonad\dell_precision.kbd %HOMEPATH%\.config\kmonad\ /D /F /H /I /P
 
 REM ~/.config/nvim
 xcopy %DOTFILES_HOMEPATH%\.config\nvim\init.vim %HOMEPATH%\.config\nvim\ /D /F /H /I /P
