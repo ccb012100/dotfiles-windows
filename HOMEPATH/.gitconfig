@@ -3,3 +3,9 @@
     path = .config/git/aliases.gitconfig
     path = .config/git/tools.gitconfig
     path = .config/git/user.gitconfig
+[fetch]
+	prune = true
+[pull]
+	rebase = false
+[http]
+	sslbackend = openssl

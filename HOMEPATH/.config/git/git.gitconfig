@@ -12,6 +12,8 @@
 	verbose = true
 [credential]
     helper = wincred
+[credential "https://dev.azure.com"]
+	usehttppath = true
 [fetch]
 	prune = true
 [filter "lfs"]
