@@ -25,4 +25,6 @@ AppData/Local/Microsoft/PowerToys/PowerToys Run/Settings/PowerToysRunSettings.js
 AppData/Local/Microsoft/PowerToys/settings.json
 AppData/Local/nvim/init.vim
 AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+AppData/Roaming/AltSnap/AltSnap.ini
 AppData/Roaming/NotePad++/shortcuts.xml
+AppData/Roaming/SoundSwitch/SoundSwitchConfiguration.json
