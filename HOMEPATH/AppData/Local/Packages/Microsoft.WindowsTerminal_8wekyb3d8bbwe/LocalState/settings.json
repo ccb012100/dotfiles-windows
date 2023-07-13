@@ -4,18 +4,6 @@
     "actions": 
     [
         {
-            "command": "unbound",
-            "keys": "ctrl+y"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+z"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+p"
-        },
-        {
             "command": 
             {
                 "action": "splitPane",
@@ -32,6 +20,18 @@
                 "splitMode": "duplicate"
             },
             "keys": "ctrl+shift+space"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+y"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+z"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+p"
         },
         {
             "command": 
@@ -70,16 +70,16 @@
             "keys": "ctrl+shift+d"
         },
         {
-            "command": "togglePaneZoom",
-            "keys": "ctrl+shift+z"
-        },
-        {
             "command": 
             {
                 "action": "moveFocus",
                 "direction": "previousInOrder"
             },
             "keys": "ctrl+shift+b"
+        },
+        {
+            "command": "togglePaneZoom",
+            "keys": "ctrl+shift+z"
         },
         {
             "command": 
@@ -98,18 +98,18 @@
         {
             "command": 
             {
-                "action": "moveFocus",
-                "direction": "nextInOrder"
-            },
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": 
-            {
                 "action": "findMatch",
                 "direction": "next"
             },
             "keys": "ctrl+s"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "nextInOrder"
+            },
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -206,7 +206,7 @@
                 "size": 11.0
             },
             "intenseTextStyle": "all",
-            "padding": "5",
+            "padding": "10",
             "scrollbarState": "hidden"
         },
         "list": 
@@ -216,22 +216,26 @@
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",
-                "source": "Git",
+                "source": "Git"
             },
             {
                 "colorScheme": "WSL",
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
                 "name": "WSL",
-                "source": "Windows.Terminal.Wsl",
+                "source": "Windows.Terminal.Wsl"
             },
             {
                 "altGrAliasing": true,
                 "colorScheme": "Cmd",
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "font": 
+                {
+                    "face": "BigBlueTermPlus Nerd Font"
+                },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "cmd.exe",
+                "name": "cmd.exe"
             },
             {
                 "altGrAliasing": true,
@@ -242,6 +246,7 @@
                 "elevate": true,
                 "font": 
                 {
+                    "face": "Fira Code Retina",
                     "size": 12.0
                 },
                 "guid": "{d5b08fdb-9a10-498a-a536-69672ac7ee1a}",
@@ -262,13 +267,14 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "colorScheme": "Ubuntu-ColorScheme",
+                "colorScheme": "Campbell Powershell",
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
             {
+                "colorScheme": "Cyberpunk",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
@@ -531,7 +537,7 @@
             "yellow": "#C18301"
         },
         {
-            "background": "#FF0000",
+            "background": "#800000",
             "black": "#000000",
             "blue": "#000080",
             "brightBlack": "#808080",
@@ -793,14 +799,14 @@
             "name": "chonk",
             "tab": 
             {
-                "background": "#FFB",
+                "background": "#FFFFBBFF",
                 "showCloseButton": "hover",
                 "unfocusedBackground": "#00000000"
             },
             "tabRow": 
             {
                 "background": "#00000000",
-                "unfocusedBackground": "#000000"
+                "unfocusedBackground": "#000000FF"
             },
             "window": 
             {
