@@ -5,6 +5,8 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
+alias back='cd -'
+
 alias ls='ls --color --block-size=K'
 alias la='ls -A'
 alias ll='ls -l'
