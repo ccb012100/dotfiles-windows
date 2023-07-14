@@ -1,0 +1,6 @@
+# shellcheck disable=all
+chocolatey/choco-installed-packages.txt
+scripts/kmonad-init.bat
+AquaSnap/AquaSnap.reg
+scripts/list-packages.sh
+winget/winget-installed-packages.txt

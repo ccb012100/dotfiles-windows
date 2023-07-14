@@ -28,7 +28,3 @@ AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settin
 AppData/Roaming/AltSnap/AltSnap.ini
 AppData/Roaming/NotePad++/shortcuts.xml
 AppData/Roaming/SoundSwitch/SoundSwitchConfiguration.json
-src/cm-notes/chocolatey/choco-installed-packages.txt
-src/cm-notes/scripts/kmonad-init.bat
-src/cm-notes/scripts/list-packages.sh
-src/cm-notes/winget/winget-installed-packages.txt
