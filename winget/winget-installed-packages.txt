@@ -1,4 +1,10 @@
-   -                                                                                                                            -                                                                                                                         Name                                     Id                                       Version              Available Source
+
+   - 
+                                                                                                                        
+
+   - 
+                                                                                                                        
+Name                                     Id                                       Version              Available Source
 -----------------------------------------------------------------------------------------------------------------------
 NVM for Windows 1.1.11                   CoreyButler.NVMforWindows                1.1.11                         winget
 Battery Percentage Icon                  61867SoleonInnovation.BatteryPercentage… 1.3.30.0                       
@@ -74,8 +80,6 @@ Microsoft Visual C++ 2013 Redistributab… Microsoft.VCRedist.2013.x64          
 ISAM ESSO AccessAgent                    {07721473-92B7-4D90-A092-E12D17EBFAC0}   08.02.20431                    
 Pegasus Software SmartScanICR 3.0        {0AA6E5C9-31CA-4F8A-BC44-A0EDA2B468C7}   3.0                            
 Microsoft .NET SDK 7.0.306 (x64) from V… {0C8B6F6E-89BE-40B5-A07D-3DF931F42AEB}   7.3.623.32203                  
-Carmax Credential Manager Client Editio… {0E7283F1-5DDC-4123-A9EB-01CC27E11990}   50.0.0                         
-Carmax Device Library                    {1570CE5F-0491-49DB-A55E-41E9439A75A8}   7.0.0                          
 Windows SDK AddOn                        {15941C7F-810D-41DF-8C5A-8D0490277AFB}   10.1.0.0                       
 Microsoft SQL Server 2019 Setup (Englis… {17DCED0E-5B27-453A-B2B4-E487B869B28A}   15.0.4013.40                   
 Teradata SQL Assistant 16.20.0.13        {188C573C-9634-46F2-A9BC-7B7369DF1620}   16.20.00.13                    
@@ -129,7 +133,6 @@ Microsoft SQL Server Management Studio … Microsoft.SQLServerManagementStudio  
 Local Administrator Password Solution    Microsoft.LAPS                           6.2.0.0                        winget
 Microsoft Visual C++ 2008 Redistributab… {9A25302D-30C0-39D9-BD6F-21E6EC160475}   9.0.30729                      
 WebPCSC                                  {9C33A615-CDA7-42C9-8008-E0A5FC51D5DA}   1.4.0.0                        
-CarMax Website Screen Capture (Machine)  {9C87B8C2-0F09-494A-BF53-97CDA22BFA25}.… 1.1.0                          
 Microsoft SQL Server 2012 Native Client  Microsoft.SQLServer2012NativeClient      11.4.7462.6                    winget
 Microsoft Visual C++ 2013 Redistributab… Microsoft.VCRedist.2013.x86              12.0.40664.0                   winget
 CrowdStrike Windows Sensor               {9ea6d923-8806-4819-a7e6-34df9e9ac2d9}   6.54.16810.0                   
@@ -144,7 +147,6 @@ Google Chrome                            Google.Chrome                          
 Microsoft Azure CLI                      Microsoft.AzureCLI                       2.50.0                         winget
 AuthenticateIT v7.0.5                    {C5BA4134-C555-436D-BE61-04F5935BFF6C}   7.0.5                          
 Microsoft Azure Libraries for .NET – v2… {C5C91AA6-3E83-430E-8B7A-6B790083F28D}   3.0.0127.060                   
-Carmax HTMLSnapshot 1.0                  {C61BE564-4A6A-477C-80BB-FCDC5DD26193}   1.0                            
 Microsoft ODBC Driver 17 for SQL Server  {CBA9B46D-5C8E-46F9-94B4-7024400EDE52}   17.10.3.1                      
 Microsoft OLE DB Driver for SQL Server   {CD711320-8704-46EF-8B09-0F40BD2A4C2F}   18.6.5.0                       
 Crystal Reports Basic Runtime for Visua… {CE26F10F-C80F-4377-908B-1B7882AE2CE3}   10.5.0.0                       
