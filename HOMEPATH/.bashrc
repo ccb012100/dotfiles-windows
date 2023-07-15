@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
-
-export EDITOR="vim"
+export EDITOR="nvim"
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
-eval "$(ssh-agent -s)" # start ssh agent
-
-# starship prompt
 eval "$(starship init bash)"
+eval "$(zoxide init bash)"
 
-source "$HOME"/.config/bash/*.sh
+source "$HOME"/.config/bash/aliases.sh
+source "$HOME"/.config/bash/functions.sh
+
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'

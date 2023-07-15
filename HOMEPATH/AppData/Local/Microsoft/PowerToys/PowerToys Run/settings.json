@@ -2,7 +2,7 @@
     "properties": {
         "search_result_preference": "most_recently_used",
         "search_type_preference": "application_name",
-        "maximum_number_of_results": 4,
+        "maximum_number_of_results": 10,
         "open_powerlauncher": {
             "win": false,
             "ctrl": true,
@@ -38,18 +38,42 @@
         "override_win_r_key": false,
         "override_win_s_key": false,
         "ignore_hotkeys_in_fullscreen": false,
-        "clear_input_on_launch": false,
+        "clear_input_on_launch": true,
         "tab_selects_context_buttons": true,
-        "theme": 0,
+        "theme": 2,
         "startupPosition": 0,
         "use_centralized_keyboard_hook": false,
         "search_query_results_with_delay": true,
         "search_input_delay": 150,
         "search_input_delay_fast": 0,
-        "search_clicked_item_weight": 5,
+        "search_clicked_item_weight": 15,
         "search_query_tuning_enabled": false,
         "search_wait_for_slow_results": false,
-        "generate_thumbnails_from_files": true
+        "generate_thumbnails_from_files": true,
+        "DefaultOpenPowerLauncher": {
+            "win": false,
+            "ctrl": false,
+            "alt": true,
+            "shift": false,
+            "code": 32,
+            "key": ""
+        },
+        "DefaultOpenFileLocation": {
+            "win": false,
+            "ctrl": false,
+            "alt": false,
+            "shift": false,
+            "code": 0,
+            "key": ""
+        },
+        "DefaultCopyPathLocation": {
+            "win": false,
+            "ctrl": false,
+            "alt": false,
+            "shift": false,
+            "code": 0,
+            "key": ""
+        }
     },
     "plugins": [
         {
@@ -57,8 +81,8 @@
             "Name": "Calculator",
             "Description": "Does mathematical calculations (e.g. 5*3-2).",
             "Author": "cxfksword",
-            "Disabled": true,
-            "IsGlobal": true,
+            "Disabled": false,
+            "IsGlobal": false,
             "ActionKeyword": "=",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Calculator\\Images\\calculator.dark.png",
@@ -67,13 +91,13 @@
                 {
                     "Key": "InputUseEnglishFormat",
                     "DisplayLabel": "Use English (United States) number format for input",
-                    "DisplayDescription": "Ignores your system setting and expects numbers in the format \u00271,000.55\u0027.",
+                    "DisplayDescription": "Ignores your system setting and expects numbers in the format '1,000.55'.",
                     "Value": false
                 },
                 {
                     "Key": "OutputUseEnglishFormat",
                     "DisplayLabel": "Use English (United States) number format for output",
-                    "DisplayDescription": "Ignores your system setting and returns numbers in the format \u00271000.55\u0027.",
+                    "DisplayDescription": "Ignores your system setting and returns numbers in the format '1000.55'.",
                     "Value": false
                 }
             ]
@@ -81,11 +105,11 @@
         {
             "Id": "B4D3B69656E14D44865C8D818EAE47C4",
             "Name": "Folder",
-            "Description": "Navigates folders starting from a drive letter \u0027C:\\\u0027 or from the user home \u0027~\u0027.",
+            "Description": "Navigates folders starting from a drive letter 'C:\\' or from the user home '~'.",
             "Author": "qianlifeng",
-            "Disabled": true,
-            "IsGlobal": true,
-            "ActionKeyword": "",
+            "Disabled": false,
+            "IsGlobal": false,
+            "ActionKeyword": "open ",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Folder\\Images\\folder.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Folder\\Images\\folder.light.png",
@@ -96,9 +120,9 @@
             "Name": "History",
             "Description": "Quick access to previously selected results.",
             "Author": "jefflord",
-            "Disabled": true,
+            "Disabled": false,
             "IsGlobal": false,
-            "ActionKeyword": "!!",
+            "ActionKeyword": "h ",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\History\\Images\\history.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\History\\Images\\history.light.png",
@@ -109,8 +133,8 @@
             "Name": "Windows Search",
             "Description": "Searches files and folders.",
             "Author": "Microsoft",
-            "Disabled": true,
-            "IsGlobal": true,
+            "Disabled": false,
+            "IsGlobal": false,
             "ActionKeyword": "?",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Indexer\\Images\\indexer.dark.png",
@@ -142,9 +166,9 @@
             "Name": "PowerToys",
             "Description": "Open PowerToys utilities and settings.",
             "Author": "davidegiacometti",
-            "Disabled": true,
-            "IsGlobal": true,
-            "ActionKeyword": "@",
+            "Disabled": false,
+            "IsGlobal": false,
+            "ActionKeyword": "pt ",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\PowerToys\\Images\\PowerToys.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\PowerToys\\Images\\PowerToys.light.png",
@@ -155,9 +179,9 @@
             "Name": "Program",
             "Description": "Searches programs.",
             "Author": "qianlifeng",
-            "Disabled": true,
-            "IsGlobal": true,
-            "ActionKeyword": ".",
+            "Disabled": false,
+            "IsGlobal": false,
+            "ActionKeyword": "p ",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Program\\Images\\app.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Program\\Images\\app.light.png",
@@ -168,9 +192,9 @@
             "Name": "Registry Plugin",
             "Description": "Navigates inside the Windows Registry.",
             "Author": "TobiasSekan",
-            "Disabled": true,
+            "Disabled": false,
             "IsGlobal": false,
-            "ActionKeyword": ":",
+            "ActionKeyword": "reg ",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Registry\\Images\\reg.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Registry\\Images\\reg.light.png",
@@ -181,9 +205,9 @@
             "Name": "Service",
             "Description": "Manages Windows services.",
             "Author": "davidegiacometti",
-            "Disabled": true,
+            "Disabled": false,
             "IsGlobal": false,
-            "ActionKeyword": "!",
+            "ActionKeyword": "svc ",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Service\\Images\\service.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Service\\Images\\service.light.png",
@@ -194,9 +218,9 @@
             "Name": "Shell",
             "Description": "Executes commands (e.g \u0027ping\u0027, \u0027cmd\u0027).",
             "Author": "qianlifeng",
-            "Disabled": true,
+            "Disabled": false,
             "IsGlobal": false,
-            "ActionKeyword": "\u003E",
+            "ActionKeyword": "cmd ",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Shell\\Images\\shell.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Shell\\Images\\shell.light.png",
@@ -205,11 +229,11 @@
         {
             "Id": "CEA08895D2544B019B2E9C5009600DF4",
             "Name": "Windows System Commands",
-            "Description": "Executes system commands (e.g. \u0027shutdown\u0027, \u0027lock\u0027, \u0027sleep\u0027).",
+            "Description": "Executes system commands (e.g. 'shutdown', 'lock', 'sleep').",
             "Author": "Wox",
-            "Disabled": true,
-            "IsGlobal": true,
-            "ActionKeyword": "",
+            "Disabled": false,
+            "IsGlobal": false,
+            "ActionKeyword": "sys ",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\System\\Images\\lock.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\System\\Images\\lock.light.png",
@@ -218,29 +242,29 @@
                     "Key": "ConfirmSystemCommands",
                     "DisplayLabel": "Show a dialog to confirm system commands",
                     "DisplayDescription": null,
-                    "Value": false
+                    "Value": true
                 },
                 {
                     "Key": "ShowSuccessOnEmptyRB",
                     "DisplayLabel": "Show a success message after emptying the Recycle Bin",
                     "DisplayDescription": null,
-                    "Value": false
+                    "Value": true
                 },
                 {
                     "Key": "LocalizeSystemCommands",
                     "DisplayLabel": "Use localized system commands instead of English ones",
                     "DisplayDescription": null,
-                    "Value": true
+                    "Value": false
                 },
                 {
                     "Key": "SeparateResultEmptyRB",
                     "DisplayLabel": "Show separate result for Empty Recycle Bin command",
                     "DisplayDescription": null,
-                    "Value": false
+                    "Value": true
                 },
                 {
                     "Key": "ReduceNetworkResultScore",
-                    "DisplayLabel": "Reduce the priority of \u0027IP\u0027 and \u0027MAC\u0027 results to improve the order in the global results",
+                    "DisplayLabel": "Reduce the priority of 'IP' and 'MAC' results to improve the order in the global results",
                     "DisplayDescription": "With this setting enabled, you have to type more characters to find the results.",
                     "Value": true
                 }
@@ -249,7 +273,7 @@
         {
             "Id": "5D69806A5A474115821C3E4C56B9C793",
             "Name": "Time and Date",
-            "Description": "Provides time and date values for the system time or a custom time stamp (Examples: \u0027Day\u0027, \u0027Day::6/20/2023\u0027, \u0027Time::1:53:59 PM\u0027, \u0027Calendar week::6/20/2023\u0027)",
+            "Description": "Provides time and date values for the system time or a custom time stamp (Examples: 'Day', 'Day::7/12/2023', 'Time::9:46:08 AM', 'Calendar week::7/12/2023')",
             "Author": "htcfreek",
             "Disabled": true,
             "IsGlobal": true,
@@ -260,25 +284,25 @@
             "AdditionalOptions": [
                 {
                     "Key": "OnlyDateTimeNowGlobal",
-                    "DisplayLabel": "Show only \u0027Time\u0027, \u0027Date\u0027 and \u0027Now\u0027 result for system time on global queries",
+                    "DisplayLabel": "Show only 'Time', 'Date' and 'Now' result for system time on global queries",
                     "DisplayDescription": "Regardless of this setting, for global queries the first word of the query has to be a complete match.",
                     "Value": true
                 },
                 {
                     "Key": "TimeWithSeconds",
                     "DisplayLabel": "Show time with seconds",
-                    "DisplayDescription": "This setting applies to the \u0027Time\u0027 and \u0027Now\u0027 result.",
+                    "DisplayDescription": "This setting applies to the 'Time' and 'Now' result.",
                     "Value": false
                 },
                 {
                     "Key": "DateWithWeekday",
                     "DisplayLabel": "Show date with weekday and name of month",
-                    "DisplayDescription": "This setting applies to the \u0027Date\u0027 and \u0027Now\u0027 result.",
+                    "DisplayDescription": "This setting applies to the 'Date' and 'Now' result.",
                     "Value": false
                 },
                 {
                     "Key": "HideNumberMessageOnGlobalQuery",
-                    "DisplayLabel": "Hide \u0027Invalid number input\u0027 error message on global queries",
+                    "DisplayLabel": "Hide 'Invalid number input' error message on global queries",
                     "DisplayDescription": null,
                     "Value": false
                 }
@@ -291,7 +315,7 @@
             "Author": "ThiefZero",
             "Disabled": true,
             "IsGlobal": false,
-            "ActionKeyword": "%%",
+            "ActionKeyword": "convert",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\UnitConverter\\Images\\unitconverter.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\UnitConverter\\Images\\unitconverter.light.png",
@@ -302,8 +326,8 @@
             "Name": "URI Handler",
             "Description": "Opens URLs and UNC network shares.",
             "Author": "Microsoft",
-            "Disabled": true,
-            "IsGlobal": true,
+            "Disabled": false,
+            "IsGlobal": false,
             "ActionKeyword": "//",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Uri\\Images\\uri.dark.png",
@@ -315,10 +339,10 @@
             "Name": "Visual Studio Code Workspaces",
             "Description": "Opens workspaces, remote machines (SSH or Codespaces) and containers, previously opened in VS Code. The VS Code instance needs to be in PATH.",
             "Author": "ricardosantos9521",
-            "Disabled": true,
+            "Disabled": false,
             "IsGlobal": false,
-            "ActionKeyword": "{",
-            "WeightBoost": 0,
+            "ActionKeyword": "v ",
+            "WeightBoost": -10,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\VSCodeWorkspace\\Images\\code-dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\VSCodeWorkspace\\Images\\code-light.png",
             "AdditionalOptions": []
@@ -328,16 +352,16 @@
             "Name": "Web Search",
             "Description": "Search the web with your default search engine.",
             "Author": "cyberrex5",
-            "Disabled": true,
-            "IsGlobal": true,
-            "ActionKeyword": "??",
+            "Disabled": false,
+            "IsGlobal": false,
+            "ActionKeyword": "web ",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WebSearch\\Images\\WebSearch.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WebSearch\\Images\\WebSearch.light.png",
             "AdditionalOptions": [
                 {
                     "Key": "NotGlobalIfUri",
-                    "DisplayLabel": "Don\u0027t include in global results on queries that are URIs",
+                    "DisplayLabel": "Don't include in global results on queries that are URIs",
                     "DisplayDescription": null,
                     "Value": false
                 }
@@ -348,9 +372,9 @@
             "Name": "Windows settings",
             "Description": "Plugin to search for Windows settings",
             "Author": "TobiasSekan",
-            "Disabled": true,
+            "Disabled": false,
             "IsGlobal": false,
-            "ActionKeyword": "$",
+            "ActionKeyword": "set",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowsSettings\\Images\\WindowsSettings.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowsSettings\\Images\\WindowsSettings.light.png",
@@ -361,9 +385,9 @@
             "Name": "Windows Terminal",
             "Description": "Open Windows Terminal profiles.",
             "Author": "davidegiacometti",
-            "Disabled": true,
-            "IsGlobal": true,
-            "ActionKeyword": "_",
+            "Disabled": false,
+            "IsGlobal": false,
+            "ActionKeyword": "sh ",
             "WeightBoost": 0,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowsTerminal\\Images\\WindowsTerminal.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowsTerminal\\Images\\WindowsTerminal.light.png",
@@ -372,19 +396,19 @@
                     "Key": "OpenNewTab",
                     "DisplayLabel": "Open profiles in a new tab",
                     "DisplayDescription": null,
-                    "Value": false
+                    "Value": true
                 },
                 {
                     "Key": "OpenQuake",
                     "DisplayLabel": "Open profiles in the quake window",
-                    "DisplayDescription": "Windows Terminal supports a \u0022quake\u0022 feature where a terminal window is accessible using a global hotkey. Enable this option to open profiles in a new tab in this window.",
+                    "DisplayDescription": "Windows Terminal supports a \"quake\" feature where a terminal window is accessible using a global hotkey. Enable this option to open profiles in a new tab in this window.",
                     "Value": false
                 },
                 {
                     "Key": "ShowHiddenProfiles",
                     "DisplayLabel": "Show hidden profiles",
                     "DisplayDescription": null,
-                    "Value": false
+                    "Value": true
                 }
             ]
         },
@@ -395,8 +419,8 @@
             "Author": "betadele",
             "Disabled": false,
             "IsGlobal": true,
-            "ActionKeyword": "\u003C",
-            "WeightBoost": 0,
+            "ActionKeyword": "w ",
+            "WeightBoost": 100,
             "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowWalker\\Images\\windowwalker.dark.png",
             "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowWalker\\Images\\windowwalker.light.png",
             "AdditionalOptions": [
@@ -433,12 +457,12 @@
                 {
                     "Key": "OpenAfterKillAndClose",
                     "DisplayLabel": "Stay open after closing windows and killing processes",
-                    "DisplayDescription": "This feature won\u0027t work if the kill process confirmation is enabled.",
+                    "DisplayDescription": "This feature won't work if the kill process confirmation is enabled.",
                     "Value": false
                 },
                 {
                     "Key": "HideKillProcessOnElevatedProcesses",
-                    "DisplayLabel": "Hide \u0022kill process\u0022 button if additional permissions required",
+                    "DisplayLabel": "Hide \"kill process\" button if additional permissions required",
                     "DisplayDescription": null,
                     "Value": false
                 },

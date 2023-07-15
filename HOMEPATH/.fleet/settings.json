@@ -1,0 +1,14 @@
+{
+    "theme": "dark_purple",
+    "autoEnabledSmartMode": true,
+    "autoSave": false,
+    "editor.softWrapEnabled": true,
+    "editor.tabLimit": 25,
+    "editor.honorCamelHumps": true,
+    "files.keyboardNavigation": "Highlight",
+    "files.toggleFolderMode": "singleClick",
+    "terminal.fontFamily": "CaskaydiaCove Nerd Font Mono",
+    "python.terminal.activateVirtualEnv": false,
+    "nodejs.terminal.addNodeModules": false,
+    "keymap": "pc"
+}

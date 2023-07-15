@@ -1,6 +1,7 @@
 @ECHO OFF
 REM COPY DOTFILES TO .dotfiles DIRECTORY
 REM /D -> only copy if src is newer than dest
+REM /E -> copy subdirectories, including empty ones
 REM /F -> display full path and file name of src and dest
 REM /H -> copy hidden/system files
 REM /I -> assume dest is a directory
@@ -19,33 +20,44 @@ xcopy %HOMEPATH%\aliases.cmd %DOTFILES_HOMEPATH%\ /D /F /H /I
 
 REM ~/.config
 xcopy %HOMEPATH%\.config\starship.toml %DOTFILES_HOMEPATH%\.config\ /D /F /H /I
-@REM xcopy %HOMEPATH%\.config\nvim\init.vim %DOTFILES_HOMEPATH%\.config\nvim\ /D /F /H /I
 
 REM ~/.config/bash
 xcopy %HOMEPATH%\.config\bash\functions.sh %DOTFILES_HOMEPATH%\.config\bash\ /D /F /H /I
 xcopy %HOMEPATH%\.config\bash\aliases.sh %DOTFILES_HOMEPATH%\.config\bash\ /D /F /H /I
 
 REM ~/.config/git
-xcopy %HOMEPATH%\.config\git\aliases.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\attributes %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\git.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\github.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\ignore %DOTFILES_HOMEPATH%\git\ /D /F /H /I
-xcopy %HOMEPATH%\.config\git\tools.gitconfig %DOTFILES_HOMEPATH%\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\aliases.gitconfig %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\attributes %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\git.gitconfig %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\github.gitconfig %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\ignore %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
+xcopy %HOMEPATH%\.config\git\tools.gitconfig %DOTFILES_HOMEPATH%\.config\git\ /D /F /H /I
 
 REM ~/.config/kmonad
-xcopy %HOMEPATH%\.config\kmonad\dell_latitude.kbd %DOTFILES_HOMEPATH%\.config\kmonad\ /D /F /H /I
+xcopy %HOMEPATH%\.config\kmonad\dell_*.kbd %DOTFILES_HOMEPATH%\.config\kmonad\ /D /F /H /I
+
+REM ~/.fleet
+xcopy %HOMEPATH%\.fleet %DOTFILES_HOMEPATH%\.fleet /D /E /F /H /I
 
 REM ~/.gnupg
 xcopy %HOMEPATH%\.gnupg\gpg.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
 xcopy %HOMEPATH%\.gnupg\gpg-agent.conf %DOTFILES_HOMEPATH%\.gnupg\ /D /F /H /I
 
+REM ~/.ssh
+xcopy %HOMEPATH%\.ssh\config %DOTFILES_HOMEPATH%\.ssh\ /D /F /H /I
+
+REM GitHub CLI (gh)
+xcopy "%APPDATA%\GitHub CLI\config.yml" "%DOTFILES_HOMEPATH%\GitHub CLI\" /D /F /H /I
+
 REM NotePad++
 xcopy %APPDATA%\NotePad++\shortcuts.xml %DOTFILES_HOMEPATH%\AppData\Roaming\NotePad++\ /D /F /H /I
 
 REM Windows Terminal
-REM xcopy %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^
-REM	%DOTFILES_HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\ /D /F /H /I
+xcopy %HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json ^
+%DOTFILES_HOMEPATH%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\ /D /F /H /I
+
+@REM Neovim
+xcopy %HOMEPATH%\AppData\Local\nvim\init.vim %DOTFILES_HOMEPATH%\AppData\Local\nvim\ /D /F /H /I
 
 REM Power Toys
 xcopy %HOMEPATH%\AppData\Local\Microsoft\PowerToys\settings.json ^

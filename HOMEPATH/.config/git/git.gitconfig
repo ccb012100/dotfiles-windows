@@ -1,17 +1,19 @@
 [advice]
 	addIgnoredFile = false
 [core]
-	editor = vim
-	autocrlf = false
-	filemode = false
 	attributesfile = ~/.config/git/attributes
+	autocrlf = false
+	editor = vim
 	excludesfile = ~/.config/git/ignore
-	#hooksPath = ~/.config/git/hooks
+	filemode = false
+	sshcommand = C:/Windows/System32/OpenSSH/ssh.exe
 [commit]
 	gpgsign = true
 	verbose = true
 [credential]
-	helper = C:/Program Files/Git/mnt/c/Program/ Files/Git/mingw64/bin/git-credential-manager.exe
+    helper = wincred
+[credential "https://dev.azure.com"]
+	usehttppath = true
 [fetch]
 	prune = true
 [filter "lfs"]
@@ -39,3 +41,5 @@
 	showUntrackedFiles = all
 [tag]
 	gpgsign = true
+[url "git@github.com:"]
+	insteadof = https://github.com/
