@@ -6,6 +6,7 @@
 	editor = vim
 	excludesfile = ~/.config/git/ignore
 	filemode = false
+	hooksPath = ~/.config/git/hooks
 	sshcommand = C:/Windows/System32/OpenSSH/ssh.exe
 [commit]
 	gpgsign = true
@@ -17,9 +18,9 @@
 [fetch]
 	prune = true
 [filter "lfs"]
+	clean = git-lfs clean -- %f
 	process = git-lfs filter-process
 	required = true
-	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [gpg]
 	format = ssh
@@ -33,8 +34,8 @@
 	ff = only
 	rebase = true
 [push]
-	default = simple
 	autoSetupRemote = true
+	default = simple
 [rebase]
 	autoStash = false
 [status]
