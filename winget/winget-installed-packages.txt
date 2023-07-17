@@ -1,10 +1,4 @@
-
-   - 
-                                                                                                                        
-
-   - 
-                                                                                                                        
-Name                                     Id                                       Version              Available Source
+   -                                                                                                                            -                                                                                                                         Name                                     Id                                       Version              Available Source
 -----------------------------------------------------------------------------------------------------------------------
 NVM for Windows 1.1.11                   CoreyButler.NVMforWindows                1.1.11                         winget
 Battery Percentage Icon                  61867SoleonInnovation.BatteryPercentage… 1.3.30.0                       
@@ -17,9 +11,9 @@ RipGrep MSVC                             BurntSushi.ripgrep.MSVC                
 Ubuntu                                   Canonical.Ubuntu.2204                    2204.2.33.0                    winget
 Cisco AnyConnect Secure Mobility Client  Cisco AnyConnect Secure Mobility Client  4.10.07061                     
 Citrix Workspace 2305                    Citrix.Workspace                         23.5.1.83                      winget
-Firefox Developer Edition (x64 en-US)    Mozilla.Firefox.DeveloperEdition         116.0                116.0b4   winget
+Firefox Developer Edition (x64 en-US)    Mozilla.Firefox.DeveloperEdition         116.0                116.0b6   winget
 GitHub Desktop                           GitHub.GitHubDesktop                     3.2.6                          winget
-Git                                      Git.Git                                  2.41.0.2                       winget
+Git                                      Git.Git                                  2.41.0.3                       winget
 Hack Fonts version 1.6.0                 SourceFoundry.HackFonts                  1.6.0                          winget
 Link Shell Extension                     HermannSchinagl.LinkShellExtension       3.9.3.5                        winget
 Haskell Stack                            commercialhaskell.stack                  2.11.1                         winget
@@ -27,16 +21,16 @@ Informatica 10.5.2 Client                Informatica 10.5.2 Client              
 KeePass Password Safe 2.54               DominikReichl.KeePass                    2.54                           winget
 Logi Bolt                                Logitech.LogiBolt                        1.2.6024.0                     winget
 Microsoft Azure Compute Emulator - v2.9… Microsoft Azure Compute Emulator - v2.9… 2.9.8999.43                    
-Microsoft Edge                           Microsoft.Edge                           114.0.1823.79                  winget
+Microsoft Edge                           Microsoft.Edge                           114.0.1823.82                  winget
 Microsoft Edge Update                    Microsoft Edge Update                    1.3.177.11                     
-Microsoft Edge WebView2 Runtime          Microsoft.EdgeWebView2Runtime            114.0.1823.79                  winget
+Microsoft Edge WebView2 Runtime          Microsoft.EdgeWebView2Runtime            114.0.1823.82                  winget
 Microsoft Help Viewer 2.3                Microsoft Help Viewer 2.3                2.3.28307                      
 Microsoft SQL Server 2019 (64-bit)       Microsoft SQL Server SQL2019             Unknown                        
 Microsoft Visual Studio 2010 Tools for … Microsoft Visual Studio 2010 Tools for … 10.0.60724                     
 App Installer                            Microsoft.DesktopAppInstaller_8wekyb3d8… 1.20.1572.0                    
 HEIF Image Extensions                    Microsoft.HEIFImageExtension_8wekyb3d8b… 1.0.61171.0                    
 Paint 3D                                 Microsoft.MSPaint_8wekyb3d8bbwe          6.2305.16087.0                 
-Microsoft Edge                           Microsoft.MicrosoftEdge.Stable_8wekyb3d… 114.0.1823.79                  
+Microsoft Edge                           Microsoft.MicrosoftEdge.Stable_8wekyb3d… 114.0.1823.82                  
 Microsoft Sticky Notes                   Microsoft.MicrosoftStickyNotes_8wekyb3d… 4.6.0.0                        
 NuGet CLI                                Microsoft.NuGet                          6.5.0.154                      winget
 Snip & Sketch                            Microsoft.ScreenSketch_8wekyb3d8bbwe     10.2008.3001.0                 
@@ -51,7 +45,7 @@ Windows Calculator                       Microsoft.WindowsCalculator_8wekyb3d8bb
 Windows Voice Recorder                   Microsoft.WindowsSoundRecorder_8wekyb3d… 10.2103.28.0                   
 Microsoft Store                          Microsoft.WindowsStore_8wekyb3d8bbwe     22306.1401.1.0                 
 Windows Terminal                         Microsoft.WindowsTerminal                1.17.11461.0                   winget
-Windows Package Manager Source (winget)  Microsoft.Winget.Source_8wekyb3d8bbwe    2023.713.1755.865              
+Windows Package Manager Source (winget)  Microsoft.Winget.Source_8wekyb3d8bbwe    2023.717.1709.737              
 Windows Subsystem for Linux              MicrosoftCorporationII.WindowsSubsystem… 1.2.5.0                        
 Mozilla Maintenance Service              MozillaMaintenanceService                115.0.1                        
 Notepad++ (64-bit x64)                   Notepad++.Notepad++                      8.5.4                          winget
@@ -73,6 +67,7 @@ HTTPie 2023.3.0                          HTTPie.HTTPie                          
 cURL                                     cURL.cURL                                8.1.2                          winget
 Clink v0.4.9                             clink_0.4.9                              0.4.9                          
 tealdeer                                 dbrgn.tealdeer                           1.6.1                          winget
+Insomnia                                 Insomnia.Insomnia                        2023.4.0                       winget
 less                                     jftuga.less                              633                            winget
 jq                                       jqlang.jq                                1.6                            winget
 YubiKey Manager                          Yubico.YubikeyManager                    1.2.4                          winget
@@ -104,7 +99,9 @@ Microsoft .NET Runtime - 6.0.20 (x64)    Microsoft.DotNet.Runtime.6             
 Microsoft Visual C++ 2015-2022 Redistri… {410c0ee1-00bb-41b6-9772-e12c2828b02f}   14.36.32532.0                  
 PowerShell 7-x64                         Microsoft.PowerShell                     7.3.5.0                        winget
 Pegasus Imaging ImagXpress 8.0           {455D7A63-5BCA-462E-9F15-A62A82CEA5C3}   8.0.23                         
+GitHub CLI                               GitHub.cli                               2.32.0                         winget
 Git Town                                 {46D42E43-F071-42B4-B49D-0EB2AE14D6F6}   9.0.0                          
+Auto Dark Mode                           XP8JK4HZBVF435                           10.3.0.90                      winget
 PowerToys (Preview) x64                  Microsoft.PowerToys                      0.71.0                         winget
 ISIS Driver Bundle Installer for fi Ser… {4B07E034-8AC7-4960-83A2-98EC96750CD6}   1.1.11206.21002                
 Pegasus Imaging SmartScan Xpress Barcod… {4B92D48A-D8C4-4AB5-B953-134EF28F75F4}   4.0.31                         
@@ -153,7 +150,6 @@ Crystal Reports Basic Runtime for Visua… {CE26F10F-C80F-4377-908B-1B7882AE2CE3
 Microsoft Build of OpenJDK with Hotspot… Microsoft.OpenJDK.11                     11.0.19.7                      winget
 Printer Abstraction - limited C++ 5.0 (… {D99FD10D-585C-426D-9C7F-328845636092}   12.11.05                       
 IDEMIA Minidriver for PIV/CIV (64-bit)   {DFA00752-045C-4A42-8C96-5826292261B1}   1.2.8                          
-GitHub CLI                               GitHub.cli                               2.31.0               2.32.0    winget
 Microsoft Visual Studio Code             Microsoft.VisualStudioCode               1.80.1                         winget
 Microsoft Visual C++ 2010  x86 Redistri… Microsoft.VCRedist.2010.x86              10.0.40219                     winget
 Teradata Tools and Utilities - Base 17.… {F1847ED2-DBF5-45D1-98C9-0F634A3D1710}   17.10.21.00                    

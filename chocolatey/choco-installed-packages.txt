@@ -40,7 +40,3 @@ vcredist2017 14.16.27033
 zoxide 0.9.1
 zstandard 1.5.0
 40 packages installed.
-
-Did you know Pro / Business automatically syncs with Programs and
- Features? Learn more about Package Synchronizer at
- https://chocolatey.org/compare
