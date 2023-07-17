@@ -1,0 +1,100 @@
+AutoThemeSwitchingEnabled: true
+Governor: Default
+Autostart:
+  Validate: true
+WindowsThemeMode:
+  Enabled: false
+  DarkThemePath: 
+  LightThemePath: 
+  MonitorActiveTheme: false
+  ApplyFlags: []
+AppsSwitch:
+  Enabled: true
+  Component:
+    Mode: Switch
+SystemSwitch:
+  Enabled: true
+  Component:
+    Mode: Switch
+    TaskbarSwitchDelay: 1200
+    TaskbarColorOnAdaptive: true
+    TaskbarColorWhenNonAdaptive: Light
+    DWMPrevalenceSwitch: false
+    DWMPrevalenceEnableTheme: Light
+ColorFilterSwitch:
+  Enabled: false
+  Component: {}
+OfficeSwitch:
+  Enabled: false
+  Component:
+    Mode: Switch
+    LightTheme: 0
+    DarkTheme: 4
+Sunrise: 2023-07-17T07:00:00.0000000
+Sunset: 2023-07-17T20:00:00.0000000
+Location:
+  PollingCooldownTimeSpan: 1.00:00:00
+  Enabled: true
+  UseGeolocatorService: true
+  SunsetOffsetMin: 0
+  SunriseOffsetMin: 0
+  CustomLat: 0
+  CustomLon: 0
+Tunable:
+  BatterySliderDefaultValue: 25
+  DisableEnergySaverOnThemeSwitch: false
+  UseLogonTask: false
+  Debug: false
+  Trace: false
+  DebugTimerMessage: false
+  ShowTrayIcon: true
+  UICulture: en
+GPUMonitoring:
+  Enabled: false
+  Threshold: 30
+  MonitorTimeSpanMin: 1
+  Samples: 1
+Events:
+  DarkThemeOnBattery: false
+  Win10AllowLockscreenSwitch: true
+Notifications:
+  OnAutoThemeSwitching: true
+  OnSkipNextSwitch: true
+AutoSwitchNotify:
+  Enabled: true
+  GracePeriodMinutes: 5
+Hotkeys:
+  Enabled: false
+  ForceLight: 
+  ForceDark: 
+  NoForce: 
+  ToggleTheme: 
+  TogglePostpone: 
+  ToggleAutoThemeSwitch: 
+IdleChecker:
+  Enabled: false
+  Threshold: 5
+WallpaperSwitch:
+  Enabled: false
+  Component:
+    TypeLight: Individual
+    TypeDark: Individual
+    Position: Fill
+    GlobalWallpaper:
+      Light: 
+      Dark: 
+    SolidColors:
+      Light: '#FFFFFF'
+      Dark: '#000000'
+    Monitors: []
+Updater:
+  AutoInstall: true
+  Enabled: true
+  Silent: false
+  DaysBetweenUpdateCheck: 7
+  CheckOnStart: true
+  VersionQueryUrl: 
+  DownloadBaseUrl: 
+  ZipCustomUrl: 
+  HashCustomUrl: 
+
