@@ -1,26 +1,7 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+enter"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+space"
-        },
+    "actions": [
         {
             "command": "unbound",
             "keys": "ctrl+y"
@@ -34,86 +15,91 @@
             "keys": "ctrl+p"
         },
         {
-            "command": 
-            {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+enter"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+shift+space"
+        },
+        {
+            "command": {
                 "action": "swapPane",
                 "direction": "previousInOrder"
             },
             "keys": "alt+shift+;"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "commandPalette"
             },
             "keys": "shift+space"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "commandPalette"
             },
             "keys": "ctrl+space"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "scrollDown"
             },
             "keys": "ctrl+shift+j"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "scrollDown"
             },
             "keys": "ctrl+shift+d"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "previousInOrder"
-            },
-            "keys": "ctrl+shift+b"
         },
         {
             "command": "togglePaneZoom",
             "keys": "ctrl+shift+z"
         },
         {
-            "command": 
-            {
+            "command": {
+                "action": "moveFocus",
+                "direction": "previousInOrder"
+            },
+            "keys": "ctrl+shift+b"
+        },
+        {
+            "command": {
                 "action": "scrollUp"
             },
             "keys": "ctrl+shift+k"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "scrollUp"
             },
             "keys": "ctrl+shift+u"
         },
         {
-            "command": 
-            {
-                "action": "findMatch",
-                "direction": "next"
-            },
-            "keys": "ctrl+s"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "moveFocus",
                 "direction": "nextInOrder"
             },
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
-            {
+            "command": {
+                "action": "findMatch",
+                "direction": "next"
+            },
+            "keys": "ctrl+s"
+        },
+        {
+            "command": {
                 "action": "moveTab",
                 "direction": "backward"
             },
@@ -128,8 +114,7 @@
             "keys": "ctrl+shift+'"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "moveTab",
                 "direction": "forward"
             },
@@ -140,16 +125,14 @@
             "keys": "ctrl+shift+w"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "findMatch",
                 "direction": "prev"
             },
             "keys": "ctrl+r"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "renameTab"
             },
             "keys": "ctrl+f2"
@@ -159,23 +142,20 @@
             "keys": "ctrl+shift+t"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "swapPane",
                 "direction": "nextInOrder"
             },
             "keys": "ctrl+shift+;"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "prevTab"
             },
             "keys": "ctrl+shift+comma"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "nextTab"
             },
             "keys": "ctrl+shift+period"
@@ -185,23 +165,19 @@
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "altGrAliasing": false,
             "antialiasingMode": "cleartype",
             "bellStyle": "window",
             "closeOnExit": "graceful",
             "colorScheme": "Tango Dark",
-            "font": 
-            {
+            "font": {
                 "face": "CaskaydiaCove Nerd Font Mono",
                 "size": 11.0
             },
@@ -209,8 +185,7 @@
             "padding": "10",
             "scrollbarState": "hidden"
         },
-        "list": 
-        [
+        "list": [
             {
                 "colorScheme": "Synthwave",
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
@@ -228,9 +203,8 @@
             {
                 "altGrAliasing": true,
                 "colorScheme": "Cmd",
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
-                "font": 
-                {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe /k aliases.cmd",
+                "font": {
                     "face": "Cascadia Mono",
                     "size": 12.0
                 },
@@ -245,8 +219,7 @@
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "cursorShape": "bar",
                 "elevate": true,
-                "font": 
-                {
+                "font": {
                     "face": "Fira Code Retina",
                     "size": 12.0
                 },
@@ -282,8 +255,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -794,84 +766,71 @@
     "tabSwitcherMode": "disabled",
     "tabWidthMode": "titleLength",
     "theme": "chonk",
-    "themes": 
-    [
+    "themes": [
         {
             "name": "chonk",
-            "tab": 
-            {
+            "tab": {
                 "background": "#FFFFBBFF",
                 "showCloseButton": "hover",
                 "unfocusedBackground": "#00000000"
             },
-            "tabRow": 
-            {
+            "tabRow": {
                 "background": "#00000000",
                 "unfocusedBackground": "#000000FF"
             },
-            "window": 
-            {
+            "window": {
                 "applicationTheme": "dark",
                 "useMica": true
             }
         },
         {
             "name": "legacyDark",
-            "tab": 
-            {
+            "tab": {
                 "background": null,
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "window": 
-            {
+            "window": {
                 "applicationTheme": "dark",
                 "useMica": false
             }
         },
         {
             "name": "legacyLight",
-            "tab": 
-            {
+            "tab": {
                 "background": null,
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "window": 
-            {
+            "window": {
                 "applicationTheme": "light",
                 "useMica": false
             }
         },
         {
             "name": "legacySystem",
-            "tab": 
-            {
+            "tab": {
                 "background": null,
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "window": 
-            {
+            "window": {
                 "applicationTheme": "system",
                 "useMica": false
             }
         },
         {
             "name": "underConstruction",
-            "tab": 
-            {
+            "tab": {
                 "background": "#FFFF00FF",
                 "showCloseButton": "never",
                 "unfocusedBackground": "#88440088"
             },
-            "tabRow": 
-            {
+            "tabRow": {
                 "background": "#FF8800FF",
                 "unfocusedBackground": "#202020FF"
             },
-            "window": 
-            {
+            "window": {
                 "applicationTheme": "light",
                 "useMica": true
             }
