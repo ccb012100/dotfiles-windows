@@ -352,6 +352,54 @@
       "SwitchForegroundApp": true,
       "NotifyOnActivation": true,
       "RestoreDevices": true
+    },
+    {
+      "Playback": {
+        "IconPath": "C:\\Windows\\System32\\DDORes.dll,12",
+        "State": 1,
+        "Name": "Speakers (Realtek(R) Audio)",
+        "Id": "{0.0.0.00000000}.{a4bd7f41-24b7-4c8c-8aed-ee09437cd8f4}",
+        "Type": 0,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.4346583Z",
+        "NameClean": "Speakers (Realtek(R) Audio)"
+      },
+      "Communication": {
+        "IconPath": "C:\\Windows\\System32\\DDORes.dll,12",
+        "State": 1,
+        "Name": "Speakers (Realtek(R) Audio)",
+        "Id": "{0.0.0.00000000}.{a4bd7f41-24b7-4c8c-8aed-ee09437cd8f4}",
+        "Type": 0,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.4346583Z",
+        "NameClean": "Speakers (Realtek(R) Audio)"
+      },
+      "Recording": {
+        "IconPath": "%windir%\\system32\\mmres.dll,-3014",
+        "State": 1,
+        "Name": "Microphone (Realtek(R) Audio)",
+        "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
+        "Type": 1,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.8103345Z",
+        "NameClean": "Microphone (Realtek(R) Audio)"
+      },
+      "RecordingCommunication": {
+        "IconPath": "%windir%\\system32\\mmres.dll,-3014",
+        "State": 1,
+        "Name": "Microphone (Realtek(R) Audio)",
+        "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
+        "Type": 1,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.8103345Z",
+        "NameClean": "Microphone (Realtek(R) Audio)"
+      },
+      "Name": "Laptop speakers",
+      "Triggers": [{ "Type": 0, "HotKey": { "Keys": 52, "Modifier": 7, "Enabled": true }, "ShouldRestoreDevices": false }],
+      "AlsoSwitchDefaultDevice": true,
+      "SwitchForegroundApp": true,
+      "NotifyOnActivation": true,
+      "RestoreDevices": true
     }
   ],
   "MigratedFields": [
