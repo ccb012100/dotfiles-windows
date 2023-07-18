@@ -4,6 +4,8 @@ set DOTFILES=%HOMEPATH%\.dotfiles\
 
 doskey ls=dir
 
+doskey cdh=cd %USERPROFILE%
+
 doskey k=git $*
 doskey cb=cargo build $*
 doskey cc=cargo check $*
