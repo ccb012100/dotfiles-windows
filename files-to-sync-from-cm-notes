@@ -1,6 +1,6 @@
 # shellcheck disable=all
-AquaSnap/AquaSnap.reg
-chocolatey/choco-installed-packages.txt
+applications/AquaSnap/AquaSnap.reg
+applications/chocolatey/packages.txt
+applications/winget/packages.txt
 scripts/kmonad-init.bat
 scripts/list-packages.sh
-winget/winget-installed-packages.txt
