@@ -1,4 +1,4 @@
-   -                                                                                                                            -                                                                                                                         Name                                     Id                                       Version              Available Source
+   -    \                                                                                                                            -                                                                                                                         Name                                     Id                                       Version              Available Source
 -----------------------------------------------------------------------------------------------------------------------
 NVM for Windows 1.1.11                   CoreyButler.NVMforWindows                1.1.11                         winget
 Battery Percentage Icon                  61867SoleonInnovation.BatteryPercentage… 1.3.30.0                       
@@ -34,7 +34,7 @@ Microsoft Edge                           Microsoft.MicrosoftEdge.Stable_8wekyb3d
 Microsoft Sticky Notes                   Microsoft.MicrosoftStickyNotes_8wekyb3d… 4.6.0.0                        
 NuGet CLI                                Microsoft.NuGet                          6.5.0.154                      winget
 Snip & Sketch                            Microsoft.ScreenSketch_8wekyb3d8bbwe     10.2008.3001.0                 
-Store Experience Host                    Microsoft.StorePurchaseApp_8wekyb3d8bbwe 22305.1401.2.0                 
+Store Experience Host                    Microsoft.StorePurchaseApp_8wekyb3d8bbwe 22305.1401.5.0                 
 Microsoft To Do                          Microsoft.Todos_8wekyb3d8bbwe            2.100.61791.0                  
 VP9 Video Extensions                     Microsoft.VP9VideoExtensions_8wekyb3d8b… 1.0.61591.0                    
 Web Media Extensions                     Microsoft.WebMediaExtensions_8wekyb3d8b… 1.0.61591.0                    
@@ -45,7 +45,7 @@ Windows Calculator                       Microsoft.WindowsCalculator_8wekyb3d8bb
 Windows Voice Recorder                   Microsoft.WindowsSoundRecorder_8wekyb3d… 10.2103.28.0                   
 Microsoft Store                          Microsoft.WindowsStore_8wekyb3d8bbwe     22306.1401.1.0                 
 Windows Terminal                         Microsoft.WindowsTerminal                1.17.11461.0                   winget
-Windows Package Manager Source (winget)  Microsoft.Winget.Source_8wekyb3d8bbwe    2023.717.1709.737              
+Windows Package Manager Source (winget)  Microsoft.Winget.Source_8wekyb3d8bbwe    2023.718.1508.177              
 Windows Subsystem for Linux              MicrosoftCorporationII.WindowsSubsystem… 1.2.5.0                        
 Mozilla Maintenance Service              MozillaMaintenanceService                115.0.1                        
 Notepad++ (64-bit x64)                   Notepad++.Notepad++                      8.5.4                          winget
@@ -59,7 +59,7 @@ Rustup: the Rust toolchain installer     Rustlang.Rustup                        
 SDK for SAP Adaptive Server Enterprise   SDK for SAP Adaptive Server Enterprise   16.0.20.500                    
 Software Operation Panel                 Software Operation Panel                 Unknown                        
 SoundSwitch 6.7.2.0                      AntoineAflalo.SoundSwitch                6.7.2.0                        winget
-Spotify                                  Spotify.Spotify                          1.2.15.828.g79f41970           winget
+Spotify                                  Spotify.Spotify                          1.2.15.828.g79f41970 1.2.16.9… winget
 SumatraPDF                               SumatraPDF.SumatraPDF                    3.4.6                          winget
 Microsoft Teams                          Microsoft.Teams                          1.6.00.18681                   winget
 Zscaler                                  Zscaler                                  3.7.1.54                       
@@ -97,7 +97,7 @@ Pegasus Imaging's ISIS® Xpress 2.0       {3E17F5E9-57A1-4DD7-8134-4FC6FD2E3913}
 Python 3.11.4 (64-bit)                   {3d45edf4-44bb-483f-9e08-43c38c81e118}   3.11.4150.0                    
 Microsoft .NET Runtime - 6.0.20 (x64)    Microsoft.DotNet.Runtime.6               6.0.20                         winget
 Microsoft Visual C++ 2015-2022 Redistri… {410c0ee1-00bb-41b6-9772-e12c2828b02f}   14.36.32532.0                  
-PowerShell 7-x64                         Microsoft.PowerShell                     7.3.5.0                        winget
+PowerShell 7-x64                         Microsoft.PowerShell                     7.3.5.0              7.3.6.0   winget
 Pegasus Imaging ImagXpress 8.0           {455D7A63-5BCA-462E-9F15-A62A82CEA5C3}   8.0.23                         
 GitHub CLI                               GitHub.cli                               2.32.0                         winget
 Git Town                                 {46D42E43-F071-42B4-B49D-0EB2AE14D6F6}   9.0.0                          
