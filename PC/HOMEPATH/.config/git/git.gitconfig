@@ -3,7 +3,6 @@
 [core]
 	attributesfile = ~/.config/git/attributes
 	autocrlf = false
-	editor = vim
 	excludesfile = ~/.config/git/ignore
 	filemode = false
 	sshcommand = C:/Windows/System32/OpenSSH/ssh.exe
