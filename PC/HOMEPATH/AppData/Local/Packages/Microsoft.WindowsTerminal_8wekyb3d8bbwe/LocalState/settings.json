@@ -41,7 +41,7 @@
             "command": {
                 "action": "commandPalette"
             },
-            "keys": "shift+space"
+            "keys": "ctrl+;"
         },
         {
             "command": {
@@ -147,18 +147,6 @@
                 "direction": "nextInOrder"
             },
             "keys": "ctrl+shift+;"
-        },
-        {
-            "command": {
-                "action": "prevTab"
-            },
-            "keys": "ctrl+shift+comma"
-        },
-        {
-            "command": {
-                "action": "nextTab"
-            },
-            "keys": "ctrl+shift+period"
         }
     ],
     "alwaysShowNotificationIcon": false,
