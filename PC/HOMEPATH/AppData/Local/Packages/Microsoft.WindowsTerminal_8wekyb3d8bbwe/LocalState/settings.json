@@ -3,6 +3,28 @@
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": [
         {
+            "command": {
+                "action": "globalSummon"
+            },
+            "keys": "ctrl+alt+shift+j"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "profile": "Git Bash"
+            },
+            "keys": "ctrl+shift+space"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "profile": "WSL"
+            },
+            "keys": "ctrl+shift+enter"
+        },
+        {
             "command": "unbound",
             "keys": "ctrl+y"
         },
@@ -15,33 +37,12 @@
             "keys": "ctrl+p"
         },
         {
-            "command": {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+enter"
+            "command": "unbound",
+            "keys": "ctrl+,"
         },
         {
-            "command": {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "ctrl+shift+space"
-        },
-        {
-            "command": {
-                "action": "swapPane",
-                "direction": "previousInOrder"
-            },
-            "keys": "alt+shift+;"
-        },
-        {
-            "command": {
-                "action": "commandPalette"
-            },
-            "keys": "ctrl+;"
+            "command": "unbound",
+            "keys": "ctrl+shift+,"
         },
         {
             "command": {
@@ -62,17 +63,6 @@
             "keys": "ctrl+shift+d"
         },
         {
-            "command": "togglePaneZoom",
-            "keys": "ctrl+shift+z"
-        },
-        {
-            "command": {
-                "action": "moveFocus",
-                "direction": "previousInOrder"
-            },
-            "keys": "ctrl+shift+b"
-        },
-        {
             "command": {
                 "action": "scrollUp"
             },
@@ -87,9 +77,13 @@
         {
             "command": {
                 "action": "moveFocus",
-                "direction": "nextInOrder"
+                "direction": "previousInOrder"
             },
-            "keys": "ctrl+shift+f"
+            "keys": "ctrl+shift+b"
+        },
+        {
+            "command": "togglePaneZoom",
+            "keys": "ctrl+shift+z"
         },
         {
             "command": {
@@ -100,10 +94,17 @@
         },
         {
             "command": {
+                "action": "moveFocus",
+                "direction": "nextInOrder"
+            },
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": {
                 "action": "moveTab",
                 "direction": "backward"
             },
-            "keys": "alt+shift+comma"
+            "keys": "ctrl+shift+9"
         },
         {
             "command": "closeWindow",
@@ -111,14 +112,14 @@
         },
         {
             "command": "toggleSplitOrientation",
-            "keys": "ctrl+shift+'"
+            "keys": "ctrl+shift+;"
         },
         {
             "command": {
                 "action": "moveTab",
                 "direction": "forward"
             },
-            "keys": "alt+shift+period"
+            "keys": "ctrl+shift+0"
         },
         {
             "command": "closePane",
@@ -144,9 +145,30 @@
         {
             "command": {
                 "action": "swapPane",
-                "direction": "nextInOrder"
+                "direction": "up"
             },
-            "keys": "ctrl+shift+;"
+            "keys": "alt+shift+i"
+        },
+        {
+            "command": {
+                "action": "swapPane",
+                "direction": "down"
+            },
+            "keys": "alt+shift+k"
+        },
+        {
+            "command": {
+                "action": "swapPane",
+                "direction": "left"
+            },
+            "keys": "alt+shift+j"
+        },
+        {
+            "command": {
+                "action": "swapPane",
+                "direction": "right"
+            },
+            "keys": "alt+shift+l"
         }
     ],
     "alwaysShowNotificationIcon": false,
@@ -751,6 +773,7 @@
             "yellow": "#EBD99C"
         }
     ],
+    "startOnUserLogin": true,
     "tabSwitcherMode": "disabled",
     "tabWidthMode": "titleLength",
     "theme": "chonk",
