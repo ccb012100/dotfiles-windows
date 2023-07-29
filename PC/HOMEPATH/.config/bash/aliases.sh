@@ -18,7 +18,7 @@ alias tree='cmd //c tree' # use cmd.exe "tree command"
 
 alias path="tr ':' '\n' <<< \"$PATH\""
 
-alias k='git'
+alias k=git
 alias ka='git a'
 alias kaa='git aa'
 alias kaacm='git aacm'
