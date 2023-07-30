@@ -3,13 +3,11 @@
 	## add
 	a       = add
 	aa      = ! git add --all && git s
-	aacm    = ! git add add --all && git commit
-	acm     = ! git add --update && git commit
+	aac     = ! git add add --all && git commit
+	ac      = ! git add --update && git commit
 	ai      = add --all --interactive
 	au      = ! git add --update && git s
-	aucm    = ! git add --update && git commit
-
-	alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
+	auc     = ! git add --update && git commit
 
 	## branch
 	b       = branch
@@ -27,8 +25,7 @@
 	ca      = commit --amend
 	call    = commit --all
 	can     = ca --no-edit
-	cm      = commit -m
-	cmnv    = cm --no-verify
+	cnv     = commit --no-verify
 	cp      = cherry-pick
 
 	## checkout
@@ -100,8 +97,6 @@
 	unstage = restore --staged
 	rest    = restore
 
-	sbs = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
-
 	## stash
 	pop       = stash pop
 	stash-all = stash push --include-untracked # *not* stash push --all, which includes ignored files
@@ -118,7 +113,9 @@
 	t               = current-tags
 
 	## misc
+	alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
 	chx     = update-index --chmod=+x
 	fg      = forgit
+	sbs = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
 	swc     = switch --create # create new branch and switch to it
 	update  = ! git fetch origin $1:$1 # update local branch from origin without checking it out
