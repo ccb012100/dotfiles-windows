@@ -10,8 +10,3 @@ repo_homepath="$git_dir/HOMEPATH"
 # --verbose --dry-run \ # move to line 12 for dry run
 rsync --relative --dirs --recursive --times --progress \
     --files-from=files-to-sync-from-home "$win_homepath/" "$repo_homepath"
-
-# --verbose --dry-run \
-rsync --relative --dirs --recursive --times --progress \
-    --files-from=files-to-sync-from-cm-notes \
-    "$win_homepath/src/cm-notes/sync/" "$git_dir"
