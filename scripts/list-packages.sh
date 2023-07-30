@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-winget list >|"$HOME"/src/cm-notes/winget/winget-installed-packages.txt
-choco list >|"$HOME"/src/cm-notes/chocolatey/choco-installed-packages.txt
+DOTFILES="$HOME/.dotfiles"
+winget list >|"$DOTFILES"/winget/winget-installed-packages.txt
+choco list >|"$DOTFILES"/chocolatey/choco-installed-packages.txt
