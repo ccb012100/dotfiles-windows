@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-git_dir="$HOME/src/windows-dotfiles"
+git_dir="$HOME/src/dotfiles-windows"
 win_homepath="$HOME/win" # `~/win` is symlinked to `/mnt/c/Users/<user_name>`
 repo_homepath="$git_dir/HOMEPATH"
 
