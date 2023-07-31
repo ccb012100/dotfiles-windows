@@ -83,16 +83,21 @@
 	publish = push -v --set-upstream origin HEAD
 
 	## rebase
-	r       = rebase
-	ra      = rebase --abort
-	rc      = rebase --continue
-	ri      = rebase --interactive
+	r			= rebase
+	ra      	= rebase --abort
+	rc      	= rebase --continue
+    remain   	= rebase --interactive origin/main
+    remaster 	= rebase --interactive origin/master
+	reorigin	= ! git rebase --interactive origin/`git branch --show-current`
+	ri      	= rebase --interactive
 
 	## reset
-	resets  = reset --soft
-	reseth  = reset --hard
-	undo    = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
-	unwind  = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
+    rt   	= reset
+    rtm  	= reset --mixed
+    rts  	= reset --soft
+    rth  	= reset --hard
+    undo    = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
+    unwind  = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
 
 	## restore
 	uns     = unstage
