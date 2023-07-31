@@ -3,11 +3,11 @@
 	## add
 	a       = add
 	aa      = ! git add --all && git s
-	aacm    = ! git add add --all && git commit
-	acm     = ! git add --update && git commit
+	aac     = ! git add add --all && git commit
+	ac      = ! git add --update && git commit
 	ai      = add --all --interactive
 	au      = ! git add --update && git s
-	aucm    = ! git add --update && git commit
+	auc     = ! git add --update && git commit
 
 	alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
 
@@ -28,8 +28,7 @@
 	ca      = commit --amend
 	call    = commit --all
 	can     = ca --no-edit
-	cm      = commit -m
-	cmnv    = cm --no-verify
+	cnv     = c --no-verify
 	cp      = cherry-pick
 
 	## checkout
