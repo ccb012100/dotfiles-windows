@@ -23,7 +23,7 @@ Logi Bolt                             Logitech.LogiBolt                      1.2
 Microsoft Azure Compute Emulator - v… Microsoft Azure Compute Emulator - v2… 2.9.8999.43
 Microsoft Edge                        Microsoft.Edge                         114.0.1823.90        115.0.1901.183 winget
 Microsoft Edge Update                 Microsoft Edge Update                  1.3.177.11
-Microsoft Edge WebView2 Runtime       Microsoft.EdgeWebView2Runtime          115.0.1901.183                      winget
+Microsoft Edge WebView2 Runtime       Microsoft.EdgeWebView2Runtime          115.0.1901.188                      winget
 Microsoft Help Viewer 2.3             Microsoft Help Viewer 2.3              2.3.28307
 Microsoft SQL Server 2019 (64-bit)    Microsoft SQL Server SQL2019           Unknown
 Microsoft Visual Studio 2010 Tools f… Microsoft Visual Studio 2010 Tools fo… 10.0.60724
@@ -45,8 +45,9 @@ Windows Calculator                    Microsoft.WindowsCalculator_8wekyb3d8… 1
 Windows Voice Recorder                Microsoft.WindowsSoundRecorder_8wekyb… 10.2103.28.0
 Microsoft Store                       Microsoft.WindowsStore_8wekyb3d8bbwe   22306.1401.1.0
 Windows Terminal                      Microsoft.WindowsTerminal              1.17.11461.0                        winget
-Windows Package Manager Source (wing… Microsoft.Winget.Source_8wekyb3d8bbwe  2023.729.1727.948
+Windows Package Manager Source (wing… Microsoft.Winget.Source_8wekyb3d8bbwe  2023.731.2016.191
 Windows Subsystem for Linux           MicrosoftCorporationII.WindowsSubsyst… 1.2.5.0
+Mozilla Firefox (x64 en-US)           Mozilla.Firefox                        115.0.3                             winget
 Mozilla Maintenance Service           MozillaMaintenanceService              115.0.1
 Notepad++ (64-bit x64)                Notepad++.Notepad++                    8.5.4                               winget
 Npcap OEM                             NpcapInst                              1.00
@@ -59,7 +60,7 @@ Rustup: the Rust toolchain installer  Rustlang.Rustup                        1.2
 SDK for SAP Adaptive Server Enterpri… SDK for SAP Adaptive Server Enterprise 16.0.20.500
 Software Operation Panel              Software Operation Panel               Unknown
 SoundSwitch 6.7.2.0                   AntoineAflalo.SoundSwitch              6.7.2.0                             winget
-Spotify                               Spotify.Spotify                        1.2.16.947.gcfbaa410                winget
+Spotify                               Spotify.Spotify                        1.2.16.947.gcfbaa410 1.2.17.832.g1… winget
 SumatraPDF                            SumatraPDF.SumatraPDF                  3.4.6                               winget
 Microsoft Teams                       Microsoft.Teams                        1.6.00.18681                        winget
 Zscaler                               Zscaler                                3.7.1.54
@@ -84,7 +85,6 @@ Azure Data Studio (User)              {1F0FD1CE-9703-4734-8F50-5B5CEEDAE6B9… 1
 Python Launcher                       {23514291-DEF3-42FD-A67C-A96E35C92F24} 3.11.4150.0
 Oracle Smart View 64-bit for Office   {28AB5960-E3F2-4D3E-B72D-4C524F3575AF} 21.200
 Software Operation Panel              {2B3A00BC-AADB-4A3C-B6F4-35FCAB33D42C} 3.5.16.0
-starship                              Starship.Starship                      1.15.0                              winget
 Microsoft VSS Writer for SQL Server … {2C33F4D4-E9A5-4DE1-ACFE-3A13464E6703} 15.0.2000.5
 OCRProcessorSetUp                     {2ED682FE-BA3D-4AED-BE56-EF7D460E66CE} 1.0.0
 Microsoft SQL Server 2019 T-SQL Lang… {31D27B41-A051-49D8-907A-62E0F4A2188C} 15.0.2000.5
@@ -118,10 +118,11 @@ Azure Data Studio                     {6591F69E-6588-4980-81ED-C8FCBD7EC4B8… 1
 Microsoft Visual Studio Installer     {6F320B93-EE3C-4826-85E0-ADF79F8D4C61} 3.6.2115.31769
 JetBrains dotPeek 2023.1.3            {72452c8c-f858-5453-95a0-0cf3c8708fef} 2023.1.3
 Teams Machine-Wide Installer          Microsoft.Teams                        1.5.0.30767          1.6.00.6754    winget
+starship                              Starship.Starship                      1.16.0                              winget
 LINQPad 7 version 7.7.15              LINQPad.LINQPad.7                      7.7.15                              winget
 Google Chrome                         Google.Chrome                          115.0.5790.110                      winget
 Microsoft Build of OpenJDK with Hots… Microsoft.OpenJDK.11                   11.0.20.8                           winget
-Logi Options+                         Logitech.OptionsPlus                   1.46.425296                         winget
+Logi Options+                         Logitech.OptionsPlus                   1.48.434174                         winget
 Go Programming Language amd64 go1.20… GoLang.Go                              1.20.6                              winget
 YubiKey Smart Card Minidriver x64     {86F3EB14-5E84-4C0A-8DC3-7FF7F6C6DAE1} 4.1.1.210
 IgnitionSetup                         {8C78B712-0406-4347-90C9-5D3CAB9CDC6F} 22.0.1
