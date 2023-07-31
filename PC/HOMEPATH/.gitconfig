@@ -5,8 +5,8 @@
 [include]
     path = .config/git/git.gitconfig
     path = .config/git/aliases.gitconfig
+    path = .config/git/interactive-rebase-tool.gitconfig
     path = .config/git/tools.gitconfig
     path = .config/git/user.gitconfig
 [pull]
 	rebase = false
-
