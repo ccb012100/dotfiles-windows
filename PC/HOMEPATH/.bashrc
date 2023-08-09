@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
+stty -ixon
+
 export EDITOR="nvim"
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 

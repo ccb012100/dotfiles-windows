@@ -22,36 +22,44 @@ function man() {
 # golang cli commands
 function gl() {
     case $1 in
-            b )
-            shift
-            go build .
+    b)
+        shift
+        go build .
         ;;
-        r )
-            shift
-            go run .
+    r)
+        shift
+        go run .
         ;;
-        * )
-            go "$@"
+    *)
+        go "$@"
         ;;
     esac
 }
 # cargo cli commands
 function cg() {
     case $1 in
-        b )
-            shift
-            cargo build
+    b)
+        shift
+        cargo build
         ;;
-        c )
-            shift
-            cargo check
+    c)
+        shift
+        cargo check
         ;;
-        r )
-            shift
-            cargo run
+    r)
+        shift
+        cargo run
         ;;
-        * )
-            cargo "$@"
+    *)
+        cargo "$@"
         ;;
     esac
+}
+
+function open() {
+    if [[ -n "${*}" ]]; then
+        start "${*}"
+    else
+        start .
+    fi
 }
