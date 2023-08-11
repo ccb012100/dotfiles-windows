@@ -1,0 +1,8 @@
+[core]
+    hooksPath = ~/work/.hooks
+[user]
+    name = Chris Bocardo
+    email = <WORK_EMAIL>
+    signingkey = ~/.ssh/work_ed25519
+[url "git@github-work:Company-Organization/"]
+    insteadof = https://github.com/Company-Organization/

@@ -3,6 +3,7 @@
 [core]
 	attributesfile = ~/.config/git/attributes
 	autocrlf = false
+	editor = nvim
 	excludesfile = ~/.config/git/ignore
 	filemode = false
 	sshcommand = C:/Windows/System32/OpenSSH/ssh.exe
@@ -26,6 +27,8 @@
 	allowedSignersFile = ~/.ssh/allowed_signers
 [help]
 	autoCorrect = prompt
+[http]
+    sslbackend = openssl
 [init]
 	defaultBranch = main
 [pull]
@@ -40,5 +43,3 @@
 	showUntrackedFiles = all
 [tag]
 	gpgsign = true
-[url "git@github.com:"]
-	insteadof = https://github.com/
