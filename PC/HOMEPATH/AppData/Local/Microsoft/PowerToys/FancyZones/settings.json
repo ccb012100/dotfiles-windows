@@ -6,8 +6,11 @@
         "fancyzones_mouseSwitch": {
             "value": false
         },
+        "fancyzones_mouseMiddleClickSpanningMultipleZones": {
+            "value": false
+        },
         "fancyzones_overrideSnapHotkeys": {
-            "value": true
+            "value": false
         },
         "fancyzones_moveWindowAcrossMonitors": {
             "value": false
@@ -91,11 +94,11 @@
         },
         "fancyzones_prevTab_hotkey": {
             "value": {
-                "win": false,
-                "ctrl": true,
-                "alt": true,
-                "shift": true,
-                "code": 38,
+                "win": true,
+                "ctrl": false,
+                "alt": false,
+                "shift": false,
+                "code": 33,
                 "key": ""
             }
         },
