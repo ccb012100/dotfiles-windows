@@ -1,6 +1,7 @@
 _gvimrc
 _vimrc
 .bashrc
+.config/ahk
 .config/bash
 .config/git
 .config/kmonad
