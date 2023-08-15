@@ -55,7 +55,7 @@ function cg() {
         ;;
     esac
 }
-
+# use built-in Windows 'open' command
 function open() {
     if [[ -n "${*}" ]]; then
         start "${*}"
