@@ -54,12 +54,14 @@
     l1      = l -1 --compact-summary # show last commit with summary
     last    = log -1 HEAD --compact-summary
     lc      = l --compact-summary
+    lfp     = l --first-parent
     lm      = l --merges
     lmc     = l --compact-summary
     ln      = log -n
     lnc     = log --compact-summary -n
     lnm     = l --no-merges
     lnmc    = lnm --compact-summary
+    logfp   = log --first-parent
     lp      = log --patch --compact-summary # show diffs
     lp1     = lp -1 --compact-summary # show last commit with diff
     ls      = ls-files
@@ -129,6 +131,7 @@
     author  = ! "f() { if [[ $# -eq 0 ]] ; then echo git rebase HEAD~1 -x \"git commit --amend --no-edit --reset-author\"; else git rebase HEAD~$1 -x \"git commit --amend --no-edit --reset-author\"; }; f"
     chx     = update-index --chmod=+x
     fg      = forgit
+    nuke    = clean -fdx
     sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
     # update local branch from origin without checking it out
     update  = ! "f() { if [[ $# -eq 0 ]] ; then echo "must supply a branch name"; else git fetch origin $1:$1; }; f"
