@@ -130,7 +130,7 @@
                 "action": "findMatch",
                 "direction": "prev"
             },
-            "keys": "ctrl+r"
+            "keys": "ctrl+shift+r"
         },
         {
             "command": {
