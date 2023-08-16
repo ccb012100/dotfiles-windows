@@ -6,25 +6,52 @@
 ; + Shift
 ; # Win
 
-^!+H::  ; Meh-H
+^!+H::  ; Meh+H 🙈
 {
-    ; (H)ide the active window
+    ; 🙈 (H)ide the active window
     if WinExist("A")
         WinMinimize "A"
 }
 
-^!+C::  ; Meh-C
+; TODO: Meh+B 📶 to connect to specific Bluetooth device
+
+^!+C::  ; Meh+C 🎯
 {
     ; (C)enter the active window
     if WinExist("A")
         CenterWindow("A")
 }
 
-^!+V::  ; Meh-V
+^!+P::  ; Meh+P ⏯️
+{
+    ; Press (P)lay/Pause button
+    SendInput "{Media_Play_Pause}"
+}
+
+^!+S::  ; Meh+S 🔍
+{
+    ; Focus on (S)potify window
+    if not ShowAndFocusWindow("ahk_exe Spotify.exe")
+        TrayTip , "No Spotify.exe window found", 2 ; TODO: open app
+}
+
+^!+V::  ; Meh+V ↕️
 {
     ; (V)ertically maximize the active window
     if WinExist("A")
         VerticallyMaximizeWindow("A")
+}
+
+^!+=::  ; Meh+<EQUALS> 🔊
+{
+    ; Volume Up (+)
+    SendInput "{Volume_Up}"
+}
+
+^!+-::  ; Meh+<MINUS> 🔉
+{
+    ; Volume Down (-)
+    SendInput "{Volume_Down}"
 }
 
 ; **WARNING**: this centers the Window on the Primary Monitor only
@@ -49,4 +76,29 @@ VerticallyMaximizeWindow(WinTitle)
     MonitorGetWorkArea( , &Left, &Top, &Right, &Bottom)
     WinGetPos &X, &Y, &Width, &Height, WinTitle
     WinMove X, 0, , Bottom, WinTitle
+}
+
+ShowAndFocusWindow(WinTitle)
+{
+    if WinExist(WinTitle)
+    {
+        WinActivate WinTitle
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+
+WatchCursor() ; copied from <https://www.autohotkey.com/docs/v2/lib/MouseGetPos.htm>
+{
+    MouseGetPos , , &id, &control
+    ToolTip
+    (
+        "ahk_id " id "
+        ahk_class " WinGetClass(id) "
+        " WinGetTitle(id) "
+        Control: " control
+    )
 }
