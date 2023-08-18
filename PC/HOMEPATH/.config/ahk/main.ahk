@@ -25,14 +25,19 @@
 ^!+P::  ; Meh+P ⏯️
 {
     ; Press (P)lay/Pause button
-    SendInput "{Media_Play_Pause}"
+    SendInput("{Media_Play_Pause}")
 }
 
 ^!+S::  ; Meh+S 🔍
 {
     ; Focus on (S)potify window
-    if not ShowAndFocusWindow("ahk_exe Spotify.exe")
-        TrayTip , "No Spotify.exe window found", 2 ; TODO: open app
+    FocusTarget("Spotify.exe")
+}
+
+^!+T::  ; Meh+T 🔍
+{
+    ; Focus on Windows (T)erminal window
+    FocusTarget("WindowsTerminal.exe")
 }
 
 ^!+V::  ; Meh+V ↕️
@@ -61,11 +66,9 @@ CenterWindow(WinTitle)
     MonitorGetWorkArea( , &Left, &Top, &Right, &Bottom)
 
     WinMove(
-        (Right/2)-(Width/2),
-        (Bottom/2)-(Height/2),
+        (Right/2)-(Width/2), (Bottom/2)-(Height/2),
         ; prevent overflowing the work area if the window is moving from a monitor with greater width and/or height
-        Min(Right, Width),
-        Min(Bottom, Height),
+        Min(Right, Width), Min(Bottom, Height),
         WinTitle
     )
 }
@@ -74,31 +77,28 @@ CenterWindow(WinTitle)
 VerticallyMaximizeWindow(WinTitle)
 {
     MonitorGetWorkArea( , &Left, &Top, &Right, &Bottom)
-    WinGetPos &X, &Y, &Width, &Height, WinTitle
-    WinMove X, 0, , Bottom, WinTitle
+    WinGetPos(&X, &Y, &Width, &Height, WinTitle)
+    WinMove(X, 0, , Bottom, WinTitle)
 }
 
-ShowAndFocusWindow(WinTitle)
+FocusTarget(ProcessName)
 {
-    if WinExist(WinTitle)
-    {
-        WinActivate WinTitle
-        return true
-    }
+    Target := "ahk_exe " . ProcessName
+
+    if WinExist(Target)
+        WinActivate(Target)
     else
-    {
-        return false
-    }
+        TrayTip("Unable to find <" . ProcessName ">.")
 }
 
-WatchCursor() ; copied from <https://www.autohotkey.com/docs/v2/lib/MouseGetPos.htm>
+WatchCursor() ; useful for debugging; copied from <https://www.autohotkey.com/docs/v2/lib/MouseGetPos.htm>
 {
     MouseGetPos , , &id, &control
     ToolTip
     (
-        "ahk_id " id "
-        ahk_class " WinGetClass(id) "
-        " WinGetTitle(id) "
-        Control: " control
+        "ahk_id " . id . "
+        ahk_class " . WinGetClass(id) . "
+        " . WinGetTitle(id) . "
+        Control: " . control
     )
 }
