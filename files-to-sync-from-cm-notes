@@ -1,5 +1,6 @@
 applications/AquaSnap/AquaSnap.reg
 applications/chocolatey/packages.txt
+applications/Microsoft.PowerShell_profile.ps1
 applications/winget/packages.txt
 scripts/kmonad-init.bat
 scripts/list-packages.sh
