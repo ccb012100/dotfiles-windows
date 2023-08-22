@@ -15,7 +15,11 @@ try  ; Attempts to execute code.
             WinMinimize "A"
     }
 
-    ; TODO: Meh+B 📶 to connect to specific Bluetooth device
+    ^!+B::  ; Meh+B 📶
+    {
+        ; 📶 Open (B)luetooth settings
+        Run 'ms-settings:bluetooth'
+    }
 
     ^!+C::  ; Meh+C 🎯
     {
