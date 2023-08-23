@@ -1,4 +1,7 @@
-﻿#Requires AutoHotkey v2.0
+﻿#Warn
+#SingleInstance Force
+#Requires AutoHotkey >=2.0
+SetWorkingDir(A_ScriptDir)
 
 ; WinTitle "A" is the Active Window
 ; ^ Ctrl
@@ -6,8 +9,17 @@
 ; + Shift
 ; # Win
 
-try  ; Attempts to execute code.
+try
 {
+    ^!+F5::Reload ; Meh+F5
+
+    ^!+F2:: ; Meh+F2
+    {
+        ; could also just use the command `Edit`, but I don't want
+        ; to have to worry about the file association for *.ahk files
+        Run "C:\Program Files\Microsoft VS Code\Code.exe " . A_ScriptFullPath
+    }
+
     ^!+H::  ; Meh+H 🙈
     {
         ; 🙈 (H)ide the active window
@@ -111,7 +123,7 @@ try  ; Attempts to execute code.
         )
     }
 }
-catch as e  ; Handles the first error thrown by the block above.
+catch as e
 {
     MsgBox "An error was thrown:`nLine " . e.Line . ": " . e.Message
 }
