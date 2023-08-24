@@ -12,3 +12,5 @@ rsync --relative --dirs --recursive --times --progress \
 rsync --relative --dirs --recursive --times --progress \
     --files-from=files-to-sync-from-cm-notes \
     "$win_homepath/work/cm-notes/sync/" "$git_dir"
+
+./format-files.sh
