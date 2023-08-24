@@ -29,18 +29,16 @@
                                                            _
 )
 (defalias
-;; hold v for r_layer
-  r_r  (tap-hold-next-release 200 f (layer-toggle raise_right))
-  ;; hold m for raise_left
-  r_l (tap-hold-next-release 200 j (layer-toggle raise_left))
+  r_r  (tap-hold-next-release 200 f (layer-toggle _f))
+  r_l (tap-hold-next-release 200 j (layer-toggle _j))
 
   ;; FIXME: this is causing issues in Windows - holding lsft or rsft toggles capslock
   ;; press both shift buttons simultaneously to toggle caps lock
   ;; lsh (around (layer-toggle shift_layer) lsft)
   ;; rsh (around (layer-toggle shift_layer) rsft)
 
-  ;; hold caps for l-ctrl; tap for esc
-  cap (tap-hold-next-release 200 esc lctl)
+  ;; remap caps to escape
+  cap esc 
   ;; hold space for l-ctrl
   spc (tap-hold-next-release 200 spc lctl)
   ;; left meh key
@@ -49,21 +47,21 @@
   r_m (tap-hold-next-release 275 / S-C-lalt)
 )
 
-(deflayer raise_left
+(deflayer _j 
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    \(   up   \)   _    _    _    _
-  _    home _    pgup `    _    pgup left down rght |    _    _
+  _    home _    pgup `    _    pgup _    down rght |    _    _
   _    end  ins  pgdn ~    _    pgdn -    \_   caps \    _
   _    _    _              _              _    _    _      _       _
                                                            _
 )
-(deflayer raise_right
+(deflayer _f
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    [    ]    {    }    _    _    up   _    _    _    _    _
-  caps home _    pgup `    home _    left down rght |    _    _
-  _    end  ins  pgdn ~    end  _    _    \_   caps \    _
+  caps home _    pgup _    home _    left down rght |    _    _
+  _    end  ins  pgdn ~    end  _    -    \_   caps \    _
   _    _    _              _              _    _    _      _       _
                                                            _
 )
