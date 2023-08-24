@@ -1,488 +1,488 @@
 {
-    "SelectedPlaybackDeviceListId": [],
-    "SelectedRecordingDeviceListId": [],
-    "SelectedDevices": [
+  "SelectedPlaybackDeviceListId": [],
+  "SelectedRecordingDeviceListId": [],
+  "SelectedDevices": [
+    {
+      "Name": "Headset Earphone (Zone Wired)",
+      "Id": "{0.0.0.00000000}.{0c4dc5a2-0391-49d8-9d1b-0e5dc7a37391}",
+      "Type": 0,
+      "IsUsb": true,
+      "DiscoveredAt": "2023-06-26T16:14:52.428387Z",
+      "NameClean": "Headset Earphone (Zone Wired)"
+    },
+    {
+      "Name": "LG HDR 4K (HD Audio Driver for Display Audio)",
+      "Id": "{0.0.0.00000000}.{ed550853-93cb-43a9-9ec4-99c836c68eb0}",
+      "Type": 0,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-06-26T16:14:53.8168317Z",
+      "NameClean": "LG HDR 4K (HD Audio Driver for Display Audio)"
+    },
+    {
+      "Name": "Speakers (Realtek(R) Audio)",
+      "Id": "{0.0.0.00000000}.{a4bd7f41-24b7-4c8c-8aed-ee09437cd8f4}",
+      "Type": 0,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-06-26T16:14:54.9042298Z",
+      "NameClean": "Speakers (Realtek(R) Audio)"
+    },
+    {
+      "Name": "Headphones (Realtek(R) Audio)",
+      "Id": "{0.0.0.00000000}.{b679b108-bca9-4fb9-b5cc-b27aca637897}",
+      "Type": 0,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-06-26T16:15:05.0484918Z",
+      "NameClean": "Headphones (Realtek(R) Audio)"
+    },
+    {
+      "Name": "Headset Microphone (Zone Wired)",
+      "Id": "{0.0.1.00000000}.{72f61e85-b181-4d00-9bd1-b69a78ae7f2f}",
+      "Type": 1,
+      "IsUsb": true,
+      "DiscoveredAt": "2023-06-26T16:15:08.3057788Z",
+      "NameClean": "Headset Microphone (Zone Wired)"
+    },
+    {
+      "Name": "Microphone (Realtek(R) Audio)",
+      "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
+      "Type": 1,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-06-26T16:15:08.8306772Z",
+      "NameClean": "Microphone (Realtek(R) Audio)"
+    },
+    {
+      "Name": "Jack Mic (Realtek(R) Audio)",
+      "Id": "{0.0.1.00000000}.{9425ebc6-8319-46de-ba46-16bade7b6f23}",
+      "Type": 1,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-06-26T16:15:09.5742897Z",
+      "NameClean": "Jack Mic (Realtek(R) Audio)"
+    },
+    {
+      "Name": "Headphones ([AV] Samsung Soundbar MM55 M-Series Stereo)",
+      "Id": "{0.0.0.00000000}.{73921e16-167e-448b-8a61-3c63dddbf2f9}",
+      "Type": 0,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-06-27T14:25:08.7861838Z",
+      "NameClean": "Headphones ([AV] Samsung Soundbar MM55 M-Series Stereo)"
+    },
+    {
+      "Name": "Microphone (Logitech BRIO)",
+      "Id": "{0.0.1.00000000}.{9f79aed1-8bcb-40fb-8d9f-cc815ba0e66e}",
+      "Type": 1,
+      "IsUsb": true,
+      "DiscoveredAt": "2023-06-27T14:25:13.6197039Z",
+      "NameClean": "Microphone (Logitech BRIO)"
+    },
+    {
+      "Name": "Speakers (Jabra SPEAK 410 USB)",
+      "Id": "{0.0.0.00000000}.{3578d262-f384-46dd-af4e-539f1b1135da}",
+      "Type": 0,
+      "IsUsb": true,
+      "DiscoveredAt": "2023-07-05T13:54:48.6310527Z",
+      "NameClean": "Speakers (Jabra SPEAK 410 USB)"
+    },
+    {
+      "Name": "Microphone (Jabra SPEAK 410 USB)",
+      "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
+      "Type": 1,
+      "IsUsb": true,
+      "DiscoveredAt": "2023-07-05T13:54:50.2928871Z",
+      "NameClean": "Microphone (Jabra SPEAK 410 USB)"
+    },
+    {
+      "Name": "Headphones (2- Zone Wired)",
+      "Id": "{0.0.0.00000000}.{0aad53d7-70d7-404f-86f9-d7aae3f29e33}",
+      "Type": 0,
+      "IsUsb": true,
+      "DiscoveredAt": "2023-07-05T14:22:22.9008621Z",
+      "NameClean": "Headphones (Zone Wired)"
+    },
+    {
+      "Name": "Headphones (ATH-M50xBT2 Stereo)",
+      "Id": "{0.0.0.00000000}.{5b0446d5-d350-4c24-8e6f-10c0569d0043}",
+      "Type": 0,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-07-05T19:47:13.5115707Z",
+      "NameClean": "Headphones (ATH-M50xBT2 Stereo)"
+    },
+    {
+      "Name": "Speakers (Logitech USB Headset H540)",
+      "Id": "{0.0.0.00000000}.{72de6e3a-24cc-4d48-bb62-737fb1862667}",
+      "Type": 0,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-07-10T13:55:31.0068702Z",
+      "NameClean": "Speakers (Logitech USB Headset H540)"
+    },
+    {
+      "Name": "Microphone (Logitech USB Headset H540)",
+      "Id": "{0.0.1.00000000}.{ad93dc6d-35ff-40f4-83ae-cc910d27abc6}",
+      "Type": 1,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-07-10T13:55:34.3139882Z",
+      "NameClean": "Microphone (Logitech USB Headset H540)"
+    },
+    {
+      "Name": "Headphones (LE_ATH-M50xBT2 Stereo)",
+      "Id": "{0.0.0.00000000}.{ffa28027-383d-47fd-97d2-588b22c6fc28}",
+      "Type": 0,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-07-12T20:32:24.1880198Z",
+      "NameClean": "Headphones (LE_ATH-M50xBT2 Stereo)"
+    },
+    {
+      "Name": "U32R59x (HD Audio Driver for Display Audio)",
+      "Id": "{0.0.0.00000000}.{1a36ab06-be6c-4de8-9514-e8d2aebbe528}",
+      "Type": 0,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-07-22T19:01:39.0788842Z",
+      "NameClean": "U32R59x (HD Audio Driver for Display Audio)"
+    }
+  ],
+  "FirstRun": false,
+  "PlaybackHotKey": {
+    "Keys": 48,
+    "Modifier": 7,
+    "Enabled": false
+  },
+  "RecordingHotKey": {
+    "Keys": 118,
+    "Modifier": 3,
+    "Enabled": false
+  },
+  "MuteRecordingHotKey": {
+    "Keys": 77,
+    "Modifier": 3,
+    "Enabled": false
+  },
+  "ChangeCommunications": false,
+  "UpdateCheckInterval": 86400,
+  "UpdateMode": 0,
+  "TooltipInfo": 1,
+  "CyclerType": 0,
+  "NotificationSettings": 5,
+  "Language": 0,
+  "IncludeBetaVersions": false,
+  "NotifyUsingPrimaryScreen": false,
+  "AutoAddNewConnectedDevices": true,
+  "LastDonationNagTime": "2023-06-16T16:11:51.868321Z",
+  "KeepSystrayIcon": false,
+  "SwitchForegroundProgram": true,
+  "SwitchIcon": 2,
+  "ProfileSettings": [],
+  "Profiles": [
+    {
+      "Playback": {
+        "Name": "Headphones ([AV] Samsung Soundbar MM55 M-Series Stereo)",
+        "Id": "{0.0.0.00000000}.{73921e16-167e-448b-8a61-3c63dddbf2f9}",
+        "Type": 0,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-11T19:23:56.6664853Z",
+        "NameClean": "Headphones ([AV] Samsung Soundbar MM55 M-Series Stereo)"
+      },
+      "Communication": {
+        "Name": "Speakers (Jabra SPEAK 410 USB)",
+        "Id": "{0.0.0.00000000}.{3578d262-f384-46dd-af4e-539f1b1135da}",
+        "Type": 0,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:56.6123234Z",
+        "NameClean": "Speakers (Jabra SPEAK 410 USB)"
+      },
+      "Recording": {
+        "Name": "Microphone (Jabra SPEAK 410 USB)",
+        "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
+        "Type": 1,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
+        "NameClean": "Microphone (Jabra SPEAK 410 USB)"
+      },
+      "RecordingCommunication": {
+        "Name": "Microphone (Jabra SPEAK 410 USB)",
+        "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
+        "Type": 1,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
+        "NameClean": "Microphone (Jabra SPEAK 410 USB)"
+      },
+      "Name": "Samsung MM55 Soundbar",
+      "Triggers": [
         {
-            "Name": "Headset Earphone (Zone Wired)",
-            "Id": "{0.0.0.00000000}.{0c4dc5a2-0391-49d8-9d1b-0e5dc7a37391}",
-            "Type": 0,
-            "IsUsb": true,
-            "DiscoveredAt": "2023-06-26T16:14:52.428387Z",
-            "NameClean": "Headset Earphone (Zone Wired)"
-        },
-        {
-            "Name": "LG HDR 4K (HD Audio Driver for Display Audio)",
-            "Id": "{0.0.0.00000000}.{ed550853-93cb-43a9-9ec4-99c836c68eb0}",
-            "Type": 0,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-06-26T16:14:53.8168317Z",
-            "NameClean": "LG HDR 4K (HD Audio Driver for Display Audio)"
-        },
-        {
-            "Name": "Speakers (Realtek(R) Audio)",
-            "Id": "{0.0.0.00000000}.{a4bd7f41-24b7-4c8c-8aed-ee09437cd8f4}",
-            "Type": 0,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-06-26T16:14:54.9042298Z",
-            "NameClean": "Speakers (Realtek(R) Audio)"
-        },
-        {
-            "Name": "Headphones (Realtek(R) Audio)",
-            "Id": "{0.0.0.00000000}.{b679b108-bca9-4fb9-b5cc-b27aca637897}",
-            "Type": 0,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-06-26T16:15:05.0484918Z",
-            "NameClean": "Headphones (Realtek(R) Audio)"
-        },
-        {
-            "Name": "Headset Microphone (Zone Wired)",
-            "Id": "{0.0.1.00000000}.{72f61e85-b181-4d00-9bd1-b69a78ae7f2f}",
-            "Type": 1,
-            "IsUsb": true,
-            "DiscoveredAt": "2023-06-26T16:15:08.3057788Z",
-            "NameClean": "Headset Microphone (Zone Wired)"
-        },
-        {
-            "Name": "Microphone (Realtek(R) Audio)",
-            "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
-            "Type": 1,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-06-26T16:15:08.8306772Z",
-            "NameClean": "Microphone (Realtek(R) Audio)"
-        },
-        {
-            "Name": "Jack Mic (Realtek(R) Audio)",
-            "Id": "{0.0.1.00000000}.{9425ebc6-8319-46de-ba46-16bade7b6f23}",
-            "Type": 1,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-06-26T16:15:09.5742897Z",
-            "NameClean": "Jack Mic (Realtek(R) Audio)"
-        },
-        {
-            "Name": "Headphones ([AV] Samsung Soundbar MM55 M-Series Stereo)",
-            "Id": "{0.0.0.00000000}.{73921e16-167e-448b-8a61-3c63dddbf2f9}",
-            "Type": 0,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-06-27T14:25:08.7861838Z",
-            "NameClean": "Headphones ([AV] Samsung Soundbar MM55 M-Series Stereo)"
-        },
-        {
-            "Name": "Microphone (Logitech BRIO)",
-            "Id": "{0.0.1.00000000}.{9f79aed1-8bcb-40fb-8d9f-cc815ba0e66e}",
-            "Type": 1,
-            "IsUsb": true,
-            "DiscoveredAt": "2023-06-27T14:25:13.6197039Z",
-            "NameClean": "Microphone (Logitech BRIO)"
-        },
-        {
-            "Name": "Speakers (Jabra SPEAK 410 USB)",
-            "Id": "{0.0.0.00000000}.{3578d262-f384-46dd-af4e-539f1b1135da}",
-            "Type": 0,
-            "IsUsb": true,
-            "DiscoveredAt": "2023-07-05T13:54:48.6310527Z",
-            "NameClean": "Speakers (Jabra SPEAK 410 USB)"
-        },
-        {
-            "Name": "Microphone (Jabra SPEAK 410 USB)",
-            "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
-            "Type": 1,
-            "IsUsb": true,
-            "DiscoveredAt": "2023-07-05T13:54:50.2928871Z",
-            "NameClean": "Microphone (Jabra SPEAK 410 USB)"
-        },
-        {
-            "Name": "Headphones (2- Zone Wired)",
-            "Id": "{0.0.0.00000000}.{0aad53d7-70d7-404f-86f9-d7aae3f29e33}",
-            "Type": 0,
-            "IsUsb": true,
-            "DiscoveredAt": "2023-07-05T14:22:22.9008621Z",
-            "NameClean": "Headphones (Zone Wired)"
-        },
-        {
-            "Name": "Headphones (ATH-M50xBT2 Stereo)",
-            "Id": "{0.0.0.00000000}.{5b0446d5-d350-4c24-8e6f-10c0569d0043}",
-            "Type": 0,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-07-05T19:47:13.5115707Z",
-            "NameClean": "Headphones (ATH-M50xBT2 Stereo)"
-        },
-        {
-            "Name": "Speakers (Logitech USB Headset H540)",
-            "Id": "{0.0.0.00000000}.{72de6e3a-24cc-4d48-bb62-737fb1862667}",
-            "Type": 0,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-07-10T13:55:31.0068702Z",
-            "NameClean": "Speakers (Logitech USB Headset H540)"
-        },
-        {
-            "Name": "Microphone (Logitech USB Headset H540)",
-            "Id": "{0.0.1.00000000}.{ad93dc6d-35ff-40f4-83ae-cc910d27abc6}",
-            "Type": 1,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-07-10T13:55:34.3139882Z",
-            "NameClean": "Microphone (Logitech USB Headset H540)"
-        },
-        {
-            "Name": "Headphones (LE_ATH-M50xBT2 Stereo)",
-            "Id": "{0.0.0.00000000}.{ffa28027-383d-47fd-97d2-588b22c6fc28}",
-            "Type": 0,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-07-12T20:32:24.1880198Z",
-            "NameClean": "Headphones (LE_ATH-M50xBT2 Stereo)"
-        },
-        {
-            "Name": "U32R59x (HD Audio Driver for Display Audio)",
-            "Id": "{0.0.0.00000000}.{1a36ab06-be6c-4de8-9514-e8d2aebbe528}",
-            "Type": 0,
-            "IsUsb": false,
-            "DiscoveredAt": "2023-07-22T19:01:39.0788842Z",
-            "NameClean": "U32R59x (HD Audio Driver for Display Audio)"
+          "Type": 0,
+          "HotKey": {
+            "Keys": 54,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
         }
-    ],
-    "FirstRun": false,
-    "PlaybackHotKey": {
-        "Keys": 48,
-        "Modifier": 7,
-        "Enabled": false
+      ],
+      "AlsoSwitchDefaultDevice": true,
+      "SwitchForegroundApp": true,
+      "NotifyOnActivation": true,
+      "RestoreDevices": false
     },
-    "RecordingHotKey": {
-        "Keys": 118,
-        "Modifier": 3,
-        "Enabled": false
-    },
-    "MuteRecordingHotKey": {
-        "Keys": 77,
-        "Modifier": 3,
-        "Enabled": false
-    },
-    "ChangeCommunications": false,
-    "UpdateCheckInterval": 86400,
-    "UpdateMode": 0,
-    "TooltipInfo": 1,
-    "CyclerType": 0,
-    "NotificationSettings": 5,
-    "Language": 0,
-    "IncludeBetaVersions": false,
-    "NotifyUsingPrimaryScreen": false,
-    "AutoAddNewConnectedDevices": true,
-    "LastDonationNagTime": "2023-06-16T16:11:51.868321Z",
-    "KeepSystrayIcon": false,
-    "SwitchForegroundProgram": true,
-    "SwitchIcon": 2,
-    "ProfileSettings": [],
-    "Profiles": [
+    {
+      "Playback": {
+        "Name": "Headset Earphone (Zone Wired)",
+        "Id": "{0.0.0.00000000}.{8c54965e-1871-4ff0-8a5d-42c5a21252d9}",
+        "Type": 0,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:56.7257911Z",
+        "NameClean": "Headset Earphone (Zone Wired)"
+      },
+      "Communication": {
+        "Name": "Headset Earphone (Zone Wired)",
+        "Id": "{0.0.0.00000000}.{8c54965e-1871-4ff0-8a5d-42c5a21252d9}",
+        "Type": 0,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:56.7257911Z",
+        "NameClean": "Headset Earphone (Zone Wired)"
+      },
+      "Recording": {
+        "Name": "Headset Microphone (Zone Wired)",
+        "Id": "{0.0.1.00000000}.{9c0d8b76-0be6-4ddb-9a62-bc0ced98f26b}",
+        "Type": 1,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:57.1028988Z",
+        "NameClean": "Headset Microphone (Zone Wired)"
+      },
+      "RecordingCommunication": {
+        "Name": "Headset Microphone (Zone Wired)",
+        "Id": "{0.0.1.00000000}.{9c0d8b76-0be6-4ddb-9a62-bc0ced98f26b}",
+        "Type": 1,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:57.1028988Z",
+        "NameClean": "Headset Microphone (Zone Wired)"
+      },
+      "Name": "Logitech Zone Wired headset",
+      "Triggers": [
         {
-            "Playback": {
-                "Name": "Headphones ([AV] Samsung Soundbar MM55 M-Series Stereo)",
-                "Id": "{0.0.0.00000000}.{73921e16-167e-448b-8a61-3c63dddbf2f9}",
-                "Type": 0,
-                "IsUsb": false,
-                "DiscoveredAt": "2023-07-11T19:23:56.6664853Z",
-                "NameClean": "Headphones ([AV] Samsung Soundbar MM55 M-Series Stereo)"
-            },
-            "Communication": {
-                "Name": "Speakers (Jabra SPEAK 410 USB)",
-                "Id": "{0.0.0.00000000}.{3578d262-f384-46dd-af4e-539f1b1135da}",
-                "Type": 0,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:56.6123234Z",
-                "NameClean": "Speakers (Jabra SPEAK 410 USB)"
-            },
-            "Recording": {
-                "Name": "Microphone (Jabra SPEAK 410 USB)",
-                "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
-                "Type": 1,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
-                "NameClean": "Microphone (Jabra SPEAK 410 USB)"
-            },
-            "RecordingCommunication": {
-                "Name": "Microphone (Jabra SPEAK 410 USB)",
-                "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
-                "Type": 1,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
-                "NameClean": "Microphone (Jabra SPEAK 410 USB)"
-            },
-            "Name": "Samsung MM55 Soundbar",
-            "Triggers": [
-                {
-                    "Type": 0,
-                    "HotKey": {
-                        "Keys": 54,
-                        "Modifier": 7,
-                        "Enabled": true
-                    },
-                    "ShouldRestoreDevices": false
-                }
-            ],
-            "AlsoSwitchDefaultDevice": true,
-            "SwitchForegroundApp": true,
-            "NotifyOnActivation": true,
-            "RestoreDevices": false
-        },
-        {
-            "Playback": {
-                "Name": "Headset Earphone (Zone Wired)",
-                "Id": "{0.0.0.00000000}.{8c54965e-1871-4ff0-8a5d-42c5a21252d9}",
-                "Type": 0,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:56.7257911Z",
-                "NameClean": "Headset Earphone (Zone Wired)"
-            },
-            "Communication": {
-                "Name": "Headset Earphone (Zone Wired)",
-                "Id": "{0.0.0.00000000}.{8c54965e-1871-4ff0-8a5d-42c5a21252d9}",
-                "Type": 0,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:56.7257911Z",
-                "NameClean": "Headset Earphone (Zone Wired)"
-            },
-            "Recording": {
-                "Name": "Headset Microphone (Zone Wired)",
-                "Id": "{0.0.1.00000000}.{9c0d8b76-0be6-4ddb-9a62-bc0ced98f26b}",
-                "Type": 1,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:57.1028988Z",
-                "NameClean": "Headset Microphone (Zone Wired)"
-            },
-            "RecordingCommunication": {
-                "Name": "Headset Microphone (Zone Wired)",
-                "Id": "{0.0.1.00000000}.{9c0d8b76-0be6-4ddb-9a62-bc0ced98f26b}",
-                "Type": 1,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:57.1028988Z",
-                "NameClean": "Headset Microphone (Zone Wired)"
-            },
-            "Name": "Logitech Zone Wired headset",
-            "Triggers": [
-                {
-                    "Type": 0,
-                    "HotKey": {
-                        "Keys": 49,
-                        "Modifier": 7,
-                        "Enabled": true
-                    },
-                    "ShouldRestoreDevices": false
-                }
-            ],
-            "AlsoSwitchDefaultDevice": true,
-            "SwitchForegroundApp": true,
-            "NotifyOnActivation": true,
-            "RestoreDevices": true
-        },
-        {
-            "Playback": {
-                "Name": "Speakers (Jabra SPEAK 410 USB)",
-                "Id": "{0.0.0.00000000}.{3578d262-f384-46dd-af4e-539f1b1135da}",
-                "Type": 0,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:56.6123234Z",
-                "NameClean": "Speakers (Jabra SPEAK 410 USB)"
-            },
-            "Communication": {
-                "Name": "Speakers (Jabra SPEAK 410 USB)",
-                "Id": "{0.0.0.00000000}.{3578d262-f384-46dd-af4e-539f1b1135da}",
-                "Type": 0,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:56.6123234Z",
-                "NameClean": "Speakers (Jabra SPEAK 410 USB)"
-            },
-            "Recording": {
-                "Name": "Microphone (Jabra SPEAK 410 USB)",
-                "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
-                "Type": 1,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
-                "NameClean": "Microphone (Jabra SPEAK 410 USB)"
-            },
-            "RecordingCommunication": {
-                "Name": "Microphone (Jabra SPEAK 410 USB)",
-                "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
-                "Type": 1,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
-                "NameClean": "Microphone (Jabra SPEAK 410 USB)"
-            },
-            "Name": "Jabra Speak 410 USB puck",
-            "Triggers": [
-                {
-                    "Type": 0,
-                    "HotKey": {
-                        "Keys": 50,
-                        "Modifier": 7,
-                        "Enabled": true
-                    },
-                    "ShouldRestoreDevices": false
-                }
-            ],
-            "AlsoSwitchDefaultDevice": true,
-            "SwitchForegroundApp": true,
-            "NotifyOnActivation": true,
-            "RestoreDevices": false
-        },
-        {
-            "Playback": {
-                "Name": "Headphones (LE_ATH-M50xBT2 Stereo)",
-                "Id": "{0.0.0.00000000}.{ffa28027-383d-47fd-97d2-588b22c6fc28}",
-                "Type": 0,
-                "IsUsb": false,
-                "DiscoveredAt": "2023-07-11T19:23:56.9678004Z",
-                "NameClean": "Headphones (LE_ATH-M50xBT2 Stereo)"
-            },
-            "Communication": {
-                "Name": "Speakers (Jabra SPEAK 410 USB)",
-                "Id": "{0.0.0.00000000}.{3578d262-f384-46dd-af4e-539f1b1135da}",
-                "Type": 0,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:56.6123234Z",
-                "NameClean": "Speakers (Jabra SPEAK 410 USB)"
-            },
-            "Recording": {
-                "Name": "Microphone (Jabra SPEAK 410 USB)",
-                "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
-                "Type": 1,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
-                "NameClean": "Microphone (Jabra SPEAK 410 USB)"
-            },
-            "RecordingCommunication": {
-                "Name": "Microphone (Jabra SPEAK 410 USB)",
-                "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
-                "Type": 1,
-                "IsUsb": true,
-                "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
-                "NameClean": "Microphone (Jabra SPEAK 410 USB)"
-            },
-            "Name": "Audio-Technica",
-            "Triggers": [
-                {
-                    "Type": 0,
-                    "HotKey": {
-                        "Keys": 55,
-                        "Modifier": 7,
-                        "Enabled": true
-                    },
-                    "ShouldRestoreDevices": false
-                }
-            ],
-            "AlsoSwitchDefaultDevice": true,
-            "SwitchForegroundApp": true,
-            "NotifyOnActivation": true,
-            "RestoreDevices": true
-        },
-        {
-            "Playback": {
-                "Name": "Headphones (Realtek(R) Audio)",
-                "Id": "{0.0.0.00000000}.{b679b108-bca9-4fb9-b5cc-b27aca637897}",
-                "Type": 0,
-                "IsUsb": false,
-                "DiscoveredAt": "2023-07-11T19:23:56.8273735Z",
-                "NameClean": "Headphones (Realtek(R) Audio)"
-            },
-            "Communication": {
-                "Name": "Headphones (Realtek(R) Audio)",
-                "Id": "{0.0.0.00000000}.{b679b108-bca9-4fb9-b5cc-b27aca637897}",
-                "Type": 0,
-                "IsUsb": false,
-                "DiscoveredAt": "2023-07-11T19:23:56.8273735Z",
-                "NameClean": "Headphones (Realtek(R) Audio)"
-            },
-            "Recording": {
-                "Name": "Microphone (Realtek(R) Audio)",
-                "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
-                "Type": 1,
-                "IsUsb": false,
-                "DiscoveredAt": "2023-07-11T19:23:57.0252885Z",
-                "NameClean": "Microphone (Realtek(R) Audio)"
-            },
-            "RecordingCommunication": {
-                "Name": "Microphone (Realtek(R) Audio)",
-                "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
-                "Type": 1,
-                "IsUsb": false,
-                "DiscoveredAt": "2023-07-11T19:23:57.0252885Z",
-                "NameClean": "Microphone (Realtek(R) Audio)"
-            },
-            "Name": "Earbuds headset",
-            "Triggers": [
-                {
-                    "Type": 0,
-                    "HotKey": {
-                        "Keys": 51,
-                        "Modifier": 7,
-                        "Enabled": true
-                    },
-                    "ShouldRestoreDevices": false
-                }
-            ],
-            "AlsoSwitchDefaultDevice": true,
-            "SwitchForegroundApp": true,
-            "NotifyOnActivation": true,
-            "RestoreDevices": true
-        },
-        {
-            "Playback": {
-                "Name": "Speakers (Realtek(R) Audio)",
-                "Id": "{0.0.0.00000000}.{a4bd7f41-24b7-4c8c-8aed-ee09437cd8f4}",
-                "Type": 0,
-                "IsUsb": false,
-                "DiscoveredAt": "2023-07-18T13:49:24.4346583Z",
-                "NameClean": "Speakers (Realtek(R) Audio)"
-            },
-            "Communication": {
-                "Name": "Speakers (Realtek(R) Audio)",
-                "Id": "{0.0.0.00000000}.{a4bd7f41-24b7-4c8c-8aed-ee09437cd8f4}",
-                "Type": 0,
-                "IsUsb": false,
-                "DiscoveredAt": "2023-07-18T13:49:24.4346583Z",
-                "NameClean": "Speakers (Realtek(R) Audio)"
-            },
-            "Recording": {
-                "Name": "Microphone (Realtek(R) Audio)",
-                "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
-                "Type": 1,
-                "IsUsb": false,
-                "DiscoveredAt": "2023-07-18T13:49:24.8103345Z",
-                "NameClean": "Microphone (Realtek(R) Audio)"
-            },
-            "RecordingCommunication": {
-                "Name": "Microphone (Realtek(R) Audio)",
-                "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
-                "Type": 1,
-                "IsUsb": false,
-                "DiscoveredAt": "2023-07-18T13:49:24.8103345Z",
-                "NameClean": "Microphone (Realtek(R) Audio)"
-            },
-            "Name": "Laptop speakers",
-            "Triggers": [
-                {
-                    "Type": 0,
-                    "HotKey": {
-                        "Keys": 52,
-                        "Modifier": 7,
-                        "Enabled": true
-                    },
-                    "ShouldRestoreDevices": false
-                }
-            ],
-            "AlsoSwitchDefaultDevice": true,
-            "SwitchForegroundApp": true,
-            "NotifyOnActivation": true,
-            "RestoreDevices": true
+          "Type": 0,
+          "HotKey": {
+            "Keys": 49,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
         }
-    ],
-    "MigratedFields": [
-        "KeepSystrayIcon",
-        "ProfileSettings_final",
-        "LastDonationNagTime",
-        "SwitchForegroundProgram_force_off",
-        "CleanupSelectedDevices",
-        "CleanupProfilesForeground",
-        "SwitchForegroundProgram_cleanup",
-        "SwitchForegroundProgram_fix"
-    ],
-    "UniqueInstallationId": "c06965e3-916f-433b-b549-79089be11374",
-    "Telemetry": true,
-    "QuickMenuEnabled": false
+      ],
+      "AlsoSwitchDefaultDevice": true,
+      "SwitchForegroundApp": true,
+      "NotifyOnActivation": true,
+      "RestoreDevices": true
+    },
+    {
+      "Playback": {
+        "Name": "Speakers (Jabra SPEAK 410 USB)",
+        "Id": "{0.0.0.00000000}.{3578d262-f384-46dd-af4e-539f1b1135da}",
+        "Type": 0,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:56.6123234Z",
+        "NameClean": "Speakers (Jabra SPEAK 410 USB)"
+      },
+      "Communication": {
+        "Name": "Speakers (Jabra SPEAK 410 USB)",
+        "Id": "{0.0.0.00000000}.{3578d262-f384-46dd-af4e-539f1b1135da}",
+        "Type": 0,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:56.6123234Z",
+        "NameClean": "Speakers (Jabra SPEAK 410 USB)"
+      },
+      "Recording": {
+        "Name": "Microphone (Jabra SPEAK 410 USB)",
+        "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
+        "Type": 1,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
+        "NameClean": "Microphone (Jabra SPEAK 410 USB)"
+      },
+      "RecordingCommunication": {
+        "Name": "Microphone (Jabra SPEAK 410 USB)",
+        "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
+        "Type": 1,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
+        "NameClean": "Microphone (Jabra SPEAK 410 USB)"
+      },
+      "Name": "Jabra Speak 410 USB puck",
+      "Triggers": [
+        {
+          "Type": 0,
+          "HotKey": {
+            "Keys": 50,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
+        }
+      ],
+      "AlsoSwitchDefaultDevice": true,
+      "SwitchForegroundApp": true,
+      "NotifyOnActivation": true,
+      "RestoreDevices": false
+    },
+    {
+      "Playback": {
+        "Name": "Headphones (LE_ATH-M50xBT2 Stereo)",
+        "Id": "{0.0.0.00000000}.{ffa28027-383d-47fd-97d2-588b22c6fc28}",
+        "Type": 0,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-11T19:23:56.9678004Z",
+        "NameClean": "Headphones (LE_ATH-M50xBT2 Stereo)"
+      },
+      "Communication": {
+        "Name": "Speakers (Jabra SPEAK 410 USB)",
+        "Id": "{0.0.0.00000000}.{3578d262-f384-46dd-af4e-539f1b1135da}",
+        "Type": 0,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:56.6123234Z",
+        "NameClean": "Speakers (Jabra SPEAK 410 USB)"
+      },
+      "Recording": {
+        "Name": "Microphone (Jabra SPEAK 410 USB)",
+        "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
+        "Type": 1,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
+        "NameClean": "Microphone (Jabra SPEAK 410 USB)"
+      },
+      "RecordingCommunication": {
+        "Name": "Microphone (Jabra SPEAK 410 USB)",
+        "Id": "{0.0.1.00000000}.{ab592689-2ec0-405e-ab00-80fef70fa609}",
+        "Type": 1,
+        "IsUsb": true,
+        "DiscoveredAt": "2023-07-11T19:23:57.1537202Z",
+        "NameClean": "Microphone (Jabra SPEAK 410 USB)"
+      },
+      "Name": "Audio-Technica",
+      "Triggers": [
+        {
+          "Type": 0,
+          "HotKey": {
+            "Keys": 55,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
+        }
+      ],
+      "AlsoSwitchDefaultDevice": true,
+      "SwitchForegroundApp": true,
+      "NotifyOnActivation": true,
+      "RestoreDevices": true
+    },
+    {
+      "Playback": {
+        "Name": "Headphones (Realtek(R) Audio)",
+        "Id": "{0.0.0.00000000}.{b679b108-bca9-4fb9-b5cc-b27aca637897}",
+        "Type": 0,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-11T19:23:56.8273735Z",
+        "NameClean": "Headphones (Realtek(R) Audio)"
+      },
+      "Communication": {
+        "Name": "Headphones (Realtek(R) Audio)",
+        "Id": "{0.0.0.00000000}.{b679b108-bca9-4fb9-b5cc-b27aca637897}",
+        "Type": 0,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-11T19:23:56.8273735Z",
+        "NameClean": "Headphones (Realtek(R) Audio)"
+      },
+      "Recording": {
+        "Name": "Microphone (Realtek(R) Audio)",
+        "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
+        "Type": 1,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-11T19:23:57.0252885Z",
+        "NameClean": "Microphone (Realtek(R) Audio)"
+      },
+      "RecordingCommunication": {
+        "Name": "Microphone (Realtek(R) Audio)",
+        "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
+        "Type": 1,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-11T19:23:57.0252885Z",
+        "NameClean": "Microphone (Realtek(R) Audio)"
+      },
+      "Name": "Earbuds headset",
+      "Triggers": [
+        {
+          "Type": 0,
+          "HotKey": {
+            "Keys": 51,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
+        }
+      ],
+      "AlsoSwitchDefaultDevice": true,
+      "SwitchForegroundApp": true,
+      "NotifyOnActivation": true,
+      "RestoreDevices": true
+    },
+    {
+      "Playback": {
+        "Name": "Speakers (Realtek(R) Audio)",
+        "Id": "{0.0.0.00000000}.{a4bd7f41-24b7-4c8c-8aed-ee09437cd8f4}",
+        "Type": 0,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.4346583Z",
+        "NameClean": "Speakers (Realtek(R) Audio)"
+      },
+      "Communication": {
+        "Name": "Speakers (Realtek(R) Audio)",
+        "Id": "{0.0.0.00000000}.{a4bd7f41-24b7-4c8c-8aed-ee09437cd8f4}",
+        "Type": 0,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.4346583Z",
+        "NameClean": "Speakers (Realtek(R) Audio)"
+      },
+      "Recording": {
+        "Name": "Microphone (Realtek(R) Audio)",
+        "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
+        "Type": 1,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.8103345Z",
+        "NameClean": "Microphone (Realtek(R) Audio)"
+      },
+      "RecordingCommunication": {
+        "Name": "Microphone (Realtek(R) Audio)",
+        "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
+        "Type": 1,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.8103345Z",
+        "NameClean": "Microphone (Realtek(R) Audio)"
+      },
+      "Name": "Laptop speakers",
+      "Triggers": [
+        {
+          "Type": 0,
+          "HotKey": {
+            "Keys": 52,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
+        }
+      ],
+      "AlsoSwitchDefaultDevice": true,
+      "SwitchForegroundApp": true,
+      "NotifyOnActivation": true,
+      "RestoreDevices": true
+    }
+  ],
+  "MigratedFields": [
+    "KeepSystrayIcon",
+    "ProfileSettings_final",
+    "LastDonationNagTime",
+    "SwitchForegroundProgram_force_off",
+    "CleanupSelectedDevices",
+    "CleanupProfilesForeground",
+    "SwitchForegroundProgram_cleanup",
+    "SwitchForegroundProgram_fix"
+  ],
+  "UniqueInstallationId": "c06965e3-916f-433b-b549-79089be11374",
+  "Telemetry": true,
+  "QuickMenuEnabled": false
 }
