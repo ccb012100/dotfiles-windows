@@ -17,6 +17,7 @@ function clla {
 }
 # Git Bash doesn't have the `man` command
 function man() {
+    echo 'using --help'
     "$@" --help | less
 }
 # golang cli commands
