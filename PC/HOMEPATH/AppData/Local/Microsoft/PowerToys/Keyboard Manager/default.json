@@ -1,1 +1,14 @@
-{ "remapKeys": { "inProcess": [{ "originalKeys": "20", "newRemapKeys": "27" }] }, "remapShortcuts": { "global": [], "appSpecific": [] } }
+{
+  "remapKeys": {
+    "inProcess": [
+      {
+        "originalKeys": "20",
+        "newRemapKeys": "27"
+      }
+    ]
+  },
+  "remapShortcuts": {
+    "global": [],
+    "appSpecific": []
+  }
+}
