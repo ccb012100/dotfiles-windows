@@ -1,29 +1,29 @@
 # diff/merge/sequence tools
 [diff]
-	colorMoved = zebra
-	tool = meld
+    colorMoved = zebra
+    tool = meld
 [difftool]
-	prompt = false
-	keepBackup = false
-	trustExitCode = false
+    prompt = false
+    keepBackup = false
+    trustExitCode = false
 [merge]
-	tool = meld
+    tool = meld
 [mergetool]
-	prompt = false
-	keepBackup = false
-	keepTemporaries = false
+    prompt = false
+    keepBackup = false
+    keepTemporaries = false
 [sequence]
-	editor = 'C:\\Tools\\git-interactive-rebase-tool\\interactive-rebase-tool'
+    editor = 'C:\\Tools\\git-interactive-rebase-tool\\interactive-rebase-tool'
 ## meld
 [difftool "meld"]
-	path = "/c/Program Files/Meld/Meld.exe"
+    path = "/c/Program Files/Meld/Meld.exe"
 [mergetool "meld"]
-	path = "/c/Program Files/Meld/Meld.exe"
+    path = "/c/Program Files/Meld/Meld.exe"
 ## visual studio
 [difftool "vsdiffmerge"]
-	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
-	keepBackup = false
+    cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+    keepBackup = false
 [mergetool "vsdiffmerge"]
-	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
-	keepBackup = false
-	trustExitCode = true
+    cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+    keepBackup = false
+    trustExitCode = true

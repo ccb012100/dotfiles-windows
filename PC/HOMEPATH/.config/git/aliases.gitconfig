@@ -26,8 +26,7 @@
     ca      = commit --amend
     call    = commit --all
     can     = ca --no-edit
-    cm      = commit -m
-    cmnv    = cm --no-verify
+    cnv     = c --no-verify
     contrib = shortlog -s
     cp      = cherry-pick
 
@@ -85,13 +84,13 @@
     publish = push -v --set-upstream origin HEAD
 
     ## rebase
-	r			= rebase
-	ra      	= rebase --abort
-	rc      	= rebase --continue
-    remain   	= rebase --interactive origin/main
-    remaster 	= rebase --interactive origin/master
-	reorigin	= ! git rebase --interactive origin/`git branch --show-current`
-	ri      	= rebase --interactive
+    r            = rebase
+    ra          = rebase --abort
+    rc          = rebase --continue
+    remain       = rebase --interactive origin/main
+    remaster     = rebase --interactive origin/master
+    reorigin    = ! git rebase --interactive origin/`git branch --show-current`
+    ri          = rebase --interactive
 
     ## reset
     rt      = reset
