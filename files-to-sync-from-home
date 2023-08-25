@@ -9,7 +9,8 @@ _vimrc
 .config/starship.toml
 .config/tealdeer
 .gitconfig
-.gnupg
+.gnupg/gpg-agent.conf
+.gnupg/gpg.conf
 .minttyrc
 .ssh/config
 aliases.cmd
