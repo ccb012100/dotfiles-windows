@@ -23,14 +23,14 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    @r_r _    _    @r_l _    _    _    _    _
+  _    _    _    _    @_f  _    _    @_j  _    _    _    _    _
   _    @l_m _    _    _    _    _    _    _    _    @r_m _
   _    _    _              @spc           _    _    _      _       _
                                                            _
 )
 (defalias
-  r_r  (tap-hold-next-release 200 f (layer-toggle _f))
-  r_l (tap-hold-next-release 200 j (layer-toggle _j))
+  _f  (tap-hold-next-release 200 f (layer-toggle _f))
+  _j (tap-hold-next-release 200 j (layer-toggle _j))
 
   ;; FIXME: this is causing issues in Windows - holding lsft or rsft toggles capslock
   ;; press both shift buttons simultaneously to toggle caps lock
@@ -59,7 +59,7 @@
 (deflayer _f
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    [    ]    {    }    _    _    up   _    _    _    _    _
+  _    _    [    ]    {    }    _    \(   up   \)   _    _    _    _
   caps home _    pgup _    home _    left down rght |    _    _
   _    end  ins  pgdn ~    end  _    -    \_   caps \    _
   _    _    _              _              _    _    _      _       _
