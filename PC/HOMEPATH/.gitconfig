@@ -1,7 +1,6 @@
 [include]
     path = .config/git/git.gitconfig
     path = .config/git/aliases.gitconfig
-    path = .config/git/interactive-rebase-tool.gitconfig
     path = .config/git/tools.gitconfig
 [includeIf "gitdir:~/src/"]
     path = .config/git/personal.gitconfig

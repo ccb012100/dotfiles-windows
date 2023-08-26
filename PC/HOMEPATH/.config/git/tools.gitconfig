@@ -12,8 +12,6 @@
     prompt = false
     keepBackup = false
     keepTemporaries = false
-[sequence]
-    editor = 'C:\\Tools\\git-interactive-rebase-tool\\interactive-rebase-tool'
 ## meld
 [difftool "meld"]
     path = "/c/Program Files/Meld/Meld.exe"
