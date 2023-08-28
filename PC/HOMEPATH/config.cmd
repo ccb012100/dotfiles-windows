@@ -1,5 +1,8 @@
 @echo off
 
+@REM starship init cmd
+@REM clink set prompt.transient same_dir
+
 set DOTFILES=%HOMEPATH%\.dotfiles\
 
 doskey ls=dir
@@ -13,5 +16,6 @@ doskey cr=cargo run $*
 doskey gb=go build .
 doskey gr=go run .
 doskey c.=code .
-doskey dr=dotnet run $*
-doskey db=dotnet build $*
+doskey dn=dotnet
+doskey v=nvim
+doskey vim=nvim
