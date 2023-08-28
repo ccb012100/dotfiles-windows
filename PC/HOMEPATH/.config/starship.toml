@@ -11,14 +11,15 @@ $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
-$fill\
 $time\
 $cmd_duration\
 $line_break\
 $character"""
 
+continuation_prompt = '▶▶ '
+
 [character]
-error_symbol = "[❯](red)"
+error_symbol = "[!](red)"
 success_symbol = "[\\$](purple)"
 vicmd_symbol = "[❮](green)"
 
@@ -110,6 +111,6 @@ disabled = false
 
 [time]
 disabled = false
-format = '[$time](cyan)'
+format = ' [$time](cyan)'
 time_format = "%T %e-%b "
 utc_time_offset = "local"
