@@ -14,6 +14,7 @@ export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 source "$HOME"/.config/bash/aliases.sh
 source "$HOME"/.config/bash/functions.sh
 source "$HOME"/.config/bash/tools.sh
+source "$HOME"/.local/config-local.sh
 
 bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
