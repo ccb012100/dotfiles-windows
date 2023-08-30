@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
+set -o noclobber
+shopt -s expand_aliases
 stty -ixon
 
 # less configuration
@@ -18,3 +20,5 @@ source "$HOME"/.local/config-local.sh
 
 bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
+# also bound by default to Ctrl+Alt+e
+bind '\C-g:shell-expand-line'
