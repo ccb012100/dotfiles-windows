@@ -1,9 +1,11 @@
 ﻿#Warn
 #SingleInstance Force
 #Requires AutoHotkey >=2.0
+
 SetWorkingDir(A_ScriptDir)
 
-#Include JumpToApplication.ahk
+#Include Gruvbox.ahk
+#Include JumpApp.ahk
 
 ; WinTitle "A" is the Active Window
 
@@ -37,7 +39,7 @@ try
     }
 
     ^!+J:: { ; Meh+J 🦘 (J)ump to Application
-        JumpApp.Activate()
+        JumpApp_Activate()
     }
 
     ^!+P:: { ; Meh+P ⏯️🎧 Press (P)lay/Pause button
