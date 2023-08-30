@@ -29,7 +29,7 @@
                                                            _
 )
 (defalias
-  _f  (tap-hold-next-release 200 f (layer-toggle _f))
+  _f (tap-hold-next-release 200 f (layer-toggle _f))
   _j (tap-hold-next-release 200 j (layer-toggle _j))
 
   ;; FIXME: this is causing issues in Windows - holding lsft or rsft toggles capslock
@@ -38,7 +38,7 @@
   ;; rsh (around (layer-toggle shift_layer) rsft)
 
   ;; remap caps to escape
-  cap esc 
+  cap esc
   ;; hold space for l-ctrl
   spc (tap-hold-next-release 200 spc lctl)
   ;; left meh key
@@ -47,10 +47,10 @@
   r_m (tap-hold-next-release 275 / S-C-lalt)
 )
 
-(deflayer _j 
+(deflayer _j
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    \(   up   \)   _    _    _    _
+  _    _    [    ]    {    }    _    \(   up   \)   _    _    _    _
   _    home _    pgup `    _    pgup _    down rght |    _    _
   _    end  ins  pgdn ~    _    pgdn -    \_   caps \    _
   _    _    _              _              _    _    _      _       _
