@@ -19,8 +19,8 @@ $character"""
 continuation_prompt = '▶▶ '
 
 [character]
-error_symbol = "[!](red)"
-success_symbol = "[\\$](purple)"
+error_symbol = "[✗](bold red)"
+success_symbol = "[➜](bold green)"
 vicmd_symbol = "[❮](green)"
 
 [cmd_duration]
@@ -83,28 +83,29 @@ symbol = " "
 symbol = " "
 
 [hostname]
-ssh_symbol = " "
+ssh_symbol = "󰣀 "
 
 [os]
+# style is defined within the symbol
+format = "$symbol "
 disabled = false
-style = "bold cyan"
 
 [os.symbols]
-Linux = " "
-Macos = " "
-MidnightBSD = " "
-Ubuntu = " "
-Unknown = " "
-Windows = "󰍲 "
+Linux = "[](bold purple)"
+Macos = "[](bold purple)"
+Ubuntu = "[](bold purple)"
+Unknown = ""
+Windows = "[󰨡](bold green)"
 
 [rust]
-symbol = " "
+symbol = " "
 
 [shell]
 disabled = false
-format = '[$indicator]($style)'
-zsh_indicator = '󰰸 '
-bash_indicator = ''
+format = '[$indicator]($style) '
+zsh_indicator = '󰰶'
+bash_indicator = ''
+fish_indicator = '󰈺'
 
 [sudo]
 disabled = false
