@@ -64,3 +64,8 @@ function open() {
         start .
     fi
 }
+
+function brew() {
+    echo "This is Git Bash; did you mean 'choco ${*}'?"
+    return 1
+}
