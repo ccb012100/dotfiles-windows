@@ -54,6 +54,7 @@ alias b=bat
 alias c=code
 alias c.='code .' # open current directory in vscode
 alias dn=dotnet
+alias ghv='gh pr view --web || gh repo view --web'
 alias lg=lazygit
 
 alias v=nvim
