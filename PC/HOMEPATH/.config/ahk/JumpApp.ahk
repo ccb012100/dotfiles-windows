@@ -11,10 +11,10 @@
 ; Value = process name
 JumpApp_ChoiceMap := Map(
     "c -> Chrome", "chrome.exe",
-    "d -> Downloads Folder", "explorer.exe Downloads",
-    "e -> File Explorer", "explorer.exe",
+    ;"d -> Downloads Folder", "explorer.exe Downloads",
+    ; "e -> File Explorer", "explorer.exe",
     "f -> Firefox", "firefox.exe",
-    "h -> Home Folder", "explorer.exe %HOME%",
+    ;"h -> Home Folder", "explorer.exe %HOME%",
     "m -> Microsoft Edge", "msedge.exe",
     "n -> Notepad++", "notepad++.exe",
     "o -> Outlook", "outlook.exe",
@@ -26,20 +26,26 @@ JumpApp_ChoiceMap := Map(
 
 JumpApp_Gui := Gui()
 
-JumpApp_Gui.BackColor := Gruvbox.bg4
-JumpApp_Gui.Opt("+AlwaysOnTop -SysMenu +Owner")    ; +Owner avoids a taskbar button.
-JumpApp_Gui.SetFont("s12", "JetBrains Mono")
+JumpApp_Gui.BackColor := Gruvbox.blue
+; -Caption :: remove title bar and a thick window border/edge
+; -SysMenu :: omit the system menu and icon in the window's upper left corner
+;;         :: omit the minimize, maximize, and close buttons in the title bar.
+; +AlwaysOnTop :: what it sounds like
+; +Owner :: Make the GUI owned by the script's main window to prevent display of a taskbar button.
+JumpApp_Gui.Opt("-Caption -SysMenu +AlwaysOnTop +Owner")
+JumpApp_Gui.SetFont("s14 cWhite", "JetBrains Mono")
 
-JumpApp_Gui.OnEvent("Escape", (*) => JumpApp_Gui.Hide())  ; Hide when you hit [Esc] key
+JumpApp_Gui.OnEvent("Escape", (*) => JumpApp_Gui.Hide())  ; Hide Gui when [Esc] key is pressed
 
 JumpApp_LBChoiceArray := []
 
 for k in JumpApp_ChoiceMap
     JumpApp_LBChoiceArray.Push(k)
 
+; TODO: remove color on listbox border
 JumpApp_LB := JumpApp_Gui.Add(
     "ListBox",
-    "sort" . " w400" . " r" . JumpApp_ChoiceMap.Count . " Background" . Gruvbox.bg,
+    "sort" . " w400" . " r" . JumpApp_ChoiceMap.Count . " Background" . Gruvbox.blue,
     JumpApp_LBChoiceArray
 )
 
