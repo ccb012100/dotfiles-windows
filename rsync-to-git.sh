@@ -2,7 +2,7 @@
 
 git_dir="$HOME/src/dotfiles-windows"
 win_homepath="$HOME/win" # `~/win` is symlinked to `/mnt/c/Users/<user_name>`
-repo_homepath="$git_dir/HOMEPATH"
+repo_homepath="$git_dir/PC/HOMEPATH"
 
 # c_drive="/mnt/c"
 # repo_c="$git_dir/c"
