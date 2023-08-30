@@ -36,6 +36,20 @@
     },
     {
       "command": {
+        "action": "renameTab"
+      },
+      "keys": "ctrl+f2"
+    },
+    {
+      "command": {
+        "action": "splitPane",
+        "profile": "WSL",
+        "split": "auto"
+      },
+      "keys": "ctrl+shift+enter"
+    },
+    {
+      "command": {
         "action": "scrollDown"
       },
       "keys": "ctrl+shift+j"
@@ -48,23 +62,10 @@
     },
     {
       "command": {
-        "action": "splitPane",
-        "profile": "WSL",
-        "split": "auto"
+        "action": "swapPane",
+        "direction": "left"
       },
-      "keys": "ctrl+shift+enter"
-    },
-    {
-      "command": {
-        "action": "renameTab"
-      },
-      "keys": "ctrl+f2"
-    },
-    {
-      "command": {
-        "action": "commandPalette"
-      },
-      "keys": "ctrl+space"
+      "keys": "alt+shift+j"
     },
     {
       "command": {
@@ -75,10 +76,20 @@
     },
     {
       "command": {
-        "action": "swapPane",
-        "direction": "left"
+        "action": "commandPalette"
       },
-      "keys": "alt+shift+j"
+      "keys": "ctrl+space"
+    },
+    {
+      "command": {
+        "action": "moveFocus",
+        "direction": "previousInOrder"
+      },
+      "keys": "ctrl+shift+b"
+    },
+    {
+      "command": "togglePaneZoom",
+      "keys": "ctrl+shift+z"
     },
     {
       "command": {
@@ -94,14 +105,10 @@
     },
     {
       "command": {
-        "action": "moveFocus",
-        "direction": "previousInOrder"
+        "action": "findMatch",
+        "direction": "next"
       },
-      "keys": "ctrl+shift+b"
-    },
-    {
-      "command": "togglePaneZoom",
-      "keys": "ctrl+shift+z"
+      "keys": "ctrl+shift+s"
     },
     {
       "command": {
@@ -116,13 +123,6 @@
         "direction": "up"
       },
       "keys": "alt+shift+i"
-    },
-    {
-      "command": {
-        "action": "findMatch",
-        "direction": "next"
-      },
-      "keys": "ctrl+shift+s"
     },
     {
       "command": {
@@ -152,21 +152,49 @@
     },
     {
       "command": {
-        "action": "swapPane",
-        "direction": "right"
-      },
-      "keys": "alt+shift+l"
-    },
-    {
-      "command": {
         "action": "findMatch",
         "direction": "prev"
       },
       "keys": "ctrl+shift+r"
     },
     {
+      "command": {
+        "action": "swapPane",
+        "direction": "right"
+      },
+      "keys": "alt+shift+l"
+    },
+    {
       "command": "restoreLastClosed",
       "keys": "ctrl+shift+t"
+    },
+    {
+      "command": {
+        "action": "adjustFontSize",
+        "delta": 1
+      },
+      "keys": "ctrl+shift+="
+    },
+    {
+      "command": {
+        "action": "adjustFontSize",
+        "delta": -1
+      },
+      "keys": "ctrl+shift+-"
+    },
+    {
+      "command": {
+        "action": "adjustFontSize",
+        "delta": 1
+      },
+      "keys": "ctrl+shift+numpad_plus"
+    },
+    {
+      "command": {
+        "action": "adjustFontSize",
+        "delta": -1
+      },
+      "keys": "ctrl+shift+numpad_minus"
     }
   ],
   "alwaysShowNotificationIcon": false,
@@ -211,7 +239,7 @@
       {
         "altGrAliasing": true,
         "colorScheme": "Cmd",
-        "commandline": "%SystemRoot%\\System32\\cmd.exe /k aliases.cmd",
+        "commandline": "%SystemRoot%\\System32\\cmd.exe /k config.cmd",
         "font": {
           "face": "Cascadia Mono",
           "size": 12
