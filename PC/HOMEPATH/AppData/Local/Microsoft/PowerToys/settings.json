@@ -4,6 +4,7 @@
     "AlwaysOnTop": false,
     "Awake": true,
     "ColorPicker": true,
+    "CropAndLock": true,
     "FancyZones": true,
     "File Explorer": true,
     "File Locksmith": true,
@@ -33,5 +34,5 @@
   "is_admin": true,
   "theme": "system",
   "system_theme": "light",
-  "powertoys_version": "v0.72.0"
+  "powertoys_version": "v0.73.0"
 }
