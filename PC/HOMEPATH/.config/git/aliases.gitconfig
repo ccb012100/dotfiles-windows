@@ -28,7 +28,7 @@
     can     = ca --no-edit
     cnv     = c --no-verify
     contrib = shortlog -s
-    cp      = cherry-pick
+    pick    = cherry-pick
 
     ## checkout
     back    = checkout -
@@ -107,7 +107,8 @@
     rest    = restore
 
     ## stash
-    checkpoint  = !stash push --include-untracked && git stash apply # stash changes but keep them in staging area
+    checkpoint  = !git stash push --include-untracked && git stash apply # stash changes but keep them in staging area
+    cp          = checkpoint
     pop         = stash pop
     stc         = checkpoint
     stl         = stash list
