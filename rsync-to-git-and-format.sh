@@ -10,4 +10,8 @@ repo_homepath="$git_dir/PC/HOMEPATH"
 rsync --relative --dirs --recursive --times --progress \
     --files-from=files-to-sync-from-home "$win_homepath/" "$repo_homepath"
 
+rsync --relative --dirs --recursive --times --progress \
+    --files-from=files-to-sync-from-win-dir \
+    "$win_homepath/src/sync/" "$git_dir"
+
 ./format-files.sh
