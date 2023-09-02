@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-DOTFILES="$HOME/.dotfiles"
-winget list >|"$DOTFILES"/winget/winget-installed-packages.txt
-choco list >|"$DOTFILES"/chocolatey/choco-installed-packages.txt
+SYNC="$HOME/src/sync/applications"
+winget list >|"$SYNC"/winget/packages.txt
+choco list >|"$SYNC"/chocolatey/packages.txt
