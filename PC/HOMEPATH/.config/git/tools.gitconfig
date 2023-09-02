@@ -18,9 +18,6 @@
 [mergetool "meld"]
     path = "/c/Program Files/Meld/Meld.exe"
 ## visual studio
-[difftool "vsdiffmerge"]
-    cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
-    keepBackup = false
 [mergetool "vsdiffmerge"]
     cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
     keepBackup = false
