@@ -1,0 +1,398 @@
+
+[[keymaps]]
+command = "palette.command"
+key = "Ctrl+ "
+
+[[keymaps]]
+command = "-palette.command"
+key = "Ctrl+Shift+p"
+
+[[keymaps]]
+command = "palette.command"
+key = "Alt+x"
+
+[[keymaps]]
+command = "-palette.command"
+key = "F1"
+
+[[keymaps]]
+command = "toggle_terminal_focus"
+key = "Ctrl+g t"
+
+[[keymaps]]
+command = "-toggle_terminal_focus"
+key = "Ctrl+`"
+
+[[keymaps]]
+command = "-duplicate_line_up"
+mode = "i"
+key = "Alt+Shift+ArrowUp"
+
+[[keymaps]]
+command = "duplicate_line_down"
+mode = "i"
+key = "Ctrl+Shift+d"
+
+[[keymaps]]
+command = "-duplicate_line_down"
+mode = "i"
+key = "Alt+Shift+ArrowDown"
+
+[[keymaps]]
+command = "palette"
+key = "Ctrl+x Ctrl+f"
+
+[[keymaps]]
+command = "-palette"
+key = "Ctrl+p"
+
+[[keymaps]]
+command = "-toggle_code_lens"
+mode = "i"
+key = "Ctrl+e"
+
+[[keymaps]]
+command = "open_settings"
+key = "F1"
+
+[[keymaps]]
+command = "-open_settings"
+key = "Ctrl+,"
+
+[[keymaps]]
+command = "open_keyboard_shortcuts"
+key = "Ctrl+h k"
+
+[[keymaps]]
+command = "-open_keyboard_shortcuts"
+key = "Ctrl+k Ctrl+s"
+
+[[keymaps]]
+command = "clipboard_copy"
+mode = "t"
+key = "Alt+w"
+
+[[keymaps]]
+command = "-clipboard_copy"
+mode = "t"
+key = "Ctrl+Shift+c"
+
+[[keymaps]]
+command = "redo"
+mode = "i"
+key = "Ctrl+Shift+?"
+
+[[keymaps]]
+command = "-redo"
+mode = "i"
+key = "Ctrl+y"
+
+[[keymaps]]
+command = "undo"
+mode = "i"
+key = "Ctrl+/"
+
+[[keymaps]]
+command = "-undo"
+mode = "i"
+key = "Ctrl+z"
+
+[[keymaps]]
+command = "clipboard_cut"
+mode = "i"
+key = "Ctrl+w"
+
+[[keymaps]]
+command = "-clipboard_cut"
+mode = "i"
+key = "Ctrl+x"
+
+[[keymaps]]
+command = "search"
+key = "Ctrl+s"
+
+[[keymaps]]
+command = "-search"
+key = "Ctrl+f"
+
+[[keymaps]]
+command = "toggle_line_comment"
+key = "Ctrl+l Ctrl+j"
+
+[[keymaps]]
+command = "-toggle_line_comment"
+key = "Ctrl+/"
+
+[[keymaps]]
+command = "indent_line"
+key = "Ctrl+]"
+
+[[keymaps]]
+command = "-indent_line"
+key = "Ctrl+]"
+
+[[keymaps]]
+command = "outdent_line"
+key = "Ctrl+["
+
+[[keymaps]]
+command = "-outdent_line"
+key = "Ctrl+["
+
+[[keymaps]]
+command = "select_all"
+key = "Ctrl+x h"
+
+[[keymaps]]
+command = "-select_all"
+key = "Ctrl+a"
+
+[[keymaps]]
+command = "new_line_below"
+mode = "i"
+key = "Ctrl+o"
+
+[[keymaps]]
+command = "-new_line_below"
+mode = "i"
+key = "Ctrl+Enter"
+
+[[keymaps]]
+command = "new_line_above"
+mode = "i"
+key = "Ctrl+Shift+o"
+
+[[keymaps]]
+command = "-new_line_above"
+mode = "i"
+key = "Ctrl+Shift+Enter"
+
+[[keymaps]]
+command = "-select_current_line"
+mode = "i"
+key = "Ctrl+l"
+
+[[keymaps]]
+command = "-select_all_current"
+mode = "i"
+key = "Ctrl+Shift+l"
+
+[[keymaps]]
+command = "-select_skip_current"
+mode = "i"
+key = "Ctrl+k Ctrl+d"
+
+[[keymaps]]
+command = "-select_next_current"
+mode = "i"
+key = "Ctrl+d"
+
+[[keymaps]]
+command = "-select_undo"
+mode = "i"
+key = "Ctrl+u"
+
+[[keymaps]]
+command = "save"
+key = "Ctrl+x Ctrl+s"
+
+[[keymaps]]
+command = "-save"
+key = "Ctrl+s"
+
+[[keymaps]]
+command = "-open_file"
+key = "Ctrl+o"
+
+[[keymaps]]
+command = "split_close"
+mode = "i"
+key = "Ctrl+x 0"
+
+[[keymaps]]
+command = "-split_close"
+mode = "i"
+key = "Ctrl+w"
+
+[[keymaps]]
+command = "new_file"
+key = "Ctrl+x n"
+
+[[keymaps]]
+command = "-new_file"
+key = "Ctrl+n"
+
+[[keymaps]]
+command = "-close_folder"
+key = "Ctrl+k f"
+
+[[keymaps]]
+command = "split_vertical"
+key = "Ctrl+x 2"
+
+[[keymaps]]
+command = "-split_vertical"
+key = 'Ctrl+\'
+
+[[keymaps]]
+command = "get_completion"
+mode = "i"
+key = "Ctrl+Shift+Enter"
+
+[[keymaps]]
+command = "-get_completion"
+mode = "i"
+key = "Ctrl+ "
+
+[[keymaps]]
+command = "-get_completion"
+mode = "i"
+key = "Ctrl+i"
+
+[[keymaps]]
+command = "get_signature"
+mode = "i"
+key = "Alt+Shift+Enter"
+
+[[keymaps]]
+command = "-get_signature"
+mode = "i"
+key = "Ctrl+Shift+ "
+
+[[keymaps]]
+command = "-get_signature"
+mode = "i"
+key = "Ctrl+Shift+ "
+
+[[keymaps]]
+command = "toggle_file_explorer_focus"
+key = "Ctrl+g f"
+
+[[keymaps]]
+command = "-toggle_file_explorer_focus"
+key = "Ctrl+Shift+e"
+
+[[keymaps]]
+command = "toggle_plugin_focus"
+key = "Ctrl+g x"
+
+[[keymaps]]
+command = "-toggle_plugin_focus"
+key = "Ctrl+Shift+x"
+
+[[keymaps]]
+command = "toggle_problem_focus"
+key = "Ctrl+x p"
+
+[[keymaps]]
+command = "-toggle_problem_focus"
+key = "Ctrl+Shift+m"
+
+[[keymaps]]
+command = "document_start"
+key = "Alt+Shift+<"
+
+[[keymaps]]
+command = "-document_start"
+key = "Ctrl+Home"
+
+[[keymaps]]
+command = "document_end"
+key = "Alt+Shift+>"
+
+[[keymaps]]
+command = "-document_end"
+key = "Ctrl+End"
+
+[[keymaps]]
+command = "-palette.symbol"
+key = "Ctrl+Shift+o"
+
+[[keymaps]]
+command = "-palette.workspace_symbol"
+key = "Ctrl+t"
+
+[[keymaps]]
+command = "-palette.line"
+key = "Ctrl+g"
+
+[[keymaps]]
+command = "reveal_active_file_in_file_explorer"
+key = "Alt+Shift+r"
+
+[[keymaps]]
+command = "open_settings_file"
+key = "Ctrl+h Ctrl+s"
+
+[[keymaps]]
+command = "open_keyboard_shortcuts_file"
+key = "Ctrl+h Ctrl+k"
+
+[[keymaps]]
+command = "palette.workspace"
+key = "Ctrl+x Ctrl+j"
+
+[[keymaps]]
+command = "toggle_panel_visual"
+key = "Ctrl+x ArrowRight"
+
+[[keymaps]]
+command = "toggle_source_control_visual"
+key = "Ctrl+g Ctrl+g"
+
+[[keymaps]]
+command = "focus_editor"
+key = "Ctrl+g e"
+
+[[keymaps]]
+command = "focus_terminal"
+key = "Ctrl+g t"
+
+[[keymaps]]
+command = "quit"
+key = "Ctrl+x Ctrl+c"
+
+[[keymaps]]
+command = "delete_line"
+key = "Ctrl+k"
+
+[[keymaps]]
+command = "delete_to_end_of_line"
+key = "Ctrl+Shift+k"
+
+[[keymaps]]
+command = "delete_to_beginning_of_line"
+key = "Alt+k"
+
+[[keymaps]]
+command = "join_lines"
+key = "Ctrl+j Ctrl+j"
+
+[[keymaps]]
+command = "yank"
+key = "Alt+w"
+
+[[keymaps]]
+command = "paste"
+key = "Ctrl+y"
+
+[[keymaps]]
+command = "paste_before"
+key = "Ctrl+Shift+y"
+
+[[keymaps]]
+command = "word_forward"
+key = "Ctrl+i"
+
+[[keymaps]]
+command = "line_start"
+key = "Ctrl+a"
+
+[[keymaps]]
+command = "format_document"
+key = "Ctrl+l Ctrl+d"
+
+[[keymaps]]
+command = "-delete_backward"
+mode = "i"
+key = "Ctrl+h"

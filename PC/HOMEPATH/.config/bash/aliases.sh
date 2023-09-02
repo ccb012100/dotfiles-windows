@@ -7,6 +7,8 @@ alias ......='cd ../../../../..'
 
 alias back='cd -'
 
+alias l=less
+
 alias ls='ls --color --block-size=K'
 alias la='ls -A'
 alias ll='ls -l'
@@ -18,7 +20,10 @@ alias tree='cmd //c tree' # use cmd.exe "tree command"
 
 alias path="tr ':' '\n' <<< \"$PATH\""
 
-alias k='git'
+alias cls='clear'
+alias path='tr '\'':'\'' '\''\n'\'' <<< "$PATH"'
+
+alias k=git
 alias ka='git a'
 alias kaa='git aa'
 alias kaac='git aac'
@@ -36,17 +41,23 @@ alias kl='git l'
 alias kcob='git cob'
 alias kp='git p'
 alias kps='git ps'
-alias krest='git restore'
 alias kr='git rebase'
+alias kra='git ra'
+alias krc='git rc'
+alias kri='git ri'
+alias krest='git restore'
 alias ks='git s'
 alias ksl='git sl'
 alias ksvv='git svv'
 alias kundo='git undo'
 alias kunstage='git unstage'
 
+alias b=bat
 alias c=code
 alias c.='code .' # open current directory in vscode
 alias dn=dotnet
+alias ghv='gh pr view --web || gh repo view --web'
+alias lg=lazygit
 
 alias v=nvim
 alias vim=nvim

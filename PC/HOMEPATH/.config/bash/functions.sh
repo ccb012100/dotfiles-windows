@@ -17,41 +17,55 @@ function clla {
 }
 # Git Bash doesn't have the `man` command
 function man() {
+    echo 'using --help'
     "$@" --help | less
 }
 # golang cli commands
 function gl() {
     case $1 in
-            b )
-            shift
-            go build .
+    b)
+        shift
+        go build .
         ;;
-        r )
-            shift
-            go run .
+    r)
+        shift
+        go run .
         ;;
-        * )
-            go "$@"
+    *)
+        go "$@"
         ;;
     esac
 }
 # cargo cli commands
 function cg() {
     case $1 in
-        b )
-            shift
-            cargo build
+    b)
+        shift
+        cargo build
         ;;
-        c )
-            shift
-            cargo check
+    c)
+        shift
+        cargo check
         ;;
-        r )
-            shift
-            cargo run
+    r)
+        shift
+        cargo run
         ;;
-        * )
-            cargo "$@"
+    *)
+        cargo "$@"
         ;;
     esac
+}
+# use built-in Windows 'open' command
+function open() {
+    if [[ -n "${*}" ]]; then
+        start "${*}"
+    else
+        start .
+    fi
+}
+
+function brew() {
+    echo "This is Git Bash; did you mean 'choco ${*}'?"
+    return 1
 }

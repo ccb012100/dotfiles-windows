@@ -9,6 +9,7 @@
 
 # Force shell scripts/configs to always use lf line endings
 *.bashrc text eol=lf
+*.md text eol=lf
 *.sh text eol=lf
 *.fish text eol=lf
 *.zsh text eol=lf

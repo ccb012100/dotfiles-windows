@@ -2,10 +2,9 @@
     path = .config/git/git.gitconfig
     path = .config/git/aliases.gitconfig
     path = .config/git/tools.gitconfig
-    path = .config/git/user.gitconfig
-[fetch]
-	prune = true
-[pull]
-	rebase = false
-[http]
-	sslbackend = openssl
+[includeIf "gitdir:~/src/"]
+    path = .config/git/personal.gitconfig
+[includeIf "gitdir:~/.dotfiles/"]
+    path = .config/git/personal.gitconfig
+[includeIf "gitdir:~/work/"]
+    path = .config/git/work.gitconfig

@@ -1,0 +1,176 @@
+Name                                  Id                                    Version              Available      Source
+-----------------------------------------------------------------------------------------------------------------------
+Bitwarden                             Bitwarden.Bitwarden                   2023.7.1                            winget
+1Password                             XP99C9G0KRDZ27                        8.10.9                              msstore
+NVM for Windows 1.1.11                CoreyButler.NVMforWindows             1.1.11                              winget
+Battery Percentage Icon               61867SoleonInnovation.BatteryPercent… 1.3.30.0
+Visual Studio Enterprise 2022         Microsoft.VisualStudio.2022.Enterpri… 17.7.0                              winget
+7-Zip 23.01 (x64)                     7zip.7zip                             23.01                               winget
+Windows Driver Package - IDEMIA (UMP… 7AF37550F81D0AF066068712E83F61482535… 06/25/2021 1.2.8.438
+AltSnap                               AltSnap.AltSnap                       1.60                                winget
+Remote Support Jump Client 22.2.2 [e… BeyondTrust Remote Support Jump Clie… 22.2.2
+RipGrep MSVC                          BurntSushi.ripgrep.MSVC               13.0.0                              winget
+Ubuntu                                Canonical.Ubuntu.2204                 2204.2.33.0                         winget
+Cisco AnyConnect Secure Mobility Cli… Cisco AnyConnect Secure Mobility Cli… 4.10.07061
+Citrix Workspace 2305                 Citrix.Workspace                      23.5.1.83            23.7.1.18      winget
+Firefox Developer Edition (x64 en-US) Mozilla.Firefox.DeveloperEdition      116.0                117.0b5        winget
+GitHub Desktop                        GitHub.GitHubDesktop                  3.2.7                               winget
+Git                                   Git.Git                               2.41.0.3                            winget
+Hack Fonts version 1.6.0              SourceFoundry.HackFonts               1.6.0                               winget
+Link Shell Extension                  HermannSchinagl.LinkShellExtension    3.9.3.5                             winget
+Haskell Stack                         commercialhaskell.stack               2.11.1                              winget
+Informatica 10.5.2 Client             Informatica 10.5.2 Client             10.5.2.0
+KeePass Password Safe 2.54            DominikReichl.KeePass                 2.54                                winget
+Logi Bolt                             Logitech.LogiBolt                     1.2.6024.0                          winget
+Microsoft Azure Compute Emulator - v… Microsoft Azure Compute Emulator - v… 2.9.8999.43
+Microsoft Edge                        Microsoft.Edge                        114.0.1823.106       115.0.1901.200 winget
+Microsoft Edge Update                 Microsoft Edge Update                 1.3.177.11
+Microsoft Edge WebView2 Runtime       Microsoft.EdgeWebView2Runtime         115.0.1901.200                      winget
+Microsoft Help Viewer 2.3             Microsoft Help Viewer 2.3             2.3.28307
+Microsoft SQL Server 2019 (64-bit)    Microsoft SQL Server SQL2019          Unknown
+Microsoft Visual Studio 2010 Tools f… Microsoft Visual Studio 2010 Tools f… 10.0.60724
+App Installer                         Microsoft.DesktopAppInstaller_8wekyb… 1.20.1881.0
+HEIF Image Extensions                 Microsoft.HEIFImageExtension_8wekyb3… 1.0.62091.0
+Paint 3D                              Microsoft.MSPaint_8wekyb3d8bbwe       6.2305.16087.0
+Microsoft Edge                        Microsoft.MicrosoftEdge.Stable_8weky… 114.0.1823.106
+Microsoft Sticky Notes                Microsoft.MicrosoftStickyNotes_8weky… 4.6.0.0
+NuGet CLI                             Microsoft.NuGet                       6.5.0.154                           winget
+Snip & Sketch                         Microsoft.ScreenSketch_8wekyb3d8bbwe  10.2008.3001.0
+Store Experience Host                 Microsoft.StorePurchaseApp_8wekyb3d8… 22305.1401.5.0
+Microsoft To Do                       Microsoft.Todos_8wekyb3d8bbwe         2.100.61791.0
+VP9 Video Extensions                  Microsoft.VP9VideoExtensions_8wekyb3… 1.0.61591.0
+Web Media Extensions                  Microsoft.WebMediaExtensions_8wekyb3… 1.0.61591.0
+Webp Image Extensions                 Microsoft.WebpImageExtension_8wekyb3… 1.0.52351.0
+Windows App Runtime DDLM 3000.934.19… Microsoft.WinAppRuntime.DDLM.3000.93… 3000.934.1904.0
+Windows App Runtime DDLM 3000.934.19… Microsoft.WinAppRuntime.DDLM.3000.93… 3000.934.1904.0
+Microsoft Photos                      Microsoft.Windows.Photos_8wekyb3d8bb… 2023.10070.17002.0
+Windows Clock                         Microsoft.WindowsAlarms_8wekyb3d8bbwe 11.2304.0.0
+Windows Calculator                    Microsoft.WindowsCalculator_8wekyb3d… 11.2210.0.0
+Windows Voice Recorder                Microsoft.WindowsSoundRecorder_8weky… 10.2103.28.0
+Microsoft Store                       Microsoft.WindowsStore_8wekyb3d8bbwe  22306.1401.1.0
+Windows Terminal                      Microsoft.WindowsTerminal             1.17.11461.0                        winget
+Windows Package Manager Source (wing… Microsoft.Winget.Source_8wekyb3d8bbwe 2023.811.1644.446
+WinAppRuntime.Main.1.3                MicrosoftCorporationII.WinAppRuntime… 3000.934.1904.0
+WinAppRuntime.Singleton               MicrosoftCorporationII.WinAppRuntime… 3000.934.1904.0
+Windows Subsystem for Linux           MicrosoftCorporationII.WindowsSubsys… 1.2.5.0
+Mozilla Firefox (x64 en-US)           Mozilla.Firefox                       116.0.2                             winget
+Mozilla Maintenance Service           MozillaMaintenanceService             115.0.1
+Notepad++ (64-bit x64)                Notepad++.Notepad++                   8.5.4                8.5.5          winget
+Npcap OEM                             NpcapInst                             1.00
+Microsoft 365 Apps for enterprise - … Microsoft.Office                      16.0.16130.20644     16.0.16626.20… winget
+Microsoft OneDrive                    Microsoft.OneDrive                    23.101.0514.0004                    winget
+Original Application Support          OriginalAppSupport                    PB.9.2003
+Postman x86_64 10.17.0                Postman.Postman                       10.17.0                             winget
+Rustup: the Rust toolchain installer  Rustlang.Rustup                       1.26.0                              winget
+SDK for SAP Adaptive Server Enterpri… SDK for SAP Adaptive Server Enterpri… 16.0.20.500
+Software Operation Panel              Software Operation Panel              Unknown
+SoundSwitch 6.7.2.0                   AntoineAflalo.SoundSwitch             6.7.2.0                             winget
+Spotify                               Spotify.Spotify                       1.2.17.834.g26ee1129                winget
+SumatraPDF                            SumatraPDF.SumatraPDF                 3.4.6                               winget
+Microsoft Teams                       Microsoft.Teams                       1.6.00.20074                        winget
+Zscaler                               Zscaler                               3.7.1.54
+WindowsMultiTool                      a3a8c61c-01f9-407e-a040-d2c984b9ca3d… 1.0.0.0
+HTTPie 2023.3.3                       HTTPie.HTTPie                         2023.3.3                            winget
+cURL                                  cURL.cURL                             8.2.1                               winget
+Clink v0.4.9                          clink_0.4.9                           0.4.9
+tealdeer                              dbrgn.tealdeer                        1.6.1                               winget
+Insomnia                              Insomnia.Insomnia                     2023.4.0                            winget
+less                                  jftuga.less                           633                                 winget
+jq                                    jqlang.jq                             1.6                                 winget
+YubiKey Manager                       Yubico.YubikeyManager                 1.2.4                1.2.5          winget
+Microsoft Visual C++ 2013 Redistribu… Microsoft.VCRedist.2013.x64           12.0.40664.0                        winget
+ISAM ESSO AccessAgent                 {07721473-92B7-4D90-A092-E12D17EBFAC… 08.02.20431
+Pegasus Software SmartScanICR 3.0     {0AA6E5C9-31CA-4F8A-BC44-A0EDA2B468C… 3.0
+IIS 10.0 Express                      {0DCE4558-8BF6-4C7A-B293-CDDDCE04793… 10.0.08009
+Windows Software Development Kit - W… {126dedf0-cc0e-4b48-9ece-806b0e43719… 10.1.18362.1
+Windows SDK AddOn                     {15941C7F-810D-41DF-8C5A-8D0490277AF… 10.1.0.0
+Microsoft SQL Server 2019 Setup (Eng… {17DCED0E-5B27-453A-B2B4-E487B869B28… 15.0.4013.40
+Teradata SQL Assistant 16.20.0.13     {188C573C-9634-46F2-A9BC-7B7369DF162… 16.20.00.13
+MSXML 4.0 SP3 Parser                  {196467F1-C11F-4F76-858B-5812ADC83B9… 4.30.2100.0
+Microsoft Visual C++ 2010  x64 Redis… Microsoft.VCRedist.2010.x64           10.0.40219                          winget
+Azure Data Studio (User)              {1F0FD1CE-9703-4734-8F50-5B5CEEDAE6B… 1.44.1
+Python Launcher                       {23514291-DEF3-42FD-A67C-A96E35C92F2… 3.11.4150.0
+Oracle Smart View 64-bit for Office   {28AB5960-E3F2-4D3E-B72D-4C524F3575A… 21.200
+Software Operation Panel              {2B3A00BC-AADB-4A3C-B6F4-35FCAB33D42… 3.5.16.0
+Go Programming Language amd64 go1.21… GoLang.Go                             1.21.0                              winget
+Microsoft VSS Writer for SQL Server … {2C33F4D4-E9A5-4DE1-ACFE-3A13464E670… 15.0.2000.5
+OCRProcessorSetUp                     {2ED682FE-BA3D-4AED-BE56-EF7D460E66C… 1.0.0
+Microsoft SQL Server 2019 T-SQL Lang… {31D27B41-A051-49D8-907A-62E0F4A2188… 15.0.2000.5
+MSXML 4.0 SP3 Parser (KB2721691)      {355B5AC0-CEEE-42C5-AD4D-7F3CFD806C3… 4.30.2114.0
+Microsoft SQL Server 2019 LocalDB     {36E492B8-CB83-4DA5-A5D2-D99A8E8228A… 15.0.4153.1
+Tableau Reader 2022.4 (20224.22.1117… Tableau.Reader                        22.4.949                            winget
+Pegasus Imaging SmartScan Xpress ICR… {39468A04-8B8B-4A4D-8B4E-E9386E80C59… 4.0.21
+Microsoft Azure PowerShell - April 2… {3BA7CAA9-97BA-4528-B7E1-B640910BB14… 5.7.0.18831
+Pegasus Imaging's ISIS® Xpress 2.0    {3E17F5E9-57A1-4DD7-8134-4FC6FD2E391… 2.0.12
+PowerShell 7-x64                      Microsoft.PowerShell                  7.3.6.0                             winget
+Python 3.11.4 (64-bit)                Python.Python.3.11                    3.11.4                              winget
+Microsoft Visual C++ 2015-2022 Redis… Microsoft.VCRedist.2015+.x86          14.36.32532.0        14.38.32919.0  winget
+Pegasus Imaging ImagXpress 8.0        {455D7A63-5BCA-462E-9F15-A62A82CEA5C… 8.0.23
+GitHub CLI                            GitHub.cli                            2.32.0               2.32.1         winget
+Windows Software Development Kit - W… Microsoft.WindowsSDK.10.0.19041       10.1.19041.685                      winget
+Git Town                              {46D42E43-F071-42B4-B49D-0EB2AE14D6F… 9.0.0
+Auto Dark Mode                        XP8JK4HZBVF435                        10.3.0.90                           winget
+ISIS Driver Bundle Installer for fi … {4B07E034-8AC7-4960-83A2-98EC96750CD… 1.1.11206.21002
+Pegasus Imaging SmartScan Xpress Bar… {4B92D48A-D8C4-4AB5-B953-134EF28F75F… 4.0.31
+Logitech G HUB                        Logitech.GHUB                         2023.6.430723                       winget
+NHTSA_SetUp                           {568AA30B-6195-4578-AD98-C5DBF0E128D… 4.0.0
+vs_CoreEditorFonts                    {56FB5923-1A95-4D55-BE78-CD42B50E67A… 17.6.33605
+Corporate Ignition                    {57FC47A1-5092-4C25-A438-43813589B65… 20.3.0
+Cisco AnyConnect Start Before Login … {5B1D9A83-7630-48D4-B8B5-3B71C8BEBE0… 4.10.07061
+Microsoft System CLR Types for SQL S… Microsoft.CLRTypesSQLServer.2019      15.0.2000.5                         winget
+Appeon PowerBuilder 2019 R3 Standard… {5C605BA9-B5E8-48E1-A686-0311F645EDA… 19.2.0.2728
+Browser for SQL Server 2019           {5E366957-8D78-4BB5-A790-96F97A9766B… 15.0.2000.5
+Azure Data Studio                     {6591F69E-6588-4980-81ED-C8FCBD7EC4B… 1.44.0
+Microsoft .NET Runtime - 6.0.21 (x64) Microsoft.DotNet.Runtime.6            6.0.21                              winget
+Microsoft Visual Studio Installer     {6F320B93-EE3C-4826-85E0-ADF79F8D4C6… 3.7.2175.60206
+JetBrains dotPeek 2023.1.3            {72452c8c-f858-5453-95a0-0cf3c8708fe… 2023.1.3
+Teams Machine-Wide Installer          Microsoft.Teams                       1.5.0.30767          1.6.00.6754    winget
+starship                              Starship.Starship                     1.16.0                              winget
+LINQPad 7 version 7.7.15              LINQPad.LINQPad.7                     7.7.15                              winget
+Google Chrome                         Google.Chrome                         115.0.5790.110       115.0.5790.171 winget
+Microsoft Build of OpenJDK with Hots… Microsoft.OpenJDK.11                  11.0.20.8                           winget
+Logi Options+                         Logitech.OptionsPlus                  1.48.437015                         winget
+YubiKey Smart Card Minidriver x64     {86F3EB14-5E84-4C0A-8DC3-7FF7F6C6DAE… 4.1.1.210
+IgnitionSetup                         {8C78B712-0406-4347-90C9-5D3CAB9CDC6… 22.0.1
+Microsoft Visual C++ 2015-2022 Redis… Microsoft.VCRedist.2015+.x64          14.36.32532.0        14.38.32919.0  winget
+PowerToys (Preview) x64               Microsoft.PowerToys                   0.72.0                              winget
+Microsoft Azure Authoring Tools - v2… {90462BD2-DF5B-449C-A401-FCC1DC264E4… 2.9.8999.45
+Dell Command | Monitor                {91E79414-DB41-4030-9A13-E133EE30F1D… 10.3.1.138
+Microsoft SQL Server Management Stud… Microsoft.SQLServerManagementStudio   19.1                                winget
+Local Administrator Password Solution Microsoft.LAPS                        6.2.0.0                             winget
+Microsoft Visual C++ 2008 Redistribu… {9A25302D-30C0-39D9-BD6F-21E6EC16047… 9.0.30729
+WebPCSC                               {9C33A615-CDA7-42C9-8008-E0A5FC51D5D… 1.4.0.0
+Microsoft SQL Server 2012 Native Cli… Microsoft.SQLServer2012NativeClient   11.4.7462.6                         winget
+Microsoft Visual C++ 2013 Redistribu… Microsoft.VCRedist.2013.x86           12.0.40664.0                        winget
+Adobe Acrobat Reader MUI              Adobe.Acrobat.Reader.32-bit           23.003.20269                        winget
+Wally version 3.0.1                   {AD29FB2C-766F-4272-9BB1-BEAC40CA627… 3.0.1
+MDOP MBAM                             {AEC5BCA3-A2C5-46D7-9873-7698E6D3CAA… 2.5.1147.0
+VLC media player                      VideoLAN.VLC                          3.0.18                              winget
+Microsoft .NET SDK 7.0.400 (x64) fro… {B2305758-F8FA-4868-9340-BDC90E0B90B… 7.4.23.36916
+NVIDIA Graphics Driver 527.37         {B2FE1952-0186-46C3-BAEC-A80AA35AC5B… 527.37
+BeyondTrust Remote Support Virtual S… {BBC4B8C6-3565-49C3-B9D3-1F1E8F26B59… 1.2.2.2
+Microsoft Search in Bing              {C17F6DEF-D34C-4B75-97E1-D81062408B4… 2.0.2
+Microsoft Azure CLI                   Microsoft.AzureCLI                    2.50.0               2.51.0         winget
+AuthenticateIT v7.0.5                 {C5BA4134-C555-436D-BE61-04F5935BFF6… 7.0.5
+Microsoft Azure Libraries for .NET –… {C5C91AA6-3E83-430E-8B7A-6B790083F28… 3.0.0127.060
+Microsoft Web Deploy 4.0              Microsoft.WebDeploy                   10.0.7421                           winget
+Microsoft ODBC Driver 17 for SQL Ser… {CBA9B46D-5C8E-46F9-94B4-7024400EDE5… 17.10.3.1
+Microsoft OLE DB Driver for SQL Serv… {CD711320-8704-46EF-8B09-0F40BD2A4C2… 18.6.5.0
+Crystal Reports Basic Runtime for Vi… {CE26F10F-C80F-4377-908B-1B7882AE2CE… 10.5.0.0
+Chocolatey (Install Only)             Chocolatey.Chocolatey                 2.2.0.0              2.2.2.0        winget
+Printer Abstraction - limited C++ 5.… {D99FD10D-585C-426D-9C7F-32884563609… 12.11.05
+IDEMIA Minidriver for PIV/CIV (64-bi… {DFA00752-045C-4A42-8C96-5826292261B… 1.2.8
+Microsoft Visual Studio Code          Microsoft.VisualStudioCode            1.81.1                              winget
+Microsoft Visual C++ 2010  x86 Redis… Microsoft.VCRedist.2010.x86           10.0.40219                          winget
+Teradata Tools and Utilities - Base … {F1847ED2-DBF5-45D1-98C9-0F634A3D171… 17.10.21.00
+Dell Command | Update                 Dell.CommandUpdate                    4.8.0                               winget
+Meld                                  Meld.Meld                             3.22.0                              winget
+Jabra Direct                          Jabra.Direct                          6.9.16301                           winget
+Logi Tune                             Logitech.LogiTune                     3.3.32.0                            winget
+PingID                                {com.pingidentity.pingid.pcclient}}_… 1.7.3
+Microsoft Azure Information Protecti… {d20f2e43-c85b-4bcf-b0c2-23414d6f732… 2.12.62.0
+Windows Software Development Kit - W… Microsoft.WindowsSDK.10.0.22000       10.0.22000.832                      winget
+Windows Software Development Kit - W… {d7f51c79-38df-4c6f-be17-0fcce28bc25… 10.1.22621.1778
+CrowdStrike Windows Sensor            {edd98a13-3067-4e4b-a330-22e609a3890… 6.54.16812.0
+Microsoft Visual Studio Tools for Ap… {f3fbabb4-bcfb-45eb-8fff-9b784fd68c3… 16.0.31110
+BCUninstaller                         Klocman.BulkCrapUninstaller           5.6.0.0                             winget

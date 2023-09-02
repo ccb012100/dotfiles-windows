@@ -1,7 +1,7 @@
-# shellcheck disable=all
 _gvimrc
 _vimrc
 .bashrc
+.config/ahk
 .config/bash
 .config/git
 .config/kmonad
@@ -9,10 +9,11 @@ _vimrc
 .config/starship.toml
 .config/tealdeer
 .gitconfig
-.gnupg
+.gnupg/gpg-agent.conf
+.gnupg/gpg.conf
 .minttyrc
 .ssh/config
-aliases.cmd
+config.cmd
 AppData/Local/Microsoft/PowerToys/FancyZones/settings.json
 AppData/Local/Microsoft/PowerToys/File Explorer/settings.json
 AppData/Local/Microsoft/PowerToys/File Explorer/settings.json
@@ -25,8 +26,16 @@ AppData/Local/Microsoft/PowerToys/PowerToys Run/Settings/PowerToysRunSettings.js
 AppData/Local/Microsoft/PowerToys/settings.json
 AppData/Local/nvim/init.vim
 AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+AppData/Roaming/AutoDarkMode/config.yaml
 AppData/Roaming/AltSnap/AltSnap.ini
 AppData/Roaming/GitHub CLI/config.yml
-AppData/Roaming/NotePad++/config.xml
 AppData/Roaming/NotePad++/shortcuts.xml
+AppData/Roaming/NotePad++/config.xml
 AppData/Roaming/SoundSwitch/SoundSwitchConfiguration.json
+src/sync/applications/AquaSnap/AquaSnap.reg
+src/sync/applications/chocolatey/packages.txt
+src/sync/applications/Microsoft.PowerShell_profile.ps1
+src/sync/scripts/kmonad-init.bat
+src/sync/scripts/list-packages.sh
+src/sync/scripts/remove-git-bash-context-items.bat
+src/sync/winget/packages.txt
