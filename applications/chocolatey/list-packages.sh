@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-choco list >| "$HOME"/src/sync/applications/chocolatey/packages.txt
+choco list >| "$HOME"/.dotfiles/applications/chocolatey/packages.txt
