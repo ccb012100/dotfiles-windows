@@ -1,11 +1,13 @@
 {
-    "Enabled": true,
-    "ShowIcon": true,
-    "ExtendedContextMenuOnly": false,
-    "PersistState": true,
-    "MRUEnabled": true,
-    "MaxMRUSize": 10,
-    "SearchText": "",
-    "ReplaceText": "",
-    "UseBoostLib": false
+  "Enabled": true,
+  "ShowIcon": true,
+  "ExtendedContextMenuOnly": false,
+  "PersistState": true,
+  "MRUEnabled": true,
+  "MaxMRUSize": 10,
+  "SearchText": "",
+  "ReplaceText": "",
+  "UseBoostLib": false,
+  "LastWindowWidth": 1400,
+  "LastWindowHeight": 800
 }

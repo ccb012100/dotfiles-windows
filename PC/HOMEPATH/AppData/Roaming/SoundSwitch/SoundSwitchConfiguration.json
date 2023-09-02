@@ -134,9 +134,21 @@
     }
   ],
   "FirstRun": false,
-  "PlaybackHotKey": { "Keys": 48, "Modifier": 7, "Enabled": false },
-  "RecordingHotKey": { "Keys": 118, "Modifier": 3, "Enabled": true },
-  "MuteRecordingHotKey": { "Keys": 77, "Modifier": 3, "Enabled": true },
+  "PlaybackHotKey": {
+    "Keys": 48,
+    "Modifier": 7,
+    "Enabled": false
+  },
+  "RecordingHotKey": {
+    "Keys": 118,
+    "Modifier": 3,
+    "Enabled": true
+  },
+  "MuteRecordingHotKey": {
+    "Keys": 77,
+    "Modifier": 3,
+    "Enabled": true
+  },
   "ChangeCommunications": false,
   "UpdateCheckInterval": 86400,
   "UpdateMode": 0,
@@ -187,7 +199,17 @@
         "NameClean": "Microphone (Jabra SPEAK 410 USB)"
       },
       "Name": "Samsung MM55 Soundbar",
-      "Triggers": [{ "Type": 0, "HotKey": { "Keys": 54, "Modifier": 7, "Enabled": true }, "ShouldRestoreDevices": false }],
+      "Triggers": [
+        {
+          "Type": 0,
+          "HotKey": {
+            "Keys": 54,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
+        }
+      ],
       "AlsoSwitchDefaultDevice": true,
       "SwitchForegroundApp": true,
       "NotifyOnActivation": true,
@@ -227,7 +249,17 @@
         "NameClean": "Headset Microphone (Zone Wired)"
       },
       "Name": "Logitech Zone Wired headset",
-      "Triggers": [{ "Type": 0, "HotKey": { "Keys": 49, "Modifier": 7, "Enabled": true }, "ShouldRestoreDevices": false }],
+      "Triggers": [
+        {
+          "Type": 0,
+          "HotKey": {
+            "Keys": 49,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
+        }
+      ],
       "AlsoSwitchDefaultDevice": true,
       "SwitchForegroundApp": true,
       "NotifyOnActivation": true,
@@ -267,7 +299,17 @@
         "NameClean": "Microphone (Jabra SPEAK 410 USB)"
       },
       "Name": "Jabra Speak 410 USB puck",
-      "Triggers": [{ "Type": 0, "HotKey": { "Keys": 50, "Modifier": 7, "Enabled": true }, "ShouldRestoreDevices": false }],
+      "Triggers": [
+        {
+          "Type": 0,
+          "HotKey": {
+            "Keys": 50,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
+        }
+      ],
       "AlsoSwitchDefaultDevice": true,
       "SwitchForegroundApp": true,
       "NotifyOnActivation": true,
@@ -307,7 +349,17 @@
         "NameClean": "Microphone (Jabra SPEAK 410 USB)"
       },
       "Name": "Audio-Technica",
-      "Triggers": [{ "Type": 0, "HotKey": { "Keys": 55, "Modifier": 7, "Enabled": true }, "ShouldRestoreDevices": false }],
+      "Triggers": [
+        {
+          "Type": 0,
+          "HotKey": {
+            "Keys": 55,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
+        }
+      ],
       "AlsoSwitchDefaultDevice": true,
       "SwitchForegroundApp": true,
       "NotifyOnActivation": true,
@@ -347,7 +399,17 @@
         "NameClean": "Microphone (Realtek(R) Audio)"
       },
       "Name": "Earbuds headset",
-      "Triggers": [{ "Type": 0, "HotKey": { "Keys": 51, "Modifier": 7, "Enabled": true }, "ShouldRestoreDevices": false }],
+      "Triggers": [
+        {
+          "Type": 0,
+          "HotKey": {
+            "Keys": 51,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
+        }
+      ],
       "AlsoSwitchDefaultDevice": true,
       "SwitchForegroundApp": true,
       "NotifyOnActivation": true,
