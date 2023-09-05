@@ -222,9 +222,14 @@
       "IsGlobal": false,
       "ActionKeyword": "cmd ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Shell\\Images\\shell.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Shell\\Images\\shell.light.png",
-      "AdditionalOptions": []
+      "AdditionalOptions": [
+        {
+          "Key": "LeaveShellOpen",
+          "DisplayLabel": "Keep shell open",
+          "DisplayDescription": null,
+          "Value": false
+        }
+      ]
     },
     {
       "Id": "CEA08895D2544B019B2E9C5009600DF4",
@@ -332,6 +337,16 @@
       "WeightBoost": 0,
       "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Uri\\Images\\uri.dark.png",
       "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Uri\\Images\\uri.light.png",
+    },
+    {
+      "Id": "a26b1bb4dbd911edafa10242ac120002",
+      "Name": "Value Generator",
+      "Description": "A plugin to calculate hashes and generate values.",
+      "Author": "IHorvalds",
+      "Disabled": false,
+      "IsGlobal": false,
+      "ActionKeyword": "#",
+      "WeightBoost": 0,
       "AdditionalOptions": []
     },
     {
