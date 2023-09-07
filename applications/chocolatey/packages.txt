@@ -13,8 +13,8 @@ curl 8.2.1
 deno 1.36.3
 fd 8.7.0
 FiraCode 6.2.0
-go 1.21.0
-golang 1.21.0
+go 1.21.1
+golang 1.21.1
 httpie 3.2.2
 httpie-desktop 2023.3.3
 jetbrainsmono 2.304.0
