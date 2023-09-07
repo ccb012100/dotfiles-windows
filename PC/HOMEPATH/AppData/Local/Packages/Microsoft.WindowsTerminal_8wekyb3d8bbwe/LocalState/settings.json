@@ -215,7 +215,7 @@
       "colorScheme": "Tango Dark",
       "font": {
         "face": "CaskaydiaCove Nerd Font Mono",
-        "size": 11
+        "size": 11.0
       },
       "intenseTextStyle": "all",
       "padding": "10",
@@ -242,7 +242,7 @@
         "commandline": "%SystemRoot%\\System32\\cmd.exe /k config.cmd",
         "font": {
           "face": "Cascadia Mono",
-          "size": 12
+          "size": 12.0
         },
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "hidden": false,
@@ -257,7 +257,7 @@
         "elevate": true,
         "font": {
           "face": "Fira Code Retina",
-          "size": 12
+          "size": 12.0
         },
         "guid": "{d5b08fdb-9a10-498a-a536-69672ac7ee1a}",
         "hidden": false,
