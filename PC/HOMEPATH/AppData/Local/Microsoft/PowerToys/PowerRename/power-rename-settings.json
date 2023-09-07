@@ -7,5 +7,7 @@
   "MaxMRUSize": 10,
   "SearchText": "",
   "ReplaceText": "",
-  "UseBoostLib": false
+  "UseBoostLib": false,
+  "LastWindowWidth": 1400,
+  "LastWindowHeight": 800
 }
