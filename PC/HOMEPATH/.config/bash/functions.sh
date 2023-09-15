@@ -15,26 +15,9 @@ function clal {
 function clla {
     cd "$@" && ls -la
 }
-# Git Bash doesn't have the `man` command
-function man() {
-    echo 'using --help'
-    "$@" --help | less
-}
-# golang cli commands
-function gl() {
-    case $1 in
-    b)
-        shift
-        go build .
-        ;;
-    r)
-        shift
-        go run .
-        ;;
-    *)
-        go "$@"
-        ;;
-    esac
+function brew() {
+    echo "This is Git Bash; did you mean 'choco ${*}'?"
+    return 1
 }
 # cargo cli commands
 function cg() {
@@ -56,6 +39,47 @@ function cg() {
         ;;
     esac
 }
+# dotnet cli commands
+function dn() {
+    case $1 in
+    r | run)
+        shift
+        go build .
+        ;;
+    b | build)
+        shift
+        dotnet build "$@"
+        ;;
+    t | test)
+        shift
+        dotnet test "$@"
+        ;;
+    *)
+        dotnet "$@"
+        ;;
+    esac
+}
+# golang cli commands
+function gl() {
+    case $1 in
+    b)
+        shift
+        go build .
+        ;;
+    r)
+        shift
+        go run .
+        ;;
+    *)
+        go "$@"
+        ;;
+    esac
+}
+# Git Bash doesn't have the `man` command
+function man() {
+    echo 'using --help'
+    "$@" --help | less
+}
 # use built-in Windows 'open' command
 function open() {
     if [[ -n "${*}" ]]; then
@@ -63,9 +87,4 @@ function open() {
     else
         start .
     fi
-}
-
-function brew() {
-    echo "This is Git Bash; did you mean 'choco ${*}'?"
-    return 1
 }
