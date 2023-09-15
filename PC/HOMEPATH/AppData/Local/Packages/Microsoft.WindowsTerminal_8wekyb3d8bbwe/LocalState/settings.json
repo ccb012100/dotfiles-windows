@@ -223,7 +223,7 @@
     },
     "list": [
       {
-        "colorScheme": "Synthwave",
+        "colorScheme": "GitBash",
         "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
         "hidden": false,
         "name": "Git Bash",
@@ -460,6 +460,29 @@
       "selectionBackground": "#44475A",
       "white": "#BBBBBB",
       "yellow": "#F1FA8C"
+    },
+    {
+      "background": "#000000",
+      "black": "#000000",
+      "blue": "#2186EC",
+      "brightBlack": "#000000",
+      "brightBlue": "#2F9DED",
+      "brightCyan": "#19CDE6",
+      "brightGreen": "#25C141",
+      "brightPurple": "#F97137",
+      "brightRed": "#F841A0",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FDF454",
+      "cursorColor": "#19CDE6",
+      "cyan": "#12C3E2",
+      "foreground": "#0096FF",
+      "green": "#1EBB2B",
+      "name": "GitBash",
+      "purple": "#F85A21",
+      "red": "#F6188F",
+      "selectionBackground": "#19CDE6",
+      "white": "#FFFFFF",
+      "yellow": "#FDF834"
     },
     {
       "background": "#000000",
@@ -761,7 +784,7 @@
       "yellow": "#808000"
     },
     {
-      "background": "#171717",
+      "background": "#000000",
       "black": "#000000",
       "blue": "#5DA9F6",
       "brightBlack": "#313131",
