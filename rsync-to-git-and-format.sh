@@ -10,7 +10,7 @@ rsync --relative --dirs --recursive --times --progress \
     --files-from=files-to-sync-from-home "$win_homepath/" "$repo_homepath"
 
 rsync --relative --dirs --recursive --times --progress \
-    --files-from=files-to-sync-from-cm-notes \
-    "$win_homepath/work/cm-notes/sync/" "$git_dir"
+    --files-from=files-to-sync-from-work-notes \
+    "$win_homepath/work/work-notes/sync/" "$git_dir"
 
 ./format-files.sh
