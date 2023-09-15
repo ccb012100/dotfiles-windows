@@ -1,5 +1,5 @@
 AutoThemeSwitchingEnabled: true
-Governor: Default
+Governor: NightLight
 Autostart:
   Validate: true
 WindowsThemeMode:
@@ -34,7 +34,7 @@ Sunrise: 2023-07-17T07:00:00.0000000
 Sunset: 2023-07-17T20:00:00.0000000
 Location:
   PollingCooldownTimeSpan: 1.00:00:00
-  Enabled: true
+  Enabled: false
   UseGeolocatorService: true
   SunsetOffsetMin: 0
   SunriseOffsetMin: 0
@@ -61,7 +61,7 @@ Notifications:
   OnAutoThemeSwitching: true
   OnSkipNextSwitch: true
 AutoSwitchNotify:
-  Enabled: true
+  Enabled: false
   GracePeriodMinutes: 5
 Hotkeys:
   Enabled: false
