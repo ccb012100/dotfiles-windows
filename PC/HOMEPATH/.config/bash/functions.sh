@@ -24,17 +24,36 @@ function cg() {
     case $1 in
     b)
         shift
-        cargo build
+        if [[ -n "${*}" ]]; then
+            echo cargo build "${*}"
+            cargo build "${*}"
+        else
+            echo cargo build .
+            cargo build .
+        fi
         ;;
     c)
         shift
-        cargo check
+        if [[ -n "${*}" ]]; then
+            echo cargo check "${*}"
+            cargo check "${*}"
+        else
+            echo cargo check .
+            cargo check .
+        fi
         ;;
     r)
         shift
-        cargo run
+        if [[ -n "${*}" ]]; then
+            echo cargo run "${*}"
+            cargo run "${*}"
+        else
+            echo cargo run .
+            cargo run .
+        fi
         ;;
     *)
+        echo cargo "$@"
         cargo "$@"
         ;;
     esac
@@ -44,15 +63,33 @@ function dn() {
     case $1 in
     r | run)
         shift
-        go build .
+        if [[ -n "${*}" ]]; then
+            echo go run "${*}"
+            go run "${*}"
+        else
+            echo go run .
+            go run .
+        fi
         ;;
     b | build)
         shift
-        dotnet build "$@"
+        if [[ -n "${*}" ]]; then
+            echo dotnet build "${*}"
+            dotnet build "${*}"
+        else
+            echo dotnet build .
+            dotnet build .
+        fi
         ;;
     t | test)
         shift
-        dotnet test "$@"
+        if [[ -n "${*}" ]]; then
+            echo dotnet test "${*}"
+            dotnet test "${*}"
+        else
+            echo dotnet test .
+            dotnet test .
+        fi
         ;;
     *)
         dotnet "$@"
@@ -64,14 +101,27 @@ function gl() {
     case $1 in
     b)
         shift
-        go build .
+        if [[ -n "${*}" ]]; then
+            echo go build "${*}"
+            go build "${*}"
+        else
+            echo go build .
+            go build .
+        fi
         ;;
     r)
         shift
-        go run .
+        if [[ -n "${*}" ]]; then
+            echo go run "${*}"
+            go run "${*}"
+        else
+            echo run .
+            go run .
+        fi
         ;;
     *)
-        go "$@"
+        echo go "${*}"
+        go "${*}"
         ;;
     esac
 }
