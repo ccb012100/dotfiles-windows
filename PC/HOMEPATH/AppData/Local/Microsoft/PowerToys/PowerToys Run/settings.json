@@ -5,9 +5,9 @@
     "maximum_number_of_results": 10,
     "open_powerlauncher": {
       "win": false,
-      "ctrl": true,
+      "ctrl": false,
       "alt": true,
-      "shift": true,
+      "shift": false,
       "code": 32,
       "key": ""
     },
@@ -40,7 +40,7 @@
     "ignore_hotkeys_in_fullscreen": false,
     "clear_input_on_launch": true,
     "tab_selects_context_buttons": true,
-    "theme": 2,
+    "theme": 0,
     "startupPosition": 0,
     "use_centralized_keyboard_hook": false,
     "search_query_results_with_delay": true,
