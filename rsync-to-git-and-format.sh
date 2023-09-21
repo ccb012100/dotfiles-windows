@@ -4,13 +4,13 @@ git_dir="$HOME/src/windows-dotfiles"
 win_homepath="$HOME/win" # `~/win` is symlinked to `/mnt/c/Users/<user_name>`
 repo_homepath="$git_dir/PC/HOMEPATH"
 
-# --verbose --dry-run
+# --verbose --dry-run \
 
 rsync --relative --dirs --recursive --times --progress \
-    --files-from=files-to-sync-from-home "$win_homepath/" "$repo_homepath"
+    --files-from="$git_dir"/files-to-sync-from-home "$win_homepath/" "$repo_homepath"
 
 rsync --relative --dirs --recursive --times --progress \
-    --files-from=files-to-sync-from-work-notes \
+    --files-from="$git_dir"/files-to-sync-from-work-notes \
     "$win_homepath/work/work-notes/sync/" "$git_dir"
 
-./format-files.sh
+"$git_dir"/format-files.sh
