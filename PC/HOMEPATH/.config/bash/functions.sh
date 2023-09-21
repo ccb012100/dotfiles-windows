@@ -97,7 +97,7 @@ function dn() {
     esac
 }
 # golang cli commands
-function gl() {
+function g() {
     case $1 in
     b)
         shift
@@ -115,7 +115,7 @@ function gl() {
             echo go run "${*}"
             go run "${*}"
         else
-            echo run .
+            echo go run .
             go run .
         fi
         ;;
