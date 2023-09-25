@@ -1,5 +1,19 @@
 #!/usr/bin/env bash
 
+# dotnet CLI
+#: bash parameter completion for the dotnet CLI
+function _dotnet_bash_complete()
+{
+  local cur="${COMP_WORDS[COMP_CWORD]}" IFS=$'\n' # On Windows you may need to use use IFS=$'\r\n'
+  local candidates
+
+  read -d '' -ra candidates < <(dotnet complete --position "${COMP_POINT}" "${COMP_LINE}" 2>/dev/null)
+
+  read -d '' -ra COMPREPLY < <(compgen -W "${candidates[*]:-}" -- "$cur")
+}
+
+complete -f -F _dotnet_bash_complete dotnet
+
 # fd
 #: Use fd (https://github.com/sharkdp/fd) instead of the default find
 #: command for listing path candidates.
@@ -43,11 +57,12 @@ source "$HOME/bin/fzf-keybindings.bash"
 # starship
 eval "$(starship init bash)"
 
-# zoxide
-eval "$(zoxide init bash)"
-
 function set_win_title(){
     echo -ne "\033]0; $(basename "$PWD") \007"
 }
 
 starship_precmd_user_func="set_win_title"
+
+# zoxide
+eval "$(zoxide init bash)"
+

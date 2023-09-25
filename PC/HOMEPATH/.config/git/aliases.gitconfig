@@ -18,6 +18,8 @@
     brv     = branch --remote -v
     # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
     delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
+    # delete local branches that have been merged into master (adapted from https://stackoverflow.com/a/16906759)
+    delmas  = ! git fetch --prune && git branch --merged master | rg -v '^[ *]*master$' | xargs --no-run-if-empty git branch -d
     swc     = switch --create # create new branch and switch to it
 
     ## commit
@@ -28,7 +30,7 @@
     can     = ca --no-edit
     cnv     = c --no-verify
     contrib = shortlog -s
-    cp      = cherry-pick
+    pick    = cherry-pick
 
     ## checkout
     back    = checkout -
@@ -107,7 +109,8 @@
     rest    = restore
 
     ## stash
-    checkpoint  = !stash push --include-untracked && git stash apply # stash changes but keep them in staging area
+    checkpoint  = !git stash push --include-untracked && git stash apply # stash changes but keep them in staging area
+    cp          = checkpoint
     pop         = stash pop
     stc         = checkpoint
     stl         = stash list

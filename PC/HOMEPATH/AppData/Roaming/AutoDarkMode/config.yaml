@@ -4,8 +4,8 @@ Autostart:
   Validate: true
 WindowsThemeMode:
   Enabled: false
-  DarkThemePath: 
-  LightThemePath: 
+  DarkThemePath:
+  LightThemePath:
   MonitorActiveTheme: false
   ApplyFlags: []
 AppsSwitch:
@@ -65,12 +65,12 @@ AutoSwitchNotify:
   GracePeriodMinutes: 5
 Hotkeys:
   Enabled: false
-  ForceLight: 
-  ForceDark: 
-  NoForce: 
-  ToggleTheme: 
-  TogglePostpone: 
-  ToggleAutoThemeSwitch: 
+  ForceLight:
+  ForceDark:
+  NoForce:
+  ToggleTheme:
+  TogglePostpone:
+  ToggleAutoThemeSwitch:
 IdleChecker:
   Enabled: false
   Threshold: 5
@@ -81,8 +81,8 @@ WallpaperSwitch:
     TypeDark: Individual
     Position: Fill
     GlobalWallpaper:
-      Light: 
-      Dark: 
+      Light:
+      Dark:
     SolidColors:
       Light: '#FFFFFF'
       Dark: '#000000'
@@ -93,8 +93,8 @@ Updater:
   Silent: false
   DaysBetweenUpdateCheck: 7
   CheckOnStart: true
-  VersionQueryUrl: 
-  DownloadBaseUrl: 
-  ZipCustomUrl: 
-  HashCustomUrl: 
+  VersionQueryUrl:
+  DownloadBaseUrl:
+  ZipCustomUrl:
+  HashCustomUrl:
 

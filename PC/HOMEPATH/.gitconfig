@@ -6,5 +6,7 @@
     path = .config/git/personal.gitconfig
 [includeIf "gitdir:~/.dotfiles/"]
     path = .config/git/personal.gitconfig
+[includeIf "gitdir:~/.config/ahk/"]
+    path = .config/git/personal.gitconfig
 [includeIf "gitdir:~/work/"]
     path = .config/git/work.gitconfig

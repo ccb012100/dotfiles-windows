@@ -123,14 +123,20 @@
       "NameClean": "Microphone (Logitech USB Headset H540)"
     },
     {
-      "IconPath": "%windir%\\system32\\mmres.dll,-3051",
-      "State": 1,
       "Name": "Headphones (LE_ATH-M50xBT2 Stereo)",
       "Id": "{0.0.0.00000000}.{ffa28027-383d-47fd-97d2-588b22c6fc28}",
       "Type": 0,
       "IsUsb": false,
       "DiscoveredAt": "2023-07-12T20:32:24.1880198Z",
       "NameClean": "Headphones (LE_ATH-M50xBT2 Stereo)"
+    },
+    {
+      "Name": "U32R59x (HD Audio Driver for Display Audio)",
+      "Id": "{0.0.0.00000000}.{1a36ab06-be6c-4de8-9514-e8d2aebbe528}",
+      "Type": 0,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-07-22T19:01:39.0788842Z",
+      "NameClean": "U32R59x (HD Audio Driver for Display Audio)"
     }
   ],
   "FirstRun": false,
@@ -142,12 +148,12 @@
   "RecordingHotKey": {
     "Keys": 118,
     "Modifier": 3,
-    "Enabled": true
+    "Enabled": false
   },
   "MuteRecordingHotKey": {
     "Keys": 77,
     "Modifier": 3,
-    "Enabled": true
+    "Enabled": false
   },
   "ChangeCommunications": false,
   "UpdateCheckInterval": 86400,
@@ -404,6 +410,56 @@
           "Type": 0,
           "HotKey": {
             "Keys": 51,
+            "Modifier": 7,
+            "Enabled": true
+          },
+          "ShouldRestoreDevices": false
+        }
+      ],
+      "AlsoSwitchDefaultDevice": true,
+      "SwitchForegroundApp": true,
+      "NotifyOnActivation": true,
+      "RestoreDevices": true
+    },
+    {
+      "Playback": {
+        "Name": "Speakers (Realtek(R) Audio)",
+        "Id": "{0.0.0.00000000}.{a4bd7f41-24b7-4c8c-8aed-ee09437cd8f4}",
+        "Type": 0,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.4346583Z",
+        "NameClean": "Speakers (Realtek(R) Audio)"
+      },
+      "Communication": {
+        "Name": "Speakers (Realtek(R) Audio)",
+        "Id": "{0.0.0.00000000}.{a4bd7f41-24b7-4c8c-8aed-ee09437cd8f4}",
+        "Type": 0,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.4346583Z",
+        "NameClean": "Speakers (Realtek(R) Audio)"
+      },
+      "Recording": {
+        "Name": "Microphone (Realtek(R) Audio)",
+        "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
+        "Type": 1,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.8103345Z",
+        "NameClean": "Microphone (Realtek(R) Audio)"
+      },
+      "RecordingCommunication": {
+        "Name": "Microphone (Realtek(R) Audio)",
+        "Id": "{0.0.1.00000000}.{5861fe4a-f392-4dd2-9990-6b3f1beed508}",
+        "Type": 1,
+        "IsUsb": false,
+        "DiscoveredAt": "2023-07-18T13:49:24.8103345Z",
+        "NameClean": "Microphone (Realtek(R) Audio)"
+      },
+      "Name": "Laptop speakers",
+      "Triggers": [
+        {
+          "Type": 0,
+          "HotKey": {
+            "Keys": 52,
             "Modifier": 7,
             "Enabled": true
           },

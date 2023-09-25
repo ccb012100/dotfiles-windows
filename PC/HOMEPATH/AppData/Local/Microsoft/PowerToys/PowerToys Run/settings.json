@@ -5,9 +5,9 @@
     "maximum_number_of_results": 10,
     "open_powerlauncher": {
       "win": false,
-      "ctrl": true,
+      "ctrl": false,
       "alt": true,
-      "shift": true,
+      "shift": false,
       "code": 32,
       "key": ""
     },
@@ -40,7 +40,7 @@
     "ignore_hotkeys_in_fullscreen": false,
     "clear_input_on_launch": true,
     "tab_selects_context_buttons": true,
-    "theme": 2,
+    "theme": 0,
     "startupPosition": 0,
     "use_centralized_keyboard_hook": false,
     "search_query_results_with_delay": true,
@@ -85,8 +85,8 @@
       "IsGlobal": false,
       "ActionKeyword": "=",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\Calculator\\Images\\calculator.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\Calculator\\Images\\calculator.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Calculator\\Images\\calculator.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Calculator\\Images\\calculator.light.png",
       "AdditionalOptions": [
         {
           "Key": "InputUseEnglishFormat",
@@ -111,8 +111,8 @@
       "IsGlobal": false,
       "ActionKeyword": "open ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\Folder\\Images\\folder.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\Folder\\Images\\folder.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Folder\\Images\\folder.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Folder\\Images\\folder.light.png",
       "AdditionalOptions": []
     },
     {
@@ -124,8 +124,8 @@
       "IsGlobal": false,
       "ActionKeyword": "h ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\History\\Images\\history.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\History\\Images\\history.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\History\\Images\\history.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\History\\Images\\history.light.png",
       "AdditionalOptions": []
     },
     {
@@ -137,8 +137,8 @@
       "IsGlobal": false,
       "ActionKeyword": "?",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\Indexer\\Images\\indexer.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\Indexer\\Images\\indexer.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Indexer\\Images\\indexer.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Indexer\\Images\\indexer.light.png",
       "AdditionalOptions": [
         {
           "Key": "DisableDriveDetectionWarning",
@@ -157,8 +157,8 @@
       "IsGlobal": true,
       "ActionKeyword": "o:",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\OneNote\\Images\\oneNote.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\OneNote\\Images\\oneNote.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\OneNote\\Images\\oneNote.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\OneNote\\Images\\oneNote.light.png",
       "AdditionalOptions": []
     },
     {
@@ -170,8 +170,8 @@
       "IsGlobal": false,
       "ActionKeyword": "pt ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\PowerToys\\Images\\PowerToys.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\PowerToys\\Images\\PowerToys.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\PowerToys\\Images\\PowerToys.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\PowerToys\\Images\\PowerToys.light.png",
       "AdditionalOptions": []
     },
     {
@@ -183,8 +183,8 @@
       "IsGlobal": false,
       "ActionKeyword": "p ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\Program\\Images\\app.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\Program\\Images\\app.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Program\\Images\\app.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Program\\Images\\app.light.png",
       "AdditionalOptions": []
     },
     {
@@ -196,8 +196,8 @@
       "IsGlobal": false,
       "ActionKeyword": "reg ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\Registry\\Images\\reg.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\Registry\\Images\\reg.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Registry\\Images\\reg.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Registry\\Images\\reg.light.png",
       "AdditionalOptions": []
     },
     {
@@ -209,8 +209,8 @@
       "IsGlobal": false,
       "ActionKeyword": "svc ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\Service\\Images\\service.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\Service\\Images\\service.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Service\\Images\\service.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Service\\Images\\service.light.png",
       "AdditionalOptions": []
     },
     {
@@ -222,8 +222,6 @@
       "IsGlobal": false,
       "ActionKeyword": "cmd ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\Shell\\Images\\shell.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\Shell\\Images\\shell.light.png",
       "AdditionalOptions": [
         {
           "Key": "LeaveShellOpen",
@@ -242,8 +240,8 @@
       "IsGlobal": false,
       "ActionKeyword": "sys ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\System\\Images\\lock.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\System\\Images\\lock.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\System\\Images\\lock.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\System\\Images\\lock.light.png",
       "AdditionalOptions": [
         {
           "Key": "ConfirmSystemCommands",
@@ -280,14 +278,14 @@
     {
       "Id": "5D69806A5A474115821C3E4C56B9C793",
       "Name": "Time and Date",
-      "Description": "Provides time and date values for the system time or a custom time stamp (Examples: 'Day', 'Day::9/2/2023', 'Time::5:13:17 PM', 'Calendar week::9/2/2023')",
+      "Description": "Provides time and date values for the system time or a custom time stamp (Examples: 'Day', 'Day::7/12/2023', 'Time::9:46:08 AM', 'Calendar week::7/12/2023')",
       "Author": "htcfreek",
       "Disabled": true,
       "IsGlobal": true,
       "ActionKeyword": ")",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\TimeDate\\Images\\timeDate.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\TimeDate\\Images\\timeDate.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\TimeDate\\Images\\timeDate.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\TimeDate\\Images\\timeDate.light.png",
       "AdditionalOptions": [
         {
           "Key": "OnlyDateTimeNowGlobal",
@@ -324,8 +322,8 @@
       "IsGlobal": false,
       "ActionKeyword": "convert",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\UnitConverter\\Images\\unitconverter.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\UnitConverter\\Images\\unitconverter.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\UnitConverter\\Images\\unitconverter.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\UnitConverter\\Images\\unitconverter.light.png",
       "AdditionalOptions": []
     },
     {
@@ -337,9 +335,8 @@
       "IsGlobal": false,
       "ActionKeyword": "//",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\Uri\\Images\\uri.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\Uri\\Images\\uri.light.png",
-      "AdditionalOptions": []
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Uri\\Images\\uri.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Uri\\Images\\uri.light.png",
     },
     {
       "Id": "a26b1bb4dbd911edafa10242ac120002",
@@ -350,8 +347,6 @@
       "IsGlobal": false,
       "ActionKeyword": "#",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\ValueGenerator\\Images\\ValueGenerator.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\ValueGenerator\\Images\\ValueGenerator.light.png",
       "AdditionalOptions": []
     },
     {
@@ -363,8 +358,8 @@
       "IsGlobal": false,
       "ActionKeyword": "v ",
       "WeightBoost": -10,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\VSCodeWorkspace\\Images\\code-dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\VSCodeWorkspace\\Images\\code-light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\VSCodeWorkspace\\Images\\code-dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\VSCodeWorkspace\\Images\\code-light.png",
       "AdditionalOptions": []
     },
     {
@@ -376,8 +371,8 @@
       "IsGlobal": false,
       "ActionKeyword": "web ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\WebSearch\\Images\\WebSearch.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\WebSearch\\Images\\WebSearch.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WebSearch\\Images\\WebSearch.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WebSearch\\Images\\WebSearch.light.png",
       "AdditionalOptions": [
         {
           "Key": "NotGlobalIfUri",
@@ -396,8 +391,8 @@
       "IsGlobal": false,
       "ActionKeyword": "set",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\WindowsSettings\\Images\\WindowsSettings.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\WindowsSettings\\Images\\WindowsSettings.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowsSettings\\Images\\WindowsSettings.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowsSettings\\Images\\WindowsSettings.light.png",
       "AdditionalOptions": []
     },
     {
@@ -409,8 +404,8 @@
       "IsGlobal": false,
       "ActionKeyword": "sh ",
       "WeightBoost": 0,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\WindowsTerminal\\Images\\WindowsTerminal.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\WindowsTerminal\\Images\\WindowsTerminal.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowsTerminal\\Images\\WindowsTerminal.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowsTerminal\\Images\\WindowsTerminal.light.png",
       "AdditionalOptions": [
         {
           "Key": "OpenNewTab",
@@ -441,8 +436,8 @@
       "IsGlobal": true,
       "ActionKeyword": "w ",
       "WeightBoost": 100,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\WindowWalker\\Images\\windowwalker.dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\WindowWalker\\Images\\windowwalker.light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowWalker\\Images\\windowwalker.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowWalker\\Images\\windowwalker.light.png",
       "AdditionalOptions": [
         {
           "Key": "ResultsFromVisibleDesktopOnly",

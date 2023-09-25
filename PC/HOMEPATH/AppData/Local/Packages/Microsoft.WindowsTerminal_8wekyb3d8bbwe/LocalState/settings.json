@@ -36,20 +36,6 @@
     },
     {
       "command": {
-        "action": "renameTab"
-      },
-      "keys": "ctrl+f2"
-    },
-    {
-      "command": {
-        "action": "splitPane",
-        "profile": "WSL",
-        "split": "auto"
-      },
-      "keys": "ctrl+shift+enter"
-    },
-    {
-      "command": {
         "action": "scrollDown"
       },
       "keys": "ctrl+shift+j"
@@ -62,10 +48,23 @@
     },
     {
       "command": {
-        "action": "swapPane",
-        "direction": "left"
+        "action": "splitPane",
+        "profile": "WSL",
+        "split": "auto"
       },
-      "keys": "alt+shift+j"
+      "keys": "ctrl+shift+enter"
+    },
+    {
+      "command": {
+        "action": "renameTab"
+      },
+      "keys": "ctrl+f2"
+    },
+    {
+      "command": {
+        "action": "commandPalette"
+      },
+      "keys": "ctrl+space"
     },
     {
       "command": {
@@ -76,20 +75,10 @@
     },
     {
       "command": {
-        "action": "commandPalette"
+        "action": "swapPane",
+        "direction": "left"
       },
-      "keys": "ctrl+space"
-    },
-    {
-      "command": {
-        "action": "moveFocus",
-        "direction": "previousInOrder"
-      },
-      "keys": "ctrl+shift+b"
-    },
-    {
-      "command": "togglePaneZoom",
-      "keys": "ctrl+shift+z"
+      "keys": "alt+shift+j"
     },
     {
       "command": {
@@ -105,10 +94,14 @@
     },
     {
       "command": {
-        "action": "findMatch",
-        "direction": "next"
+        "action": "moveFocus",
+        "direction": "previousInOrder"
       },
-      "keys": "ctrl+shift+s"
+      "keys": "ctrl+shift+b"
+    },
+    {
+      "command": "togglePaneZoom",
+      "keys": "ctrl+shift+z"
     },
     {
       "command": {
@@ -123,6 +116,13 @@
         "direction": "up"
       },
       "keys": "alt+shift+i"
+    },
+    {
+      "command": {
+        "action": "findMatch",
+        "direction": "next"
+      },
+      "keys": "ctrl+shift+s"
     },
     {
       "command": {
@@ -152,17 +152,17 @@
     },
     {
       "command": {
-        "action": "findMatch",
-        "direction": "prev"
-      },
-      "keys": "ctrl+shift+r"
-    },
-    {
-      "command": {
         "action": "swapPane",
         "direction": "right"
       },
       "keys": "alt+shift+l"
+    },
+    {
+      "command": {
+        "action": "findMatch",
+        "direction": "prev"
+      },
+      "keys": "ctrl+shift+r"
     },
     {
       "command": "restoreLastClosed",
@@ -171,28 +171,28 @@
     {
       "command": {
         "action": "adjustFontSize",
-        "delta": 1
+        "delta": 1.0
       },
-      "keys": "ctrl+shift+="
+      "keys": "ctrl+shift+plus"
     },
     {
       "command": {
         "action": "adjustFontSize",
-        "delta": -1
-      },
-      "keys": "ctrl+shift+-"
-    },
-    {
-      "command": {
-        "action": "adjustFontSize",
-        "delta": 1
+        "delta": 1.0
       },
       "keys": "ctrl+shift+numpad_plus"
     },
     {
       "command": {
         "action": "adjustFontSize",
-        "delta": -1
+        "delta": -1.0
+      },
+      "keys": "ctrl+shift+minus"
+    },
+    {
+      "command": {
+        "action": "adjustFontSize",
+        "delta": -1.0
       },
       "keys": "ctrl+shift+numpad_minus"
     }
@@ -215,7 +215,7 @@
       "colorScheme": "Tango Dark",
       "font": {
         "face": "CaskaydiaCove Nerd Font Mono",
-        "size": 11
+        "size": 11.0
       },
       "intenseTextStyle": "all",
       "padding": "10",
@@ -223,7 +223,7 @@
     },
     "list": [
       {
-        "colorScheme": "Synthwave",
+        "colorScheme": "Wombat (modified)",
         "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
         "hidden": false,
         "name": "Git Bash",
@@ -242,7 +242,7 @@
         "commandline": "%SystemRoot%\\System32\\cmd.exe /k config.cmd",
         "font": {
           "face": "Cascadia Mono",
-          "size": 12
+          "size": 12.0
         },
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "hidden": false,
@@ -257,7 +257,7 @@
         "elevate": true,
         "font": {
           "face": "Fira Code Retina",
-          "size": 12
+          "size": 12.0
         },
         "guid": "{d5b08fdb-9a10-498a-a536-69672ac7ee1a}",
         "hidden": false,
@@ -460,6 +460,29 @@
       "selectionBackground": "#44475A",
       "white": "#BBBBBB",
       "yellow": "#F1FA8C"
+    },
+    {
+      "background": "#000000",
+      "black": "#000000",
+      "blue": "#2186EC",
+      "brightBlack": "#000000",
+      "brightBlue": "#2F9DED",
+      "brightCyan": "#19CDE6",
+      "brightGreen": "#25C141",
+      "brightPurple": "#F97137",
+      "brightRed": "#F841A0",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FDF454",
+      "cursorColor": "#19CDE6",
+      "cyan": "#12C3E2",
+      "foreground": "#0096FF",
+      "green": "#1EBB2B",
+      "name": "GitBash",
+      "purple": "#F85A21",
+      "red": "#F6188F",
+      "selectionBackground": "#19CDE6",
+      "white": "#FFFFFF",
+      "yellow": "#FDF834"
     },
     {
       "background": "#000000",
@@ -761,27 +784,27 @@
       "yellow": "#808000"
     },
     {
-      "background": "#171717",
-      "black": "#000000",
-      "blue": "#5DA9F6",
-      "brightBlack": "#313131",
-      "brightBlue": "#A5C7FF",
-      "brightCyan": "#B7FFF9",
-      "brightGreen": "#DDF88F",
-      "brightPurple": "#DDAAFF",
-      "brightRed": "#F58C80",
-      "brightWhite": "#FFFFFF",
-      "brightYellow": "#EEE5B2",
-      "cursorColor": "#BBBBBB",
-      "cyan": "#82FFF7",
-      "foreground": "#FFCC2F",
-      "green": "#B1E969",
+      "background": "#1F1F1F",
+      "black": "#45475A",
+      "blue": "#89B4FA",
+      "brightBlack": "#585B70",
+      "brightBlue": "#89B4FA",
+      "brightCyan": "#94E2D5",
+      "brightGreen": "#A6E3A1",
+      "brightPurple": "#F5C2E7",
+      "brightRed": "#F38BA8",
+      "brightWhite": "#A6ADC8",
+      "brightYellow": "#F9E2AF",
+      "cursorColor": "#F5E0DC",
+      "cyan": "#94E2D5",
+      "foreground": "#F2E4CB",
+      "green": "#A6E3A1",
       "name": "WSL",
-      "purple": "#E86AFF",
-      "red": "#FF615A",
-      "selectionBackground": "#453B39",
-      "white": "#DEDACF",
-      "yellow": "#EBD99C"
+      "purple": "#F5C2E7",
+      "red": "#F36C43",
+      "selectionBackground": "#585B70",
+      "white": "#BAC2DE",
+      "yellow": "#F9E2AF"
     },
     {
       "background": "#171717",
@@ -797,9 +820,9 @@
       "brightYellow": "#EEE5B2",
       "cursorColor": "#BBBBBB",
       "cyan": "#82FFF7",
-      "foreground": "#FFCC2F",
+      "foreground": "#F2E4CB",
       "green": "#B1E969",
-      "name": "Wombat",
+      "name": "Wombat (modified)",
       "purple": "#E86AFF",
       "red": "#FF615A",
       "selectionBackground": "#453B39",
