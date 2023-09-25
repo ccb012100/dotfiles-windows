@@ -16,11 +16,11 @@ n | no | N | NO)
     ;;
 esac
 
-REPO_USER_DIR="$HOME/src/dotfiles-windows/PC/HOMEPATH"
-CONFIG_BACKUP="$HOME/.config_bak"
+repo_user_dir="$HOME/src/dotfiles-windows/PC/HOMEPATH"
+config_backup="$HOME/.config_bak"
 
 # --verbose --dry-run \
 rsync --relative --dirs --recursive --times -v --progress \
-    --backup --backup-dir="$CONFIG_BACKUP" \
+    --backup --backup-dir="$config_backup" \
     --files-from=files-to-write-over-local.txt \
-    "$REPO_USER_DIR" "$HOME"
+    "$repo_user_dir" "$HOME/win"
