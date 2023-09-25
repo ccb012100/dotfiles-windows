@@ -1,0 +1,33 @@
+_gvimrc
+_vimrc
+.bashrc
+.config/bash
+.config/git
+.config/kmonad
+.config/ripgreprc
+.config/starship.toml
+.config/tealdeer
+.gitconfig
+.gnupg/gpg-agent.conf
+.gnupg/gpg.conf
+.minttyrc
+.ssh/config
+AppData/Local/Microsoft/PowerToys/FancyZones/settings.json
+AppData/Local/Microsoft/PowerToys/File Explorer/settings.json
+AppData/Local/Microsoft/PowerToys/File Explorer/settings.json
+AppData/Local/Microsoft/PowerToys/Keyboard Manager/default.json
+AppData/Local/Microsoft/PowerToys/Keyboard Manager/settings.json
+AppData/Local/Microsoft/PowerToys/PowerRename/power-rename-settings.json
+AppData/Local/Microsoft/PowerToys/PowerRename/power-rename-ui-flags
+AppData/Local/Microsoft/PowerToys/PowerToys Run/settings.json
+AppData/Local/Microsoft/PowerToys/PowerToys Run/Settings/PowerToysRunSettings.json
+AppData/Local/Microsoft/PowerToys/settings.json
+AppData/Local/nvim/init.vim
+AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+AppData/Roaming/AltSnap/AltSnap.ini
+AppData/Roaming/AutoDarkMode/config.yaml
+AppData/Roaming/GitHub CLI/config.yml
+AppData/Roaming/NotePad++/config.xml
+AppData/Roaming/NotePad++/shortcuts.xml
+AppData/Roaming/SoundSwitch/SoundSwitchConfiguration.json
+config.cmd
