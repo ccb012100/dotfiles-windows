@@ -45,6 +45,9 @@ config.window_frame = {
   -- TODO: reduce font size on command palette
 }
 
+-- place window management buttons (minimize, maximize, close) into the tab bar instead of showing a title bar
+config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+
 config.font = wezterm.font {
   family = 'JetBrains Mono',
   harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }, -- disable ligatures
