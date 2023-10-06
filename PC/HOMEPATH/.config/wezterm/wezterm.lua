@@ -36,7 +36,8 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   }
 end
 
-config.color_scheme = 'Wombat'
+config.color_scheme = 'PhD (base16)'
+
 config.initial_cols = 120
 config.initial_rows = 60
 
