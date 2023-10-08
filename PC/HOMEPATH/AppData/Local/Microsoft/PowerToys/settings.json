@@ -29,10 +29,10 @@
   },
   "is_elevated": false,
   "run_elevated": false,
-  "download_updates_automatically": false,
+  "download_updates_automatically": true,
   "enable_experimentation": true,
   "is_admin": true,
   "theme": "system",
-  "system_theme": "light",
-  "powertoys_version": "v0.73.0"
+  "system_theme": "dark",
+  "powertoys_version": "v0.74.0"
 }
