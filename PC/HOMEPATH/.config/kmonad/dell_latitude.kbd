@@ -39,7 +39,7 @@
   ;; rsh (around (layer-toggle shift_layer) rsft)
 
   ;; remap caps to escape
-  cap esc
+  caps esc
   ;; hold space for l-ctrl
   spc (tap-hold-next-release 200 spc lctl)
   ;; left meh key
@@ -52,7 +52,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _       _    _    _    _
   _    _    [    ]    {    }    _    \(   up   \)   _    _    _    _       _    _    _    _
-  caps home _    pgup _    home _    left down rght |    _    _            _    _    _
+  caps home _    pgup `    home _    left down rght |    _    _            _    _    _
   _    end  ins  pgdn ~    end  _    -    \_   caps \    _                 _    _    _    _
   _    _    _              _              _    _    _      _       _            _         _
                                                            _
