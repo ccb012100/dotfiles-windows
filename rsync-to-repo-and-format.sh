@@ -6,6 +6,6 @@ repo_homepath="$git_dir/PC/HOMEPATH"
 # --verbose --dry-run \
 
 rsync --relative --dirs --recursive --times --progress \
-    --files-from="$git_dir"/files-to-sync-from-home "$win_homepath/" "$repo_homepath"
+    --files-from="$git_dir"/write-to-local/files-to-sync-from-home "$win_homepath/" "$repo_homepath"
 
 "$git_dir"/format-files.sh
