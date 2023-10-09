@@ -41,7 +41,7 @@
     "clear_input_on_launch": true,
     "tab_selects_context_buttons": true,
     "theme": 0,
-    "startupPosition": 0,
+    "startupPosition": 2,
     "use_centralized_keyboard_hook": false,
     "search_query_results_with_delay": true,
     "search_input_delay": 150,
@@ -49,6 +49,7 @@
     "search_clicked_item_weight": 15,
     "search_query_tuning_enabled": false,
     "search_wait_for_slow_results": false,
+    "use_pinyin": false,
     "generate_thumbnails_from_files": true,
     "DefaultOpenPowerLauncher": {
       "win": false,
@@ -89,16 +90,22 @@
       "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Calculator\\Images\\calculator.light.png",
       "AdditionalOptions": [
         {
+          "PluginOptionType": 0,
           "Key": "InputUseEnglishFormat",
           "DisplayLabel": "Use English (United States) number format for input",
           "DisplayDescription": "Ignores your system setting and expects numbers in the format '1,000.55'.",
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "OutputUseEnglishFormat",
           "DisplayLabel": "Use English (United States) number format for output",
           "DisplayDescription": "Ignores your system setting and returns numbers in the format '1000.55'.",
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         }
       ]
     },
@@ -141,10 +148,12 @@
       "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\Indexer\\Images\\indexer.light.png",
       "AdditionalOptions": [
         {
+          "PluginOptionType": 0,
           "Key": "DisableDriveDetectionWarning",
           "DisplayLabel": "Disable non-indexed files warning",
-          "DisplayDescription": null,
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         }
       ]
     },
@@ -224,10 +233,26 @@
       "WeightBoost": 0,
       "AdditionalOptions": [
         {
+          "PluginOptionType": 0,
           "Key": "LeaveShellOpen",
           "DisplayLabel": "Keep shell open",
-          "DisplayDescription": null,
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
+        },
+        {
+          "PluginOptionType": 1,
+          "Key": "ShellCommandExecution",
+          "DisplayLabel": "Shell command execution",
+          "Value": false,
+          "ComboBoxValue": 2,
+          "ComboBoxOptions": [
+            "Run command in Command Prompt (cmd.exe)",
+            "Run command in PowerShell (PowerShell.exe)",
+            "Find executable file and run it",
+            "Run command in Windows Terminal (wt.exe)"
+          ],
+          "NumberValue": 0
         }
       ]
     },
@@ -244,41 +269,52 @@
       "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\System\\Images\\lock.light.png",
       "AdditionalOptions": [
         {
+          "PluginOptionType": 0,
           "Key": "ConfirmSystemCommands",
           "DisplayLabel": "Show a dialog to confirm system commands",
-          "DisplayDescription": null,
-          "Value": true
+          "Value": true,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "ShowSuccessOnEmptyRB",
           "DisplayLabel": "Show a success message after emptying the Recycle Bin",
-          "DisplayDescription": null,
-          "Value": true
+          "Value": true,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "LocalizeSystemCommands",
           "DisplayLabel": "Use localized system commands instead of English ones",
-          "DisplayDescription": null,
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "SeparateResultEmptyRB",
           "DisplayLabel": "Show separate result for Empty Recycle Bin command",
-          "DisplayDescription": null,
-          "Value": true
+          "Value": true,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "ReduceNetworkResultScore",
           "DisplayLabel": "Reduce the priority of 'IP' and 'MAC' results to improve the order in the global results",
           "DisplayDescription": "With this setting enabled, you have to type more characters to find the results.",
-          "Value": true
+          "Value": true,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         }
       ]
     },
     {
       "Id": "5D69806A5A474115821C3E4C56B9C793",
       "Name": "Time and Date",
-      "Description": "Provides time and date values for the system time or a custom time stamp (Examples: 'Day', 'Day::7/12/2023', 'Time::9:46:08 AM', 'Calendar week::7/12/2023')",
+      "Description": "Provides time and date values for the system time or a custom time stamp (Examples: 'Day', 'Day::10/6/2023', 'Time::5:54:30 PM', 'Calendar week::10/6/2023')",
       "Author": "htcfreek",
       "Disabled": true,
       "IsGlobal": true,
@@ -288,28 +324,39 @@
       "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\TimeDate\\Images\\timeDate.light.png",
       "AdditionalOptions": [
         {
+          "PluginOptionType": 0,
           "Key": "OnlyDateTimeNowGlobal",
           "DisplayLabel": "Show only 'Time', 'Date' and 'Now' result for system time on global queries",
           "DisplayDescription": "Regardless of this setting, for global queries the first word of the query has to be a complete match.",
-          "Value": true
+          "Value": true,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "TimeWithSeconds",
           "DisplayLabel": "Show time with seconds",
           "DisplayDescription": "This setting applies to the 'Time' and 'Now' result.",
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "DateWithWeekday",
           "DisplayLabel": "Show date with weekday and name of month",
           "DisplayDescription": "This setting applies to the 'Date' and 'Now' result.",
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "HideNumberMessageOnGlobalQuery",
           "DisplayLabel": "Hide 'Invalid number input' error message on global queries",
-          "DisplayDescription": null,
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         }
       ]
     },
@@ -375,10 +422,12 @@
       "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WebSearch\\Images\\WebSearch.light.png",
       "AdditionalOptions": [
         {
+          "PluginOptionType": 0,
           "Key": "NotGlobalIfUri",
           "DisplayLabel": "Don't include in global results on queries that are URIs",
-          "DisplayDescription": null,
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         }
       ]
     },
@@ -408,22 +457,29 @@
       "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowsTerminal\\Images\\WindowsTerminal.light.png",
       "AdditionalOptions": [
         {
+          "PluginOptionType": 0,
           "Key": "OpenNewTab",
           "DisplayLabel": "Open profiles in a new tab",
-          "DisplayDescription": null,
-          "Value": true
+          "Value": true,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "OpenQuake",
           "DisplayLabel": "Open profiles in the quake window",
           "DisplayDescription": "Windows Terminal supports a \"quake\" feature where a terminal window is accessible using a global hotkey. Enable this option to open profiles in a new tab in this window.",
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "ShowHiddenProfiles",
           "DisplayLabel": "Show hidden profiles",
-          "DisplayDescription": null,
-          "Value": true
+          "Value": true,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         }
       ]
     },
@@ -440,52 +496,72 @@
       "IconPathLight": "C:\\Program Files\\PowerToys\\modules\\launcher\\Plugins\\WindowWalker\\Images\\windowwalker.light.png",
       "AdditionalOptions": [
         {
+          "PluginOptionType": 0,
           "Key": "ResultsFromVisibleDesktopOnly",
           "DisplayLabel": "Show only results from visible desktop",
-          "DisplayDescription": null,
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "SubtitleShowPid",
           "DisplayLabel": "Show process id in the subtitle",
-          "DisplayDescription": null,
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "SubtitleShowDesktopName",
           "DisplayLabel": "Show desktop name in the subtitle",
           "DisplayDescription": "This information is only shown in subtitle and tool tip, if you have at least two desktops.",
-          "Value": true
+          "Value": true,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "ConfirmKillProcess",
           "DisplayLabel": "Request confirmation when killing a process",
-          "DisplayDescription": null,
-          "Value": true
+          "Value": true,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "KillProcessTree",
           "DisplayLabel": "Kill process and its child processes",
           "DisplayDescription": "Be careful when activating this. Killing the whole process tree can lead to problematic application crashes.",
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "OpenAfterKillAndClose",
           "DisplayLabel": "Stay open after closing windows and killing processes",
           "DisplayDescription": "This feature won't work if the kill process confirmation is enabled.",
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "HideKillProcessOnElevatedProcesses",
           "DisplayLabel": "Hide \"kill process\" button if additional permissions required",
-          "DisplayDescription": null,
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         },
         {
+          "PluginOptionType": 0,
           "Key": "HideExplorerSettingInfo",
           "DisplayLabel": "Hide Explorer process information",
           "DisplayDescription": "This message is only shown when searching with a direct activation command.",
-          "Value": false
+          "Value": false,
+          "ComboBoxValue": 0,
+          "NumberValue": 0
         }
       ]
     }

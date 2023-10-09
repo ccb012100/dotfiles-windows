@@ -14,9 +14,9 @@ FiraCode 6.2.0
 go 1.21.0
 golang 1.21.0
 httpie 3.2.2
-httpie-desktop 2023.3.3
+httpie-desktop 2023.3.5
 jetbrainsmono 2.304.0
-jq 1.6.0
+jq 1.7.0
 KB2919355 1.0.20160915
 KB2919442 1.0.20160915
 KB2999226 1.0.20181019
@@ -35,6 +35,9 @@ ripgrep 13.0.0.20220913
 SQLite 3.42.0
 starship 1.16.0
 starship.install 1.16.0
+tldr 1.0.0
+tldr-plusplus 0.6.1
+traffic-monitor 1.84.1
 vcredist140 14.36.32532
 vcredist2015 14.0.24215.20170201
 vcredist2017 14.16.27033

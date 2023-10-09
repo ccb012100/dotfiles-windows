@@ -8,6 +8,7 @@ alias ......='cd ../../../../..'
 alias back='cd -'
 
 alias l=less
+alias rm='rm -i'
 
 alias ls='ls --color --block-size=K'
 alias la='ls -A'

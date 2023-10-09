@@ -73,7 +73,12 @@ set ww=<,>,[,],h,l,b,s          " allow cursor to wrap to previous/next line
 call plug#begin()
     Plug 'easymotion/vim-easymotion'
     Plug 'tpope/vim-commentary'
+    Plug 'itchyny/lightline.vim'
 call plug#end()
+
+" lightline.vim
+set noshowmode
+let g:lightline = { 'colorscheme': 'darcula', }
 
 " vim-easymotion
 let g:EasyMotion_do_mapping = 0             " disable default mappings
