@@ -137,6 +137,24 @@
       "IsUsb": false,
       "DiscoveredAt": "2023-07-22T19:01:39.0788842Z",
       "NameClean": "U32R59x (HD Audio Driver for Display Audio)"
+    },
+    {
+      "Name": "Microphone Array (Realtek(R) Audio)",
+      "Id": "{0.0.1.00000000}.{476e27ae-2432-45e0-bd99-2599ddef5d8d}",
+      "Type": 1,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-10-10T11:51:44.0003459Z",
+      "NameClean": "Microphone Array (Realtek(R) Audio)"
+    },
+    {
+      "IconPath": "%windir%\\system32\\mmres.dll,-3051",
+      "State": 1,
+      "Name": "Headphones (ATH-M50xBT2)",
+      "Id": "{0.0.0.00000000}.{eeeaf5c0-c249-49cd-ab28-89ec50125dd9}",
+      "Type": 0,
+      "IsUsb": false,
+      "DiscoveredAt": "2023-10-13T18:45:45.6469396Z",
+      "NameClean": "Headphones (ATH-M50xBT2)"
     }
   ],
   "FirstRun": false,
