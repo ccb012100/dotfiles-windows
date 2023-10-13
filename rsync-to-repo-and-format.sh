@@ -8,8 +8,9 @@ repo_homepath="$git_dir/PC/HOMEPATH"
 echo 'Syncing to repository...'
 # --verbose --dry-run \
 rsync --relative --dirs --recursive --times --progress \
-    --files-from="$git_dir"/write-to-local/files-to-sync-from-home "$win_homepath/" "$repo_homepath"
+    --files-from="$git_dir"/files-to-sync-from-home "$win_homepath/" "$repo_homepath"
 
+echo 'Finished syncing.'
 echo 'Formatting...'
 
 "$git_dir"/format-files.sh
