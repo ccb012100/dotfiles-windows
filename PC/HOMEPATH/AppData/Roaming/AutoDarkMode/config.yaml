@@ -4,8 +4,8 @@ Autostart:
   Validate: true
 WindowsThemeMode:
   Enabled: false
-  DarkThemePath:
-  LightThemePath:
+  DarkThemePath: 
+  LightThemePath: 
   MonitorActiveTheme: false
   ApplyFlags: []
 AppsSwitch:
@@ -21,6 +21,16 @@ SystemSwitch:
     TaskbarColorWhenNonAdaptive: Light
     DWMPrevalenceSwitch: false
     DWMPrevalenceEnableTheme: Light
+TouchKeyboardSwitch:
+  Enabled: false
+  Component: {}
+ColorizationSwitch:
+  Enabled: false
+  Component:
+    LightHex: ''
+    DarkHex: ''
+    LightAutoColorization: false
+    DarkAutoColorization: false
 ColorFilterSwitch:
   Enabled: false
   Component: {}
@@ -30,6 +40,11 @@ OfficeSwitch:
     Mode: Switch
     LightTheme: 0
     DarkTheme: 4
+CursorSwitch:
+  Enabled: false
+  Component:
+    CursorsLight: 
+    CursorsDark: 
 Sunrise: 2023-07-17T07:00:00.0000000
 Sunset: 2023-07-17T20:00:00.0000000
 Location:
@@ -48,12 +63,15 @@ Tunable:
   Trace: false
   DebugTimerMessage: false
   ShowTrayIcon: true
+  AlwaysFullDwmRefresh: false
   UICulture: en
 GPUMonitoring:
   Enabled: false
   Threshold: 30
-  MonitorTimeSpanMin: 1
   Samples: 1
+ProcessBlockList:
+  ProcessNames: []
+  Enabled: false
 Events:
   DarkThemeOnBattery: false
   Win10AllowLockscreenSwitch: true
@@ -61,16 +79,16 @@ Notifications:
   OnAutoThemeSwitching: true
   OnSkipNextSwitch: true
 AutoSwitchNotify:
-  Enabled: true
+  Enabled: false
   GracePeriodMinutes: 5
 Hotkeys:
   Enabled: false
-  ForceLight:
-  ForceDark:
-  NoForce:
-  ToggleTheme:
-  TogglePostpone:
-  ToggleAutoThemeSwitch:
+  ForceLight: 
+  ForceDark: 
+  NoForce: 
+  ToggleTheme: 
+  TogglePostpone: 
+  ToggleAutoThemeSwitch: 
 IdleChecker:
   Enabled: false
   Threshold: 5
@@ -81,8 +99,8 @@ WallpaperSwitch:
     TypeDark: Individual
     Position: Fill
     GlobalWallpaper:
-      Light:
-      Dark:
+      Light: 
+      Dark: 
     SolidColors:
       Light: '#FFFFFF'
       Dark: '#000000'
@@ -93,8 +111,8 @@ Updater:
   Silent: false
   DaysBetweenUpdateCheck: 7
   CheckOnStart: true
-  VersionQueryUrl:
-  DownloadBaseUrl:
-  ZipCustomUrl:
-  HashCustomUrl:
+  VersionQueryUrl: 
+  DownloadBaseUrl: 
+  ZipCustomUrl: 
+  HashCustomUrl: 
 
