@@ -10,14 +10,15 @@ alias back='cd -'
 alias l=less
 alias rm='rm -i'
 
-alias ls='ls --color --block-size=K'
-alias la='ls -A'
+# ls
+alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
+alias la='ls -a'
+alias lal='ls -al'
 alias ll='ls -l'
-alias lal='ls -Al'
-alias lla='ls -Al'
-alias llt='ls -lt'
-alias llat='ls -Alt'
-alias tree='cmd //c tree' # use cmd.exe "tree command"
+alias lla='ls -la'
+alias llat='eza -al -t modified --sort newest'
+alias llt='eza -l -t modified --sort newest'
+alias tree='eza --tree'
 
 alias cls='clear'
 alias path='tr '\'':'\'' '\''\n'\'' <<< "$PATH"'
