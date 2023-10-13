@@ -19,7 +19,7 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
     {
       label = "WSL - Ubuntu",
       args = { "wsl.exe" },
-      cwd = "//wsl.localhost/Ubuntu/home/ccb"
+      cwd = "//wsl.localhost/Ubuntu/home/ccb012100"
     },
     { label = "cmd.exe",    args = { "cmd.exe", "/k", "config.cmd" } },
     { label = 'PowerShell', args = { "C:/Program Files/PowerShell/7/pwsh.exe" } }
@@ -36,7 +36,7 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   }
 end
 
-config.color_scheme = 'PhD (base16)'
+config.color_scheme = 'Pandora'
 
 config.initial_cols = 120
 config.initial_rows = 60
@@ -74,6 +74,8 @@ local keycode = {
 
 config.leader = { key = 'm', mods = keycode.ctrl }
 
+-- TODO: shortcuts to swap layout
+-- TODO: shortcuts to detach tab / attach window
 -- TODO: shortcuts to open Ubuntu
 config.keys = {
   { key = keycode.space, mods = keycode.ctrl,        action = act.ActivateCommandPalette },
