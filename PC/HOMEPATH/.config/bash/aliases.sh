@@ -42,6 +42,7 @@ alias kl='git l'
 alias kcob='git cob'
 alias kp='git p'
 alias kps='git ps'
+alias kpra='git pra'
 alias kr='git rebase'
 alias kra='git ra'
 alias krc='git rc'
@@ -50,8 +51,7 @@ alias krest='git restore'
 alias ks='git s'
 alias ksl='git sl'
 alias ksvv='git svv'
-alias kundo='git undo'
-alias kunstage='git unstage'
+alias kui='git-ui'
 
 alias b=bat
 alias c=code
