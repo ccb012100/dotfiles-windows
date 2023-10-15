@@ -1,0 +1,4 @@
+set drawbox
+set cursorpreviewfmt "\033[7m"
+set info size
+set dircounts
