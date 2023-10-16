@@ -10,14 +10,15 @@ alias back='cd -'
 alias l=less
 alias rm='rm -i'
 
-alias ls='ls --color --block-size=K'
-alias la='ls -A'
+# ls
+alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
+alias la='ls -a'
+alias lal='ls -al'
 alias ll='ls -l'
-alias lal='ls -Al'
-alias lla='ls -Al'
-alias llt='ls -lt'
-alias llat='ls -Alt'
-alias tree='cmd //c tree' # use cmd.exe "tree command"
+alias lla='ls -la'
+alias llat='eza -al -t modified --sort newest'
+alias llt='eza -l -t modified --sort newest'
+alias tree='eza --tree'
 
 alias cls='clear'
 alias path='tr '\'':'\'' '\''\n'\'' <<< "$PATH"'
@@ -41,6 +42,7 @@ alias kl='git l'
 alias kcob='git cob'
 alias kp='git p'
 alias kps='git ps'
+alias kpra='git pra'
 alias kr='git rebase'
 alias kra='git ra'
 alias krc='git rc'
@@ -49,8 +51,7 @@ alias krest='git restore'
 alias ks='git s'
 alias ksl='git sl'
 alias ksvv='git svv'
-alias kundo='git undo'
-alias kunstage='git unstage'
+alias kui='git-ui'
 
 alias b=bat
 alias c=code

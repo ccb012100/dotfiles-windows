@@ -38,7 +38,7 @@
   ;; rsh (around (layer-toggle shift_layer) rsft)
 
   ;; remap caps to escape
-  cap esc
+  caps esc
   ;; hold space for l-ctrl
   spc (tap-hold-next-release 200 spc lctl)
   ;; left meh key

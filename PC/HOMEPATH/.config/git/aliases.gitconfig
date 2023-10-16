@@ -103,10 +103,9 @@
     undo    = ! "f() { if [[ $# -eq 0 ]] ; then git reset HEAD~1 --mixed; else git reset HEAD~$1 --mixed; fi; }; f"
 
     ## restore
-    uns     = unstage
-    unsall  = unstage *
+    unst    = unstage
+    unstall = unstage *
     unstage = restore --staged
-    rest    = restore
 
     ## stash
     checkpoint  = !git stash push --include-untracked && git stash apply # stash changes but keep them in staging area
@@ -135,6 +134,7 @@
     fg      = forgit
     nuke    = clean -fdx
     sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
+    ui      = ! gitui
     # update local branch from origin without checking it out
     update  = ! "f() { if [[ $# -eq 0 ]] ; then echo "must supply a branch name"; else git fetch origin $1:$1; }; f"
     unwind  = update

@@ -86,28 +86,42 @@ let g:EasyMotion_smartcase = 1              " case-insensitive
 let g:EasyMotion_startofline = 0            " keep cursor column when jk motion
 
 "" use both SPACE and BACKSPACE because it works well with my Ergodox layout
-nnoremap <space>; <Plug>(easymotion-s2)     " 2-char search
-nnoremap <space>F <Plug>(easymotion-bd-F)   " move to char
-nnoremap <space>f <Plug>(easymotion-bd-f)   " move to char
+" 2-char search
+nnoremap <space>; <Plug>(easymotion-s2)
+" move to char
+nnoremap <space>F <Plug>(easymotion-bd-F)
+" move to char
+nnoremap <space>f <Plug>(easymotion-bd-f)
 nnoremap <space>h <Plug>(easymotion-linebackward)
 nnoremap <space>j <Plug>(easymotion-j)
 nnoremap <space>k <Plug>(easymotion-k)
-nnoremap <space>L <Plug>(easymotion-bd-jk)  " move to line
+" move to line
+nnoremap <space>L <Plug>(easymotion-bd-jk)
 nnoremap <space>l <Plug>(easymotion-lineforward)
-nnoremap <space>s <Plug>(easymotion-s2)     " 2-char search
-nnoremap <space>W <Plug>(easymotion-w)      " word motion
-nnoremap <space>w <Plug>(easymotion-bd-w)   " word motion
-nnoremap <BS>; <Plug>(easymotion-s2)        " 2-char search
-nnoremap <BS>F <Plug>(easymotion-bd-F)      " move to char
-nnoremap <BS>f <Plug>(easymotion-bd-f)      " move to char
+" 2-char search
+nnoremap <space>s <Plug>(easymotion-s2)
+" word motion
+nnoremap <space>W <Plug>(easymotion-w)
+" word motion
+nnoremap <space>w <Plug>(easymotion-bd-w)
+" 2-char search
+nnoremap <BS>; <Plug>(easymotion-s2)
+" move to char
+nnoremap <BS>F <Plug>(easymotion-bd-F)
+" move to char
+nnoremap <BS>f <Plug>(easymotion-bd-f)
 nnoremap <BS>h <Plug>(easymotion-linebackward)
 nnoremap <BS>j <Plug>(easymotion-j)
 nnoremap <BS>k <Plug>(easymotion-k)
-nnoremap <BS>L <Plug>(easymotion-bd-jk)     " move to line
+" move to line
+nnoremap <BS>L <Plug>(easymotion-bd-jk)
 nnoremap <BS>l <Plug>(easymotion-lineforward)
-nnoremap <BS>s <Plug>(easymotion-s2)        " 2-char search
-nnoremap <BS>W <Plug>(easymotion-w)         " word motion
-nnoremap <BS>w <Plug>(easymotion-bd-w)      " word motion
+" 2-char search
+nnoremap <BS>s <Plug>(easymotion-s2)
+" word motion
+nnoremap <BS>W <Plug>(easymotion-w)
+" word motion
+nnoremap <BS>w <Plug>(easymotion-bd-w)
 
 "" use easymotion with searches
 map  / <Plug>(easymotion-sn)

@@ -15,6 +15,7 @@ _vimrc
 .ssh/config
 AppData/Local/Microsoft/PowerToys/FancyZones/settings.json
 AppData/Local/Microsoft/PowerToys/File Explorer/settings.json
+AppData/Local/Microsoft/PowerToys/File Explorer/settings.json
 AppData/Local/Microsoft/PowerToys/Keyboard Manager/default.json
 AppData/Local/Microsoft/PowerToys/Keyboard Manager/settings.json
 AppData/Local/Microsoft/PowerToys/PowerRename/power-rename-settings.json
@@ -22,7 +23,6 @@ AppData/Local/Microsoft/PowerToys/PowerRename/power-rename-ui-flags
 AppData/Local/Microsoft/PowerToys/PowerToys Run/settings.json
 AppData/Local/Microsoft/PowerToys/PowerToys Run/Settings/PowerToysRunSettings.json
 AppData/Local/Microsoft/PowerToys/settings.json
-AppData/Local/lf/lfrc
 AppData/Local/nvim/init.vim
 AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 AppData/Roaming/AltSnap/AltSnap.ini
@@ -32,3 +32,4 @@ AppData/Roaming/lsd/config.yaml
 AppData/Roaming/NotePad++/config.xml
 AppData/Roaming/NotePad++/shortcuts.xml
 AppData/Roaming/SoundSwitch/SoundSwitchConfiguration.json
+config.cmd
