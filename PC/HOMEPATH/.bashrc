@@ -13,6 +13,11 @@ export LESS="-XFR"
 export EDITOR="nvim"
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
+bashcompdir="$HOME/.local/share/bash-completion/completions"
+if [[ ! -d "$bashcompdir" ]]; then
+    mkdir -p "$bashcompdir";
+fi
+
 source "$HOME"/.config/bash/aliases.sh
 source "$HOME"/.config/bash/functions.sh
 source "$HOME"/.config/bash/tools.sh
