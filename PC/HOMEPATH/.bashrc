@@ -26,4 +26,4 @@ source "$HOME"/.local/config-local.sh
 bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
 # also bound by default to Ctrl+Alt+e
-bind '\C-g:shell-expand-line'
+bind "\C-.":shell-expand-line
