@@ -13,6 +13,8 @@ export LESS="-XFR"
 export EDITOR="nvim"
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
+export GPG_TTY="$(tty)"
+
 bashcompdir="$HOME/.local/share/bash-completion/completions"
 if [[ ! -d "$bashcompdir" ]]; then
     mkdir -p "$bashcompdir";
