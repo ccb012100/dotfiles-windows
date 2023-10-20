@@ -11,11 +11,13 @@ alias l=less
 alias rm='rm -i'
 
 # ls
-alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
 alias la='ls -a'
 alias lal='ls -al'
 alias ll='ls -l'
 alias lla='ls -la'
+
+# eza
+alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
 alias llat='eza -al -t modified --sort newest'
 alias llt='eza -l -t modified --sort newest'
 alias tree='eza --tree'
@@ -23,7 +25,10 @@ alias tree='eza --tree'
 alias cls='clear'
 alias path='tr '\'':'\'' '\''\n'\'' <<< "$PATH"'
 
-# k is easier to type
+
+# git
+alias git=git_wrapper.sh # ln in ~/bin directory
+#: k is easier to type
 alias k=git
 alias ka='git a'
 alias kaa='git aa'
@@ -61,4 +66,5 @@ alias ku=kubectl
 alias lk=lazygit # easier than typing 'lg'
 alias v=nvim
 alias vim=nvim
+alias zq='zoxide query'
 alias zq='zoxide query'
