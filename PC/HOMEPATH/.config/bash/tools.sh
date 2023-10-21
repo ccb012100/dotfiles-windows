@@ -43,15 +43,23 @@ export FZF_CTRL_T_OPTS="
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 
+#: keybindings
+#: https://github.com/junegunn/fzf/blob/master/shell/key-bindings.bash
+fzfkeybinds="$HOME"/bin/fzf-keybindings.bash
+if [[ ! -f "$fzfkeybinds" ]]; then
+    curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfkeybinds"
+fi
+source "$fzfkeybinds"
+
+#: bash completions
+#: https://github.com/junegunn/fzf/blob/master/shell/completion.bash
+fzfcompletions="$HOME/.local/share/bash-completion/completions/fzf"
+if [[ ! -f "$fzfcompletions" ]]; then
+  curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfcompletions"
+fi
+
 # set Ripgrep configuration file
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
-
-#: copied over from https://github.com/junegunn/fzf/blob/master/shell/key-bindings.bash
-source "$HOME/bin/fzf-keybindings.bash"
-
-#: for bash completions, download
-#: https://github.com/junegunn/fzf/blob/master/shell/completion.bash and run
-#: `mv completion.bash ~/.local/share/bash-completion/completions/fzf`
 
 # starship
 eval "$(starship init bash)"

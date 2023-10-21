@@ -13,6 +13,11 @@ export LESS="-XFR"
 export EDITOR="nvim"
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
+bashcompdir="$HOME/.local/share/bash-completion/completions"
+if [[ ! -d "$bashcompdir" ]]; then
+    mkdir -p "$bashcompdir";
+fi
+
 source "$HOME"/.config/bash/aliases.sh
 source "$HOME"/.config/bash/functions.sh
 source "$HOME"/.config/bash/tools.sh
@@ -21,4 +26,4 @@ source "$HOME"/.local/config-local.sh
 bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
 # also bound by default to Ctrl+Alt+e
-bind '\C-g:shell-expand-line'
+bind "\C-.":shell-expand-line
