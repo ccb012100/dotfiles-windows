@@ -12,7 +12,7 @@ clink-maintained 1.5.9
 curl 8.4.0
 far 3.0.6161
 Far-3 3.0.4700
-fd 8.7.0
+fd 8.7.1
 FiraCode 6.2.0
 jetbrainsmono 2.304.0
 jq 1.7.0
