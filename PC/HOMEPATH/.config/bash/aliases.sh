@@ -6,7 +6,6 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 alias back='cd -'
-
 alias l=less
 alias rm='rm -i'
 
@@ -62,3 +61,6 @@ alias lk=lazygit # easier than typing 'lg'
 alias v=nvim
 alias vim=nvim
 alias zq='zoxide query'
+
+alias cbash='code ~/.config/bash'
+alias ebash='exec bash'
