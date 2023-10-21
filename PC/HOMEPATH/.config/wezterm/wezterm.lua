@@ -36,7 +36,11 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   }
 end
 
-config.color_scheme = 'Pandora'
+-- causes issues with key remappers like kmonad and kanata
+-- see: <https://github.com/jtroo/kanata/issues/437> and <https://github.com/wez/wezterm/issues/3934>
+config.allow_win32_input_mode = false
+
+config.color_scheme = 'PhD (base16)'
 
 config.initial_cols = 120
 config.initial_rows = 60
