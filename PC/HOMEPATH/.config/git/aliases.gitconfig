@@ -9,7 +9,6 @@
     ai      = add --update --interactive
     au      = ! git add --update && git s
     auc     = ! git add --update && git commit
-    aui     = add --update --interactive
 
     ## branch
     b       = branch
@@ -100,7 +99,7 @@
     rc          = rebase --continue
     remain      = rebase --interactive origin/main
     remaster    = rebase --interactive origin/master
-    re          = ! git rebase --interactive origin/`git branch --show-current`
+    reorigin    = ! git rebase --interactive origin/`git branch --show-current`
     ri          = rebase --interactive
 
     ## reset

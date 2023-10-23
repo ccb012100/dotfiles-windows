@@ -11,13 +11,11 @@ alias l=less
 alias rm='rm -i'
 
 # ls
+alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
 alias la='ls -a'
 alias lal='ls -al'
 alias ll='ls -l'
 alias lla='ls -la'
-
-# eza
-alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
 alias llat='eza -al -t modified --sort newest'
 alias llt='eza -l -t modified --sort newest'
 alias tree='eza --tree'
@@ -67,4 +65,6 @@ alias lk=lazygit # easier than typing 'lg'
 alias v=nvim
 alias vim=nvim
 alias zq='zoxide query'
-alias zq='zoxide query'
+
+alias cbash='code ~/.config/bash'
+alias ebash='exec bash'
