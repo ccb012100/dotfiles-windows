@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+
+alias ebash='exec bash'
+
+# built-in tools
+#: cd into parent directories
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -6,28 +11,29 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 alias back='cd -'
-
-alias l=less
 alias rm='rm -i'
 
-# ls
-alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
+#: ls
+alias l=ls
 alias la='ls -a'
 alias lal='ls -al'
 alias ll='ls -l'
 alias lla='ls -la'
-alias llat='eza -al -t modified --sort newest'
-alias llt='eza -l -t modified --sort newest'
-alias tree='eza --tree'
 
 alias cls='clear'
 alias path='tr '\'':'\'' '\''\n'\'' <<< "$PATH"'
 
+# external tools
 
-# git
+#: eza
+alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
+alias llat='eza -al -t modified --sort newest'
+alias llt='eza -l -t modified --sort newest'
+alias tree='eza --tree'
+
+#: git
 alias git=git_wrapper.sh # ln in ~/bin directory
-#: k is easier to type
-alias k=git
+alias k=git # k is easier to type
 alias ka='git a'
 alias kaa='git aa'
 alias kaac='git aac'
@@ -57,8 +63,6 @@ alias ksvv='git svv'
 alias kui='git-ui'
 
 alias b=bat
-alias c=code
-alias c.='code .' # open current directory in vscode
 alias ghv='gh pr view --web || gh repo view --web'
 alias ku=kubectl
 alias lk=lazygit # easier than typing 'lg'
@@ -66,5 +70,9 @@ alias v=nvim
 alias vim=nvim
 alias zq='zoxide query'
 
+#: vs code
+alias c=code
+alias c.='code .' # open current directory in vscode
 alias cbash='code ~/.config/bash'
-alias ebash='exec bash'
+alias cconf='code ~/.config'
+alias cgit='code ~/.config/git'
