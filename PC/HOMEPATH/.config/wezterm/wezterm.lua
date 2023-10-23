@@ -53,17 +53,16 @@ local keycode = {
 }
 
 -- LEADER key is Ctrl-m
-config.leader = { key = 'm', mods = keycode.ctrl }
+config.leader = { key = 'j', mods = keycode.ctrl }
 
 config.keys = {
-  -- ENTER
+  -- Launcher
   {
     key = 'Enter',
     mods = keycode.ctrl,
     action = act.ShowLauncherArgs { flags = 'FUZZY|TABS|LAUNCH_MENU_ITEMS' }
   },
   -- Command Palette
-  { key = 'm',           mods = keycode.leader_ctrl,      action = act.ActivateCommandPalette },
   { key = keycode.space, mods = keycode.ctrl,             action = act.ActivateCommandPalette },
   { key = keycode.space, mods = keycode.shift,            action = act.ActivateCommandPalette },
   -- New window
@@ -100,10 +99,10 @@ config.keys = {
   -- Move/select panes
   -- TODO: use new modes when they move out of nightly builds: "MoveToNewTab", "MoveToNewWindow"
   -- :: activate Pane Selection mode with <leader>,<leader>
-  { key = 'm',           mods = keycode.leader_ctrl,      action = act.PaneSelect },
+  { key = 'j',           mods = keycode.leader_ctrl,      action = act.PaneSelect },
   -- TODO: switch to SwapWithActiveKeepFocus when it moves out of nightly builds
   -- :: swap the active and selected panes
-  { key = 'k',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActive', } },
+  { key = 'j',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActive', } },
   { key = ',',           mods = keycode.leader,           action = act.RotatePanes 'CounterClockwise', },
   { key = '.',           mods = keycode.leader,           action = act.RotatePanes 'Clockwise' },
   -- Copy/paste/select
