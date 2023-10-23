@@ -9,6 +9,7 @@
     ai      = add --update --interactive
     au      = ! git add --update && git s
     auc     = ! git add --update && git commit
+    aui     = add --update --interactive
 
     ## branch
     b       = branch
@@ -133,6 +134,7 @@
 
     ## misc
     chx     = update-index --chmod=+x
+    difft   = git difftool --tool=difftastic
     fg      = forgit
     nuke    = clean -fdx
     sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
