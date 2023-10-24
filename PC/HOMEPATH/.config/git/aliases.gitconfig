@@ -132,6 +132,14 @@
     current-tags    = tag --list --points-at HEAD
     t               = current-tags
 
+    ## worktree
+    w   =   worktree
+    wl  =   worktree list
+    wa  =   worktree add
+    wm  =   worktree move
+    wp  =   worktree prune
+    wr  =   worktree remove
+
     ## misc
     chx     = update-index --chmod=+x
     difft   = git difftool --tool=difftastic
