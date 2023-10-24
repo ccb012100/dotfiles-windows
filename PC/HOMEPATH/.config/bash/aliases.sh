@@ -61,6 +61,12 @@ alias ks='git s'
 alias ksl='git sl'
 alias ksvv='git svv'
 alias kui='git-ui'
+alias kw='git w'
+alias kwa='git wa'
+alias kwc='git wc'
+alias kwl='git wl'
+alias kwm='git wm'
+alias kwr='git wr'
 
 alias b=bat
 alias ghv='gh pr view --web || gh repo view --web'
