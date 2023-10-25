@@ -65,28 +65,30 @@ config.keys = {
   -- Command Palette
   { key = keycode.space, mods = keycode.ctrl,             action = act.ActivateCommandPalette },
   { key = keycode.space, mods = keycode.shift,            action = act.ActivateCommandPalette },
+  -- Function keys
+  { key = 'F5',          mods = keycode.leader,           action = act.ReloadConfiguration },
+  { key = 'F11',         mods = keycode.leader,           action = act.ToggleFullScreen },
   -- New window
   { key = 'n',           mods = keycode.leader,           action = act.SpawnWindow },
   -- Close tab/pane
   { key = 'q',           mods = keycode.leader,           action = act.CloseCurrentTab { confirm = true } },
   { key = 'w',           mods = keycode.leader,           action = wezterm.action.CloseCurrentPane { confirm = true } },
-  -- Function keys
-  { key = 'F5',          mods = keycode.leader,           action = act.ReloadConfiguration },
-  { key = 'F11',         mods = keycode.leader,           action = act.ToggleFullScreen },
   -- Move/Activate Tab
   { key = 'Tab',         mods = keycode.ctrl,             action = act.ActivateTabRelative(1) },
   { key = 'Tab',         mods = keycode.ctrl_shift,       action = act.ActivateTabRelative(-1) },
   { key = 'Tab',         mods = keycode.leader_ctrl,      action = act.MoveTabRelative(1) },
   { key = 'Tab',         mods = keycode.leader_ctrlshift, action = act.MoveTabRelative(-1) },
-  -- Font size
-  { key = '-',           mods = keycode.leader,           action = act.DecreaseFontSize },
-  { key = '+',           mods = keycode.leader,           action = act.IncreaseFontSize },
-  { key = ";",           mods = keycode.leader,           action = act.QuickSelect },
-  { key = '=',           mods = keycode.leader_ctrl,      action = act.ResetFontSize },
-  -- Scrollback
-  { key = 'PageDown',    mods = keycode.leader,           action = act.ScrollByPage(1) },
-  { key = 'PageUp',      mods = keycode.leader,           action = act.ScrollByPage(-1) },
-  { key = 'u',           mods = keycode.leader,           action = act.ClearScrollback 'ScrollbackOnly' },
+  -- Move/select panes
+  -- TODO: use new modes when they move out of nightly builds: "MoveToNewTab", "MoveToNewWindow"
+  -- :: activate Pane Selection mode with <leader>,<leader>
+  { key = 'j',           mods = keycode.leader_ctrl,      action = act.PaneSelect },
+  { key = 'j',           mods = keycode.leader,           action = act.ActivatePaneDirection 'Next' },
+  { key = 'k',           mods = keycode.leader,           action = act.ActivatePaneDirection 'Prev' },
+  -- TODO: switch to SwapWithActiveKeepFocus when it moves out of nightly builds
+  -- :: swap the active and selected panes
+  { key = 's',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActive', } },
+  { key = ',',           mods = keycode.leader,           action = act.RotatePanes 'CounterClockwise', },
+  { key = '.',           mods = keycode.leader,           action = act.RotatePanes 'Clockwise' },
   -- Adjust pane size
   { key = 'DownArrow',   mods = keycode.leader,           action = act.AdjustPaneSize { 'Down', 1 } },
   { key = 'DownArrow',   mods = keycode.ctrl_shift,       action = act.AdjustPaneSize { 'Down', 1 } },
@@ -96,15 +98,17 @@ config.keys = {
   { key = 'RightArrow',  mods = keycode.ctrl_shift,       action = act.AdjustPaneSize { 'Right', 1 } },
   { key = 'UpArrow',     mods = keycode.leader,           action = act.AdjustPaneSize { 'Up', 1 } },
   { key = 'UpArrow',     mods = keycode.ctrl_shift,       action = act.AdjustPaneSize { 'Up', 1 } },
-  -- Move/select panes
-  -- TODO: use new modes when they move out of nightly builds: "MoveToNewTab", "MoveToNewWindow"
-  -- :: activate Pane Selection mode with <leader>,<leader>
-  { key = 'j',           mods = keycode.leader_ctrl,      action = act.PaneSelect },
-  -- TODO: switch to SwapWithActiveKeepFocus when it moves out of nightly builds
-  -- :: swap the active and selected panes
-  { key = 'j',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActive', } },
-  { key = ',',           mods = keycode.leader,           action = act.RotatePanes 'CounterClockwise', },
-  { key = '.',           mods = keycode.leader,           action = act.RotatePanes 'Clockwise' },
+  -- Zoom pane
+  { key = 'z',           mods = keycode.leader,           action = act.TogglePaneZoomState },
+  -- Font size
+  { key = '-',           mods = keycode.leader,           action = act.DecreaseFontSize },
+  { key = '+',           mods = keycode.leader,           action = act.IncreaseFontSize },
+  { key = ";",           mods = keycode.leader,           action = act.QuickSelect },
+  { key = '=',           mods = keycode.leader_ctrl,      action = act.ResetFontSize },
+  -- Scrollback
+  { key = 'PageDown',    mods = keycode.leader,           action = act.ScrollByPage(1) },
+  { key = 'PageUp',      mods = keycode.leader,           action = act.ScrollByPage(-1) },
+  { key = 'u',           mods = keycode.leader,           action = act.ClearScrollback 'ScrollbackOnly' },
   -- Copy/paste/select
   { key = 'c',           mods = keycode.leader,           action = act.ActivateCopyMode },
   { key = 'c',           mods = keycode.ctrl_shift,       action = act.CopyTo 'Clipboard' },
@@ -117,8 +121,6 @@ config.keys = {
   { key = 'f',           mods = keycode.ctrl_shift,       action = act.Search 'CurrentSelectionOrEmptyString' },
   -- Debug overlay
   { key = 'l',           mods = keycode.leader_shift,     action = act.ShowDebugOverlay },
-  -- Zoom pane
-  { key = 'z',           mods = keycode.leader,           action = act.TogglePaneZoomState },
 }
 
 config.key_tables = {
@@ -252,7 +254,7 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
     { key = '2', mods = keycode.leader, action = act.SplitHorizontal { args = spawn_wsl.args, cwd = spawn_wsl.cwd } })
   --:: 3  ->  CMD.exe
   table.insert(config.keys,
-    { key = '3', mods = keycode.shift_ctrl, action = act.SplitVertical { args = spawn_cmdexe.args } })
+    { key = '3', mods = keycode.ctrl_shift, action = act.SplitVertical { args = spawn_cmdexe.args } })
   table.insert(config.keys,
     { key = '3', mods = keycode.leader, action = act.SplitHorizontal { args = spawn_cmdexe.args } })
 end
