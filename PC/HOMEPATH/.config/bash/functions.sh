@@ -16,11 +16,14 @@ function clla {
     cd "$@" && ls -la
 }
 function brew() {
-    echo "This is Git Bash; did you mean 'choco ${*}'?"
+    echo "This is Git Bash; did you mean 'choco/winget ${*}'?"
     return 1
 }
+function zc() { # cd with zoxide and then open in vscode
+   z "$@" && code . 
+}
 # cargo cli commands
-function cg() {
+function jj() {
     case $1 in
     b)
         shift
@@ -97,7 +100,7 @@ function dn() {
     esac
 }
 # golang cli commands
-function g() {
+function gg() {
     case $1 in
     b)
         shift
