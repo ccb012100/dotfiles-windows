@@ -80,9 +80,9 @@ sh) # show
 
     command git show --expand-tabs=4 -n"$num" "$@"
     ;;
-files | shf)
+files | shf) # list files changed in last n commits
     shift
-        num=1
+    num=1
 
     if [[ $# -gt 0 ]]; then
         num=$1
@@ -90,6 +90,23 @@ files | shf)
     fi
 
     command git show --pretty="" --name-only -n"$num" "$@"
+    ;;
+restore | rest) # wraps `restore`
+    shift
+
+    if [[ $# -eq 0 ]]; then
+        error 'Need to supply arguments to "restore"'
+        exit 1
+    elif [[ $# -eq 1 ]]; then
+        case $1 in
+        all)
+            git restore :/
+            exit 0
+            ;;
+        esac
+    fi
+
+    git restore "$@"
     ;;
 undo) # reset last commit or last n commits and keeps undone changes in working directory
     shift
@@ -100,10 +117,27 @@ undo) # reset last commit or last n commits and keeps undone changes in working 
         num="$1"
     else
         error "Can't parse argument: undo $*"
-        return 1
+        exit 1
     fi
 
     git reset HEAD~"$num" --mixed
+    ;;
+unstage | u) # move staged files back to staging area; alias for `restore`
+    shift
+
+    if [[ $# -eq 0 ]]; then
+        error 'Need to supply arguments to "unstage"'
+        exit 1
+    elif [[ $# -eq 1 ]]; then
+        case $1 in
+        all)
+            git restore --staged :/
+            exit 0
+            ;;
+        esac
+    fi
+
+    git restore --staged "$@"
     ;;
 update | unwind) # update local branch from origin without checking it out
     shift
@@ -114,7 +148,7 @@ update | unwind) # update local branch from origin without checking it out
         git fetch origin "$1":"$1"
     else
         error "Can't parse argument: update $*"
-        return 1
+        exit 1
     fi
     ;;
 *) # pass through to git
@@ -125,4 +159,3 @@ update | unwind) # update local branch from origin without checking it out
     command git "$@"
     ;;
 esac
-
