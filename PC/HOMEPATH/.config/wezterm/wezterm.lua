@@ -22,6 +22,7 @@ config.font = wezterm.font {
   harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }, -- disable ligatures
 }
 config.font_size = 11.0
+config.pane_select_font_size = 36 -- default = 36
 config.color_scheme = 'PhD (base16)'
 
 -- see: <https://github.com/wez/wezterm/issues/2623>
@@ -35,6 +36,8 @@ config.key_map_preference = 'Physical'
 
 config.use_dead_keys = false
 config.disable_default_key_bindings = true
+
+config.quick_select_alphabet = 'asdfjkl;zxcvm,./weruiop'
 
 local keycode = {
   none = 'NONE', -- unmap
@@ -53,39 +56,42 @@ local keycode = {
 config.leader = { key = 'm', mods = keycode.ctrl }
 
 config.keys = {
-  -- TODO: shortcuts to swap layout
-  -- TODO: shortcuts to detach tab / attach window
-  -- ENTER
+  -- Launcher
   {
     key = 'Enter',
     mods = keycode.ctrl,
     action = act.ShowLauncherArgs { flags = 'FUZZY|TABS|LAUNCH_MENU_ITEMS' }
   },
   -- Command Palette
-  { key = 'm',           mods = keycode.leader_ctrl,      action = act.ActivateCommandPalette },
   { key = keycode.space, mods = keycode.ctrl,             action = act.ActivateCommandPalette },
   { key = keycode.space, mods = keycode.shift,            action = act.ActivateCommandPalette },
-  -- New window
-  { key = 'n',           mods = keycode.leader,           action = act.SpawnWindow },
-  -- Close tab
-  { key = 'w',           mods = keycode.leader,           action = act.CloseCurrentTab { confirm = true } },
   -- Function keys
   { key = 'F5',          mods = keycode.leader,           action = act.ReloadConfiguration },
   { key = 'F11',         mods = keycode.leader,           action = act.ToggleFullScreen },
+  -- New window
+  { key = 'n',           mods = keycode.leader,           action = act.SpawnWindow },
+  { key = 'n',           mods = keycode.ctrl_shift,       action = act.SpawnWindow },
+  -- Close tab/pane
+  { key = 'q',           mods = keycode.leader,           action = act.CloseCurrentTab { confirm = true } },
+  { key = 'q',           mods = keycode.ctrl_shift,       action = act.CloseCurrentTab { confirm = true } },
+  { key = 'w',           mods = keycode.leader,           action = wezterm.action.CloseCurrentPane { confirm = true } },
+  { key = 'w',           mods = keycode.ctrl_shift,       action = wezterm.action.CloseCurrentPane { confirm = true } },
   -- Move/Activate Tab
-  { key = 'Tab',         mods = keycode.ctrl,             action = act.ActivateTabRelative(1) },
   { key = 'Tab',         mods = keycode.ctrl_shift,       action = act.ActivateTabRelative(-1) },
-  { key = 'Tab',         mods = keycode.leader_ctrl,      action = act.MoveTabRelative(1) },
-  { key = 'Tab',         mods = keycode.leader_ctrlshift, action = act.MoveTabRelative(-1) },
-  -- Font size
-  { key = '-',           mods = keycode.leader,           action = act.DecreaseFontSize },
-  { key = '+',           mods = keycode.leader,           action = act.IncreaseFontSize },
-  { key = ";",           mods = keycode.leader,           action = act.QuickSelect },
-  { key = '=',           mods = keycode.leader_ctrl,      action = act.ResetFontSize },
-  -- Scrollback
-  { key = 'PageDown',    mods = keycode.leader,           action = act.ScrollByPage(1) },
-  { key = 'PageUp',      mods = keycode.leader,           action = act.ScrollByPage(-1) },
-  { key = 'u',           mods = keycode.leader,           action = act.ClearScrollback 'ScrollbackOnly' },
+  { key = 'Tab',         mods = keycode.ctrl,             action = act.ActivateTabRelative(1) },
+  { key = 'Tab',         mods = keycode.leader,           action = act.MoveTabRelative(-1) },
+  { key = 'Tab',         mods = keycode.leader,           action = act.MoveTabRelative(1) },
+  -- Move/select panes
+  -- TODO: use new modes when they move out of nightly builds: "MoveToNewTab", "MoveToNewWindow"
+  { key = 'm',           mods = keycode.leader,           action = act.PaneSelect },
+  -- :: activate next Pane with <leader>,<leader>
+  { key = 'm',           mods = keycode.leader_ctrl,      action = act.ActivatePaneDirection 'Next' },
+  { key = 'm',           mods = keycode.leader_ctrlshift, action = act.ActivatePaneDirection 'Prev' },
+  -- TODO: switch to SwapWithActiveKeepFocus when it moves out of nightly builds
+  -- :: swap the active and selected panes
+  { key = 's',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActive', } },
+  { key = ',',           mods = keycode.leader,           action = act.RotatePanes 'CounterClockwise', },
+  { key = '.',           mods = keycode.leader,           action = act.RotatePanes 'Clockwise' },
   -- Adjust pane size
   { key = 'DownArrow',   mods = keycode.leader,           action = act.AdjustPaneSize { 'Down', 1 } },
   { key = 'DownArrow',   mods = keycode.ctrl_shift,       action = act.AdjustPaneSize { 'Down', 1 } },
@@ -95,11 +101,20 @@ config.keys = {
   { key = 'RightArrow',  mods = keycode.ctrl_shift,       action = act.AdjustPaneSize { 'Right', 1 } },
   { key = 'UpArrow',     mods = keycode.leader,           action = act.AdjustPaneSize { 'Up', 1 } },
   { key = 'UpArrow',     mods = keycode.ctrl_shift,       action = act.AdjustPaneSize { 'Up', 1 } },
-  -- Focus on pane
-  { key = 'i',           mods = keycode.leader_ctrl,      action = act.ActivatePaneDirection 'Up' },
-  { key = 'j',           mods = keycode.leader_ctrl,      action = act.ActivatePaneDirection 'Left' },
-  { key = 'k',           mods = keycode.leader_ctrl,      action = act.ActivatePaneDirection 'Down' },
-  { key = 'l',           mods = keycode.leader_ctrl,      action = act.ActivatePaneDirection 'Right' },
+  -- Zoom pane
+  { key = 'z',           mods = keycode.leader,           action = act.TogglePaneZoomState },
+  { key = 'z',           mods = keycode.ctrl_shift,       action = act.TogglePaneZoomState },
+  -- Font size
+  { key = '-',           mods = keycode.leader,           action = act.DecreaseFontSize },
+  { key = '+',           mods = keycode.leader,           action = act.IncreaseFontSize },
+  { key = ";",           mods = keycode.leader,           action = act.QuickSelect },
+  { key = '=',           mods = keycode.leader,           action = act.ResetFontSize },
+  -- Scrollback
+  { key = 'PageDown',    mods = keycode.leader,           action = act.ScrollByPage(1) },
+  { key = 'PageDown',    mods = keycode.ctrl_shift,       action = act.ScrollByPage(1) },
+  { key = 'PageUp',      mods = keycode.leader,           action = act.ScrollByPage(-1) },
+  { key = 'PageUp',      mods = keycode.ctrl_shift,       action = act.ScrollByPage(-1) },
+  { key = 'u',           mods = keycode.leader,           action = act.ClearScrollback 'ScrollbackOnly' },
   -- Copy/paste/select
   { key = 'c',           mods = keycode.leader,           action = act.ActivateCopyMode },
   { key = 'c',           mods = keycode.ctrl_shift,       action = act.CopyTo 'Clipboard' },
@@ -109,11 +124,10 @@ config.keys = {
   { key = 'Insert',      mods = keycode.shift,            action = act.PasteFrom 'PrimarySelection' },
   { key = 'Paste',       mods = keycode.none,             action = act.PasteFrom 'Clipboard' },
   -- Search
+  { key = 'f',           mods = keycode.leader,           action = act.Search 'CurrentSelectionOrEmptyString' },
   { key = 'f',           mods = keycode.ctrl_shift,       action = act.Search 'CurrentSelectionOrEmptyString' },
   -- Debug overlay
   { key = 'l',           mods = keycode.leader_shift,     action = act.ShowDebugOverlay },
-  -- Zoom pane
-  { key = 'z',           mods = keycode.leader,           action = act.TogglePaneZoomState },
 }
 
 config.key_tables = {
@@ -208,7 +222,7 @@ config.key_tables = {
 -- Windows-specific config
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   local spawn_gitbash = { label = "Git Bash", args = { "C:/Program Files/Git/bin/bash.exe ", "-i", "-l" } }
-  local spawn_wsl = { label = "WSL - Ubuntu", args = { "wsl.exe" }, cwd = "//wsl.localhost/Ubuntu/home/ccb012100" }
+  local spawn_wsl = { label = "WSL - Ubuntu", args = { "wsl.exe" }, cwd = "//wsl.localhost/Ubuntu/home/ccb" }
   local spawn_cmdexe = { label = "cmd.exe", args = { "cmd.exe", "/k", "config.cmd" } }
   local spawn_pwsh = { label = 'PowerShell', args = { "C:/Program Files/PowerShell/7/pwsh.exe" } }
 
@@ -239,17 +253,17 @@ if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   table.insert(config.keys,
     { key = '1', mods = keycode.ctrl_shift, action = act.SplitVertical { args = spawn_gitbash.args } })
   table.insert(config.keys,
-    { key = '1', mods = keycode.leader, action = act.SplitVertical { args = spawn_gitbash.args } })
+    { key = '1', mods = keycode.leader, action = act.SplitHorizontal { args = spawn_gitbash.args } })
   --:: 2  ->  WSL
   table.insert(config.keys,
     { key = '2', mods = keycode.ctrl_shift, action = act.SplitVertical { args = spawn_wsl.args, cwd = spawn_wsl.cwd } })
   table.insert(config.keys,
-    { key = '2', mods = keycode.leader, action = act.SplitVertical { args = spawn_wsl.args, cwd = spawn_wsl.cwd } })
+    { key = '2', mods = keycode.leader, action = act.SplitHorizontal { args = spawn_wsl.args, cwd = spawn_wsl.cwd } })
   --:: 3  ->  CMD.exe
   table.insert(config.keys,
-    { key = '3', mods = keycode.shift_ctrl, action = act.SplitVertical { args = spawn_cmdexe.args } })
+    { key = '3', mods = keycode.ctrl_shift, action = act.SplitVertical { args = spawn_cmdexe.args } })
   table.insert(config.keys,
-    { key = '3', mods = keycode.leader, action = act.SplitVertical { args = spawn_cmdexe.args } })
+    { key = '3', mods = keycode.leader, action = act.SplitHorizontal { args = spawn_cmdexe.args } })
 end
 
 return config
