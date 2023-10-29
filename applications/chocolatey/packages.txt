@@ -37,7 +37,7 @@ vcredist2015 14.0.24215.20170201
 vcredist2017 14.16.27033
 wezterm 20230712.72601.0
 wezterm.install 20230712.72601.0
-xh 0.18.0
+xh 0.19.4
 zoxide 0.9.2
 zstandard 1.5.0
 41 packages installed.
