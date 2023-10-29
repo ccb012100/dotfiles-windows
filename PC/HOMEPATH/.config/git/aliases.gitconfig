@@ -4,10 +4,12 @@
     a       = add
     aa      = ! git add --all && git s
     aac     = ! git add --all && git commit
+    aai     = add --all --interactive
     ac      = ! git add --update && git commit
-    ai      = add --all --interactive
+    ai      = add --update --interactive
     au      = ! git add --update && git s
     auc     = ! git add --update && git commit
+    aui     = add --update --interactive
 
     ## branch
     b       = branch
@@ -16,11 +18,8 @@
     bv      = branch -v
     br      = branch --remote
     brv     = branch --remote -v
-    # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
-    delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
-    # delete local branches that have been merged into master (adapted from https://stackoverflow.com/a/16906759)
-    delmas  = ! git fetch --prune && git branch --merged master | rg -v '^[ *]*master$' | xargs --no-run-if-empty git branch -d
-    swc     = switch --create # create new branch and switch to it
+    delete  = delete-merged-branches    # <https://github.com/hartwork/git-delete-merged-branches>
+    swc     = switch --create           # create new branch and switch to it
 
     ## commit
     amend   = commit --amend
@@ -34,8 +33,8 @@
 
     ## checkout
     back    = checkout -
-    co      = checkout # create and checkout a new branch
-    cob     = checkout -b
+    co      = checkout
+    cob     = checkout -b # create and checkout a new branch
     cof     = checkout --force
     main    = checkout main
     master  = checkout master
@@ -50,21 +49,31 @@
     f       = fetch --all
     fm      = fetch origin main:main # update local main branch to match origin
 
+    ## forgit
+    ja      = forgit add
+    jbd     = forgit branch_delete
+    jblame  = forgit blame
+    jclean  = forgit clean
+    jco     = forgit checkout_branch
+    jcoc    = forgit checkout_commit
+    jcof    = forgit checkout_file
+    jcot    = forgit checkout_tag
+    jf      = forgit fixup
+    ji      = forgit ignore
+    jl      = forgit log
+    jpick   = forgit cherry_pick
+    jpickb  = forgit cherry_pick_from_branch
+    jr      = forgit rebase
+    jrc     = forgit revert_commit
+    jreset  = forgit reset_head
+    js      = forgit stash_show
+    jsp     = forgit stash_push
+
     ## log
-    l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
-    l1      = l -1 --compact-summary # show last commit with summary
-    last    = log -1 HEAD --compact-summary
-    lc      = l --compact-summary
-    lfp     = l --first-parent
-    lm      = l --merges
-    lmc     = l --compact-summary
-    ln      = log -n
-    lnc     = log --compact-summary -n
-    lnm     = l --no-merges
-    lnmc    = lnm --compact-summary
     logfp   = log --first-parent
+    logm    = log --merges
+    lognm   = log --no-merges
     lp      = log --patch --compact-summary # show diffs
-    lp1     = lp -1 --compact-summary # show last commit with diff
     ls      = ls-files
 
     ## merge
@@ -86,11 +95,11 @@
     publish = push -v --set-upstream origin HEAD
 
     ## rebase
-    r            = rebase
+    r           = rebase
     ra          = rebase --abort
     rc          = rebase --continue
-    remain       = rebase --interactive origin/main
-    remaster     = rebase --interactive origin/master
+    remain      = rebase --interactive origin/main
+    remaster    = rebase --interactive origin/master
     reorigin    = ! git rebase --interactive origin/`git branch --show-current`
     ri          = rebase --interactive
 
@@ -99,8 +108,6 @@
     rtm     = reset --mixed
     rts     = reset --soft
     rth     = reset --hard
-    # reset last commit or last $1 commits and keeps undone changes in working directory
-    undo    = ! "f() { if [[ $# -eq 0 ]] ; then git reset HEAD~1 --mixed; else git reset HEAD~$1 --mixed; fi; }; f"
 
     ## restore
     unst    = unstage
@@ -109,7 +116,6 @@
 
     ## stash
     checkpoint  = !git stash push --include-untracked && git stash apply # stash changes but keep them in staging area
-    cp          = checkpoint
     pop         = stash pop
     stc         = checkpoint
     stl         = stash list
@@ -126,15 +132,18 @@
     current-tags    = tag --list --points-at HEAD
     t               = current-tags
 
+    ## worktree
+    w   =   worktree
+    wl  =   worktree list
+    wa  =   worktree add
+    wm  =   worktree move
+    wp  =   worktree prune
+    wr  =   worktree remove
+
     ## misc
-    alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
-    # reset author for last commit or last $1 commits
-    author  = ! "f() { if [[ $# -eq 0 ]] ; then echo git rebase HEAD~1 -x \"git commit --amend --no-edit --reset-author\"; else git rebase HEAD~$1 -x \"git commit --amend --no-edit --reset-author\"; }; f"
     chx     = update-index --chmod=+x
+    difft   = git difftool --tool=difftastic
     fg      = forgit
     nuke    = clean -fdx
     sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
     ui      = ! gitui
-    # update local branch from origin without checking it out
-    update  = ! "f() { if [[ $# -eq 0 ]] ; then echo "must supply a branch name"; else git fetch origin $1:$1; }; f"
-    unwind  = update

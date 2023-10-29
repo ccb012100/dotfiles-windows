@@ -12,6 +12,42 @@
     prompt = false
     keepBackup = false
     keepTemporaries = false
+[pager]
+    diff = delta
+    difftool = true
+    log = delta
+    reflog = delta
+    show = delta
+
+## delta
+[delta]
+	commit-decoration-style = magenta box ul
+	commit-regex = > [0-9a-f]{7,}
+    features = line-numbers decorations
+	file-decoration-style = yellow box
+	file-style = brightyellow italic
+	hyperlinks = true
+	line-numbers-minus-style = red
+	line-numbers-plus-style = green
+	line-numbers-zero-style = white
+    syntax-theme = TwoDark
+	whitespace-error-style = 22 reverse
+    # keep-plus-minus-markers = true
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+[delta "interactive"]
+    keep-plus-minus-markers = false
+[delta "sbs"]
+	side-by-side = true
+## difftastic
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
 ## meld
 [difftool "meld"]
     path = "/c/Program Files/Meld/Meld.exe"
