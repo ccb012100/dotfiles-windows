@@ -222,7 +222,7 @@ config.key_tables = {
 -- Windows-specific config
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   local spawn_gitbash = { label = "Git Bash", args = { "C:/Program Files/Git/bin/bash.exe ", "-i", "-l" } }
-  local spawn_wsl = { label = "WSL - Ubuntu", args = { "wsl.exe" }, cwd = "//wsl.localhost/Ubuntu/home/ccb" }
+  local spawn_wsl = { label = "WSL - Ubuntu", args = { "wsl.exe" }, cwd = "//wsl.localhost/Ubuntu/home/ccb012100" }
   local spawn_cmdexe = { label = "cmd.exe", args = { "cmd.exe", "/k", "config.cmd" } }
   local spawn_pwsh = { label = 'PowerShell', args = { "C:/Program Files/PowerShell/7/pwsh.exe" } }
 
