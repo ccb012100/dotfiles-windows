@@ -10,6 +10,11 @@ end
 config.initial_cols = 120
 config.initial_rows = 60
 
+config.inactive_pane_hsb = {
+  saturation = 0.5,
+  brightness = 0.5,
+}
+
 config.window_frame = {                 -- TODO: reduce font size on command palette
   font = wezterm.font('IBM Plex Sans'), -- Proportional font
 }
