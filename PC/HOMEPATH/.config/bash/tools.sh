@@ -71,4 +71,4 @@ function set_win_title() {
 starship_precmd_user_func="set_win_title"
 
 # zoxide
-eval "$(zoxide init bash)"
+eval "$(zoxide init --cmd j bash)"
