@@ -288,20 +288,6 @@
           "Value": false,
           "ComboBoxValue": 0,
           "NumberValue": 0
-        },
-        {
-          "PluginOptionType": 1,
-          "Key": "ShellCommandExecution",
-          "DisplayLabel": "Shell command execution",
-          "Value": false,
-          "ComboBoxValue": 2,
-          "ComboBoxOptions": [
-            "Run command in Command Prompt (cmd.exe)",
-            "Run command in PowerShell (PowerShell.exe)",
-            "Find executable file and run it",
-            "Run command in Windows Terminal (wt.exe)"
-          ],
-          "NumberValue": 0
         }
       ]
     },
