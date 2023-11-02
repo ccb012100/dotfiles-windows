@@ -5,9 +5,5 @@
   "PersistState": true,
   "MRUEnabled": true,
   "MaxMRUSize": 10,
-  "SearchText": "",
-  "ReplaceText": "",
-  "UseBoostLib": false,
-  "LastWindowWidth": 1400,
-  "LastWindowHeight": 800
+  "UseBoostLib": false
 }
