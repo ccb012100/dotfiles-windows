@@ -46,12 +46,24 @@ author) # reset author for last commit or last $1 commits
 
     git rebase HEAD~"$num" -x "git commit --amend --no-edit --reset-author"
     ;;
+files | shf) # list files changed in last n commits
+    shift
+    num=1
+
+    if [[ $# -gt 0 ]]; then
+        num=$1
+        shift
+    fi
+
+    command git show --pretty="" --name-only -n"$num" "$@"
+    ;;
 l) # git log, formatted to 1 line per commit
     shift
 
     num=25
 
-    if [[ $# -gt 0 ]]; then
+    # check if $1 is a number
+    if [[ $# -gt 0 ]] && [[ $1 =~ ^[1-9][0-9]*$ ]]; then
         num=$1
         shift
     fi
@@ -63,11 +75,13 @@ la | last) # log compact summary (commit message and list of changed files)
 
     num=1
 
-    if [[ $# -gt 0 ]]; then
+    # check if $1 is a number
+    if [[ $# -gt 0 ]] && [[ $1 =~ ^[1-9][0-9]*$ ]]; then
         num=$1
+        shift
     fi
 
-    command git log --compact-summary -"$num"
+    command git log --compact-summary -"$num" "$@"
     ;;
 sh) # show
     shift
@@ -79,17 +93,6 @@ sh) # show
     fi
 
     command git show --expand-tabs=4 -n"$num" "$@"
-    ;;
-files | shf) # list files changed in last n commits
-    shift
-    num=1
-
-    if [[ $# -gt 0 ]]; then
-        num=$1
-        shift
-    fi
-
-    command git show --pretty="" --name-only -n"$num" "$@"
     ;;
 restore | rest) # wraps `restore`
     shift
