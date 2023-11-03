@@ -28,7 +28,10 @@ config.font = wezterm.font {
 }
 config.font_size = 11.0
 config.pane_select_font_size = 36 -- default = 36
-config.color_scheme = 'PhD (base16)'
+
+-- on Windows, make sure to link/copy files from ~/.config/wezterm/colors/
+-- to "/c/Program Files/Wezterm/colors"
+config.color_scheme = 'melange_dark'
 
 -- see: <https://github.com/wez/wezterm/issues/2623>
 config.key_map_preference = 'Physical'
