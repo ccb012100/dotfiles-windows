@@ -74,6 +74,7 @@ call plug#begin()
     Plug 'easymotion/vim-easymotion'
     Plug 'tpope/vim-commentary'
     Plug 'itchyny/lightline.vim'
+    Plug 'savq/melange'
 call plug#end()
 
 " lightline.vim
@@ -139,7 +140,7 @@ autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
 syntax enable
-colorscheme habamax
+colorscheme melange
 
 set viminfo+=n~/.vim/viminfo
 
