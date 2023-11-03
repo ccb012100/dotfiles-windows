@@ -15,12 +15,16 @@ function clal {
 function clla {
     cd "$@" && ls -la
 }
+# cd into the directory containing the file passed as an argument
+function cdf {
+    cd "$(dirname "$*")" || exit
+}
 function brew() {
     echo "This is Git Bash; did you mean 'choco/winget ${*}'?"
     return 1
 }
-function zc() { # cd with zoxide and then open in vscode
-   z "$@" && code . 
+function jc() { # cd with zoxide and then open in vscode
+    j "$@" && code .
 }
 # cargo cli commands
 function jj() {
