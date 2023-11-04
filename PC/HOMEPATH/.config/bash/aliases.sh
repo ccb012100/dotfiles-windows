@@ -34,14 +34,14 @@ alias vim=nvim
 alias zq='zoxide query'
 
 #: eza
-alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
+alias ls='eza --git --icons --group-directories-first -F' # replace ls with eza
 alias llat='eza -al -t modified --sort newest'
 alias llt='eza -l -t modified --sort newest'
 alias tree='eza --tree'
 
 #: git
 alias git=git_wrapper.sh # ln in ~/bin directory
-alias k=git # k is easier to type
+alias k=git              # k is easier to type
 alias ka='git a'
 alias kaa='git aa'
 alias kaac='git aac'
