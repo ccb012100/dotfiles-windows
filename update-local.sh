@@ -9,16 +9,17 @@ winconfig="$HOME"/win/.config
 
 case $1 in
 bash)
-    cp -i "$repoconf"/bash/{aliases,tools,functions}.sh "$winconfig"/bash/
+    cp -u "$repoconf"/bash/{aliases,tools,functions}.sh "$winconfig"/bash/
     ;;
 bashrc)
-    cp -i "$repo"/PC/HOMEPATH/.bashrc "$HOME"/win/
+    cp -u "$repo"/PC/HOMEPATH/.bashrc "$HOME"/win/
     ;;
 git)
-    cp -i "$repoconf"/git/{aliases.gitconfig,git_wrapper.sh} "$winconfig"/git/
+    cp -u "$repoconf"/git/{aliases.gitconfig,git_wrapper.sh} "$winconfig"/git/
     ;;
 wez)
-    cp -i "$repoconf"/wezterm/wezterm.lua "$winconfig"/wezterm/
+    cp -u "$repoconf"/wezterm/wezterm.lua "$winconfig"/wezterm/
+    cp -u "$repoconf"/wezterm/colors/* "$winconfig"/wezterm/colors/
     ;;
 *)
     echo ERROR: unsupported option
