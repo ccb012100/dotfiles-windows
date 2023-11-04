@@ -11,6 +11,7 @@ _vimrc
 .gitconfig
 .gnupg/gpg-agent.conf
 .gnupg/gpg.conf
+.inputrc
 .minttyrc
 .ssh/config
 AppData/Local/Microsoft/PowerToys/FancyZones/settings.json

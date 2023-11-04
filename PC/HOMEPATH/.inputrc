@@ -1,0 +1,10 @@
+# clink settings
+set colored-completion-prefix on
+C-f: forward-char
+C-a: beginning-of-line
+C-e: end-of-line
+C-k: kill-line
+M-f: forward-word
+C-b: backward-char
+M-b: backward-word
+"\C-/": undo
