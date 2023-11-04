@@ -24,7 +24,7 @@ function brew() { # homebrew does not exist on Windows
     return 1
 }
 function ln() { # getting ln working on Git Bash is annoying to set up
-    echo Use 'cmd \c "mklink LINK TARGET"' to create a symlink on Windows
+    echo Use 'cmd //c "mklink LINK TARGET"' to create a symlink on Windows
     return 1
 }
 function jc() { # cd with zoxide and then open in vscode
@@ -41,7 +41,6 @@ function open() { # use built-in Windows 'open' command
         start .
     fi
 }
-
 function jj() { # cargo cli commands
     case $1 in
     b)

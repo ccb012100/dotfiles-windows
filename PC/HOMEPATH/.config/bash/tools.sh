@@ -46,7 +46,7 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 #: https://github.com/junegunn/fzf/blob/master/shell/key-bindings.bash
 fzfkeybinds="$HOME"/bin/fzf-keybindings.bash
 if [[ ! -f "$fzfkeybinds" ]]; then
-    curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfkeybinds"
+  curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfkeybinds"
 fi
 source "$fzfkeybinds"
 
@@ -67,6 +67,7 @@ function set_win_title() {
   echo -ne "\033]0; $(basename "$PWD") \007"
 }
 
+# shellcheck disable=SC2034
 starship_precmd_user_func="set_win_title"
 
 # zoxide
