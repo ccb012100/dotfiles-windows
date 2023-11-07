@@ -6,7 +6,9 @@
     editor = nvim
     excludesfile = ~/.config/git/ignore
     filemode = false
+    fsmonitor = true
     sshcommand = C:/Windows/System32/OpenSSH/ssh.exe
+    untrackedCache = true
 [commit]
     gpgsign = true
     verbose = true
