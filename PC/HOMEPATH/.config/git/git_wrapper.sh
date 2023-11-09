@@ -23,6 +23,14 @@ if [[ $# -eq 0 ]]; then
 fi
 
 case $1 in
+a)
+    shift
+    if [[ $# -eq 0 ]]; then
+        git add --update && git status --short
+    else
+        git add "$@"
+    fi
+    ;;
 alias) # list aliases, optionally filtering on search string
     shift
 
