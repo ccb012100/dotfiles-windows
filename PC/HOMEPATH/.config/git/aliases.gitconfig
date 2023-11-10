@@ -1,14 +1,10 @@
 ## aliases
 [alias]
     ## add
-    a       = add
-    aa      = ! git add --all && git s
-    aac     = ! git add --all && git commit
+    aa      = ! git add --all && git status --short
     aai     = add --all --interactive
-    ac      = ! git add --update && git commit
     ai      = add --update --interactive
-    au      = ! git add --update && git s
-    auc     = ! git add --update && git commit
+    au      = ! git add --update && git status --short
     aui     = add --update --interactive
 
     ## branch
