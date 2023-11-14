@@ -14,8 +14,8 @@ delta 0.16.5
 difftastic 0.52.0
 fd 8.7.1
 FiraCode 6.2.0
-go 1.21.3
-golang 1.21.3
+go 1.21.4
+golang 1.21.4
 httpie 3.2.2
 jetbrainsmono 2.304.0
 jq 1.7.0
