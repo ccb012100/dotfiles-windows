@@ -50,18 +50,18 @@
 (deflayer _j
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    [    ]    {    }    _    \(   up   \)   _    _    _    _
-  _    home _    pgup `    _    pgup _    down rght |    _    _
-  _    end  ins  pgdn ~    _    pgdn -    \_   caps \    _
+  _    _    [    ins  ]    _    _    \(   up   \)   _    _    _    _
+  caps home ~    pgup `    _    _    _    down rght |    _    _
+  _    end  {    pgdn }    _    _    \_   |    caps \    _
   _    _    _              _              _    _    _      _       _
                                                            _
 )
 (deflayer _f
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    [    ]    {    }    _    \(   up   \)   _    _    _    _
-  caps home _    pgup _    home _    left down rght |    _    _
-  _    end  ins  pgdn ~    end  _    -    \_   caps \    _
+  _    _    [    ins  ]    _    _    \(   up   \)   _    _    _    _
+  caps home ~    pgup _    _    _    left down rght -    _    _
+  _    end  {    pgdn }    _    _    \_   |    caps \    _
   _    _    _              _              _    _    _      _       _
                                                            _
 )
