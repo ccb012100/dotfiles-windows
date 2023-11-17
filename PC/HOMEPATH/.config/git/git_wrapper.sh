@@ -76,6 +76,9 @@ author) # reset author for last commit or last $1 commits
 
     git rebase HEAD~"$num" -x "git commit --amend --no-edit --reset-author"
     ;;
+date)
+    GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"
+    ;;
 files | shf) # list files changed in last n commits
     shift
     num=1

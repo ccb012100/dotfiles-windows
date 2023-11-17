@@ -139,7 +139,7 @@
 
     ## misc
     chx     = update-index --chmod=+x
-    difft   = git difftool --tool=difftastic
+    difft   = difftool --tool=difftastic
     fg      = forgit
     nuke    = clean -fdx
     sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
