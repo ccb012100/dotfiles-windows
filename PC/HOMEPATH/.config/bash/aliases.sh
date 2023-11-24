@@ -25,15 +25,23 @@ alias path='tr '\'':'\'' '\''\n'\'' <<< "$PATH"'
 
 # external tools
 
+alias b=bat
+alias ghv='gh pr view --web || gh repo view --web'
+alias ku=kubectl
+alias lk=lazygit # easier than typing 'lg'
+alias v=nvim
+alias vim=nvim
+alias zq='zoxide query'
+
 #: eza
-alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
+alias ls='eza --git --icons --group-directories-first -F' # replace ls with eza
 alias llat='eza -al -t modified --sort newest'
 alias llt='eza -l -t modified --sort newest'
 alias tree='eza --tree'
 
 #: git
 alias git=git_wrapper.sh # ln in ~/bin directory
-alias k=git # k is easier to type
+alias k=git              # k is easier to type
 alias ka='git a'
 alias kaa='git aa'
 alias kaac='git aac'
@@ -68,13 +76,10 @@ alias kwl='git wl'
 alias kwm='git wm'
 alias kwr='git wr'
 
-alias b=bat
-alias ghv='gh pr view --web || gh repo view --web'
-alias ku=kubectl
-alias lk=lazygit # easier than typing 'lg'
-alias v=nvim
-alias vim=nvim
-alias zq='zoxide query'
+#: mdcat
+alias md=mdcat
+alias mdp='mdcat --paginate'
+alias readme='mdcat README.md'
 
 #: vs code
 alias c=code

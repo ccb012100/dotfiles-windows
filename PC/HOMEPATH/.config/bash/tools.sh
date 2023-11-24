@@ -38,8 +38,7 @@ export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
 export FZF_DEFAULT_OPTS='--cycle --layout=reverse --info=inline --border --margin=1 --padding=1 --color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_CTRL_T_OPTS="
-  --preview 'bat -n --color=always {}'
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 
@@ -47,7 +46,7 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 #: https://github.com/junegunn/fzf/blob/master/shell/key-bindings.bash
 fzfkeybinds="$HOME"/bin/fzf-keybindings.bash
 if [[ ! -f "$fzfkeybinds" ]]; then
-    curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfkeybinds"
+  curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfkeybinds"
 fi
 source "$fzfkeybinds"
 
@@ -68,7 +67,8 @@ function set_win_title() {
   echo -ne "\033]0; $(basename "$PWD") \007"
 }
 
+# shellcheck disable=SC2034
 starship_precmd_user_func="set_win_title"
 
 # zoxide
-eval "$(zoxide init bash)"
+eval "$(zoxide init --cmd j bash)"

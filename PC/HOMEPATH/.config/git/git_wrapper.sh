@@ -23,6 +23,36 @@ if [[ $# -eq 0 ]]; then
 fi
 
 case $1 in
+a)
+    shift
+    if [[ $# -eq 0 ]]; then
+        if [[ $(git diff --staged --name-only) ]]; then
+            error 'there are already staged files!'
+        else
+            git add --update && git status --short
+        fi
+    else
+        git add "$@"
+    fi
+    ;;
+aac) # add changed and untracked files and then commit
+    shift
+    # if there are already staged files, I likely didn't mean to run this command
+    if [[ $(git diff --staged --name-only) ]]; then
+        error 'there are already staged files!'
+    else
+        git add --all && git commit
+    fi
+    ;;
+ac | auc) # add unstaged files and then commit
+    shift
+    # if there are already staged files, I likely didn't mean to run this command
+    if [[ $(git diff --staged --name-only) ]]; then
+        error 'there are already staged files!'
+    else
+        git add --update && git commit
+    fi
+    ;;
 alias) # list aliases, optionally filtering on search string
     shift
 
@@ -46,39 +76,8 @@ author) # reset author for last commit or last $1 commits
 
     git rebase HEAD~"$num" -x "git commit --amend --no-edit --reset-author"
     ;;
-l) # git log, formatted to 1 line per commit
-    shift
-
-    num=25
-
-    if [[ $# -gt 0 ]]; then
-        num=$1
-        shift
-    fi
-
-    command git log -n"$num" --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)' "$@"
-    ;;
-la | last) # log compact summary (commit message and list of changed files)
-    shift
-
-    num=1
-
-    if [[ $# -gt 0 ]]; then
-        num=$1
-    fi
-
-    command git log --compact-summary -"$num"
-    ;;
-sh) # show
-    shift
-    num=1
-
-    if [[ $# -gt 0 ]]; then
-        num=$1
-        shift
-    fi
-
-    command git show --expand-tabs=4 -n"$num" "$@"
+date)
+    GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"
     ;;
 files | shf) # list files changed in last n commits
     shift
@@ -90,6 +89,44 @@ files | shf) # list files changed in last n commits
     fi
 
     command git show --pretty="" --name-only -n"$num" "$@"
+    ;;
+l) # git log, formatted to 1 line per commit
+    shift
+
+    num=25
+
+    # check if $1 is a number
+    if [[ $# -gt 0 ]] && [[ $1 =~ ^[1-9][0-9]*$ ]]; then
+        num=$1
+        shift
+    fi
+
+    command git log -n"$num" --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)' "$@"
+    ;;
+la | last) # log compact summary (commit message and list of changed files)
+    shift
+
+    num=1
+
+    # check if $1 is a number
+    if [[ $# -gt 0 ]] && [[ $1 =~ ^[1-9][0-9]*$ ]]; then
+        num=$1
+        shift
+    fi
+
+    command git log --compact-summary -"$num" "$@"
+    ;;
+sh | show) # show
+    shift
+    num=1
+
+    # check if $1 is a number
+    if [[ $# -gt 0 ]] && [[ $1 =~ ^[1-9][0-9]*$ ]]; then
+        num=$1
+        shift
+    fi
+
+    command git show --expand-tabs=4 -n"$num" "$@"
     ;;
 restore | rest) # wraps `restore`
     shift

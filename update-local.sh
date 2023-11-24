@@ -5,23 +5,24 @@ set -Eeou pipefail
 
 repo=$(dirname -- "$(readlink -f -- "$0")")
 repoconf="$repo"/PC/HOMEPATH/.config
+repoappdatalocal="$repo"/PC/HOMEPATH/AppData/Local
+winappdatalocal="$HOME"/win/AppData/Local
 winconfig="$HOME"/win/.config
 
 case $1 in
 bash)
-    cp -i "$repoconf"/bash/{aliases,tools,functions}.sh "$winconfig"/bash/
-    ;;
-bashrc)
-    cp -i "$repo"/PC/HOMEPATH/.bashrc "$HOME"/win/
+    cp -uv "$repoconf"/bash/{aliases,tools,functions}.sh "$winconfig"/bash/
+    cp -uv "$repo"/PC/HOMEPATH/.bashrc "$HOME"/win/
     ;;
 git)
-    cp -i "$repoconf"/git/{aliases.gitconfig,git_wrapper.sh} "$winconfig"/git/
+    cp -uv "$repoconf"/git/{aliases.gitconfig,git_wrapper.sh} "$winconfig"/git/
     ;;
-kmonad)
-    cp -i "$repoconf"/kmonad/dell_latitude.kbd "$winconfig"/kmonad/
+nvim)
+    cp -uv "$repoappdatalocal"/nvim/init.vim "$winappdatalocal"/nvim/
     ;;
 wez)
-    cp -i "$repoconf"/wezterm/wezterm.lua "$winconfig"/wezterm/
+    cp -uv "$repoconf"/wezterm/wezterm.lua "$winconfig"/wezterm/
+    cp -uv "$repoconf"/wezterm/colors/* "$winconfig"/wezterm/colors/
     ;;
 *)
     echo ERROR: unsupported option

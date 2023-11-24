@@ -10,6 +10,11 @@ end
 config.initial_cols = 120
 config.initial_rows = 60
 
+config.inactive_pane_hsb = {
+  saturation = 0.5,
+  brightness = 0.5,
+}
+
 config.window_frame = {                 -- TODO: reduce font size on command palette
   font = wezterm.font('IBM Plex Sans'), -- Proportional font
 }
@@ -23,7 +28,10 @@ config.font = wezterm.font {
 }
 config.font_size = 11.0
 config.pane_select_font_size = 36 -- default = 36
-config.color_scheme = 'PhD (base16)'
+
+-- on Windows, make sure to link/copy files from ~/.config/wezterm/colors/
+-- to "/c/Program Files/Wezterm/colors"
+config.color_scheme = 'melange_dark'
 
 -- see: <https://github.com/wez/wezterm/issues/2623>
 config.key_map_preference = 'Physical'
@@ -53,7 +61,7 @@ local keycode = {
 }
 
 -- LEADER key is Ctrl-m
-config.leader = { key = 'm', mods = keycode.ctrl }
+config.leader = { key = 'j', mods = keycode.ctrl }
 
 config.keys = {
   -- Launcher
@@ -83,13 +91,13 @@ config.keys = {
   { key = 'Tab',         mods = keycode.leader,           action = act.MoveTabRelative(1) },
   -- Move/select panes
   -- TODO: use new modes when they move out of nightly builds: "MoveToNewTab", "MoveToNewWindow"
-  { key = 'm',           mods = keycode.leader,           action = act.PaneSelect },
-  -- :: activate next Pane with <leader>,<leader>
-  { key = 'm',           mods = keycode.leader_ctrl,      action = act.ActivatePaneDirection 'Next' },
-  { key = 'm',           mods = keycode.leader_ctrlshift, action = act.ActivatePaneDirection 'Prev' },
+  { key = 'j',           mods = keycode.leader,           action = act.PaneSelect },
+  -- :: activate next Pane mode with <leader>,<leader>
+  { key = 'j',           mods = keycode.leader_ctrl,      action = act.ActivatePaneDirection 'Next' },
+  { key = 'j',           mods = keycode.leader_ctrlshift, action = act.ActivatePaneDirection 'Prev' },
   -- TODO: switch to SwapWithActiveKeepFocus when it moves out of nightly builds
   -- :: swap the active and selected panes
-  { key = 's',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActive', } },
+  { key = 'm',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActive', } },
   { key = ',',           mods = keycode.leader,           action = act.RotatePanes 'CounterClockwise', },
   { key = '.',           mods = keycode.leader,           action = act.RotatePanes 'Clockwise' },
   -- Adjust pane size

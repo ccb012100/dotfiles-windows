@@ -1,14 +1,10 @@
 ## aliases
 [alias]
     ## add
-    a       = add
-    aa      = ! git add --all && git s
-    aac     = ! git add --all && git commit
+    aa      = ! git add --all && git status --short
     aai     = add --all --interactive
-    ac      = ! git add --update && git commit
     ai      = add --update --interactive
-    au      = ! git add --update && git s
-    auc     = ! git add --update && git commit
+    au      = ! git add --update && git status --short
     aui     = add --update --interactive
 
     ## branch
@@ -124,7 +120,8 @@
     ## status
     s   = ss
     sl  = status --long
-    ss  = status --short --branch
+    ss  = status --short
+    ssb = status --short --branch
     sv  = svv
     svv = status -vv
 
@@ -142,7 +139,7 @@
 
     ## misc
     chx     = update-index --chmod=+x
-    difft   = git difftool --tool=difftastic
+    difft   = difftool --tool=difftastic
     fg      = forgit
     nuke    = clean -fdx
     sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode

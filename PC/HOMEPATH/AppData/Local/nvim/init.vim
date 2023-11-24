@@ -33,6 +33,7 @@ nnoremap <C-a> a_<Esc>r
 set listchars=eol:↵,tab:➝\ ,trail:~,extends:>,precedes:<,space:·
 
 let g:rainbow_active = 1        " turn on rainbow brackets
+let mapleader = "\<Space>"      " set <leader> key to spacebar
 set autoread                    " reload file if it's changed outside vim
 set backspace=indent,eol,start  " backspace key deletes in insert mode
 set cc=120                      " set column border
@@ -71,63 +72,28 @@ set ww=<,>,[,],h,l,b,s          " allow cursor to wrap to previous/next line
 
 " https://github.com/junegunn/vim-plug
 call plug#begin()
-    Plug 'easymotion/vim-easymotion'
     Plug 'tpope/vim-commentary'
     Plug 'itchyny/lightline.vim'
+    Plug 'savq/melange'
+    Plug 'smoka7/hop.nvim'
 call plug#end()
 
 " lightline.vim
 set noshowmode
+set laststatus=2
 let g:lightline = { 'colorscheme': 'darcula', }
 
-" vim-easymotion
-let g:EasyMotion_do_mapping = 0             " disable default mappings
-let g:EasyMotion_smartcase = 1              " case-insensitive
-let g:EasyMotion_startofline = 0            " keep cursor column when jk motion
-
-"" use both SPACE and BACKSPACE because it works well with my Ergodox layout
-" 2-char search
-nnoremap <space>; <Plug>(easymotion-s2)
-" move to char
-nnoremap <space>F <Plug>(easymotion-bd-F)
-" move to char
-nnoremap <space>f <Plug>(easymotion-bd-f)
-nnoremap <space>h <Plug>(easymotion-linebackward)
-nnoremap <space>j <Plug>(easymotion-j)
-nnoremap <space>k <Plug>(easymotion-k)
-" move to line
-nnoremap <space>L <Plug>(easymotion-bd-jk)
-nnoremap <space>l <Plug>(easymotion-lineforward)
-" 2-char search
-nnoremap <space>s <Plug>(easymotion-s2)
-" word motion
-nnoremap <space>W <Plug>(easymotion-w)
-" word motion
-nnoremap <space>w <Plug>(easymotion-bd-w)
-" 2-char search
-nnoremap <BS>; <Plug>(easymotion-s2)
-" move to char
-nnoremap <BS>F <Plug>(easymotion-bd-F)
-" move to char
-nnoremap <BS>f <Plug>(easymotion-bd-f)
-nnoremap <BS>h <Plug>(easymotion-linebackward)
-nnoremap <BS>j <Plug>(easymotion-j)
-nnoremap <BS>k <Plug>(easymotion-k)
-" move to line
-nnoremap <BS>L <Plug>(easymotion-bd-jk)
-nnoremap <BS>l <Plug>(easymotion-lineforward)
-" 2-char search
-nnoremap <BS>s <Plug>(easymotion-s2)
-" word motion
-nnoremap <BS>W <Plug>(easymotion-w)
-" word motion
-nnoremap <BS>w <Plug>(easymotion-bd-w)
-
-"" use easymotion with searches
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
+" hop.nvim
+lua << EOF
+    require('hop').setup()
+EOF
+map <Leader>w <cmd>HopWord<CR>
+map <Leader>j <cmd>HopLineStartAC<CR>
+map <Leader>k <cmd>HopLineStartBC<CR>
+map <Leader>l <cmd>HopLine<CR>
+map <Leader>f <cmd>HopChar1<CR>
+map <Leader>; <cmd>HopChar2<CR>
+map <Leader>/ <cmd>HopPattern<CR>
 
 "" set tmp file directories
 set backupdir=~/.vim/.backup/,/tmp//
@@ -139,7 +105,7 @@ autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
 syntax enable
-colorscheme habamax
+colorscheme melange
 
 set viminfo+=n~/.vim/viminfo
 

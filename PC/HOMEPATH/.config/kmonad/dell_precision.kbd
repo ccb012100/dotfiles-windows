@@ -24,7 +24,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    @_f  _    _    @_j  _    _    _    _    _
-  _    @l_m _    _    _    _    _    _    _    _    @r_m _
+  _    _    _    _    @l_m _    _    @r_m _    _    _    _
   _    _    _              @spc           _    _    _      _       _
                                                            _
 )
@@ -42,26 +42,26 @@
   ;; hold space for l-ctrl
   spc (tap-hold-next-release 200 spc lctl)
   ;; left meh key
-  l_m (tap-hold-next-release 275 z S-C-lalt)
+  l_m (tap-hold-next-release 275 v S-C-lalt)
   ;; right meh key
-  r_m (tap-hold-next-release 275 / S-C-lalt)
+  r_m (tap-hold-next-release 275 m S-C-lalt)
 )
 
 (deflayer _j
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    [    ]    {    }    _    \(   up   \)   _    _    _    _
-  _    home _    pgup `    _    pgup _    down rght |    _    _
-  _    end  ins  pgdn ~    _    pgdn -    \_   caps \    _
+  _    _    [    ins  ]    _    _    \(   up   \)   _    _    _    _
+  caps home ~    pgup `    _    _    _    down rght |    _    _
+  _    end  {    pgdn }    _    _    \_   |    caps \    _
   _    _    _              _              _    _    _      _       _
                                                            _
 )
 (deflayer _f
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    [    ]    {    }    _    \(   up   \)   _    _    _    _
-  caps home _    pgup _    home _    left down rght |    _    _
-  _    end  ins  pgdn ~    end  _    -    \_   caps \    _
+  _    _    [    ins  ]    _    _    \(   up   \)   _    _    _    _
+  caps home ~    pgup _    _    _    left down rght -    _    _
+  _    end  {    pgdn }    _    _    \_   |    caps \    _
   _    _    _              _              _    _    _      _       _
                                                            _
 )

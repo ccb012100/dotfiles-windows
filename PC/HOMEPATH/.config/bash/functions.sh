@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # functions to `cd` then `ls` in one step
 function cls() {
     cd "$@" && ls -s
@@ -15,15 +16,32 @@ function clal {
 function clla {
     cd "$@" && ls -la
 }
-function brew() {
+function cdf { # cd into the directory containing the file passed as an argument
+    cd "$(dirname "$*")" || exit
+}
+function brew() { # homebrew does not exist on Windows
     echo "This is Git Bash; did you mean 'choco/winget ${*}'?"
     return 1
 }
-function zc() { # cd with zoxide and then open in vscode
-   z "$@" && code . 
+function ln() { # getting ln working on Git Bash is annoying to set up
+    echo Use 'cmd //c "mklink LINK TARGET"' to create a symlink on Windows
+    return 1
 }
-# cargo cli commands
-function jj() {
+function jc() { # cd with zoxide and then open in vscode
+    j "$@" && code .
+}
+function man() { # Git Bash doesn't have the `man` command
+    echo 'using --help'
+    "$@" --help | less
+}
+function open() { # use built-in Windows 'open' command
+    if [[ -n "${*}" ]]; then
+        start "${*}"
+    else
+        start .
+    fi
+}
+function jj() { # cargo cli commands
     case $1 in
     b)
         shift
@@ -61,8 +79,7 @@ function jj() {
         ;;
     esac
 }
-# dotnet cli commands
-function dn() {
+function dn() { # dotnet cli commands
     case $1 in
     r | run)
         shift
@@ -99,8 +116,7 @@ function dn() {
         ;;
     esac
 }
-# golang cli commands
-function gg() {
+function gg() { # golang cli commands
     case $1 in
     b)
         shift
@@ -127,17 +143,4 @@ function gg() {
         go "${*}"
         ;;
     esac
-}
-# Git Bash doesn't have the `man` command
-function man() {
-    echo 'using --help'
-    "$@" --help | less
-}
-# use built-in Windows 'open' command
-function open() {
-    if [[ -n "${*}" ]]; then
-        start "${*}"
-    else
-        start .
-    fi
 }
