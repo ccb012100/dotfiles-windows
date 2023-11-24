@@ -17,6 +17,9 @@ bashrc)
 git)
     cp -i "$repoconf"/git/{aliases.gitconfig,git_wrapper.sh} "$winconfig"/git/
     ;;
+kmonad)
+    cp -i "$repoconf"/kmonad/dell_latitude.kbd "$winconfig"/kmonad/
+    ;;
 wez)
     cp -i "$repoconf"/wezterm/wezterm.lua "$winconfig"/wezterm/
     ;;
