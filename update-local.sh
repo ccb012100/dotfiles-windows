@@ -15,7 +15,7 @@ bash)
     cp -uv "$repo"/PC/HOMEPATH/.bashrc "$HOME"/win/
     ;;
 git)
-    cp -uv "$repoconf"/git/{aliases.gitconfig,git_wrapper.sh} "$winconfig"/git/
+    cp -uv "$repoconf"/git/{aliases.gitconfig,attributes,git.gitconfig,git_wrapper.sh,ignore,tools.gitconfig} "$winconfig"/git/
     ;;
 nvim)
     cp -uv "$repoappdatalocal"/nvim/init.vim "$winappdatalocal"/nvim/
