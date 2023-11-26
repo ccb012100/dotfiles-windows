@@ -3,6 +3,8 @@ set nocompatible    " set nocompatible must be the first line in init.vim
 scriptencoding utf-8
 filetype indent plugin on
 
+let &shell='cmd.exe' " <see https://github.com/junegunn/vim-plug/issues/539>
+
 "" Exit Insert mode
 inoremap jj <Esc>
 inoremap jk <Esc>
