@@ -83,6 +83,7 @@
       "Description": "Does mathematical calculations (e.g. 5*3-2).",
       "Author": "cxfksword",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "=",
       "WeightBoost": 0,
@@ -115,6 +116,7 @@
       "Description": "Navigates folders starting from a drive letter 'C:\\' or from the user home '~'.",
       "Author": "qianlifeng",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "open ",
       "WeightBoost": 0,
@@ -128,6 +130,7 @@
       "Description": "Quick access to previously selected results.",
       "Author": "jefflord",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "h ",
       "WeightBoost": 0,
@@ -141,6 +144,7 @@
       "Description": "Searches files and folders.",
       "Author": "Microsoft",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "?",
       "WeightBoost": 0,
@@ -163,6 +167,7 @@
       "Description": "Searches your local OneNote notebooks. This plugin requires the OneNote desktop app which is included in Microsoft Office.",
       "Author": "palenshus",
       "Disabled": true,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": true,
       "ActionKeyword": "o:",
       "WeightBoost": 0,
@@ -176,6 +181,7 @@
       "Description": "Open PowerToys utilities and settings.",
       "Author": "davidegiacometti",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "pt ",
       "WeightBoost": 0,
@@ -189,6 +195,7 @@
       "Description": "Searches programs.",
       "Author": "qianlifeng",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "p ",
       "WeightBoost": 0,
@@ -202,6 +209,7 @@
       "Description": "Navigates inside the Windows Registry.",
       "Author": "TobiasSekan",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "reg ",
       "WeightBoost": 0,
@@ -215,6 +223,7 @@
       "Description": "Manages Windows services.",
       "Author": "davidegiacometti",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "svc ",
       "WeightBoost": 0,
@@ -228,6 +237,7 @@
       "Description": "Executes commands (e.g 'ping', 'cmd').",
       "Author": "qianlifeng",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "cmd ",
       "WeightBoost": 0,
@@ -235,25 +245,50 @@
       "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\Shell\\Images\\shell.light.png",
       "AdditionalOptions": [
         {
+          "PluginOptionType": 1,
+          "Key": "ShellCommandExecution",
+          "DisplayLabel": "Command execution",
+          "DisplayDescription": "All entries using the Windows Terminal force the Windows Terminal as the console host regardless of the system settings",
+          "Value": false,
+          "ComboBoxValue": 2,
+          "ComboBoxItems": [
+            {
+              "Key": "Find and run the executable file",
+              "Value": "2"
+            },
+            {
+              "Key": "Run in Command Prompt (cmd.exe)",
+              "Value": "0"
+            },
+            {
+              "Key": "Run in PowerShell (PowerShell.exe)",
+              "Value": "1"
+            },
+            {
+              "Key": "Run in PowerShell 7 (pwsh.exe)",
+              "Value": "6"
+            },
+            {
+              "Key": "Run in Command Prompt (cmd.exe) using Windows Terminal",
+              "Value": "5"
+            },
+            {
+              "Key": "Run in PowerShell (PowerShell.exe) using Windows Terminal",
+              "Value": "3"
+            },
+            {
+              "Key": "Run in PowerShell 7 (pwsh.exe) using Windows Terminal",
+              "Value": "4"
+            }
+          ],
+          "NumberValue": 0
+        },
+        {
           "PluginOptionType": 0,
           "Key": "LeaveShellOpen",
           "DisplayLabel": "Keep shell open",
           "Value": false,
           "ComboBoxValue": 0,
-          "NumberValue": 0
-        },
-        {
-          "PluginOptionType": 1,
-          "Key": "ShellCommandExecution",
-          "DisplayLabel": "Shell command execution",
-          "Value": false,
-          "ComboBoxValue": 2,
-          "ComboBoxOptions": [
-            "Run command in Command Prompt (cmd.exe)",
-            "Run command in PowerShell (PowerShell.exe)",
-            "Find executable file and run it",
-            "Run command in Windows Terminal (wt.exe)"
-          ],
           "NumberValue": 0
         }
       ]
@@ -264,6 +299,7 @@
       "Description": "Executes system commands (e.g. 'shutdown', 'lock', 'sleep').",
       "Author": "Wox",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "sys ",
       "WeightBoost": 0,
@@ -316,9 +352,10 @@
     {
       "Id": "5D69806A5A474115821C3E4C56B9C793",
       "Name": "Time and Date",
-      "Description": "Provides time and date values for the system time or a custom time stamp (Examples: 'Day', 'Day::10/11/2023', 'Time::6:57:17 PM', 'Calendar week::10/11/2023')",
+      "Description": "Provides time and date values for the system time or a custom time stamp (Examples: 'Day', 'Day::11/24/2023', 'Time::10:34:39 AM', 'Calendar week::11/24/2023')",
       "Author": "htcfreek",
       "Disabled": true,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": true,
       "ActionKeyword": ")",
       "WeightBoost": 0,
@@ -368,6 +405,7 @@
       "Description": "Provides unit conversion (e.g. 10 ft in m).",
       "Author": "ThiefZero",
       "Disabled": true,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "convert",
       "WeightBoost": 0,
@@ -381,6 +419,7 @@
       "Description": "Opens URLs and UNC network shares.",
       "Author": "Microsoft",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "//",
       "WeightBoost": 0,
@@ -394,6 +433,7 @@
       "Description": "A plugin to calculate hashes and generate values.",
       "Author": "IHorvalds",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "#",
       "WeightBoost": 0,
@@ -407,6 +447,7 @@
       "Description": "Opens workspaces, remote machines (SSH or Codespaces) and containers, previously opened in VS Code. The VS Code instance needs to be in PATH.",
       "Author": "ricardosantos9521",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "v",
       "WeightBoost": -10,
@@ -420,6 +461,7 @@
       "Description": "Search the web with your default search engine.",
       "Author": "cyberrex5",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "web ",
       "WeightBoost": 0,
@@ -442,6 +484,7 @@
       "Description": "Plugin to search for Windows settings",
       "Author": "TobiasSekan",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "set",
       "WeightBoost": 0,
@@ -455,6 +498,7 @@
       "Description": "Open Windows Terminal profiles.",
       "Author": "davidegiacometti",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": false,
       "ActionKeyword": "sh ",
       "WeightBoost": 0,
@@ -494,6 +538,7 @@
       "Description": "Switches between open windows.",
       "Author": "betadele",
       "Disabled": false,
+      "EnabledPolicyUiState": -1,
       "IsGlobal": true,
       "ActionKeyword": "w ",
       "WeightBoost": 100,
