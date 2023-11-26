@@ -27,7 +27,7 @@
     # vscode doesn't support ssh signing at the moment: <https://github.com/microsoft/vscode/issues/179517>
     # format = ssh
     format = ssh
-    program = C:/Program Files/Git/usr/bin/gpg.exe # this is necessary for GPG signing to work with GitHub Desktop
+    # program = C:/Program Files/Git/usr/bin/gpg.exe # this is necessary for GPG signing to work with GitHub Desktop
 [gpg "ssh"]
     allowedSignersFile = ~/.ssh/allowed_signers
 [help]
