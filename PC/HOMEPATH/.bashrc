@@ -26,11 +26,6 @@ source "$HOME"/.config/bash/functions.sh
 source "$HOME"/.config/bash/tools.sh
 source "$HOME"/.local/config-local.sh
 
-if [[ ! -f "$HOME"/bin/git_wrapper.sh ]]; then
-    # shellcheck disable=SC1001
-    cmd //c "mklink %HOMEPATH%\\bin\\git_wrapper.sh %HOMEPATH%\\.config\\git\\git_wrapper.sh"
-fi
-
 bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
 # also bound by default to Ctrl+Alt+e

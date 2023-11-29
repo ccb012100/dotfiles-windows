@@ -40,8 +40,8 @@ alias llt='eza -l -t modified --sort newest'
 alias tree='eza --tree'
 
 #: git
-alias git=git_wrapper.sh # ln in ~/bin directory
-alias k=git              # k is easier to type
+alias git=git-util  # symlink in ~/bin directory
+alias k=git         # k is easier to type
 alias ka='git a'
 alias kaa='git aa'
 alias kaac='git aac'
