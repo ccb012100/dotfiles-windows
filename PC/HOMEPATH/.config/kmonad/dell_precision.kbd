@@ -1,6 +1,7 @@
 #|
   kmonad configuration for
-  DELL Precision 5570 internal keyboard
+  DELL Precision 5570
+  internal keyboard
 |#
 
 (defcfg
@@ -51,7 +52,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    [    ins  ]    _    _    \(   up   \)   _    _    _    _
-  caps home ~    pgup `    _    _    _    down rght |    _    _
+  caps home ~    pgup `    ssrq _    _    down rght |    _    _
   _    end  {    pgdn }    _    _    \_   |    caps \    _
   _    _    _              _              _    _    _      _       _
                                                            _
@@ -60,7 +61,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    [    ins  ]    _    _    \(   up   \)   _    _    _    _
-  caps home ~    pgup _    _    _    left down rght -    _    _
+  caps home ~    pgup _    ssrq _    left down rght -    _    _
   _    end  {    pgdn }    _    _    \_   |    caps \    _
   _    _    _              _              _    _    _      _       _
                                                            _
@@ -74,14 +75,3 @@
   _    _    _              _              _    _    _      _       _
                                                            _
 )
-#|
-(deflayer
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _   _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _              _              _    _    _      _       _
-                                                           _
-)
-|#
