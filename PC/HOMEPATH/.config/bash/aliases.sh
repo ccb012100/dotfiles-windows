@@ -2,6 +2,8 @@
 
 alias ebash='exec bash'
 
+alias aliases='alias | column --table --separator ='
+
 # built-in tools
 #: cd into parent directories
 alias ..='cd ..'
@@ -32,6 +34,18 @@ alias lk=lazygit # easier than typing 'lg'
 alias v=nvim
 alias vim=nvim
 alias zq='zoxide query'
+
+#: cargo
+alias jj=cargo
+alias jjb='cargo build'
+alias jjc='cargo check'
+alias jjr='cargo run'
+
+#: dotnet
+alias dn=dotnet
+alias dnb='dotnet build'
+alias dnr='dotnet run'
+alias dnt='dotnet test'
 
 #: eza
 alias ls='eza --git --icons --group-directories-first -F' # replace ls with eza
@@ -75,6 +89,10 @@ alias kwc='git wc'
 alias kwl='git wl'
 alias kwm='git wm'
 alias kwr='git wr'
+
+#: golang
+alias gb='go build'
+alias gr='go run'
 
 #: mdcat
 alias md=mdcat
