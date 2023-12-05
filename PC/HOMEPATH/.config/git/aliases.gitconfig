@@ -42,8 +42,8 @@
     dts     = difftool --staged
 
     ## fetch
-    f       = fetch --all
-    fm      = fetch origin main:main # update local main branch to match origin
+    f       = fetch --all --verbose
+    fm      = fetch --verbose origin main:main # update local main branch to match origin
 
     ## forgit
     ja      = forgit add
