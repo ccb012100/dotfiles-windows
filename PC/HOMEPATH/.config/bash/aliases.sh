@@ -99,6 +99,10 @@ alias md=mdcat
 alias mdp='mdcat --paginate'
 alias readme='mdcat README.md'
 
+#: python
+alias pip='py -m pip'
+alias pym='py -m'
+
 #: vs code
 alias c=code
 alias c.='code .' # open current directory in vscode
