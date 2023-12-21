@@ -13,9 +13,35 @@
 ;; NOTE: keycodes can be found in the kmonad repo at 'src/KMonad/Keyboard/Keycode.hs' (search for 'aliases')
 (defsrc
   esc    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  KeyEjectCd  f13   f14      f15   f16     f17         f18     f19
-  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc                KeyHome  pgup          KeyKpEqual  kp/     kp*
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc                KeyHome  pgup  nlck    KeyKpEqual  kp/     kp*
   tab    q    w    e    r    t    y    u    i    o    p    [    ]    \           del   KeyEnd   pgdn  KeyKp7  KeyKp8      KeyKp9  kp-
   caps     a    s    d    f    g    h    j    k    l    ;    '    return                              KeyKp4  KeyKp5      KeyKp6  kp+
-  lsft       z    x    c    v    b    n    m    ,    .    /    rsft                    up             KeyKp1  KeyKp2      KeyKp3
-  lctl  lalt   lmet           spc                      rmet ralt  rctl           left  down     rght  KeyKp0              kp.     KeyKpEqual
+  lsft       z    x    c    v    b    n    m    ,    .    bksl  rsft                   up             KeyKp1  KeyKp2      KeyKp3
+  lctl  lalt   lmet           spc                      rmet ralt  rctl           left  down     rght  KeyKp0              kp.     kprt
+)
+(deflayer default
+  _      _    _    _    _    _    _    _    _    _    _    _    _    _           _     _        _     _       _           _       _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _                   _        _     _       _           _       _
+  _      _    _    _    _    _    _    _    _    _    _    _    _    _           _     _        _     _       _           _       _
+  _        _    _    _    _    _    _    _    _    _    _    _    _                                   _       _           _       _
+  _          _    _    _    _    _    _    _    _    _    _     _                      _              _       _           _
+  _     lmet   lalt           @spc                     ralt lmet  _              _     _        _     _                   _       _
+)
+(defalias
+  ;; _f (tap-hold-next-release 200 f (layer-toggle _f))
+  ;; _j (tap-hold-next-release 200 j (layer-toggle _j))
+
+  ;; FIXME: this is causing issues in Windows - holding lsft or rsft toggles capslock
+  ;; press both shift buttons simultaneously to toggle caps lock
+  ;; lsh (around (layer-toggle shift_layer) lsft)
+  ;; rsh (around (layer-toggle shift_layer) rsft)
+
+  ;; remap caps to escape
+  caps esc
+  ;; hold space for l-ctrl
+  spc (tap-hold-next-release 200 spc lctl)
+  ;; left meh key
+  l_m (tap-hold-next-release 275 v S-C-lalt)
+  ;; right meh key
+  r_m (tap-hold-next-release 275 m S-C-lalt)
 )
