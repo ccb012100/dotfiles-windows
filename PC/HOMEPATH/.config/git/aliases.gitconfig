@@ -139,7 +139,7 @@
 
     ## misc
     chx     = update-index --chmod=+x
-    date    = ! echo git commit --amend --no-edit --date=now # change last commit time to current time
+    date    = ! git commit --amend --no-edit --date=now # change last commit time to current time
     difft   = difftool --tool=difftastic
     fg      = forgit
     nuke    = clean -fdx
