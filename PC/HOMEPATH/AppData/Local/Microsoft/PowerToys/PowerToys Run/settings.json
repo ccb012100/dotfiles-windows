@@ -352,7 +352,7 @@
     {
       "Id": "5D69806A5A474115821C3E4C56B9C793",
       "Name": "Time and Date",
-      "Description": "Provides time and date values for the system time or a custom time stamp (Examples: 'Day', 'Day::11/24/2023', 'Time::10:34:39 AM', 'Calendar week::11/24/2023')",
+      "Description": "Provides time and date values for the system time or a custom time stamp (Examples: 'Day', 'Day::12/23/2023', 'Time::10:31:15 AM', 'Calendar week::12/23/2023')",
       "Author": "htcfreek",
       "Disabled": true,
       "EnabledPolicyUiState": -1,
@@ -451,8 +451,8 @@
       "IsGlobal": false,
       "ActionKeyword": "v",
       "WeightBoost": -10,
-      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\VSCodeWorkspace\\Images\\code-dark.png",
-      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\VSCodeWorkspace\\Images\\code-light.png",
+      "IconPathDark": "C:\\Program Files\\PowerToys\\RunPlugins\\VSCodeWorkspace\\Images\\code.dark.png",
+      "IconPathLight": "C:\\Program Files\\PowerToys\\RunPlugins\\VSCodeWorkspace\\Images\\code.light.png",
       "AdditionalOptions": []
     },
     {
