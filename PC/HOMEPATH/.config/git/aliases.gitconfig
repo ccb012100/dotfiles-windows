@@ -17,6 +17,14 @@
     delete  = delete-merged-branches    # <https://github.com/hartwork/git-delete-merged-branches>
     swc     = switch --create           # create new branch and switch to it
 
+    ## checkout
+    back    = checkout -
+    co      = checkout
+    cob     = checkout -b # create and checkout a new branch
+    cof     = checkout --force
+    main    = checkout main
+    master  = checkout master
+
     ## commit
     amend   = commit --amend
     c       = commit
@@ -25,15 +33,9 @@
     can     = ca --no-edit
     cnv     = c --no-verify
     contrib = shortlog -s
+    fix     = commit --fixup
+    fixup   = commit --fixup
     pick    = cherry-pick
-
-    ## checkout
-    back    = checkout -
-    co      = checkout
-    cob     = checkout -b # create and checkout a new branch
-    cof     = checkout --force
-    main    = checkout main
-    master  = checkout master
 
     ## diff
     d       = diff
