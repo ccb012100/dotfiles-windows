@@ -44,7 +44,8 @@
     default = simple
     useForceIfIncludes = true
 [rebase]
-    autoStash = false
+    autoSquash = true
+    autoStash = true
 [status]
     showUntrackedFiles = all
 [tag]
