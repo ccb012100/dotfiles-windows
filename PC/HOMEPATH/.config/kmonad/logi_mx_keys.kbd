@@ -23,13 +23,29 @@
   _      _    _    _    _    _    _    _    _    _    _    _    _    _           _     _        _     _       _           _       _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _                   _        _     _       _           _       _
   _      _    _    _    _    _    _    _    _    _    _    _    _    _           _     _        _     _       _           _       _
-  _        _    _    _    _    _    _    _    _    _    _    _    _                                   _       _           _       _
-  _          _    _    _    _    _    _    _    _    _    _     _                      _              _       _           _
+  _        _    _    _    @_f  _    _    @_j  _    _    _    _    _                                   _       _           _       _
+  _          _    _    _    @l_m _    _    @r_m _    _    _     _                      _              _       _           _
   _     lmet   lalt           @spc                     ralt lmet  _              _     _        _     _                   _       _
 )
+(deflayer _f
+  _      _    _    _    _    _    _    _    _    _    _    _    _    _           _     _        _     _       _           _       _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _                   _        _     _       _           _       _
+  _      _    [    ins  ]    _    _    \(   up   \)   _    _    _    _           _     _        _     _       _           _       _
+  caps     home ~    pgup _    ssrq _    left down rght _    _    _                                   _       _           _       _
+  _          end  {    pgdn }    _    _    \_   |    caps bksl  _                      _              _       _           _
+  _     _      _              _                        _    _     _              _     _        _     _                   _       _
+)
+(deflayer _j
+  _      _    _    _    _    _    _    _    _    _    _    _    _    _           _     _        _     _       _           _       _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _                   _        _     _       _           _       _
+  _      _    [    ins  ]    _    _    \(   up   \)   _    _    _    _           _     _        _     _       _           _       _
+  caps     home ~    pgup _    ssrq _    left down rght _    _    _                                   _       _           _       _
+  _          end  {    pgdn }    _    _    \_   |    caps bksl  _                      _              _       _           _
+  _     _      _              _                        _    _     _              _     _        _     _                   _       _
+)
 (defalias
-  ;; _f (tap-hold-next-release 200 f (layer-toggle _f))
-  ;; _j (tap-hold-next-release 200 j (layer-toggle _j))
+  _f (tap-hold-next-release 200 f (layer-toggle _f))
+  _j (tap-hold-next-release 200 j (layer-toggle _j))
 
   ;; FIXME: this is causing issues in Windows - holding lsft or rsft toggles capslock
   ;; press both shift buttons simultaneously to toggle caps lock
@@ -45,3 +61,11 @@
   ;; right meh key
   r_m (tap-hold-next-release 275 m S-C-lalt)
 )
+;; (deflayer blank
+;;   _      _    _    _    _    _    _    _    _    _    _    _    _    _           _     _        _     _       _           _       _
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _    _                   _        _     _       _           _       _
+;;   _      _    _    _    _    _    _    _    _    _    _    _    _    _           _     _        _     _       _           _       _
+;;   _        _    _    _    _    _    _    _    _    _    _    _    _                                   _       _           _       _
+;;   _          _    _    _    _    _    _    _    _    _    _     _                      _              _       _           _
+;;   _     _      _              _                        _    _     _              _     _        _     _                   _       _
+;; )
