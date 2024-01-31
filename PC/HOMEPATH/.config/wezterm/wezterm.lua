@@ -88,18 +88,19 @@ config.keys = {
   -- Move/Activate Tab
   { key = 'Tab',         mods = keycode.ctrl_shift,       action = act.ActivateTabRelative(-1) },
   { key = 'Tab',         mods = keycode.ctrl,             action = act.ActivateTabRelative(1) },
-  { key = 'Tab',         mods = keycode.leader,           action = act.MoveTabRelative(-1) },
+  { key = 'Tab',         mods = keycode.leader_shift,     action = act.MoveTabRelative(-1) },
   { key = 'Tab',         mods = keycode.leader,           action = act.MoveTabRelative(1) },
   -- Move/select panes
-  -- TODO: use new modes when they move out of nightly builds: "MoveToNewTab", "MoveToNewWindow"
+  { key = 'd',           mods = keycode.leader,           action = act.PaneSelect { mode = 'MoveToNewTab' } },    -- (d)etach
+  { key = 'd',           mods = keycode.leader_shift,     action = act.PaneSelect { mode = 'MoveToNewWindow' } }, -- (D)etach
   { key = 'j',           mods = keycode.leader,           action = act.PaneSelect },
   -- :: activate next Pane mode with <leader>,<leader>
   { key = 'j',           mods = keycode.leader_ctrl,      action = act.ActivatePaneDirection 'Next' },
   { key = 'j',           mods = keycode.leader_ctrlshift, action = act.ActivatePaneDirection 'Prev' },
   -- TODO: switch to SwapWithActiveKeepFocus when it moves out of nightly builds
   -- :: swap the active and selected panes
-  { key = 'm',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActive', } },
-  { key = ',',           mods = keycode.leader,           action = act.RotatePanes 'CounterClockwise', },
+  { key = 'm',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActiveKeepFocus' } },
+  { key = ',',           mods = keycode.leader,           action = act.RotatePanes 'CounterClockwise' },
   { key = '.',           mods = keycode.leader,           action = act.RotatePanes 'Clockwise' },
   -- Adjust pane size
   { key = 'DownArrow',   mods = keycode.leader,           action = act.AdjustPaneSize { 'Down', 1 } },
