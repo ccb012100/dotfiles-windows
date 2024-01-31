@@ -2,14 +2,13 @@
 [alias]
     ## add
     aa      = ! git add --all && git status --short
-    aai     = add --all --interactive
-    ai      = add --update --interactive
+    af      = ! git --no-pager ls-files --modified --others --exclude-standard | fzf -m | xargs --no-run-if-empty git add # add files interactively
     au      = ! git add --update && git status --short
-    aui     = add --update --interactive
 
     ## branch
     b       = branch
-    bd      = branch --delete
+    bdf     = ! git branch | fzf -m | xargs --no-run-if-empty git branch --delete # delete branch(es)
+    bdff    = ! git branch | fzf -m | xargs --no-run-if-empty git branch --delete --force # force delete branch(es)
     bl      = branch --list
     bv      = branch -v
     br      = branch --remote
@@ -18,10 +17,11 @@
     swc     = switch --create           # create new branch and switch to it
 
     ## checkout
-    back    = checkout -
+    back    = checkout - # checkout previous branch
     co      = checkout
     cob     = checkout -b # create and checkout a new branch
-    cof     = checkout --force
+    cof     = ! git --no-pager branch | fzf | xargs --no-run-if-empty git checkout # checkout local branch
+    corf    = ! git --no-pager branch --remote | fzf | sed 's_^origin/__g' | xargs --no-run-if-empty git checkout # checkout remote branch
     main    = checkout main
     master  = checkout master
 
