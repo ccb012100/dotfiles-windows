@@ -105,6 +105,9 @@ alias readme='mdcat README.md'
 alias pip='py -m pip'
 alias pym='py -m'
 
+# ripgrep
+alias rgf='rg --fixed-strings'
+
 #: vs code
 alias c=code
 alias c.='code .' # open current directory in vscode
