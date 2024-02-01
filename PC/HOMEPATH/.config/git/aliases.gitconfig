@@ -48,24 +48,24 @@
     fm      = fetch --verbose origin main:main # update local main branch to match origin
 
     ## forgit
-    ja      = forgit add
-    jbd     = forgit branch_delete
-    jblame  = forgit blame
-    jclean  = forgit clean
-    jco     = forgit checkout_branch
-    jcoc    = forgit checkout_commit
-    jcof    = forgit checkout_file
-    jcot    = forgit checkout_tag
-    jf      = forgit fixup
-    ji      = forgit ignore
-    jl      = forgit log
-    jpick   = forgit cherry_pick
-    jpickb  = forgit cherry_pick_from_branch
-    jr      = forgit rebase
-    jrc     = forgit revert_commit
-    jreset  = forgit reset_head
-    js      = forgit stash_show
-    jsp     = forgit stash_push
+    foa      = forgit add
+    fobd     = forgit branch_delete
+    foblame  = forgit blame
+    foclean  = forgit clean
+    foco     = forgit checkout_branch
+    fococ    = forgit checkout_commit
+    focof    = forgit checkout_file
+    focot    = forgit checkout_tag
+    fof      = forgit fixup
+    foi      = forgit ignore
+    fol      = forgit log
+    fopick   = forgit cherry_pick
+    fopickb  = forgit cherry_pick_from_branch
+    for      = forgit rebase
+    forc     = forgit revert_commit
+    foreset  = forgit reset_head
+    fos      = forgit stash_show
+    fosp     = forgit stash_push
 
     ## log
     logfp   = log --first-parent
