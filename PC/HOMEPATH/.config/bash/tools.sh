@@ -30,6 +30,9 @@ function _fzf_compgen_dir() {
 
 export fzf_fd_opts='--hidden' # include hidden files
 
+# forgit
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH:$HOME/tools/forgit/bin"
+
 # fzf
 #: using https://github.com/PatrickF1/fzf.fish
 export FZF_COMPLETION_TRIGGER=';;'
@@ -44,14 +47,17 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 #: keybindings
 #: https://github.com/junegunn/fzf/blob/master/shell/key-bindings.bash
 fzfkeybinds="$HOME"/bin/fzf-keybindings.bash
+
 if [[ ! -f "$fzfkeybinds" ]]; then
   curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfkeybinds"
 fi
+
 source "$fzfkeybinds"
 
 #: bash completions
 #: https://github.com/junegunn/fzf/blob/master/shell/completion.bash
 fzfcompletions="$HOME/.local/share/bash-completion/completions/fzf"
+
 if [[ ! -f "$fzfcompletions" ]]; then
   curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfcompletions"
 fi
