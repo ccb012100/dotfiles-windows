@@ -28,10 +28,26 @@ function ln() { # getting ln working on Git Bash is annoying to set up
     return 1
 }
 function jc() { # cd with zoxide and then open in vscode
-    j "$@" && code .
+    __zoxide_z "$@" && code .
+}
+# functions to jump with zoxide then `ls` in one step
+function jls() {
+    __zoxide_z "$@" && ls -s
+}
+function jla {
+    __zoxide_z "$@" && ls -a
+}
+function jll {
+    __zoxide_z "$@" && ls -l
+}
+function jlal {
+    __zoxide_z "$@" && ls -al
+}
+function jlla {
+    __zoxide_z "$@" && ls -la
 }
 function man() { # Git Bash doesn't have the `man` command
-    echo 'using --help'
+    echo ">>> no man in Git Bash; running '$1 --help | less' instead:"
     "$@" --help | less
 }
 function open() { # use built-in Windows 'open' command

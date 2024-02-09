@@ -46,8 +46,10 @@ alias dn=dotnet
 alias dnb='dotnet build'
 alias dnc='dotnet clean'
 alias dnr='dotnet run'
+alias dns='dotnet user-secrets'
 alias dnt='dotnet test'
 alias dnu='dotnet user-secrets'
+alias dnus='dotnet user-secrets'
 
 #: eza
 alias ls='eza --git --icons --group-directories-first -F' # replace ls with eza
