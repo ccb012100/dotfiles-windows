@@ -39,7 +39,7 @@
   _      _    _    _    _    _    _    _    _    _    _    _    _    _           _     _        _     _       _           _       _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _                   _        _     _       _           _       _
   _      _    [    ins  ]    _    _    \(   up   \)   _    _    _    _           _     _        _     _       _           _       _
-  caps     home ~    pgup _    ssrq _    left down rght _    _    _                                   _       _           _       _
+  caps     home ~    pgup `    ssrq _    _    down rght _    _    _                                   _       _           _       _
   _          end  {    pgdn }    _    _    \_   |    caps bksl  _                      _              _       _           _
   _     _      _              _                        _    _     _              _     _        _     _                   _       _
 )
