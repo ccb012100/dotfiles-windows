@@ -1,0 +1,5 @@
+[wsl2]
+memory=28GB
+
+[experimental]
+autoMemoryReclaim=gradual

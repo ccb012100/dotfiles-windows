@@ -14,6 +14,7 @@ _vimrc
 .inputrc
 .minttyrc
 .ssh/config
+.wslconfig
 AppData/Local/Microsoft/PowerToys/FancyZones/settings.json
 AppData/Local/Microsoft/PowerToys/File Explorer/settings.json
 AppData/Local/Microsoft/PowerToys/Keyboard Manager/default.json
