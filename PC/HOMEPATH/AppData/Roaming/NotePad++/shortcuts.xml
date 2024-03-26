@@ -104,7 +104,7 @@
         <ScintKey ScintID="2308" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="37">
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="85" />
         </ScintKey>
-        <ScintKey ScintID="2310" menuCmdID="0" Ctrl="no" Alt="yes" Shift="no" Key="70">
+        <ScintKey ScintID="2310" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="39">
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="73" />
         </ScintKey>
         <ScintKey ScintID="2288" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="0" />
@@ -115,7 +115,6 @@
         <ScintKey ScintID="2180" menuCmdID="42006" Ctrl="no" Alt="no" Shift="no" Key="46">
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="68" />
         </ScintKey>
-        <ScintKey ScintID="2469" menuCmdID="42010" Ctrl="yes" Alt="no" Shift="yes" Key="68" />
         <ScintKey ScintID="2451" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="35" />
         <ScintKey ScintID="2413" menuCmdID="0" Ctrl="yes" Alt="yes" Shift="yes" Key="221" />
         <ScintKey ScintID="2415" menuCmdID="0" Ctrl="yes" Alt="yes" Shift="yes" Key="219" />
@@ -157,7 +156,7 @@
             <NextKey Ctrl="yes" Alt="no" Shift="yes" Key="88" />
         </ScintKey>
         <ScintKey ScintID="2455" menuCmdID="0" Ctrl="yes" Alt="no" Shift="yes" Key="67" />
-        <ScintKey ScintID="2404" menuCmdID="0" Ctrl="no" Alt="yes" Shift="no" Key="75" />
         <ScintKey ScintID="2391" menuCmdID="0" Ctrl="yes" Alt="no" Shift="yes" Key="0" />
+        <ScintKey ScintID="2469" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="0" />
     </ScintillaKeys>
 </NotepadPlus>
