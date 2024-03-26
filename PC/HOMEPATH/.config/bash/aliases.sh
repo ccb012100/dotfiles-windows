@@ -116,3 +116,6 @@ alias c.='code .' # open current directory in vscode
 alias cbash='code ~/.config/bash'
 alias cconf='code ~/.config'
 alias cgit='code ~/.config/git'
+
+#: WSL
+alias wsd='wsl --shutdown'
