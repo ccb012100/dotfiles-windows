@@ -21,7 +21,7 @@
     "fancyzones_overlappingZonesAlgorithm": {
       "value": 2
     },
-    "fancyzones_displayChange_moveWindows": {
+    "fancyzones_displayOrWorkAreaChange_moveWindows": {
       "value": true
     },
     "fancyzones_zoneSetChange_moveWindows": {
