@@ -97,9 +97,7 @@ config.keys = {
   -- :: activate next Pane mode with <leader>,<leader>
   { key = 'j',           mods = keycode.leader_ctrl,      action = act.ActivatePaneDirection 'Next' },
   { key = 'j',           mods = keycode.leader_ctrlshift, action = act.ActivatePaneDirection 'Prev' },
-  -- TODO: switch to SwapWithActiveKeepFocus when it moves out of nightly builds
-  -- :: swap the active and selected panes
-  { key = 'm',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActiveKeepFocus' } },
+  { key = ';',           mods = keycode.leader,           action = act.PaneSelect { mode = 'SwapWithActiveKeepFocus' } },
   { key = ',',           mods = keycode.leader,           action = act.RotatePanes 'CounterClockwise' },
   { key = '.',           mods = keycode.leader,           action = act.RotatePanes 'Clockwise' },
   -- Adjust pane size
@@ -117,7 +115,6 @@ config.keys = {
   -- Font size
   { key = '-',           mods = keycode.leader,           action = act.DecreaseFontSize },
   { key = '+',           mods = keycode.leader,           action = act.IncreaseFontSize },
-  { key = ";",           mods = keycode.leader,           action = act.QuickSelect },
   { key = '=',           mods = keycode.leader,           action = act.ResetFontSize },
   -- Scrollback
   { key = 'PageDown',    mods = keycode.leader,           action = act.ScrollByPage(1) },
@@ -128,6 +125,7 @@ config.keys = {
   -- Copy/paste/select
   { key = 'c',           mods = keycode.leader,           action = act.ActivateCopyMode },
   { key = 'c',           mods = keycode.ctrl_shift,       action = act.CopyTo 'Clipboard' },
+  { key = "s",           mods = keycode.leader,           action = act.QuickSelect },
   { key = 'v',           mods = keycode.ctrl_shift,       action = act.PasteFrom 'Clipboard' },
   { key = 'Copy',        mods = keycode.none,             action = act.CopyTo 'Clipboard' },
   { key = 'Insert',      mods = keycode.ctrl,             action = act.CopyTo 'PrimarySelection' },
