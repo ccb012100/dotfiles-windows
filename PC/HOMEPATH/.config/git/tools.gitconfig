@@ -1,6 +1,7 @@
 # diff/merge/sequence tools
 [diff]
     colorMoved = zebra
+    colormovedws = "allow-indentation-change"
     tool = meld
 [difftool]
     prompt = false
