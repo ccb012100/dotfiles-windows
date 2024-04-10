@@ -96,9 +96,9 @@
     r           = rebase
     ra          = rebase --abort
     rc          = rebase --continue
-    remain      = rebase --interactive origin/main
-    remaster    = rebase --interactive origin/master
-    reorigin    = ! git rebase --interactive origin/`git branch --show-current`
+    remain      = ! git fetch origin main:main && git rebase --interactive origin/main
+    remaster    = ! git fetch origin master:master && git rebase --interactive origin/master
+    reorigin    = ! git fetch origin master:master && git rebase --interactive origin/`git branch --show-current`
     ri          = rebase --interactive
 
     ## reset
