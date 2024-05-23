@@ -60,7 +60,7 @@ local keycode = {
   leader_shift = 'LEADER|SHIFT',
 }
 
--- LEADER key is Ctrl-m
+-- LEADER key is Ctrl-j
 config.leader = { key = 'j', mods = keycode.ctrl }
 
 config.keys = {
